@@ -23,6 +23,7 @@ import android.content.res.Resources;
 import android.os.Bundle;
 import android.os.UserHandle;
 import android.provider.Settings;
+import android.widget.Toast;
 
 import androidx.preference.ListPreference;
 import androidx.preference.Preference;
@@ -59,11 +60,14 @@ public class Notifications extends SettingsPreferenceFragment implements
     private static final String FLASHLIGHT_DND_PREF = "flashlight_on_call_ignore_dnd";
     private static final String FLASHLIGHT_RATE_PREF = "flashlight_on_call_rate";
     private static final String HEADS_UP_TIMEOUT_PREF = "heads_up_timeout";
+    private static final String KEY_TOAST_ANIMATION = "toast_animation";
 
+    private Context mContext;
     private Preference mAlertSlider;
     private Preference mBatLights;
     private Preference mNotLights;
 
+    private ListPreference mToastAnimation;
     private ListPreference mFlashOnCall;
     private SwitchPreferenceCompat mFlashOnCallIgnoreDND;
     private CustomSeekBarPreference mFlashOnCallRate;
@@ -75,8 +79,8 @@ public class Notifications extends SettingsPreferenceFragment implements
 
         addPreferencesFromResource(R.xml.crdroid_settings_notifications);
 
+        mContext = getActivity().getApplicationContext();
         final PreferenceScreen prefScreen = getPreferenceScreen();
-        final Context mContext = getActivity().getApplicationContext();
         final ContentResolver resolver = mContext.getContentResolver();
         final Resources res = mContext.getResources();
 
@@ -128,6 +132,13 @@ public class Notifications extends SettingsPreferenceFragment implements
             mFlashOnCallIgnoreDND.setEnabled(value > 1);
             mFlashOnCallRate.setEnabled(value > 0);
         }
+
+        mToastAnimation = (ListPreference) findPreference(KEY_TOAST_ANIMATION);
+        mToastAnimation.setSummary(mToastAnimation.getEntry());
+        int CurrentToastAnimation = Settings.Global.getInt(resolver, Settings.Global.TOAST_ANIMATION, 1);
+        mToastAnimation.setValueIndex(CurrentToastAnimation); //set to index of default value
+        mToastAnimation.setSummary(mToastAnimation.getEntries()[CurrentToastAnimation]);
+        mToastAnimation.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -136,6 +147,13 @@ public class Notifications extends SettingsPreferenceFragment implements
             int value = Integer.parseInt((String) newValue);
             mFlashOnCallIgnoreDND.setEnabled(value > 1);
             mFlashOnCallRate.setEnabled(value > 0);
+            return true;
+        } else if (preference == mToastAnimation) {
+            int index = mToastAnimation.findIndexOfValue((String) newValue);
+            Settings.Global.putString(getActivity().getContentResolver(),
+                         Settings.Global.TOAST_ANIMATION, (String) newValue);
+            mToastAnimation.setSummary(mToastAnimation.getEntries()[index]);
+            Toast.makeText(mContext, "Testing Toast Style", Toast.LENGTH_SHORT).show();
             return true;
         }
         return false;

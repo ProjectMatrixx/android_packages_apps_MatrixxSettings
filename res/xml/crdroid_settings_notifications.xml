@@ -27,6 +27,14 @@
     <PreferenceCategory
             android:title="@string/misc_category">
 
+    <ListPreference
+        android:key="toast_animation"
+        android:icon="@drawable/ic_clipboard_alert"
+        android:title="@string/toast_animation_title"
+        android:entries="@array/toast_animation_entries"
+        android:entryValues="@array/toast_animation_values"
+        android:persistent="false" />
+
     <!-- Show clipboard overlay -->
     <com.crdroid.settings.preferences.SecureSettingSwitchPreference
         android:key="show_clipboard_overlay"
