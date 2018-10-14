@@ -69,8 +69,10 @@ public class StatusBar extends SettingsPreferenceFragment implements
     private static final String KEY_STATUSBAR_RIGHT_PADDING = "statusbar_right_padding";
     private static final String VOLTE_ICON_STYLE = "volte_icon_style";
     private static final String VOWIFI_ICON_STYLE = "vowifi_icon_style";
+    private static final String TEXT_CHARGING_SYMBOL = "text_charging_symbol";
 
     private SystemSettingListPreference mVolteIconStyle;
+    private SystemSettingListPreference mChargingSymbol;
     private SystemSettingListPreference mVowifiIconStyle;
 
     private static final int PULLDOWN_DIR_NONE = 0;
@@ -173,6 +175,9 @@ public class StatusBar extends SettingsPreferenceFragment implements
                 com.android.internal.R.dimen.status_bar_padding_top);
         seekBar = findPreference(KEY_STATUSBAR_TOP_PADDING);
         seekBar.setDefaultValue(defaultTopPadding, true);
+
+        mChargingSymbol = (SystemSettingListPreference) findPreference("text_charging_symbol");
+        mChargingSymbol.setEnabled(batterystyle == BATTERY_STYLE_TEXT);
     }
 
     @Override
@@ -186,6 +191,7 @@ public class StatusBar extends SettingsPreferenceFragment implements
                     value != BATTERY_STYLE_TEXT && value != BATTERY_STYLE_HIDDEN);
             mBatteryTextCharging.setEnabled(value == BATTERY_STYLE_HIDDEN ||
                     (value != BATTERY_STYLE_TEXT && batterypercent != 2));
+            mChargingSymbol.setEnabled(value == BATTERY_STYLE_TEXT);
             return true;
         } else if (preference == mBatteryPercent) {
             int value = Integer.parseInt((String) newValue);
@@ -268,6 +274,8 @@ public class StatusBar extends SettingsPreferenceFragment implements
                 Settings.System.STATUSBAR_RIGHT_PADDING, defaultRightPadding, UserHandle.USER_CURRENT);
         Settings.System.putIntForUser(resolver,
                 Settings.System.STATUSBAR_TOP_PADDING, defaultTopPadding, UserHandle.USER_CURRENT);
+        Settings.System.putIntForUser(resolver,
+                Settings.System.TEXT_CHARGING_SYMBOL, 1, UserHandle.USER_CURRENT);
         BatteryBar.reset(mContext);
         Clock.reset(mContext);
         NetworkTrafficSettings.reset(mContext);
