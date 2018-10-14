@@ -221,4 +221,21 @@
     <string name="vowifi_icon_oneplus">OnePlus VoWiFi Icon</string>
     <string name="vowifi_icon_moto">Moto VoWiFi Icons</string>
     <string name="vowifi_icon_emui">EMUI Icons</string>
+
+    <!-- Status bar - Battery custom charging symbol -->
+    <string name="text_charging_symbol_title">Custom charging symbol for text style</string>
+    <string name="text_charging_symbol_dialog">Custom charging symbol near battery percentage text</string>
+    <string name="text_charging_symbol_default">Disabled</string>
+    <string name="text_charging_symbol_flash">Flash</string>
+    <string name="text_charging_symbol_tilde">Tilde</string>
+    <string name="text_charging_symbol_plus">Plus</string>
+    <string name="text_charging_symbol_star">Star</string>
+    <string name="text_charging_symbol_rupee">Rupee</string>
+    <string name="text_charging_symbol_dollar">Dollar</string>
+    <string name="text_charging_symbol_euro">Euro</string>
+    <string name="text_charging_symbol_cent">Cent</string>
+    <string name="text_charging_symbol_timer">Sand Timer</string>
+    <string name="text_charging_symbol_rocket">Rocket</string>
+    <string name="text_charging_symbol_milk">Milk Bottle</string>
+    <string name="text_charging_symbol_flamingo">Flamingo</string>
 </resources>
