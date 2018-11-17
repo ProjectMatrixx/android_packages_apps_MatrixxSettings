@@ -238,4 +238,11 @@
     <string name="text_charging_symbol_rocket">Rocket</string>
     <string name="text_charging_symbol_milk">Milk Bottle</string>
     <string name="text_charging_symbol_flamingo">Flamingo</string>
+
+    <!-- Power menu Animations  -->
+    <string name="power_menu_animation_title">Power menu animation</string>
+    <string name="power_menu_animation_dialog_title">Select power menu animation</string>
+    <string name="power_menu_animation_aosp">AOSP (default)</string>
+    <string name="power_menu_animation_bottom">Bottom</string>
+    <string name="power_menu_animation_top">Top</string>
 </resources>
