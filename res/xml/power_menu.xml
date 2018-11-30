@@ -20,6 +20,9 @@
     android:key="power_menu_settings"
     android:title="@string/power_menu_title">
 
+    <PreferenceCategory
+        android:title="@string/panel_porn_title">
+
         <com.crdroid.settings.preferences.SystemSettingListPreference
             android:key="power_menu_animations"
             android:icon="@drawable/ic_power_menu_animation"
@@ -29,6 +32,25 @@
             android:entryValues="@array/power_menu_animations_values"
             android:summary="%s"
             android:defaultValue="0" />
+
+        <com.crdroid.settings.preferences.SystemSettingSeekBarPreference
+            android:key="transparent_power_menu"
+            android:icon="@drawable/ic_color_bucket"
+            android:title="@string/power_menu_transparency"
+            android:max="100"
+            android:min="0"
+            settings:units="%"
+            android:defaultValue="100" />
+
+        <com.crdroid.settings.preferences.SystemSettingSeekBarPreference
+            android:key="transparent_power_dialog_dim"
+            android:icon="@drawable/ic_color_bucket"
+            android:title="@string/power_menu_dialog_dim"
+            android:max="100"
+            android:min="0"
+            settings:units="%"
+            android:defaultValue="50" />
+    </PreferenceCategory>
 
     <PreferenceCategory
         android:key="power_menu_items"
