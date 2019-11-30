@@ -279,5 +279,15 @@
         	android:title="@string/qs_footer_text_title"
         	android:summary="@string/qs_footer_text_summary"
         	android:defaultValue="false"/>
+
+         <!-- QS footer text string -->
+         <com.crdroid.settings.preferences.SystemSettingEditTextPreference
+            android:key="footer_text_string"
+            android:icon="@drawable/ic_pencil"
+            android:title="@string/qs_footer_text_string_title"
+            android:summary="@string/qs_footer_text_string_summary"
+            android:dependency="omni_footer_text_show"
+            android:defaultValue="Matrixx" />
+
     </PreferenceCategory>
 </PreferenceScreen>
