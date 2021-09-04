@@ -1336,4 +1336,10 @@
     <!-- QS Bluetooth auto on -->
     <string name="qs_bt_auto_on_title">Automatic Bluetooth on</string>
     <string name="qs_bt_auto_on_summary">Always turn on Bluetooth when pressing the Bluetooth QS tile</string>
+
+    <!-- Custom FOD Icon -->
+    <string name="custom_fp_icon_title">Custom UDFPS Icon</string>
+    <string name="custom_fp_icon_summary">Enable custom UDFPS Icon from files</string>
+    <string name="custom_fp_select_title">Select Custom UDFPS Icon</string>
+    <string name="custom_fp_select_summary">Select custom image from your saved files or gallery</string>
 </resources>
