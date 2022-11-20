@@ -51,6 +51,7 @@ import com.android.settingslib.search.SearchIndexable;
 
 import com.crdroid.settings.fragments.lockscreen.UdfpsAnimation;
 import com.crdroid.settings.fragments.lockscreen.UdfpsIconPicker;
+import com.crdroid.settings.preferences.CustomSeekBarPreference;
 import com.crdroid.settings.preferences.SystemSettingListPreference;
 import com.crdroid.settings.preferences.SystemSettingSwitchPreference;
 import com.crdroid.settings.preferences.colorpicker.ColorPickerPreference;
@@ -81,6 +82,7 @@ public class LockScreen extends SettingsPreferenceFragment
     private static final String CUSTOM_FOD_ICON_KEY = "custom_fp_icon_enabled";
     private static final String CUSTOM_FP_FILE_SELECT = "custom_fp_file_select";
     private static final int REQUEST_PICK_IMAGE = 0;
+    private static final String LOCKSCREEN_MAX_NOTIF_CONFIG = "lockscreen_max_notif_cofig";
 
     private Preference mUdfpsAnimations;
     private Preference mUdfpsIcons;
@@ -91,6 +93,7 @@ public class LockScreen extends SettingsPreferenceFragment
     private ColorPickerPreference mBarCustomColor;
     private Preference mCustomFPImage;
     private SystemSettingSwitchPreference mCustomFodIcon;
+    private CustomSeekBarPreference mMaxKeyguardNotifConfig;
 
     private OmniJawsClient mWeatherClient;
 
@@ -166,6 +169,12 @@ public class LockScreen extends SettingsPreferenceFragment
         mWeather = (Preference) findPreference(KEY_WEATHER);
         mWeatherClient = new OmniJawsClient(getContext());
         updateWeatherSettings();
+
+        mMaxKeyguardNotifConfig = (CustomSeekBarPreference) findPreference(LOCKSCREEN_MAX_NOTIF_CONFIG);
+        int kgconf = Settings.System.getInt(getContentResolver(),
+                Settings.System.LOCKSCREEN_MAX_NOTIF_CONFIG, 3);
+        mMaxKeyguardNotifConfig.setValue(kgconf);
+        mMaxKeyguardNotifConfig.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -211,6 +220,11 @@ public class LockScreen extends SettingsPreferenceFragment
             } else {
                 mUdfpsIcons.setEnabled(true);
             }
+            return true;
+        } else if (preference == mMaxKeyguardNotifConfig) {
+            int kgconf = (Integer) newValue;
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.LOCKSCREEN_MAX_NOTIF_CONFIG, kgconf);
             return true;
         }
         return false;
@@ -263,6 +277,10 @@ public class LockScreen extends SettingsPreferenceFragment
                 Settings.System.LOCKSCREEN_WEATHER_LOCATION, 0, UserHandle.USER_CURRENT);
         Settings.System.putIntForUser(resolver,
                 Settings.System.LOCKSCREEN_WEATHER_TEXT, 1, UserHandle.USER_CURRENT);
+        Settings.System.putIntForUser(resolver,
+                Settings.System.LOCK_SCREEN_CUSTOM_NOTIF, 0, UserHandle.USER_CURRENT);
+        Settings.System.putIntForUser(resolver,
+                Settings.System.LOCKSCREEN_MAX_NOTIF_CONFIG, 3, UserHandle.USER_CURRENT);
         UdfpsAnimation.reset(mContext);
         UdfpsIconPicker.reset(mContext);
     }
