@@ -69,12 +69,12 @@
         android:summary="@string/smart_pixels_summary" 
         android:fragment="com.crdroid.settings.fragments.ui.SmartPixels" />
 
-    <!-- Monet Theme Engine -->
+    <!-- Monet -->
     <Preference
-        android:key="monet_engine"
+        android:key="monet_settings"
         android:icon="@drawable/ic_themes"
-        android:title="@string/monet_title"
-        android:summary="@string/monet_summary"
+        android:title="@string/monet_settings_title"
+        android:summary="@string/monet_settings_summary"
         android:fragment="com.crdroid.settings.fragments.ui.MonetSettings" />
 
     <!-- Navbar Style -->
