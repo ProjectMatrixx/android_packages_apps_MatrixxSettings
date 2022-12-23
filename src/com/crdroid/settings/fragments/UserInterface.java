@@ -37,6 +37,7 @@ import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settingslib.search.SearchIndexable;
+import com.android.settings.preferences.CustomUIPreferenceController;
 
 import com.crdroid.settings.fragments.ui.DozeSettings;
 import com.crdroid.settings.fragments.ui.SmartPixels;
@@ -54,6 +55,14 @@ public class UserInterface extends SettingsPreferenceFragment {
 
     private Preference mShowCutoutForce;
     private Preference mSmartPixels;
+
+    private static List<AbstractPreferenceController> buildPreferenceControllers(
+            Context context, Lifecycle lifecycle, Fragment fragment) {
+
+        final List<AbstractPreferenceController> controllers = new ArrayList<>();
+        controllers.add(new CustomUIPreferenceController(context));
+        return controllers;
+    }
 
     @Override
     public void onCreate(Bundle savedInstanceState) {

@@ -1260,6 +1260,10 @@
     <!-- Radio Info -->
     <string name="radio_info_title">Radio info</string>
 
+        <!-- CustomUI -->
+    <string name="custom_ui_toggle_title">Settings dashboard style</string>
+    <string name="custom_ui_toggle_summary">Enable card-style dashboard UI</string>
+
     <!-- QS Header -->
     <string name="qs_header_image_title">Header image</string>
 
