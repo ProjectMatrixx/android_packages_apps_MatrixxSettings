@@ -129,4 +129,8 @@
 
     <string name="maintainer_rmx2020">Rinto Khan</string>
     <string name="device_rmx2020_desc">Realme C3/N10a (RMX2020)</string>            
+
+    <!-- UI styles -->
+    <string name="theme_customization_ui_style_title">UI Style</string>
+    <string name="theme_customization_ui_style_summary">Set custom style for your interface</string>
 </resources>
