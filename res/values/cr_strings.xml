@@ -1343,4 +1343,8 @@
     <string name="ambient_image_title">Ambient image</string>
     <string name="file_header_select_title">Select local image</string>
     <string name="file_header_select_summary">Select image from storage</string>
+
+    <!-- UI styles -->
+    <string name="theme_customization_ui_style_title">UI Style</string>
+    <string name="theme_customization_ui_style_summary">Set custom style for your interface</string>
 </resources>
