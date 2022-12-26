@@ -78,4 +78,8 @@
     <string name="get_changelogs_summary">Check latest changes</string>
     <string name="matrixx_legal">Matrixx legal</string>
     <string name="matrixx_legal_desc">Legal terms of use</string>    
+
+    <!-- UI styles -->
+    <string name="theme_customization_ui_style_title">UI Style</string>
+    <string name="theme_customization_ui_style_summary">Set custom style for your interface</string>
 </resources>
