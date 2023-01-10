@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+     
+     Copyright (C) 2022 Android Open Source Project
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:title="@string/crdroid_settings_title" >
+            
+        <com.android.settingslib.widget.IllustrationPreference
+            android:key="matrixx_illustration"
+            android:order="-996"
+            app:lottie_rawRes="@raw/lottie_painting"/>
+            
+        <!-- About -->
+        <Preference
+            android:icon="@drawable/ic_settings_about"
+            settings:layout="@layout/top_level_preference_solo_card"
+            android:title="@string/about_crdroid"
+            android:summary="@string/about_matrixx_summary"
+            android:fragment="com.crdroid.settings.fragments.About" />
+
+      <!-- Buttons -->
+        <com.android.settings.preferences.ui.AdaptivePreference
+            android:icon="@drawable/ic_settings_buttons"
+            settings:position="top"
+            android:title="@string/button_title"
+            android:summary="@string/buttons_settings_summary"
+            android:fragment="com.crdroid.settings.fragments.Buttons" />
+
+      <!-- Lockscreen -->
+        <com.android.settings.preferences.ui.AdaptivePreference
+            android:icon="@drawable/ic_settings_lockscreens"
+            settings:position="middle"
+            android:title="@string/lockscreen_title"
+            android:summary="@string/lockscreen_settings_summary"
+            android:fragment="com.crdroid.settings.fragments.LockScreen" />
+            
+        <!-- Misc -->
+        <com.android.settings.preferences.ui.AdaptivePreference
+            android:icon="@drawable/ic_settings_miscs"
+            settings:position="bottom"
+            android:title="@string/misc_title"
+            android:summary="@string/misc_settings_summary"
+            android:fragment="com.crdroid.settings.fragments.Miscellaneous" />
+
+        <!-- Navigation -->
+        <com.android.settings.preferences.ui.AdaptivePreference
+            android:icon="@drawable/ic_navigation"
+            settings:position="top"
+            android:title="@string/navigation_title"
+            android:summary="@string/nav_settings_summary"
+            android:fragment="com.crdroid.settings.fragments.Navigation" />
+
+        <!-- Notifications -->
+        <com.android.settings.preferences.ui.AdaptivePreference
+            android:icon="@drawable/ic_bell_ring"
+            settings:position="middle"
+            android:title="@string/notifications_title"
+            android:summary="@string/notif_settings_summary"
+            android:fragment="com.crdroid.settings.fragments.Notifications" />
+
+        <!-- QuickSettings -->
+        <com.android.settings.preferences.ui.AdaptivePreference
+            android:icon="@drawable/ic_settings_quicksettings"
+            settings:position="bottom"
+            android:title="@string/quicksettings_title"
+            android:summary="@string/qs_tile_layout_summary"
+            android:fragment="com.crdroid.settings.fragments.QuickSettings" />
+
+        <!-- Sound -->
+        <com.android.settings.preferences.ui.AdaptivePreference
+            android:icon="@drawable/ic_settings_sound"
+            settings:position="top"
+            android:title="@string/sound_title"
+            android:summary="@string/sound_settings_summary"
+            android:fragment="com.crdroid.settings.fragments.Sound" />   
+
+        <!-- Statusbar -->
+        <com.android.settings.preferences.ui.AdaptivePreference
+            android:icon="@drawable/ic_settings_statusbar"
+            settings:position="middle"
+            android:title="@string/statusbar_title"
+            android:summary="@string/sb_settings_summary"
+            android:fragment="com.crdroid.settings.fragments.StatusBar" />
+ 
+        <!-- UserInterface -->
+        <com.android.settings.preferences.ui.AdaptivePreference
+            android:icon="@drawable/ic_color_bucket"
+            settings:position="bottom"
+            android:title="@string/ui_title"
+            android:summary="@string/ui_settings_summary"
+            android:fragment="com.crdroid.settings.fragments.UserInterface" />
+
+</PreferenceScreen> 
