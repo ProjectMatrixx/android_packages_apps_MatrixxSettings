@@ -25,4 +25,16 @@
     <string name="hide_developer_status_summary">Hide developer status from apps</string>
     <string name="search">Search</string>
     <string name="search_apps">Search apps</string>
+
+   <!-- Matrixx Dashboard -->
+    <string name="about_matrixx_summary">Information about Matrixx</string>
+    <string name="buttons_settings_summary">Tweak hardware buttons</string>
+    <string name="lockscreen_settings_summary">Customize lockscreen interface</string>
+    <string name="misc_settings_summary">Misc uncategorized stuffs</string>
+    <string name="nav_settings_summary">Customize navigation behavior</string>
+    <string name="notif_settings_summary">Control notifications and more</string>
+    <string name="qs_settings_summary">QuickSettings customizations</string>
+    <string name="sound_settings_summary">Sound and vibrations customizations</string>
+    <string name="sb_settings_summary">Customize statusbar icons, layout etc</string>
+    <string name="ui_settings_summary">Customize UI colors, icons, fonts etc</string>
 </resources>
