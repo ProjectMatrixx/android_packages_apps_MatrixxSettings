@@ -22,4 +22,18 @@
         <item name="android:lineHeight">15sp</item>
         <item name="android:textColor">?android:attr/textColorSecondary</item>
     </style>
+
+    <style name="mtx_text_style_base">
+        <item name="android:breakStrategy">simple</item>
+    </style>
+        
+    <style name="mtx_text_style_h6" parent="@style/mtx_text_style_base">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:fontFamily">@*android:string/config_headlineFontFamilyMedium</item>
+    </style>
+    
+    <style name="mtx_text_style_body1" parent="@style/mtx_text_style_base">
+        <item name="android:textSize">13.0sp</item>
+        <item name="android:fontFamily">@*android:string/config_bodyFontFamily</item>
+    </style>
 </resources>

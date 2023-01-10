@@ -35,4 +35,6 @@
     <dimen name="columbus_list_item_text_spacing">32.0dip</dimen>
 
     <dimen name="package_list_padding_top">16dp</dimen>
+
+    <dimen name="card_radius">12dp</dimen>
 </resources>
