@@ -17,9 +17,10 @@
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
-    xmlns:lineage="http://schemas.android.com/apk/res-auto">
+    xmlns:lineage="http://schemas.android.com/apk/res-auto"
+    android:title="@string/quicksettings_title">
 
-    <PreferenceCategory
+    <PreferenceCategory 
          android:title="@string/qs_misc_category">
 
         <!-- QS Header -->
