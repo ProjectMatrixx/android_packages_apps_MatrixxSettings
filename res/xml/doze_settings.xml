@@ -74,6 +74,12 @@
         android:summary="@string/display_icon_summary"
         android:defaultValue="false" />
 
+    <Preference
+         android:key="ambient_customization"
+         android:title="@string/ambient_text_category_title"
+         android:summary="@string/ambient_text_category_summary"
+         android:fragment="com.crdroid.settings.fragments.AmbientCustomizations" />
+
     <PreferenceCategory
         android:key="doze_sensor"
         android:title="@string/doze_sensor_title" >
