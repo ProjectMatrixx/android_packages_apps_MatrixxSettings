@@ -183,9 +183,9 @@
 
     <!-- Status bar - Battery -->
     <string-array name="status_bar_battery_style_entries" translatable="false">
-        <item>@string/status_bar_battery_style_icon_portrait</item> 
-        <item>@string/status_bar_battery_style_icon_rlandscape</item> 
-        <item>@string/status_bar_battery_style_icon_landscape</item> 
+        <item>@string/status_bar_battery_style_icon_portrait</item>
+        <item>@string/status_bar_battery_style_icon_rlandscape</item>
+        <item>@string/status_bar_battery_style_icon_landscape</item>
         <item>@string/status_bar_battery_style_circle</item>
         <item>@string/status_bar_battery_style_dotted_circle</item>
         <item>@string/status_bar_battery_style_filled_circle</item>
@@ -234,9 +234,9 @@
     <!-- QS battery style  -->
     <string-array name="qs_battery_style_entries" translatable="false">
         <item>@string/qs_use_status_bar_battery_style</item>
-        <item>@string/status_bar_battery_style_icon_portrait</item> 
-        <item>@string/status_bar_battery_style_icon_rlandscape</item> 
-        <item>@string/status_bar_battery_style_icon_landscape</item> 
+        <item>@string/status_bar_battery_style_icon_portrait</item>
+        <item>@string/status_bar_battery_style_icon_rlandscape</item>
+        <item>@string/status_bar_battery_style_icon_landscape</item>
         <item>@string/status_bar_battery_style_circle</item>
         <item>@string/status_bar_battery_style_dotted_circle</item>
         <item>@string/status_bar_battery_style_filled_circle</item>
@@ -814,6 +814,37 @@
         <item>300000</item>
         <item>600000</item>
         <item>1800000</item>
+    </string-array>
+
+    <!-- Ambient Text Alignment -->
+    <string-array name="ambient_text_alignment_entries" translatable="false">
+        <item>@string/ambient_text_align_start_top</item>
+        <item>@string/ambient_text_align_start_center</item>
+        <!--item>@string/ambient_text_align_start_bottom</item-->
+        <item>@string/ambient_text_align_center</item>
+        <item>@string/ambient_text_align_end_top</item>
+        <item>@string/ambient_text_align_end_center</item>
+        <!--item>@string/ambient_text_align_end_bottom</item-->
+    </string-array>
+    <string-array name="ambient_text_alignment_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <!--item>2</item-->
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <!--item>6</item-->
+    </string-array>
+
+    <string-array name="ambient_text_type_color_entries" translatable="false">
+        <item>@string/ambient_notification_light_color_mode_accent</item>
+        <item>@string/ambient_notification_light_color_mode_wall</item>
+        <item>@string/ambient_notification_light_color_mode_custom</item>
+    </string-array>
+    <string-array name="ambient_text_type_color_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
     </string-array>
 
     <!-- Monet theme styles  -->
