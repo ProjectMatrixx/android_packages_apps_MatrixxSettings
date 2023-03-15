@@ -136,6 +136,12 @@
             android:title="@string/qs_show_auto_brightness_title"
             android:summary="@string/qs_show_auto_brightness_summary"
             android:defaultValue="true" />
+
+        <com.crdroid.settings.preferences.SystemSettingSwitchPreference
+             android:title="Brightness Percentage"
+             android:key="BRIGHTNESS_TEXTVIEW"
+             android:summary="show hide brightness percentage text"
+             android:defaultValue="false" />
     </PreferenceCategory>
 
     <PreferenceCategory
