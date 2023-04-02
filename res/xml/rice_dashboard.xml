@@ -25,8 +25,8 @@
             
         <com.android.settingslib.widget.IllustrationPreference
             android:key="rice_illustration"
-            android:order="-998"
-            app:lottie_rawRes="@raw/rice"/>
+            android:order="-996"
+            app:lottie_rawRes="@raw/lottie_painting"/>
             
         <!-- About -->
         <Preference
