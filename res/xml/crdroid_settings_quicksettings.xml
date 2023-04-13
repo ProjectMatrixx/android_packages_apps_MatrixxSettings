@@ -213,27 +213,36 @@
         <com.crdroid.settings.preferences.SystemSettingSwitchPreference
             android:key="qs_tile_vertical_layout"
             android:icon="@drawable/ic_qs_tile"
-            android:title="@string/qs_tile_layout_title"
-            android:summary="@string/qs_tile_layout_summary"
+            android:title="@string/qs_tile_vertical_layout_title"
+            android:summary="@string/qs_tile_vertical_layout_summary"
             android:defaultValue="false" />
 
         <com.crdroid.settings.preferences.SystemSettingSeekBarPreference
             android:key="qs_layout_columns"
             android:icon="@drawable/ic_qs_tile"
             android:title="@string/qs_columns_portrait_title"
-            android:max="5"
+            android:max="6"
             settings:min="2"
             settings:interval="1"
             android:defaultValue="2" />
 
         <com.crdroid.settings.preferences.SystemSettingSeekBarPreference
-            android:key="qs_layout_columns_landscape"
+            android:key="qs_layout_rows"
             android:icon="@drawable/ic_qs_tile"
-            android:title="@string/qs_columns_landscape_title"
+            android:title="@string/qs_rows_portrait_title"
             android:max="6"
             settings:min="2"
             settings:interval="1"
             android:defaultValue="4" />
+
+        <com.crdroid.settings.preferences.SystemSettingSeekBarPreference
+            android:key="qqs_layout_rows"
+            android:icon="@drawable/ic_qs_tile"
+            android:title="@string/qqs_rows_portrait_title"
+            android:max="5"
+            settings:min="1"
+            settings:interval="1"
+            android:defaultValue="2" />
     </PreferenceCategory>
 
     <PreferenceCategory
