@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright (C) 2022 The SuperiorOS Project
+    SPDX-License-Identifier: Apache-2.0
+-->
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+    android:title="@string/qs_tile_layout_title">
+
+    <!-- QS UI -->
+    <com.crdroid.settings.preferences.SystemSettingListPreference
+       	android:key="qs_ui_style"
+       	android:title="@string/qs_ui_title"
+       	android:entries="@array/qs_ui_entries"
+       	android:entryValues="@array/qs_ui_values"
+       	android:summary="%s"
+       	android:defaultValue="0" />
+</PreferenceScreen>
