@@ -14,8 +14,12 @@
 
 package com.crdroid.settings.fragments.ui;
 
+import android.database.ContentObserver;
 import android.content.Context;
+import android.content.ContentResolver;
+import android.net.Uri;
 import android.os.Bundle;
+import android.os.Handler;
 import android.os.UserHandle;
 import android.provider.Settings;
 import android.view.View;
@@ -29,11 +33,13 @@ import com.android.internal.util.systemui.qs.QSLayoutUtils;
 
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
+import com.android.internal.util.crdroid.ThemeUtils;
 
 import com.android.settingslib.widget.LayoutPreference;
 
 import com.crdroid.settings.preferences.SystemSettingSeekBarPreference;
 import com.crdroid.settings.preferences.SystemSettingSwitchPreference;
+import com.crdroid.settings.preferences.SystemSettingListPreference;
 
 public class QsLayoutSettings extends SettingsPreferenceFragment
         implements Preference.OnPreferenceChangeListener {
@@ -43,13 +49,18 @@ public class QsLayoutSettings extends SettingsPreferenceFragment
     private static final String KEY_QS_COLUMN_PORTRAIT = "qs_layout_columns";
     private static final String KEY_QS_ROW_PORTRAIT = "qs_layout_rows";
     private static final String KEY_QQS_ROW_PORTRAIT = "qqs_layout_rows";
+    private static final String KEY_QS_UI_STYLE  = "qs_ui_style";
     private static final String KEY_APPLY_CHANGE_BUTTON = "apply_change_button";
+    private static final String overlayThemeTarget  = "com.android.systemui";
 
     private Context mContext;
 
     private SystemSettingSeekBarPreference mQsColumns;
     private SystemSettingSeekBarPreference mQsRows;
     private SystemSettingSeekBarPreference mQqsRows;
+    private SystemSettingListPreference mQsUI;
+    private Handler mHandler;
+    private ThemeUtils mThemeUtils;
 
     private Button mApplyChange;
 
@@ -62,6 +73,11 @@ public class QsLayoutSettings extends SettingsPreferenceFragment
     public void onCreate(Bundle savedInstance) {
         super.onCreate(savedInstance);
         addPreferencesFromResource(R.xml.crdroid_settings_quicksettings);
+        
+        mThemeUtils = new ThemeUtils(getActivity());
+
+        mQsUI = (SystemSettingListPreference) findPreference(KEY_QS_UI_STYLE);
+        mCustomSettingsObserver.observe();
     }
 
     @Override
@@ -147,8 +163,57 @@ public class QsLayoutSettings extends SettingsPreferenceFragment
                 currentValue[0] != mQsRows.getValue() * 10 + mQsColumns.getValue() ||
                 currentValue[1] != qqs_rows * 10 + mQsColumns.getValue()
             );
+        } else if (preference == mQsUI) {
+            mCustomSettingsObserver.observe();
         }
         return true;
+    }
+    
+    private CustomSettingsObserver mCustomSettingsObserver = new CustomSettingsObserver(mHandler);
+    private class CustomSettingsObserver extends ContentObserver {
+
+        CustomSettingsObserver(Handler handler) {
+            super(handler);
+        }
+
+        void observe() {
+            Context mContext = getContext();
+            ContentResolver resolver = mContext.getContentResolver();
+            resolver.registerContentObserver(Settings.System.getUriFor(
+                    Settings.System.QS_UI_STYLE),
+                    false, this, UserHandle.USER_ALL);
+        }
+
+        @Override
+        public void onChange(boolean selfChange, Uri uri) {
+            if (uri.equals(Settings.System.getUriFor(Settings.System.QS_UI_STYLE))) {
+                updateQsStyle();
+            }
+        }
+    }
+    
+    private void updateQsStyle() {
+        ContentResolver resolver = getActivity().getContentResolver();
+
+        boolean isA11Style = Settings.System.getIntForUser(getContext().getContentResolver(),
+                Settings.System.QS_UI_STYLE , 1, UserHandle.USER_CURRENT) == 1;
+
+	String qsUIStyleCategory = "android.theme.customization.qs_ui";
+
+	/// reset all overlays before applying
+	resetQsOverlays(qsUIStyleCategory);
+
+	if (isA11Style) {
+	    setQsStyle("com.android.system.qs.ui.A11", qsUIStyleCategory);
+	}
+    }
+
+    public void resetQsOverlays(String category) {
+        mThemeUtils.setOverlayEnabled(category, overlayThemeTarget, overlayThemeTarget);
+    }
+
+    public void setQsStyle(String overlayName, String category) {
+        mThemeUtils.setOverlayEnabled(category, overlayName, overlayThemeTarget);
     }
 
     @Override
