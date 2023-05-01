@@ -366,8 +366,6 @@
     <string name="theme_customization_navbar_summary">Set custom navigation bar style</string>
     <string name="theme_customization_lock_clock_title">Clock font style</string>
     <string name="theme_customization_lock_clock_summary">Set lockscreen clock font style</string>
-    <string name="theme_customization_brightness_slider_title">Brightness slider style</string>
-    <string name="theme_customization_brightness_slider_summary">Set custom brightness slider style</string>
 
     <!-- Refresh rate -->
     <string name="default_refresh_rate_title_custom">Default refresh rate</string>
@@ -1336,4 +1334,8 @@
     <!-- Custom switch -->
     <string name="theme_customization_switch_title">Switch Style</string>
     <string name="theme_customization_switch_summary">Set custom switch style</string>
+
+    <!-- Brightness Slider -->
+    <string name="theme_customization_brightness_slider_title">Brightness Slider Style</string>
+    <string name="theme_customization_brightness_slider_summary">Set custom brightness slider style</string>
 </resources>
