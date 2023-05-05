@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+     
+     Copyright (C) 2022 Android Open Source Project
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<PreferenceScreen 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:title="@string/crdroid_settings_title" >
+      
+        <!-- QuickSettings -->
+        <Preference
+            android:icon="@drawable/ic_settings_quicksettings"
+	        android:title="@string/quicksettings_title"
+            android:summary="@string/quick_summary"
+            android:fragment="com.crdroid.settings.fragments.QuickSettings" />
+
+      <!-- Buttons -->
+        <Preference
+            android:icon="@drawable/ic_settings_cogs"
+	        android:title="@string/button_title"
+            android:summary="@string/bottom_summary"
+            android:fragment="com.crdroid.settings.fragments.Buttons" />
+
+      <!-- Lockscreen -->
+        <Preference
+            android:icon="@drawable/ic_settings_lockscreens"
+            android:title="@string/lockscreen_title"
+            android:summary="@string/lockscreen_summary"
+            android:fragment="com.crdroid.settings.fragments.LockScreen" />
+
+        <!-- Misc -->
+        <Preference
+            android:icon="@drawable/ic_settings_miscs"
+            android:title="@string/misc_title"
+            android:summary="@string/mice_summary"
+            android:fragment="com.crdroid.settings.fragments.Miscellaneous" />
+
+        <!-- Navigation -->
+        <Preference
+            android:icon="@drawable/ic_settings_notifications"
+            android:title="@string/navigation_title"
+            android:summary="@string/navigation_summary"
+            android:fragment="com.crdroid.settings.fragments.Navigation" />
+
+        <!-- Notifications -->
+        <Preference
+            android:icon="@drawable/ic_settings_notifications"
+            android:title="@string/notifications_title"
+            android:summary="@string/notification_summary"
+            android:fragment="com.crdroid.settings.fragments.Notifications" />
+
+        <!-- Sound -->
+         <Preference
+            android:icon="@drawable/ic_cellphone_sound"
+            android:title="@string/sound_title"
+            android:summary="@string/sound_summary"
+            android:fragment="com.crdroid.settings.fragments.Sound" />
+            
+        <!-- Statusbar -->   
+        <Preference
+            android:icon="@drawable/ic_settings_statusbar"
+            android:title="@string/statusbar_title"
+            android:summary="@string/status_summary"
+            android:fragment="com.crdroid.settings.fragments.StatusBar" />  
+
+        <!-- UserInterface -->
+        <Preference
+            android:icon="@drawable/ic_color_bucket"
+            android:title="@string/ui_title"
+            android:summary="@string/user_summary"
+            android:fragment="com.crdroid.settings.fragments.UserInterface" />
+
+</PreferenceScreen>
