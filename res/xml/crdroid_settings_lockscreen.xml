@@ -21,6 +21,10 @@
     xmlns:lineage="http://schemas.android.com/apk/res-auto"
     android:title="@string/lockscreen_title">
 
+    <com.android.settingslib.widget.IllustrationPreference
+        android:key="lockscreen_illustration"
+        app:lottie_rawRes="@raw/lockscreen_illustration" />
+
     <PreferenceCategory
         android:key="lockscreen_clock_category"
         android:title="@string/qs_clock_title">
