@@ -19,6 +19,10 @@
     xmlns:lineage="http://schemas.android.com/apk/res-auto"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
+    <com.android.settingslib.widget.IllustrationPreference
+        android:key="sound_illustration"
+        lineage:lottie_rawRes="@raw/sound_illustration" />
+
     <!-- Pulse music visualizer -->
     <Preference
         android:key="pulse_settings"
