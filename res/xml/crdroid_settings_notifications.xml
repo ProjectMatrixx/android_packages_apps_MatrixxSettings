@@ -19,6 +19,10 @@
     xmlns:lineage="http://schemas.android.com/apk/res-auto"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
+    <com.android.settingslib.widget.IllustrationPreference
+        android:key="notification_illustration"
+        lineage:lottie_rawRes="@raw/notification_illustration" />
+
     <com.crdroid.settings.preferences.SystemSettingSwitchPreference
         android:key="alert_slider_notifications"
         android:icon="@drawable/ic_light_switch"
