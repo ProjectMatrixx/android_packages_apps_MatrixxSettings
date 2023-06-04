@@ -315,4 +315,8 @@
     <string name="vowifi_icon_oneplus">OnePlus VoWiFi Icon</string>
     <string name="vowifi_icon_moto">Moto VoWiFi Icons</string>
     <string name="vowifi_icon_emui">EMUI Icons</string>
+
+    <!-- Spoof storage encryption status -->
+    <string name="spoof_storage_encryption_status_title">Use storage encryption spoofing</string>
+    <string name="spoof_storage_encryption_status_summary">Spoof storage encryption status to encrypted.</string>
 </resources>

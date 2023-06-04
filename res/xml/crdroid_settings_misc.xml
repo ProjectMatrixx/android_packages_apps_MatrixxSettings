@@ -86,6 +86,11 @@
         android:summary="@string/netflix_spoof_summary"
         android:defaultValue="false" />
 
+    <com.crdroid.settings.preferences.SecureSettingSwitchPreference
+        android:key="spoof_storage_encryption_status"
+        android:title="@string/spoof_storage_encryption_status_title"
+        android:summary="@string/spoof_storage_encryption_status_summary"
+        android:defaultValue="false"/>
     </PreferenceCategory>
 
     <!-- Google services
