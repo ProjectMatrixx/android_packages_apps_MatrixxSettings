@@ -37,6 +37,7 @@ import android.provider.Settings;
 
 import com.android.internal.logging.nano.MetricsProto;
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
+import com.android.internal.util.crdroid.Utils;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.search.BaseSearchIndexProvider;
@@ -68,6 +69,7 @@ public class AmbientCustomizations extends SettingsPreferenceFragment implements
     private static final String FILE_AMBIENT_SELECT = "file_ambient_select";
 
     private static final int REQUEST_PICK_IMAGE = 0;
+    private static final String IMAGE_PICKER = "com.android.gallery3d";
 
     private SystemSettingEditTextPreference mAmbientText;
     private ListPreference mAmbientTextAlign;
@@ -113,6 +115,10 @@ public class AmbientCustomizations extends SettingsPreferenceFragment implements
         mAmbientTextColor.setNewPreviewColor(ambientTextColor);
 
         mAmbientImage = findPreference(FILE_AMBIENT_SELECT);
+        // disable file picker if gallery3d is not enabled
+        if (!Utils.isPackageEnabled(getContext(), IMAGE_PICKER)) {
+            mAmbientImage.setEnabled(false);
+        }
 
     }
 
