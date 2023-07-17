@@ -69,7 +69,7 @@ public class AmbientCustomizations extends SettingsPreferenceFragment implements
     private static final String FILE_AMBIENT_SELECT = "file_ambient_select";
 
     private static final int REQUEST_PICK_IMAGE = 0;
-    private static final String IMAGE_PICKER = "com.android.gallery3d";
+    private static final String IMAGE_PICKER = "com.oneplus.gallery";
 
     private SystemSettingEditTextPreference mAmbientText;
     private ListPreference mAmbientTextAlign;
@@ -115,7 +115,7 @@ public class AmbientCustomizations extends SettingsPreferenceFragment implements
         mAmbientTextColor.setNewPreviewColor(ambientTextColor);
 
         mAmbientImage = findPreference(FILE_AMBIENT_SELECT);
-        // disable file picker if gallery3d is not enabled
+        // disable file picker if oneplus gallery is not enabled
         if (!Utils.isPackageEnabled(getContext(), IMAGE_PICKER)) {
             mAmbientImage.setEnabled(false);
         }
@@ -127,7 +127,7 @@ public class AmbientCustomizations extends SettingsPreferenceFragment implements
         if (preference == mAmbientImage) {
             Intent intent = new Intent(Intent.ACTION_GET_CONTENT);
             intent.addCategory(Intent.CATEGORY_OPENABLE);
-            intent.setPackage("com.android.gallery3d");
+            intent.setPackage("com.oneplus.gallery");
             intent.setType("image/*");
             startActivityForResult(intent, REQUEST_PICK_IMAGE);
             return true;
