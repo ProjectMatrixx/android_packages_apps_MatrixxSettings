@@ -16,7 +16,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- App Title -->
-    <string name="crdroid_settings_title">Nastavenia crDroid</string>
+    <string name="crdroid_settings_title">Nastavenia Matrixx</string>
     <string name="crdroid_settings_summary">Otvorte dobroty</string>
     <string name="reset_settings_title">Resetovať nastavenia</string>
     <string name="reset_settings_message">To obnoví väčšinu crdroid nastavení na predvolené hodnoty pre aktuálneho používateľa. Chcete pokračovať?</string>
@@ -59,13 +59,13 @@
     <string name="changelog_crdroid_summary">Zobraziť zmeny v nainštalovanej ROM</string>
     <string name="changelog_crdroid_error">Nie je možné načítať zoznam zmien</string>
     <!-- About crDroid -->
-    <string name="about_crdroid">O crDroid</string>
+    <string name="about_crdroid">O Matrixx</string>
     <string name="about_device_name">Zariadenie</string>
     <!-- Share crDroid -->
-    <string name="share_crdroid_title">Zdieľať crDroid</string>
-    <string name="share_crdroid_summary">Dajte ostatným vedieť o crDroid</string>
+    <string name="share_crdroid_title">Zdieľať Matrixx</string>
+    <string name="share_crdroid_summary">Dajte ostatným vedieť o Matrixx</string>
     <string name="share_message">Zistite o #crDroid viac na @ https://crdroid.net/</string>
-    <string name="share_chooser_title">Zdieľať crDroid</string>
+    <string name="share_chooser_title">Zdieľať Matrixx</string>
     <!-- Sites crDroid -->
     <string name="crdroid_source_title">GitHub</string>
     <string name="crdroid_source_summary">Máme radi open source, pozrite sa na nás</string>
@@ -83,7 +83,7 @@ Ashle-XDA [SLOVAK Preklad]</string>
     <!-- Donate crDroid -->
     <string name="donate_crdroid_title">Podporte nás</string>
     <string name="donate_crdroid_summary">Prispejte na podporu rozvoja a na náš server</string>
-    <string name="donate_team_title">crDroid tím</string>
+    <string name="donate_team_title">Matrixx tím</string>
     <string name="donate_team_summary">Prispejte na podporu hostingového servera, prevádzku a celkovú správu webu</string>
     <!-- The Drill -->
     <string name="drill_title">Správa od vývojárov</string>
@@ -553,7 +553,7 @@ Ashle-XDA [SLOVAK Preklad]</string>
     <string name="qs_footer_services_icon_title">Odkaz na spustené služby</string>
     <string name="qs_footer_settings_icon_title">Odkaz na nastavenia</string>
     <!-- Device Info screen. crDroid legal. -->
-    <string name="crdroid_license_title">Licencia crDroid</string>
+    <string name="crdroid_license_title">Licencia Matrixx</string>
     <!-- Quick Settings brightness slider -->
     <string name="qs_brightness_slider_category">Posuvník jasu</string>
     <string name="qs_show_brightness_slider_title">Posuvník jasu</string>

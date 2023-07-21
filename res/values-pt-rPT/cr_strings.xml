@@ -16,7 +16,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- App Title -->
-    <string name="crdroid_settings_title">Definições crDroid</string>
+    <string name="crdroid_settings_title">Definições Matrixx</string>
     <string name="crdroid_settings_summary">Abrir as coisinhas boas</string>
     <string name="reset_settings_title">Repor definições</string>
     <string name="reset_settings_message">Isso irá redefinir a maioria das configurações do crdroid para seus valores padrão para o usuário atual. Você gostaria de continuar?</string>
@@ -59,17 +59,17 @@
     <string name="changelog_crdroid_summary">Ver as alterações na ROM instalada</string>
     <string name="changelog_crdroid_error">Não foi possível carregar o changelog</string>
     <!-- About crDroid -->
-    <string name="about_crdroid">Acerca de crDroid</string>
+    <string name="about_crdroid">Acerca de Matrixx</string>
     <string name="about_device_name">Dispositivo</string>
     <!-- Share crDroid -->
-    <string name="share_crdroid_title">Partilhar crDroid</string>
-    <string name="share_crdroid_summary">Deixar os outros saber da crDroid</string>
+    <string name="share_crdroid_title">Partilhar Matrixx</string>
+    <string name="share_crdroid_summary">Deixar os outros saber da Matrixx</string>
     <string name="share_message">Conferir se #crDroidAndroid está disponível para o seu dispositivo @ https://crdroid.net/</string>
-    <string name="share_chooser_title">Partilhar crDroid</string>
+    <string name="share_chooser_title">Partilhar Matrixx</string>
     <!-- Sites crDroid -->
     <string name="crdroid_source_title">GitHub</string>
     <string name="crdroid_source_summary">Nós gostamos de código aberto, confira-nos</string>
-    <string name="crdroid_telegram_title">Comunidade crDroid</string>
+    <string name="crdroid_telegram_title">Comunidade Matrixx</string>
     <string name="crdroid_telegram_summary">Estamos no Telegram. Junte-se a nós!</string>
     <string name="crdroid_telegram_channel_title">Canal de Atualizações</string>
     <string name="crdroid_telegram_channel_summary">Seja notificado acerca de novas atualizações no Telegram</string>
@@ -82,7 +82,7 @@
     <!-- Donate crDroid -->
     <string name="donate_crdroid_title">Apoia-nos</string>
     <string name="donate_crdroid_summary">Doar para apoiar desenvolvimento</string>
-    <string name="donate_team_title">equipa crDroid</string>
+    <string name="donate_team_title">equipa Matrixx</string>
     <string name="donate_team_summary">Doar para manter o servidor de hospedagem, uptime e gerenciamento geral do site</string>
     <!-- The Drill -->
     <string name="drill_title">Já sabe o que fazer</string>
@@ -550,7 +550,7 @@
     <string name="qs_footer_services_icon_title">Atalho para serviços em execução</string>
     <string name="qs_footer_settings_icon_title">Atalho para as definições</string>
     <!-- Device Info screen. crDroid legal. -->
-    <string name="crdroid_license_title">Licença crDroid</string>
+    <string name="crdroid_license_title">Licença Matrixx</string>
     <!-- Quick Settings brightness slider -->
     <string name="qs_brightness_slider_category">Controlo de brilho</string>
     <string name="qs_show_brightness_slider_title">Barra de controlo de brilho</string>
