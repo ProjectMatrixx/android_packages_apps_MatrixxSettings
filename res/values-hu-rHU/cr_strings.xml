@@ -71,7 +71,7 @@
     <!-- Sites crDroid -->
     <string name="crdroid_source_title">GitHub</string>
     <string name="crdroid_source_summary">Kedveljük a nyílt forráskódot, nézzen meg minket</string>
-    <string name="crdroid_telegram_title">crDroid közösség</string>
+    <string name="crdroid_telegram_title">Matrixx közösség</string>
     <string name="crdroid_telegram_summary">Jelen vagyunk a Telegramon. Csatlakozzon hozzánk!</string>
     <string name="crdroid_telegram_channel_title">Frissítési csatorna</string>
     <string name="crdroid_telegram_channel_summary">Küldjön értesítést, ha új kiadás érhető el a Telegramon</string>
@@ -562,7 +562,7 @@
     <string name="qs_footer_services_icon_title">\'Futó szolgáltatások\'-parancsikon</string>
     <string name="qs_footer_settings_icon_title">Beállítások-parancsikon</string>
     <!-- Device Info screen. crDroid legal. -->
-    <string name="crdroid_license_title">crDroid jogok</string>
+    <string name="crdroid_license_title">Matrixx jogok</string>
     <!-- Quick Settings brightness slider -->
     <string name="qs_show_brightness_slider_title">Fényerőszabályzó-csúszka</string>
     <string name="qs_show_brightness_slider_never">Sose jelenítse meg</string>

@@ -16,7 +16,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- App Title -->
-    <string name="crdroid_settings_title">crDroid 设置</string>
+    <string name="crdroid_settings_title">Matrixx 设置</string>
     <string name="crdroid_settings_summary">个性化设置</string>
     <string name="reset_settings_title">重置设置</string>
     <string name="reset_settings_message">这将会重置当前用户大部分的 crDroid 设置为默认值。您要继续吗？</string>
@@ -71,7 +71,7 @@
     <!-- Sites crDroid -->
     <string name="crdroid_source_title">GitHub</string>
     <string name="crdroid_source_summary">我们热爱开源，来看看我们的代码吧。</string>
-    <string name="crdroid_telegram_title">crDroid 社区</string>
+    <string name="crdroid_telegram_title">Matrixx 社区</string>
     <string name="crdroid_telegram_summary">我们有 TG 群。加入我们！</string>
     <string name="crdroid_telegram_channel_title">更新频道</string>
     <string name="crdroid_telegram_channel_summary">在 Telegram 上获取更新通知</string>
@@ -84,7 +84,7 @@
     <!-- Donate crDroid -->
     <string name="donate_crdroid_title">支持我们</string>
     <string name="donate_crdroid_summary">捐赠以支持开发</string>
-    <string name="donate_team_title">crDroid 团队</string>
+    <string name="donate_team_title">Matrixx 团队</string>
     <string name="donate_team_summary">捐赠支持服务器托管，网站正常运行时间和整体管理</string>
     <!-- The Drill -->
     <string name="drill_title">实锤</string>
@@ -561,7 +561,7 @@
     <string name="qs_footer_services_icon_title">运行中服务快捷方式</string>
     <string name="qs_footer_settings_icon_title">设置快捷方式</string>
     <!-- Device Info screen. crDroid legal. -->
-    <string name="crdroid_license_title">crDroid 法律信息</string>
+    <string name="crdroid_license_title">Matrixx 法律信息</string>
     <!-- Quick Settings brightness slider -->
     <string name="qs_show_brightness_slider_title">亮度滑块</string>
     <string name="qs_show_brightness_slider_never">从不显示</string>

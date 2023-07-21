@@ -16,7 +16,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- App Title -->
-    <string name="crdroid_settings_title">crDroidi seaded</string>
+    <string name="crdroid_settings_title">Matrixx seaded</string>
     <string name="crdroid_settings_summary">Ava hea kraam</string>
     <string name="reset_settings_title">Lähtesta seaded</string>
     <string name="reset_settings_message">See lähtestab valitud kasutaja jaoks enamus CrDroidi seaded vaikeväärtustele. Kas soovid jätkata?</string>
@@ -71,7 +71,7 @@
     <!-- Sites crDroid -->
     <string name="crdroid_source_title">GitHub</string>
     <string name="crdroid_source_summary">Me armastame avatud tarkvara, tutvu meiega</string>
-    <string name="crdroid_telegram_title">crDroid kogukond</string>
+    <string name="crdroid_telegram_title">Matrixx kogukond</string>
     <string name="crdroid_telegram_summary">Liitu meie Telegrami kommuuniga!</string>
     <string name="crdroid_telegram_channel_title">Uuendustekanal</string>
     <string name="crdroid_telegram_channel_summary">Saa Telegramis uute versioonide teavitusi</string>
@@ -84,7 +84,7 @@
     <!-- Donate crDroid -->
     <string name="donate_crdroid_title">Toeta meid</string>
     <string name="donate_crdroid_summary">Anneta edasise arenduse toetamiseks</string>
-    <string name="donate_team_title">crDroidi meeskond</string>
+    <string name="donate_team_title">Matrixx meeskond</string>
     <string name="donate_team_summary">Anneta, et toetada serveri majutust, veebilehe ülalpidamist ning üleüldist haldust</string>
     <!-- The Drill -->
     <string name="drill_title">Nagu ikka</string>
@@ -562,7 +562,7 @@
     <string name="qs_footer_services_icon_title">Töötavate teenuste otsetee</string>
     <string name="qs_footer_settings_icon_title">Seadete otsetee</string>
     <!-- Device Info screen. crDroid legal. -->
-    <string name="crdroid_license_title">crDroidi legaalne</string>
+    <string name="crdroid_license_title">Matrixx legaalne</string>
     <!-- Quick Settings brightness slider -->
     <string name="qs_show_brightness_slider_title">Heleduse liugur</string>
     <string name="qs_show_brightness_slider_never">Ära kuva kunagi</string>

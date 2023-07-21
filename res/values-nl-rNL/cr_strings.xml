@@ -16,7 +16,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- App Title -->
-    <string name="crdroid_settings_title">crDroid Instellingen</string>
+    <string name="crdroid_settings_title">Matrixx Instellingen</string>
     <string name="crdroid_settings_summary">Goodies</string>
     <string name="reset_settings_title">Instellingen resetten</string>
     <string name="reset_settings_message">Dit zal de meeste crdroid instellingen terugzetten op de standaardwaarden voor de huidige gebruiker. Wilt u doorgaan?</string>
@@ -71,7 +71,7 @@
     <!-- Sites crDroid -->
     <string name="crdroid_source_title">Github</string>
     <string name="crdroid_source_summary">We houden van open source, neem een kijkje</string>
-    <string name="crdroid_telegram_title">crDroid gemeenschap</string>
+    <string name="crdroid_telegram_title">Matrixx gemeenschap</string>
     <string name="crdroid_telegram_summary">Wij zitten op Telegram. Kom er bij!</string>
     <string name="crdroid_telegram_channel_title">Updatekanaal</string>
     <string name="crdroid_telegram_channel_summary">Ontvang een melding van nieuwe builds op Telegram</string>
@@ -84,7 +84,7 @@
     <!-- Donate crDroid -->
     <string name="donate_crdroid_title">Steun ons</string>
     <string name="donate_crdroid_summary">Doneer om verdere ontwikkeling te ondersteunen</string>
-    <string name="donate_team_title">crDroid team</string>
+    <string name="donate_team_title">Matrixx team</string>
     <string name="donate_team_summary">Doneer ter ondersteuning van de server hosting, site uptime en algemeen beheer</string>
     <!-- The Drill -->
     <string name="drill_title">Zoals het hoort</string>
@@ -562,7 +562,7 @@
     <string name="qs_footer_services_icon_title">Snelkoppeling voor actieve services</string>
     <string name="qs_footer_settings_icon_title">Snelkoppeling instellingen</string>
     <!-- Device Info screen. crDroid legal. -->
-    <string name="crdroid_license_title">crDroid legaal</string>
+    <string name="crdroid_license_title">Matrixx legaal</string>
     <!-- Quick Settings brightness slider -->
     <string name="qs_show_brightness_slider_title">Helderheidsregelaar</string>
     <string name="qs_show_brightness_slider_never">Nooit weergeven</string>

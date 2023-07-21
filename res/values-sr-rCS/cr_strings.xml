@@ -16,7 +16,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- App Title -->
-    <string name="crdroid_settings_title">crDroid Podešavanja</string>
+    <string name="crdroid_settings_title">Matrixx Podešavanja</string>
     <string name="crdroid_settings_summary">Otvori dobre stvari</string>
     <string name="reset_settings_title">Resetuj podešavanja</string>
     <string name="reset_settings_message">Ovo će resetovati većinu crdroid podešavanja na njihove podrazumevane vrednosti za trenutnog korisnika. Želite li da nastavite?</string>
@@ -71,7 +71,7 @@
     <!-- Sites crDroid -->
     <string name="crdroid_source_title">GitHub</string>
     <string name="crdroid_source_summary">Mi volimo open source, proveri nas</string>
-    <string name="crdroid_telegram_title">crDroid zajednica</string>
+    <string name="crdroid_telegram_title">Matrixx zajednica</string>
     <string name="crdroid_telegram_summary">Na Telegramu smo. Pridruži nam se!</string>
     <string name="crdroid_telegram_channel_title">Update kanal</string>
     <string name="crdroid_telegram_channel_summary">Budi obavešten o novom verziji na Terlegramu</string>
@@ -84,7 +84,7 @@
     <!-- Donate crDroid -->
     <string name="donate_crdroid_title">Podržite nas</string>
     <string name="donate_crdroid_summary">Donirajte da podržite dalji razvoj</string>
-    <string name="donate_team_title">crDroid tim</string>
+    <string name="donate_team_title">Matrixx tim</string>
     <string name="donate_team_summary">Donirajte da podržite hosting servera, sajt i sveukupno održavanje</string>
     <!-- The Drill -->
     <string name="drill_title">Dril</string>
@@ -563,7 +563,7 @@
     <string name="qs_footer_services_icon_title">Prečica pokrenutih servisa</string>
     <string name="qs_footer_settings_icon_title">Prečica za podešavanja</string>
     <!-- Device Info screen. crDroid legal. -->
-    <string name="crdroid_license_title">crDroid pravne informacije</string>
+    <string name="crdroid_license_title">Matrixx pravne informacije</string>
     <!-- Quick Settings brightness slider -->
     <string name="qs_show_brightness_slider_title">Nivo osvjetljenja</string>
     <string name="qs_show_brightness_slider_never">Nikad ne pokazuj</string>
