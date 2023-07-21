@@ -71,7 +71,7 @@
     <!-- Sites crDroid -->
     <string name="crdroid_source_title">ГитХъб/GitHub</string>
     <string name="crdroid_source_summary">Ние обичаме код с отворен източник, проверете ни</string>
-    <string name="crdroid_telegram_title">crDroid общност</string>
+    <string name="crdroid_telegram_title">Matrixx общност</string>
     <string name="crdroid_telegram_summary">Ние сме в telegram. Присъединете се към нас!</string>
     <string name="crdroid_telegram_channel_title">Канал за обновления</string>
     <string name="crdroid_telegram_channel_summary">Получавайте известия за нови компилации в Telegram</string>
@@ -84,7 +84,7 @@
     <!-- Donate crDroid -->
     <string name="donate_crdroid_title">Подкрепете ни</string>
     <string name="donate_crdroid_summary">Направете дарение, за да подкрепите разработването за напред</string>
-    <string name="donate_team_title">crDroid екип</string>
+    <string name="donate_team_title">Matrixx екип</string>
     <string name="donate_team_summary">Дарете в подкрепа на хостинг сървър, поддръжка на сайта и цялостното управление</string>
     <!-- The Drill -->
     <string name="drill_title">Бормашината</string>
@@ -562,7 +562,7 @@
     <string name="qs_footer_services_icon_title">Пряк път за стартиране на услуги</string>
     <string name="qs_footer_settings_icon_title">Пряк път настройки</string>
     <!-- Device Info screen. crDroid legal. -->
-    <string name="crdroid_license_title">crDroid лиценз</string>
+    <string name="crdroid_license_title">Matrixx лиценз</string>
     <!-- Quick Settings brightness slider -->
     <string name="qs_show_brightness_slider_title">Плъзгач за яркост</string>
     <string name="qs_show_brightness_slider_never">Никога не показвай</string>
@@ -964,7 +964,7 @@
     <string name="status_bar_logo_summary">在状态栏的左侧或右侧显示自定义徽标</string>
     <string name="status_bar_logo_position_title">Позиция на лого</string>
     <string name="status_bar_logo_style_title">Стил на логото</string>
-    <string name="status_bar_logo_style_crdroid">crDroid</string>
+    <string name="status_bar_logo_style_crdroid">Matrixx</string>
     <string name="status_bar_logo_style_android">Андроид</string>
     <string name="status_bar_logo_style_adidas">adidas</string>
     <string name="status_bar_logo_style_alien">外星人</string>

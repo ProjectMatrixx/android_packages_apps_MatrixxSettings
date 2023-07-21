@@ -16,7 +16,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- App Title -->
-    <string name="crdroid_settings_title">crDroid postavke</string>
+    <string name="crdroid_settings_title">Matrixx postavke</string>
     <string name="crdroid_settings_summary">Otvorite mrak opcije</string>
     <string name="reset_settings_title">Vraćanje postavki</string>
     <string name="reset_settings_message">Ovo će vratiti većinu crDroid postavki na njihove zadane vrijednosti za trenutnog korisnika. Želite li nastaviti?</string>
@@ -71,7 +71,7 @@
     <!-- Sites crDroid -->
     <string name="crdroid_source_title">GitHub</string>
     <string name="crdroid_source_summary">Volimo open source, provjerite nas</string>
-    <string name="crdroid_telegram_title">crDroid zajednica</string>
+    <string name="crdroid_telegram_title">Matrixx zajednica</string>
     <string name="crdroid_telegram_summary">Na telegramu smo. Pridruži nam se!</string>
     <string name="crdroid_telegram_channel_title">Kanal ažuriranja</string>
     <string name="crdroid_telegram_channel_summary">Primajte obavijesti o novim verzijama na Telegramu</string>
@@ -563,7 +563,7 @@
     <string name="qs_footer_services_icon_title">Prečac za pokretanje servisa</string>
     <string name="qs_footer_settings_icon_title">Prečac postavki</string>
     <!-- Device Info screen. crDroid legal. -->
-    <string name="crdroid_license_title">crDroid legal</string>
+    <string name="crdroid_license_title">Matrixx legal</string>
     <!-- Quick Settings brightness slider -->
     <string name="qs_show_brightness_slider_title">Klizač osvjetljenja zaslona</string>
     <string name="qs_show_brightness_slider_never">Nikad ne prikazuj</string>

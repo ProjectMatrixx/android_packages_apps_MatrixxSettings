@@ -562,7 +562,7 @@
     <string name="qs_footer_services_icon_title">Atalho de serviços em execução</string>
     <string name="qs_footer_settings_icon_title">Atalho de configurações</string>
     <!-- Device Info screen. crDroid legal. -->
-    <string name="crdroid_license_title">crDroid é legal</string>
+    <string name="crdroid_license_title">Matrixx é legal</string>
     <!-- Quick Settings brightness slider -->
     <string name="qs_show_brightness_slider_title">Controle deslizante de brilho</string>
     <string name="qs_show_brightness_slider_never">Nunca mostrar</string>
