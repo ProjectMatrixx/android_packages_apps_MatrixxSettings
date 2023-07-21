@@ -71,7 +71,7 @@
     <!-- Sites crDroid -->
     <string name="crdroid_source_title">GitHub</string>
     <string name="crdroid_source_summary">Ми любимо відкритий вихідний код, перевірте нас</string>
-    <string name="crdroid_telegram_title">crDroid спільнота</string>
+    <string name="crdroid_telegram_title">Matrixx спільнота</string>
     <string name="crdroid_telegram_summary">Ми також є в Telegram. Приєднуйтесь!</string>
     <string name="crdroid_telegram_channel_title">Канал оновлень</string>
     <string name="crdroid_telegram_channel_summary">Отримувати сповіщення про нові збірки в Telegram</string>
@@ -84,7 +84,7 @@
     <!-- Donate crDroid -->
     <string name="donate_crdroid_title">Підтримати нас</string>
     <string name="donate_crdroid_summary">Пожертвуйте для підтримки подальшого розвитку</string>
-    <string name="donate_team_title">crDroid команда</string>
+    <string name="donate_team_title">Matrixx команда</string>
     <string name="donate_team_summary">Пожертвувати на підтримку хостингу, сайту та розвитку проекту</string>
     <!-- The Drill -->
     <string name="drill_title">Від розробників</string>

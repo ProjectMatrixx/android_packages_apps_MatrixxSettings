@@ -16,7 +16,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- App Title -->
-    <string name="crdroid_settings_title">crDroid-indstillinger</string>
+    <string name="crdroid_settings_title">Matrixx-indstillinger</string>
     <string name="crdroid_settings_summary">Åbn Godhed</string>
     <string name="reset_settings_title">Nulstil indstillinger</string>
     <string name="reset_settings_message">Dette vil nulstille de fleste crDroid-indstillinger til deres standardværdier for den aktuelle bruger. Fortsæt?</string>
@@ -71,7 +71,7 @@
     <!-- Sites crDroid -->
     <string name="crdroid_source_title">GitHub</string>
     <string name="crdroid_source_summary">Vi elsker open source, tjek os ud</string>
-    <string name="crdroid_telegram_title">crDroid community</string>
+    <string name="crdroid_telegram_title">Matrixx community</string>
     <string name="crdroid_telegram_summary">Vi er på telegram. Tilmeld dig!</string>
     <string name="crdroid_telegram_channel_title">Updates channel</string>
     <string name="crdroid_telegram_channel_summary">Get notified of new builds on Telegram</string>
@@ -84,7 +84,7 @@
     <!-- Donate crDroid -->
     <string name="donate_crdroid_title">Støt os</string>
     <string name="donate_crdroid_summary">Donate to support further development</string>
-    <string name="donate_team_title">crDroid-team</string>
+    <string name="donate_team_title">Matrixx-team</string>
     <string name="donate_team_summary">Donér for at støtte server-hosting, opetid på webstedet og generel håndterng</string>
     <!-- The Drill -->
     <string name="drill_title">Øvelse</string>
@@ -562,7 +562,7 @@
     <string name="qs_footer_services_icon_title">Genvej til Kørende tjenester</string>
     <string name="qs_footer_settings_icon_title">Indstillingsgenvej</string>
     <!-- Device Info screen. crDroid legal. -->
-    <string name="crdroid_license_title">crDroid legal</string>
+    <string name="crdroid_license_title">Matrixx legal</string>
     <!-- Quick Settings brightness slider -->
     <string name="qs_show_brightness_slider_title">Lysstyrkeskyder</string>
     <string name="qs_show_brightness_slider_never">Never show</string>

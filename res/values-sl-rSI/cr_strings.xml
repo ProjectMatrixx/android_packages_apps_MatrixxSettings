@@ -16,7 +16,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- App Title -->
-    <string name="crdroid_settings_title">crDroid nastavitve</string>
+    <string name="crdroid_settings_title">Matrixx nastavitve</string>
     <string name="crdroid_settings_summary">Odprte dobrote</string>
     <string name="reset_settings_title">Ponastavi nastavitve</string>
     <string name="reset_settings_message">To bo ponastavilo večino nastavitev na njihove privzete vrednosti za trenutnega uporabnika. Ali želite nadaljevati?</string>
@@ -71,7 +71,7 @@
     <!-- Sites crDroid -->
     <string name="crdroid_source_title">GitHub</string>
     <string name="crdroid_source_summary">Radi imamo odprto kodo, preverite nas</string>
-    <string name="crdroid_telegram_title">crDroid skupnost</string>
+    <string name="crdroid_telegram_title">Matrixx skupnost</string>
     <string name="crdroid_telegram_summary">Smo na telegramu. Pridružite se nam!</string>
     <string name="crdroid_telegram_channel_title">Kanal s posodobitvami</string>
     <string name="crdroid_telegram_channel_summary">Bodite obveščeni o novih izgradnjah na Telegramu</string>
@@ -84,7 +84,7 @@
     <!-- Donate crDroid -->
     <string name="donate_crdroid_title">Podprite nas</string>
     <string name="donate_crdroid_summary">Prispevajte, da podprete nadaljnji razvoj</string>
-    <string name="donate_team_title">crDroid ekipa</string>
+    <string name="donate_team_title">Matrixx ekipa</string>
     <string name="donate_team_summary">Prispevajte, da podprete gostovanje strežnika, čas delovanja strani in upravljanje na splošno</string>
     <!-- The Drill -->
     <string name="drill_title">Postopek</string>
@@ -564,7 +564,7 @@
     <string name="qs_footer_services_icon_title">Bližnjica storitev v izvajanju</string>
     <string name="qs_footer_settings_icon_title">Bližnjica nastavitev</string>
     <!-- Device Info screen. crDroid legal. -->
-    <string name="crdroid_license_title">crDroid pravo</string>
+    <string name="crdroid_license_title">Matrixx pravo</string>
     <!-- Quick Settings brightness slider -->
     <string name="qs_show_brightness_slider_title">Drsnik za svetlost</string>
     <string name="qs_show_brightness_slider_never">Nikoli ne prikaži</string>

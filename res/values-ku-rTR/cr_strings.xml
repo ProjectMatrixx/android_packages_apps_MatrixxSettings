@@ -71,7 +71,7 @@
     <!-- Sites crDroid -->
     <string name="crdroid_source_title">GitHub</string>
     <string name="crdroid_source_summary">We love open source, check us out</string>
-    <string name="crdroid_telegram_title">crDroid community</string>
+    <string name="crdroid_telegram_title">Matrixx community</string>
     <string name="crdroid_telegram_summary">We are on telegram. Join us!</string>
     <string name="crdroid_telegram_channel_title">Updates channel</string>
     <string name="crdroid_telegram_channel_summary">Get notified of new builds on Telegram</string>
@@ -84,7 +84,7 @@
     <!-- Donate crDroid -->
     <string name="donate_crdroid_title">Support us</string>
     <string name="donate_crdroid_summary">Donate to support further development</string>
-    <string name="donate_team_title">crDroid team</string>
+    <string name="donate_team_title">Matrixx team</string>
     <string name="donate_team_summary">Donate to support server hosting, site uptime and overall management</string>
     <!-- The Drill -->
     <string name="drill_title">The drill</string>
@@ -562,7 +562,7 @@
     <string name="qs_footer_services_icon_title">Running services shortcut</string>
     <string name="qs_footer_settings_icon_title">Settings shortcut</string>
     <!-- Device Info screen. crDroid legal. -->
-    <string name="crdroid_license_title">crDroid legal</string>
+    <string name="crdroid_license_title">Matrixx legal</string>
     <!-- Quick Settings brightness slider -->
     <string name="qs_show_brightness_slider_title">تەختەی ڕۆشنایی</string>
     <string name="qs_show_brightness_slider_never">Never show</string>

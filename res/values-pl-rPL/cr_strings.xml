@@ -564,7 +564,7 @@
     <string name="qs_footer_services_icon_title">Skrót do działających usług</string>
     <string name="qs_footer_settings_icon_title">Skrót do ustawień</string>
     <!-- Device Info screen. crDroid legal. -->
-    <string name="crdroid_license_title">crDroid legalny</string>
+    <string name="crdroid_license_title">Matrixx legalny</string>
     <!-- Quick Settings brightness slider -->
     <string name="qs_show_brightness_slider_title">Pasek jasności</string>
     <string name="qs_show_brightness_slider_never">Nigdy nie pokazuj</string>

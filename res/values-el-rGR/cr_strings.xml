@@ -16,7 +16,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- App Title -->
-    <string name="crdroid_settings_title">crDroid Ρυθμίσεις</string>
+    <string name="crdroid_settings_title">Matrixx Ρυθμίσεις</string>
     <string name="crdroid_settings_summary">Ανοίξτε τα \"καλούδια\"</string>
     <string name="reset_settings_title">Επαναφορά ρυθμίσεων</string>
     <string name="reset_settings_message">Αυτό θα επαναφέρει τις περισσότερες ρυθμίσεις crdroid στις προεπιλεγμένες τιμές τους για τον τρέχοντα χρήστη. Θέλετε να συνεχίσετε;</string>
