@@ -16,7 +16,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- App Title -->
-    <string name="crdroid_settings_title">Настройки crDroid</string>
+    <string name="crdroid_settings_title">Настройки Matrixx</string>
     <string name="crdroid_settings_summary">Здесь происходит волшебство</string>
     <string name="reset_settings_title">Сбросить настройки</string>
     <string name="reset_settings_message">Это приведёт к сбросу большинства настроек crDroid к значениям по умолчанию для текущего пользователя. Продолжить?</string>
@@ -59,17 +59,17 @@
     <string name="changelog_crdroid_summary">Просмотр изменений установленной прошивки</string>
     <string name="changelog_crdroid_error">Невозможно загрузить список изменений</string>
     <!-- About crDroid -->
-    <string name="about_crdroid">О crDroid</string>
+    <string name="about_crdroid">О Matrixx</string>
     <string name="about_device_name">Устройство</string>
     <!-- Share crDroid -->
-    <string name="share_crdroid_title">Рассказать о crDroid</string>
-    <string name="share_crdroid_summary">Пусть другие узнают о crDroid</string>
+    <string name="share_crdroid_title">Рассказать о Matrixx</string>
+    <string name="share_crdroid_summary">Пусть другие узнают о Matrixx</string>
     <string name="share_message">Узнайте, доступен ли #crDroidAndroid для Вашего устройства на @ https://crdroid.net/</string>
-    <string name="share_chooser_title">Рассказать о crDroid</string>
+    <string name="share_chooser_title">Рассказать о Matrixx</string>
     <!-- Sites crDroid -->
     <string name="crdroid_source_title">Github</string>
     <string name="crdroid_source_summary">Мы любим открытый исходный код, посмотрите его</string>
-    <string name="crdroid_telegram_title">Cообщество crDroid</string>
+    <string name="crdroid_telegram_title">Cообщество Matrixx</string>
     <string name="crdroid_telegram_summary">Мы в Telegram. Присоединяйтесь!</string>
     <string name="crdroid_telegram_channel_title">Канал обновлений</string>
     <string name="crdroid_telegram_channel_summary">Получать уведомления о новых сборках в Telegram</string>
@@ -82,7 +82,7 @@
     <!-- Donate crDroid -->
     <string name="donate_crdroid_title">Поддержать нас</string>
     <string name="donate_crdroid_summary">Пожертвуйте для поддержки дальнейшего развития</string>
-    <string name="donate_team_title">Команда crDroid</string>
+    <string name="donate_team_title">Команда Matrixx</string>
     <string name="donate_team_summary">Пожертвовать на поддержку хостинга, сайта и общие задачи</string>
     <!-- The Drill -->
     <string name="drill_title">Послание от разработчиков</string>
@@ -552,7 +552,7 @@
     <string name="qs_footer_services_icon_title">Диспетчер задач</string>
     <string name="qs_footer_settings_icon_title">Настройки</string>
     <!-- Device Info screen. crDroid legal. -->
-    <string name="crdroid_license_title">О crDroid</string>
+    <string name="crdroid_license_title">О Matrixx</string>
     <!-- Quick Settings brightness slider -->
     <string name="qs_brightness_slider_category">Регулятор яркости</string>
     <string name="qs_show_brightness_slider_title">Где показывать</string>
@@ -954,7 +954,7 @@
     <string name="status_bar_logo_summary">Показывать выбранный логотип слева или справа в строке состояния</string>
     <string name="status_bar_logo_position_title">Расположение логотипа</string>
     <string name="status_bar_logo_style_title">Стиль логотипа</string>
-    <string name="status_bar_logo_style_crdroid">crDroid</string>
+    <string name="status_bar_logo_style_crdroid">Matrixx</string>
     <string name="status_bar_logo_style_android">Android</string>
     <string name="status_bar_logo_style_adidas">Adidas</string>
     <string name="status_bar_logo_style_alien">Пришелец</string>
