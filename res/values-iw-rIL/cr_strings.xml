@@ -16,7 +16,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- App Title -->
-    <string name="crdroid_settings_title">הגדרות crDroid</string>
+    <string name="crdroid_settings_title">הגדרות Matrixx</string>
     <string name="crdroid_settings_summary">לפתוח את הטוב</string>
     <string name="reset_settings_title">איפוס הגדרות</string>
     <string name="reset_settings_message">הגדרה זו תאפס את רוב הגדרות crDroid לערכי ברירת המחדל, להמשיך?</string>
@@ -59,17 +59,17 @@
     <string name="changelog_crdroid_summary">ראה שינויים ברום שהותקן</string>
     <string name="changelog_crdroid_error">טעינת יומן השינויים נכשלה</string>
     <!-- About crDroid -->
-    <string name="about_crdroid">אודות crDroid</string>
+    <string name="about_crdroid">אודות Matrixx</string>
     <string name="about_device_name">מכשיר</string>
     <!-- Share crDroid -->
-    <string name="share_crdroid_title">שתף crDroid</string>
-    <string name="share_crdroid_summary">עזור לאנשים אחרים לדעת אודות crDroid</string>
+    <string name="share_crdroid_title">שתף Matrixx</string>
+    <string name="share_crdroid_summary">עזור לאנשים אחרים לדעת אודות Matrixx</string>
     <string name="share_message">בדוק האם crDroidAndroid# זמין למכשיר שלך https://crdroid.net/</string>
-    <string name="share_chooser_title">שתף crDroid</string>
+    <string name="share_chooser_title">שתף Matrixx</string>
     <!-- Sites crDroid -->
     <string name="crdroid_source_title">GitHub</string>
     <string name="crdroid_source_summary">אנחנו אוהבים מקור פתוח, בדוק אותנו</string>
-    <string name="crdroid_telegram_title">קהילת crDroid</string>
+    <string name="crdroid_telegram_title">קהילת Matrixx</string>
     <string name="crdroid_telegram_summary">אנחנו גם בטלגרם, תצטרף אלינו!</string>
     <string name="crdroid_telegram_channel_title">ערוץ עדכונים</string>
     <string name="crdroid_telegram_channel_summary">קבל הודעה בטלגרם אודות עדכונים חדשים</string>
@@ -82,7 +82,7 @@
     <!-- Donate crDroid -->
     <string name="donate_crdroid_title">תמוך בנו</string>
     <string name="donate_crdroid_summary">תמוך בנו כדי לאפשר המשך פיתוח עתידי</string>
-    <string name="donate_team_title">צוות crDroid</string>
+    <string name="donate_team_title">צוות Matrixx</string>
     <string name="donate_team_summary">תירמו לתמיכה בשרתי האחסון, הפעלת האתר והניהול הכללי</string>
     <!-- The Drill -->
     <string name="drill_title">התהליך</string>
@@ -552,7 +552,7 @@
     <string name="qs_footer_services_icon_title">קיצור דרך להפעלת שירותים</string>
     <string name="qs_footer_settings_icon_title">קיצור דרך להגדרות</string>
     <!-- Device Info screen. crDroid legal. -->
-    <string name="crdroid_license_title">חוקי crDroid</string>
+    <string name="crdroid_license_title">חוקי Matrixx</string>
     <!-- Quick Settings brightness slider -->
     <string name="qs_brightness_slider_category">סרגל הבהירות</string>
     <string name="qs_show_brightness_slider_title">מחוון בהירות</string>
