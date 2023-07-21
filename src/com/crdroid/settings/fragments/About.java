@@ -80,7 +80,7 @@ public class About extends SettingsPreferenceFragment {
         if (preference == mDonate) {
             launchUrl("https://crdroid.net/donate.php");
         } else if (preference == mSourceUrl) {
-            launchUrl("https://github.com/crdroidandroid");
+            launchUrl("https://github.com/ProjectMatrixx");
         } else if (preference == mTelegramUrl) {
             launchUrl("https://t.me/crDroidAndroid");
         } else if (preference == mShare) {

@@ -17,10 +17,10 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
     <!-- App Title -->
-    <string name="crdroid_settings_title">crDroid Settings</string>
-    <string name="crdroid_settings_summary">Open goodness</string>
+    <string name="crdroid_settings_title">Matrixx Settings</string>
+    <string name="crdroid_settings_summary">Open the door of Matrixx</string>
     <string name="reset_settings_title">Reset settings</string>
-    <string name="reset_settings_message">This will reset most crdroid settings to their default values for the current user. Would you like to continue?</string>
+    <string name="reset_settings_message">This will reset most matrixx settings to their default values for the current user. Would you like to continue?</string>
 
     <!-- Personalization Categories -->
     <string name="button_title">Buttons</string>
@@ -69,7 +69,7 @@
     <string name="changelog_crdroid_error">Unable to load changelog</string>
 
     <!-- About crDroid -->
-    <string name="about_crdroid">About crDroid</string>
+    <string name="about_crdroid">About matrixx</string>
     <string name="about_device_name">Device</string>
 
     <!-- Share crDroid -->
