@@ -62,6 +62,15 @@
             settings:interval="1"
             android:defaultValue="180"
             settings:units="@string/unit_pixels" />
+            
+        <com.crdroid.settings.preferences.SystemSettingListPreference
+            android:key="clock_use_custom_format"
+            android:icon="@drawable/ic_clock"
+            android:title="@string/clock_use_single_line_title"
+            android:entries="@array/clock_use_single_line_entries"
+            android:entryValues="@array/clock_use_single_line_values"
+            android:summary="%s"
+            android:defaultValue="0" />
 
     </PreferenceCategory>
 
