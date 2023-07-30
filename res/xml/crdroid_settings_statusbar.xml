@@ -189,6 +189,16 @@
             android:summary="@string/status_bar_battery_text_charging_summary"
             android:defaultValue="true" />
 
+        <com.crdroid.settings.preferences.SystemSettingListPreference
+            android:key="text_charging_symbol"
+            android:icon="@drawable/ic_battery_charging"
+            android:title="@string/text_charging_symbol_title"
+            android:dialogTitle="@string/text_charging_symbol_dialog"
+            android:entries="@array/text_charging_symbol_entries"
+            android:entryValues="@array/text_charging_symbol_values"
+            android:summary="%s"
+            android:defaultValue="1" />
+
         <Preference
             android:key="batterybar"
             android:icon="@drawable/ic_car_battery"
