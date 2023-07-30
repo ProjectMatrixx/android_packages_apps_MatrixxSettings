@@ -48,6 +48,8 @@ import com.crdroid.settings.utils.DeviceUtils;
 import com.crdroid.settings.utils.TelephonyUtils;
 
 import lineageos.preference.LineageSystemSettingListPreference;
+import com.crdroid.settings.preferences.SystemSettingListPreference;
+
 import lineageos.providers.LineageSettings;
 
 import java.util.List;
@@ -70,6 +72,7 @@ public class StatusBar extends SettingsPreferenceFragment implements
     private static final String KEY_STATUSBAR_TOP_PADDING = "statusbar_top_padding";
     private static final String KEY_STATUSBAR_LEFT_PADDING = "statusbar_left_padding";
     private static final String KEY_STATUSBAR_RIGHT_PADDING = "statusbar_right_padding";
+    private static final String TEXT_CHARGING_SYMBOL = "text_charging_symbol";
 
     private static final int PULLDOWN_DIR_NONE = 0;
     private static final int PULLDOWN_DIR_RIGHT = 1;
@@ -89,6 +92,7 @@ public class StatusBar extends SettingsPreferenceFragment implements
     private SwitchPreference mDataDisabled;
     private SwitchPreference mOldMobileType;
     private SwitchPreference mBatteryTextCharging;
+    private SystemSettingListPreference mChargingSymbol;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -150,6 +154,9 @@ public class StatusBar extends SettingsPreferenceFragment implements
                 batterystyle != BATTERY_STYLE_TEXT && batterystyle != BATTERY_STYLE_HIDDEN);
         mBatteryPercent.setOnPreferenceChangeListener(this);
 
+        mChargingSymbol = (SystemSettingListPreference) findPreference(TEXT_CHARGING_SYMBOL);
+        mChargingSymbol.setEnabled(batterystyle == BATTERY_STYLE_TEXT);
+
         mBatteryTextCharging = (SwitchPreference) findPreference(KEY_STATUS_BAR_BATTERY_TEXT_CHARGING);
         mBatteryTextCharging.setEnabled(batterystyle == BATTERY_STYLE_HIDDEN ||
                 (batterystyle != BATTERY_STYLE_TEXT && batterypercent != 2));
@@ -193,6 +200,7 @@ public class StatusBar extends SettingsPreferenceFragment implements
             int value = Integer.parseInt((String) newValue);
             int batterystyle = Settings.System.getIntForUser(getContentResolver(),
                     Settings.System.STATUS_BAR_BATTERY_STYLE, BATTERY_STYLE_PORTRAIT, UserHandle.USER_CURRENT);
+            mChargingSymbol.setEnabled(batterystyle == BATTERY_STYLE_TEXT);
             mBatteryTextCharging.setEnabled(batterystyle == BATTERY_STYLE_HIDDEN ||
                     (batterystyle != BATTERY_STYLE_TEXT && value != 2));
             return true;
