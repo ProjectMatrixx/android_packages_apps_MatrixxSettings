@@ -8,6 +8,13 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/qs_tile_layout_title">
 
+    <com.crdroid.settings.preferences.SecureSettingListPreference
+        android:key="qs_tile_shape"
+        android:title="@string/qs_tile_shape"
+        android:entries="@array/qs_tile_shape_entries"
+        android:entryValues="@array/qs_tile_shape_values"
+        android:defaultValue="2" />
+
     <!-- QS UI -->
     <com.crdroid.settings.preferences.SystemSettingListPreference
        	android:key="qs_ui_style"
