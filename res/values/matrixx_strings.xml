@@ -172,4 +172,10 @@
     <string name="qs_tile_label_size_title">Label text size</string>
     <string name="qs_ui_title">Quick Settings UI</string>
     <string name="android_eleven">Android 11</string>
+
+    <!-- QS tile shape -->
+    <string name="qs_tile_shape">QS tile shape</string>
+    <string name="qs_tile_round">Round</string>
+    <string name="qs_tile_rect">Rounded Rectangle</string>
+    <string name="qs_tile_mix">Round for active tiles and Rounded Rectangle for inactive tiles</string>
 </resources>
