@@ -1338,4 +1338,7 @@
     <!-- Brightness Slider -->
     <string name="theme_customization_brightness_slider_title">Brightness Slider Style</string>
     <string name="theme_customization_brightness_slider_summary">Set custom brightness slider style</string>
+
+    <!-- QS Header Size -->
+    <string name="large_qs_switch_title">QS Header Size</string>
 </resources>

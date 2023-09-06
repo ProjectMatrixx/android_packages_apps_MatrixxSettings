@@ -75,4 +75,12 @@
         android:defaultValue="0" 
         android:dependency="status_bar_custom_header" />
 
+    <com.crdroid.settings.preferences.SystemSettingSeekBarPreference
+         android:key="qs_header_size"
+         android:title="@string/large_qs_switch_title"
+         android:max="400"
+         settings:min="110"
+         settings:interval="1"
+         android:defaultValue="220" />
+
 </PreferenceScreen>
