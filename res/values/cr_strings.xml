@@ -21,6 +21,7 @@
     <string name="crdroid_settings_summary">Open the door of Matrixx</string>
     <string name="reset_settings_title">Reset settings</string>
     <string name="reset_settings_message">This will reset most matrixx settings to their default values for the current user. Would you like to continue?</string>
+    <string name="rice_illustration_summary">Welcome to the Matrixx!</string>
 
     <!-- Personalization Categories -->
     <string name="button_title">Buttons</string>
@@ -168,7 +169,7 @@
 
     <!-- Button settings -->
     <string name="extras_title">Extras</string>
-    <string name="additional_buttons_title">Additional buttons</string>
+    <string name="additional_buttons_title">Additional buttons settings</string>
     <string name="hardware_keys_power_key_title">Power button</string>
     <string name="hardware_keys_home_key_title">Home button</string>
     <string name="hardware_keys_back_key_title">Back button</string>

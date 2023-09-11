@@ -20,6 +20,10 @@
     android:key="button_settings"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
+    <com.android.settingslib.widget.IllustrationPreference
+        android:key="buttons_illustration"
+        lineage:lottie_rawRes="@raw/buttons_illustration" />
+
     <PreferenceCategory
         android:key="extras_category"
         android:title="@string/extras_title" >
