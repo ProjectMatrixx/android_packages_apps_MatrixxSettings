@@ -20,6 +20,10 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/ui_title">    
 
+    <com.android.settingslib.widget.IllustrationPreference
+        android:key="ui_illustration"
+        lineage:lottie_rawRes="@raw/ui_illustration" />
+
     <!-- Ambient Display -->
     <Preference
         android:key="doze_fragment"
