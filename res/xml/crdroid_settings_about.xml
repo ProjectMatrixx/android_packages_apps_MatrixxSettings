@@ -17,8 +17,13 @@
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+    xmlns:lineage="http://schemas.android.com/apk/res-auto"
     android:title="@string/about_crdroid" >
 
+    <com.android.settingslib.widget.IllustrationPreference
+        android:key="about_illustration"
+        lineage:lottie_rawRes="@raw/about_illustration" />
+        
     <!-- crDroid Changelog -->
     <Preference
         android:key="crdroid_changelog"
