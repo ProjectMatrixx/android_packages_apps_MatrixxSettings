@@ -21,7 +21,6 @@
     <string name="crdroid_settings_summary">Mind makes it real.</string>
     <string name="reset_settings_title">Reset settings</string>
     <string name="reset_settings_message">This will reset most matrixx settings to their default values for the current user. Would you like to continue?</string>
-    <string name="matrixx_illustration_summary">Welcome to the Matrixx!</string>
 
     <!-- Personalization Categories -->
     <string name="button_title">Buttons</string>

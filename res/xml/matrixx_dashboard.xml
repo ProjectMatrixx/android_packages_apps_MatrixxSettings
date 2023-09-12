@@ -18,11 +18,6 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:title="@string/crdroid_settings_title" >
             
-       <com.android.settingslib.widget.TopIntroPreference
-            android:key="matrixx_illustration_desc"
-            android:order="-999"
-            android:title="@string/matrixx_illustration_summary"/>
-            
         <com.android.settingslib.widget.IllustrationPreference
             android:key="matrixx_illustration"
             android:order="-996"
