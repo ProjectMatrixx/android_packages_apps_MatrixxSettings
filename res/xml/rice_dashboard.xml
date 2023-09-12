@@ -37,7 +37,7 @@
 
       <!-- Buttons -->
         <Preference
-            android:icon="@drawable/ic_settings_cogs"
+            android:icon="@drawable/ic_settings_buttons"
             settings:layout="@layout/arc_card_about"
             android:title="@string/button_title"
             android:fragment="com.crdroid.settings.fragments.Buttons" />
@@ -58,7 +58,7 @@
 
         <!-- Navigation -->
         <Preference
-            android:icon="@drawable/ic_settings_notifications"
+            android:icon="@drawable/ic_settings_navigation"
             settings:layout="@layout/arc_card_about"
             android:title="@string/navigation_title"
             android:fragment="com.crdroid.settings.fragments.Navigation" />
@@ -79,7 +79,7 @@
 
         <!-- Sound -->
         <Preference
-            android:icon="@drawable/ic_cellphone_sound"
+            android:icon="@drawable/ic_settings_sound"
             settings:layout="@layout/arc_card_about"
             android:title="@string/sound_title"
             android:fragment="com.crdroid.settings.fragments.Sound" />    
