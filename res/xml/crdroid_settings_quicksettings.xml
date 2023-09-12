@@ -18,7 +18,8 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
-    xmlns:lineage="http://schemas.android.com/apk/res-auto">
+    xmlns:lineage="http://schemas.android.com/apk/res-auto"
+    android:title="@string/quicksettings_title">
 
     <com.android.settingslib.widget.IllustrationPreference
         android:key="lottie_row_quick_setting_style"
