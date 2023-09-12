@@ -17,7 +17,12 @@
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+    xmlns:lineage="http://schemas.android.com/apk/res-auto"
     android:title="@string/misc_title">
+
+    <com.android.settingslib.widget.IllustrationPreference
+        android:key="misc_illustration"
+        lineage:lottie_rawRes="@raw/misc_illustration" />
 
     <!-- Gaming mode -->
     <Preference
