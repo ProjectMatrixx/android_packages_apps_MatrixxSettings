@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2022 crDroid Android Project
+ * Copyright (C) 2022-2023 crDroid Android Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -91,9 +91,11 @@ public class UdfpsSettings extends SettingsPreferenceFragment implements
         }*/
 
         mScreenOffUdfps = (Preference) prefSet.findPreference(SCREEN_OFF_UDFPS_ENABLED);
-        boolean mScreenOffUdfpsAvailable = resources.getBoolean(
-                com.android.internal.R.bool.config_supportScreenOffUdfps);
-        if (!mScreenOffUdfpsAvailable)
+        boolean screenOffUdfpsAvailable = resources.getBoolean(
+                com.android.internal.R.bool.config_supportScreenOffUdfps) ||
+                !TextUtils.isEmpty(resources.getString(
+                    com.android.internal.R.string.config_dozeUdfpsLongPressSensorType));
+        if (!screenOffUdfpsAvailable)
             prefSet.removePreference(mScreenOffUdfps);
 
         mUdfpsIconPicker = (Preference) prefSet.findPreference("udfps_icon_picker");
