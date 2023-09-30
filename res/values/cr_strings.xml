@@ -1419,4 +1419,34 @@
     <string name="sound_settings_summary">Sound and vibrations customizations</string>
     <string name="sb_settings_summary">Customize statusbar icons, layout etc</string>
     <string name="ui_settings_summary">Customize UI colors, icons, fonts etc</string>
+
+    <!-- Custom settings dashboard style -->
+    <string name="settings_styles_title">Settings Interface</string>
+    <string name="settings_styles_summary">Customize settings user interface</string>
+    <string name="settings_dashboard_style_title">Settings Styles</string>
+    <string name="settings_dashboard_style_oos">Sushi(legacy OOS)</string>
+    <string name="settings_dashboard_style_rui">Oxygen/ColorOS</string>
+    <string name="settings_dashboard_style_arc">Arcane</string>
+    <string name="settings_dashboard_style_aosp">Stock pixel</string>
+    <string name="settings_dashboard_style_mt">Google material you</string>
+    <string name="settings_dashboard_style_card">Ayan\'s card ui</string>
+    <string name="settings_home_style_title">Searchbar style</string>
+    <string name="settings_home_style_summary">Use AOSP settings homepage style</string>
+    <string name="settings_user_card_title">Hide user card preference</string>
+    <string name="settings_user_card_summary">Hide the extra user profile card below the searchbar</string>
+    <string name="about_card_style_title">About phone style</string>
+    <string name="about_card_style_banner_one">Centered wallpaper banner</string>
+    <string name="about_card_style_banner_one_high">Centered wallpaper banner (big)</string>
+
+    <!-- Settings Greetings -->
+    <string name="settings_contextual_message_title">Settings contextual messages</string>
+    <string name="settings_contextual_message_summary">Enable settings homepage messages that changes base on current time of the day</string>
+
+    <!-- Settings Header -->
+    <string name="settings_header_image_title">Settings header image</string>
+    <string name="settings_header_text_title">Settings header text</string>
+    <string name="settings_header_text_enabled_title">Set settings header text</string>
+    <string name="settings_header_text_summary">Custom header text for settings homepage banner (Leave empty for blank header text)</string>
+    <string name="settings_header_image_random_title">Random Settings header image</string>
+    <string name="settings_header_image_random_summary">Enable random aesthetic settings dashboard banner/header images</string>
 </resources>

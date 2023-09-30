@@ -21,10 +21,14 @@ import android.content.Context;
 import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.content.pm.PackageManager;
+import android.database.ContentObserver;
 import android.graphics.drawable.Drawable;
+import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
+import android.os.SystemProperties;
+import android.os.UserHandle;
 import android.provider.SearchIndexableResource;
 import android.provider.Settings;
 import android.view.LayoutInflater;
@@ -55,6 +59,11 @@ import com.android.settingslib.search.Indexable;
 import com.android.settings.SettingsPreferenceFragment;
 
 import com.android.internal.util.crdroid.ThemeUtils;
+import com.android.internal.util.crdroid.Utils;
+
+import com.crdroid.settings.preferences.SystemSettingListPreference;
+import com.crdroid.settings.preferences.SystemSettingSwitchPreference;
+import com.crdroid.settings.preferences.SystemSettingEditTextPreference;
 
 import java.util.ArrayList;
 import java.util.concurrent.atomic.AtomicBoolean;
@@ -68,11 +77,32 @@ import java.util.Arrays;
 import org.json.JSONObject;
 import org.json.JSONException;
 
-public class UIStyles extends SettingsPreferenceFragment {
+public class UIStyles extends SettingsPreferenceFragment implements
+        OnPreferenceChangeListener {
+
+    private static final String SETTINGS_DASHBOARD_STYLE = "settings_dashboard_style";
+    private static final String SETTINGS_HEADER_IMAGE = "settings_header_image";
+    private static final String SETTINGS_HEADER_IMAGE_RANDOM = "settings_header_image_random";
+    private static final String SETTINGS_HEADER_TEXT = "settings_header_text";
+    private static final String SETTINGS_HEADER_TEXT_ENABLED = "settings_header_text_enabled";
+    private static final String SETTINGS_CONTEXTUAL_MESSAGES = "settings_contextual_messages";
+    private static final String USE_STOCK_LAYOUT = "use_stock_layout";
+    private static final String ABOUT_PHONE_STYLE = "about_card_style";
+    private static final String HIDE_USER_CARD = "hide_user_card";
 
     private RecyclerView mRecyclerView;
     private ThemeUtils mThemeUtils;
     private String mCategory = "android.theme.customization.style.android";
+
+    private SystemSettingListPreference mSettingsDashBoardStyle;
+    private SystemSettingListPreference mAboutPhoneStyle;
+    private SystemSettingSwitchPreference mUseStockLayout;
+    private SystemSettingSwitchPreference mHideUserCard;
+    private Preference mSettingsHeaderImage;
+    private Preference mSettingsHeaderImageRandom;
+    private Preference mSettingsMessage;
+    private SystemSettingEditTextPreference mSettingsHeaderText;
+    private SystemSettingSwitchPreference mSettingsHeaderTextEnabled;
 
     private List<String> mPkgs;
 
@@ -93,6 +123,27 @@ public class UIStyles extends SettingsPreferenceFragment {
 
         mThemeUtils = new ThemeUtils(getActivity());
         mPkgs = mThemeUtils.getOverlayPackagesForCategory(mCategory, "android");
+
+        mCustomSettingsObserver.observe();
+
+        mSettingsDashBoardStyle = (SystemSettingListPreference) findPreference(SETTINGS_DASHBOARD_STYLE);
+        mSettingsDashBoardStyle.setOnPreferenceChangeListener(this);
+        mSettingsHeaderImageRandom = findPreference(SETTINGS_HEADER_IMAGE_RANDOM);
+        mSettingsHeaderImageRandom.setOnPreferenceChangeListener(this);
+        mSettingsMessage = findPreference(SETTINGS_CONTEXTUAL_MESSAGES);
+        mSettingsMessage.setOnPreferenceChangeListener(this);
+        mSettingsHeaderImage = findPreference(SETTINGS_HEADER_IMAGE);
+        mSettingsHeaderImage.setOnPreferenceChangeListener(this);
+        mUseStockLayout = (SystemSettingSwitchPreference) findPreference(USE_STOCK_LAYOUT);
+        mUseStockLayout.setOnPreferenceChangeListener(this);
+        mAboutPhoneStyle = (SystemSettingListPreference) findPreference(ABOUT_PHONE_STYLE);
+        mAboutPhoneStyle.setOnPreferenceChangeListener(this);
+        mHideUserCard = (SystemSettingSwitchPreference) findPreference(HIDE_USER_CARD);
+        mHideUserCard.setOnPreferenceChangeListener(this);
+        mSettingsHeaderText = (SystemSettingEditTextPreference) findPreference(SETTINGS_HEADER_TEXT);
+        mSettingsHeaderText.setOnPreferenceChangeListener(this);
+        mSettingsHeaderTextEnabled = (SystemSettingSwitchPreference) findPreference(SETTINGS_HEADER_TEXT_ENABLED);
+        mSettingsHeaderTextEnabled.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -108,6 +159,102 @@ public class UIStyles extends SettingsPreferenceFragment {
         mRecyclerView.setAdapter(mAdapter);
 
         return view;
+    }
+
+    @Override
+    public boolean onPreferenceChange(Preference preference, Object newValue) {
+        if (preference == mSettingsDashBoardStyle) {
+            mCustomSettingsObserver.observe();
+            return true;
+        } else if (preference == mUseStockLayout) {
+            Utils.showSettingsRestartDialog(getContext());
+            return true;
+        } else if (preference == mHideUserCard) {
+            Utils.showSettingsRestartDialog(getContext());
+            return true;
+        } else if (preference == mAboutPhoneStyle) {
+            Utils.showSettingsRestartDialog(getContext());
+            return true;
+        } else if (preference == mSettingsHeaderImage) {
+            Utils.showSettingsRestartDialog(getContext());
+            return true;
+        } else if (preference == mSettingsHeaderImageRandom) {
+            Utils.showSettingsRestartDialog(getContext());
+            return true;
+        } else if (preference == mSettingsMessage) {
+            Utils.showSettingsRestartDialog(getContext());
+            return true;
+        } else if (preference == mSettingsHeaderTextEnabled) {
+            boolean enable = (Boolean) newValue;
+            SystemProperties.set("persist.sys.settings.header_text_enabled", enable ? "true" : "false");
+            Utils.showSettingsRestartDialog(getContext());
+            return true;
+        } else if (preference == mSettingsHeaderText) {
+            String value = (String) newValue;
+            SystemProperties.set("persist.sys.settings.header_text", value);
+            Utils.showSettingsRestartDialog(getContext());
+            return true;
+         }
+         return false;
+    }
+
+    private CustomSettingsObserver mCustomSettingsObserver = new CustomSettingsObserver(mHandler);
+    private class CustomSettingsObserver extends ContentObserver {
+
+        CustomSettingsObserver(Handler handler) {
+            super(handler);
+        }
+
+        void observe() {
+            Context mContext = getContext();
+            ContentResolver resolver = mContext.getContentResolver();
+            resolver.registerContentObserver(Settings.System.getUriFor(
+                    Settings.System.SETTINGS_DASHBOARD_STYLE),
+                    false, this, UserHandle.USER_ALL);
+        }
+
+        @Override
+        public void onChange(boolean selfChange, Uri uri) {
+            if (uri.equals(Settings.System.getUriFor(Settings.System.SETTINGS_DASHBOARD_STYLE))) {
+                updateSettingsStyle();
+            }
+        }
+    }
+
+    private void updateSettingsStyle() {
+        ContentResolver resolver = getActivity().getContentResolver();
+
+        int settingsPanelStyle = Settings.System.getIntForUser(getContext().getContentResolver(),
+                Settings.System.SETTINGS_DASHBOARD_STYLE, 0, UserHandle.USER_CURRENT);
+
+	// reset all overlays before applying
+        mThemeUtils.setOverlayEnabled("android.theme.customization.icon_pack.settings", "com.android.settings", "com.android.settings");
+
+	if (settingsPanelStyle == 0) return;
+
+        switch (settingsPanelStyle) {
+            case 1:
+              setSettingsStyle("com.android.system.settings.rui");
+              break;
+            case 2:
+              setSettingsStyle("com.android.system.settings.arc");
+              break;
+            case 3:
+              setSettingsStyle("com.android.system.settings.aosp");
+              break;
+            case 4:
+              setSettingsStyle("com.android.system.settings.mt");
+              break;
+            case 5:
+              setSettingsStyle("com.android.system.settings.card");
+              break;
+            default:
+              break;
+        }
+    }
+
+    public void setSettingsStyle(String overlayName) {
+       mThemeUtils.setOverlayEnabled("android.theme.customization.icon_pack.settings", overlayName, "com.android.settings");
     }
 
     @Override
