@@ -1093,15 +1093,15 @@
 
     <!-- Hide developer status -->
     <string name="hide_developer_status_title">Nascondi stato sviluppatore</string>
-    <string name="hide_developer_status_summary">Nascondi stato sviluppatore alle app</string>
+    <string name="hide_developer_status_summary">Nascondi stato sviluppatore per app</string>
     <string name="search">Cerca</string>
     <string name="search_apps">Cerca app</string>
 
     <!-- Monet settings -->
     <string name="monet_settings_title">Impostazioni avanzate Monet</string>
-    <string name="monet_settings_summary">Additional settings to customize monet engine</string>
-    <string name="theme_style_title">Theme style</string>
-    <string name="theme_style_tonal_spot">Tonal Spot (Default)</string>
+    <string name="monet_settings_summary">Impostazioni aggiuntive per personalizzare l\'engine Monet</string>
+    <string name="theme_style_title">Stile Tema</string>
+    <string name="theme_style_tonal_spot">Tonal Spot (Predefinito)</string>
     <string name="theme_style_vibrant">Vibrant</string>
     <string name="theme_style_expressive">Expressive</string>
     <string name="theme_style_spritz">Spritz</string>
@@ -1110,23 +1110,23 @@
     <string name="theme_style_muted">Muted</string>
     <string name="theme_style_content">Content</string>
     <string name="theme_style_monochromatic">Monochromatic</string>
-    <string name="color_source_title">Color source</string>
-    <string name="color_source_both">Both (Default)</string>
-    <string name="color_source_home">Home wallpaper</string>
-    <string name="color_source_lock">Lock wallpaper</string>
-    <string name="color_source_preset">Preset</string>
-    <string name="accent_color_title">Accent Color</string>
-    <string name="accent_color_summary">Override default accent color</string>
-    <string name="accent_background_title">Accent background</string>
-    <string name="accent_background_summary">Choose a different accent color for background</string>
-    <string name="bg_color_title">Background Color</string>
-    <string name="bg_color_summary">Override default background accent color</string>
-    <string name="luminance_factor_title">Luminance</string>
-    <string name="luminance_factor_summary">Higher values produce brighter colors</string>
-    <string name="chroma_factor_title">Chroma</string>
-    <string name="chroma_factor_summary">Higher values produce stronger colors</string>
-    <string name="tint_background_title">Tint Background</string>
-    <string name="tint_background_summary">Make Luminance and Chroma selection affect background colors as well</string>
+    <string name="color_source_title">Sorgente Colore</string>
+    <string name="color_source_both">Entrambi (Predefinito)</string>
+    <string name="color_source_home">Sfondo Home</string>
+    <string name="color_source_lock">Sfondo Lockscreen</string>
+    <string name="color_source_preset">Preimpostato</string>
+    <string name="accent_color_title">Colore Accento</string>
+    <string name="accent_color_summary">Sovrascrivi il colore accento predefinito</string>
+    <string name="accent_background_title">Sfondo accento</string>
+    <string name="accent_background_summary">Scegli un colore accento diverso per lo sfondo</string>
+    <string name="bg_color_title">Colore Sfondo</string>
+    <string name="bg_color_summary">Sovrascrivi il colore accento di sfondo predefinito</string>
+    <string name="luminance_factor_title">Luminanza</string>
+    <string name="luminance_factor_summary">Valori più alti producono colori più luminosi</string>
+    <string name="chroma_factor_title">Fattore Cromatico</string>
+    <string name="chroma_factor_summary">Valori più alti producono colori più forti</string>
+    <string name="tint_background_title">Tinta sfondo</string>
+    <string name="tint_background_summary">Fai in modo che la selezione di Luminanza e Fattore Cromatico influisca anche sui colori di sfondo</string>
 
     <!-- Status bar padding -->
     <string name="statusbar_padding">Status bar padding</string>
@@ -1135,108 +1135,108 @@
     <string name="statusbar_right_padding">Right padding</string>
 
     <!-- Ambient Customization -->
-    <string name="default_string">Default</string>
-    <string name="ambient_text_category">Text customization</string>
-    <string name="ambient_image_category">Image customization</string>
-    <string name="ambient_text_category_title">Ambient customization</string>
-    <string name="ambient_text_category_summary">Customizing the looks of ambient display</string>
-    <string name="ambient_text_title">Ambient text</string>
-    <string name="ambient_text_summary">Show ambient text in AoD</string>
-    <string name="ambient_text_animation_title">Ambient text animation</string>
-    <string name="ambient_text_animation_summary">Show a animation when show AoD</string>
-    <string name="ambient_text_size_title">Ambient text size</string>
-    <string name="ambient_text_font_title">Ambient text font</string>
-    <string name="ambient_text_string_title">Set ambient text</string>
-    <string name="ambient_text_align_title">Ambient text align</string>
-    <string name="ambient_text_align_start_top">Right n top</string>
+    <string name="default_string">Predefinito</string>
+    <string name="ambient_text_category">Personalizzazioni Testo</string>
+    <string name="ambient_image_category">Personalizzazioni Immagini</string>
+    <string name="ambient_text_category_title">Personalizzazioni Ambient</string>
+    <string name="ambient_text_category_summary">Personalizza il look dell\'ambient display</string>
+    <string name="ambient_text_title">Testo Ambient</string>
+    <string name="ambient_text_summary">Mostra un testo in AoD</string>
+    <string name="ambient_text_animation_title">Animazione testo Ambient</string>
+    <string name="ambient_text_animation_summary">Mostra animazione quando viene mostrato l\'AoD</string>
+    <string name="ambient_text_size_title">Dimensione testo Ambient</string>
+    <string name="ambient_text_font_title">Font test Ambient</string>
+    <string name="ambient_text_string_title">Imposta testo Ambient</string>
+    <string name="ambient_text_align_title">Allineamento testo Ambient</string>
+    <string name="ambient_text_align_start_top">In alto a dx</string>
     <string name="ambient_text_align_start_center">Right n center</string>
     <string name="ambient_text_align_start_bottom">Right n bottom</string>
-    <string name="ambient_text_align_center">Center</string>
-    <string name="ambient_text_align_end_top">Left n top</string>
-    <string name="ambient_text_align_end_center">Left n center</string>
-    <string name="ambient_text_align_end_bottom">Left n bottom</string>
-    <string name="ambient_text_type_color_title">Ambient text type color</string>
+    <string name="ambient_text_align_center">Centro</string>
+    <string name="ambient_text_align_end_top">In alto a sx</string>
+    <string name="ambient_text_align_end_center">Centro Destra</string>
+    <string name="ambient_text_align_end_bottom">In basso a Sinistra</string>
+    <string name="ambient_text_type_color_title">Colore testo Ambient</string>
     <string name="ambient_text_color_title">Ambient text color</string>
-    <string name="ambient_notification_light_color_mode_accent">System accent color</string>
-    <string name="ambient_notification_light_color_mode_custom">Custom color</string>
-    <string name="ambient_notification_light_color_mode_wall">Wallpaper color</string>
-    <string name="ambient_image_title">Ambient image</string>
-    <string name="file_header_select_title">Select local image</string>
-    <string name="file_header_select_summary">Select image from storage</string>
+    <string name="ambient_notification_light_color_mode_accent">Colore accento di sistema</string>
+    <string name="ambient_notification_light_color_mode_custom">Colore personalizzato</string>
+    <string name="ambient_notification_light_color_mode_wall">Colore Sfondo</string>
+    <string name="ambient_image_title">Immagine Ambient</string>
+    <string name="file_header_select_title">Seleziona Immagine Locale</string>
+    <string name="file_header_select_summary">Seleziona immagine dall\'archivio</string>
 
     <!-- UI styles -->
-    <string name="theme_customization_ui_style_title">UI Style</string>
-    <string name="theme_customization_ui_style_summary">Set custom style for your interface</string>
+    <string name="theme_customization_ui_style_title">Stile UI</string>
+    <string name="theme_customization_ui_style_summary">Imposta uno stile personalizzato per l\'interfaccia</string>
 
-    <string name="clock_use_single_line_title">Lockscreen clock Format</string>
-    <string name="single_line">Single-line</string>
-    <string name="double_line">Double-line</string>
+    <string name="clock_use_single_line_title">Formato orario Lockscreen</string>
+    <string name="single_line">Linea Singola</string>
+    <string name="double_line">Doppia Linea</string>
 
     <!-- Custom FOD Icon -->
-    <string name="custom_fp_icon_title">Custom UDFPS Icon</string>
+    <string name="custom_fp_icon_title">Icona UDFPS Personalizzata</string>
     <string name="custom_fp_icon_summary">Enable custom UDFPS Icon from files</string>
     <string name="custom_fp_select_title">Select Custom UDFPS Icon</string>
     <string name="custom_fp_select_summary">Select custom image from your saved files or gallery</string>
 
     <!-- QS Footer Text -->
     <string name="qs_footer_text_title">QS footer text</string>
-    <string name="qs_footer_text_summary">Display text at bottom of QS panel</string>
-    <string name="qs_footer_text_string_title">Customize footer text</string>
-    <string name="qs_footer_text_string_summary">Set to empty for default Matrixx</string> 
+    <string name="qs_footer_text_summary">Mostra un testo in fondo al pannello Impostazioni Rapide</string>
+    <string name="qs_footer_text_string_title">Personalizza testo</string>
+    <string name="qs_footer_text_string_summary">Lascia vuoto per predefinito Matrixx</string> 
 
     <!-- Status bar - Battery custom charging symbol -->
-    <string name="text_charging_symbol_title">Custom charging symbol for text style</string>
-    <string name="text_charging_symbol_dialog">Custom charging symbol near battery percentage text</string>
-    <string name="text_charging_symbol_default">Disabled</string>
+    <string name="text_charging_symbol_title">Simbolo personalizzato per la ricarica</string>
+    <string name="text_charging_symbol_dialog">Simbolo personalizzato per la ricarica affianco il testo della percentuale batteria</string>
+    <string name="text_charging_symbol_default">Disabilitato</string>
     <string name="text_charging_symbol_flash">Flash</string>
     <string name="text_charging_symbol_tilde">Tilde</string>
     <string name="text_charging_symbol_plus">Plus</string>
     <string name="text_charging_symbol_star">Star</string>
-    <string name="text_charging_symbol_rupee">Rupee</string>
-    <string name="text_charging_symbol_dollar">Dollar</string>
+    <string name="text_charging_symbol_rupee">Rupie</string>
+    <string name="text_charging_symbol_dollar">Dollati</string>
     <string name="text_charging_symbol_euro">Euro</string>
     <string name="text_charging_symbol_cent">Cent</string>
 
     <!-- Lockscreen Weather styles -->
-    <string name="lockscreen_weather_selection_title">WeatherView Background Style</string>
-    <string name="lockscreen_weather_selection_default">Default</string>
-    <string name="lockscreen_weather_selection_str_box">Semi-transparent box</string>
-    <string name="lockscreen_weather_selection_str_round">Semi-transparent box (round)</string>
+    <string name="lockscreen_weather_selection_title">Stile Sfondo Meteo</string>
+    <string name="lockscreen_weather_selection_default">Predefinito</string>
+    <string name="lockscreen_weather_selection_str_box">Box Semi-trasparente</string>
+    <string name="lockscreen_weather_selection_str_round">Box Semi-trasparente (arrotondato)</string>
     <string name="lockscreen_weather_selection_qbeta_style">Q-Beta pill</string>
-    <string name="lockscreen_weather_selection_str_accent">Rounded, simple and with accent</string>
-    <string name="lockscreen_weather_selection_str_accent_transparent">Rounded, transparent and with accent</string>
-    <string name="lockscreen_weather_selection_str_gradient">Gradient</string>
-    <string name="lockscreen_weather_selection_str_border_accent">Dark with accented borders</string>
-    <string name="lockscreen_weather_selection_str_border_gradient">Dark with gradient borders</string>
+    <string name="lockscreen_weather_selection_str_accent">Arrotondato, semplice con accento</string>
+    <string name="lockscreen_weather_selection_str_accent_transparent">Arrotondato, Trasparente con accento</string>
+    <string name="lockscreen_weather_selection_str_gradient">Gradiente</string>
+    <string name="lockscreen_weather_selection_str_border_accent">Scuro con bordi accentati</string>
+    <string name="lockscreen_weather_selection_str_border_gradient">Scuro con bordi gradienti</string>
 
     <!-- Adaptive Charging Settings -->
-    <string name="sys_adaptive_charging_title">Adaptive Charging Mode</string>
-    <string name="sys_adaptive_charging_summary">System will enter adaptive power mode to optimize power consumption while charging.</string>
+    <string name="sys_adaptive_charging_title">Modalità Caricamento Adattiva</string>
+    <string name="sys_adaptive_charging_summary">Il sistema entrerà in modalità adattiva per ottimizzare i consumi mentre è in ricarica.</string>
     
     <!-- Desktop Mode Settings -->
-    <string name="desktop_mode_pc_title">Desktop Mode</string>
-    <string name="desktop_mode_pc_summary">Full desktop mode on external display or PC</string>
+    <string name="desktop_mode_pc_title">Mdalità Desktop</string>
+    <string name="desktop_mode_pc_summary">Modalità desktop su display esterno o PC</string>
     
     <!-- Sound settings -->
-    <string name="notification_sounds_title">Notification sounds</string>
-    <string name="system_sounds_title">System sounds</string>
-    <string name="other_sounds_title">Other sounds</string>
+    <string name="notification_sounds_title">Suoni di notifica</string>
+    <string name="system_sounds_title">Suoni di sistema</string>
+    <string name="other_sounds_title">Altri suoni</string>
     
-    <string name="qs_battery_styles_title">QuickSettings battery</string>
+    <string name="qs_battery_styles_title">QuickSetting batteria</string>
 
     <!-- QS Dual Tone Colors -->
-    <string name="qs_dual_tone_title">QS dual-tone</string>
-    <string name="qs_dual_tone_summary">Use dual tone background colors</string>
+    <string name="qs_dual_tone_title">QS doppio tono</string>
+    <string name="qs_dual_tone_summary">Una un doppio tono per il colore di sfondo</string>
 
    <!-- Matrixx Dashboard -->
     <string name="about_matrixx_summary">Informazioni su Matrixx</string>
-    <string name="buttons_settings_summary">Personalizza pulsanti</string>
-    <string name="lockscreen_settings_summary">Personalizza schermata di blocco</string>
+    <string name="buttons_settings_summary">Personalizza tasti hardware</string>
+    <string name="lockscreen_settings_summary">Personalizza interfaccia schermata di blocco</string>
     <string name="misc_settings_summary">Personalizzazioni varie</string>
-    <string name="nav_settings_summary">Personalizza il comportamento della barra di navigazione</string>
-    <string name="notif_settings_summary">Controlla notifiche e altro</string>
-    <string name="qs_settings_summary">Personalizzazione Impostazioni Rapide</string>
+    <string name="nav_settings_summary">Personalizza comportamento navbar</string>
+    <string name="notif_settings_summary">Controllo notifiche e altro</string>
+    <string name="qs_settings_summary">Personalizzazione impostazioni rapide</string>
     <string name="sound_settings_summary">Personalizzazione suoni e vibrazione</string>
     <string name="sb_settings_summary">Personalizza icone barra di stato, layout etc</string>
-    <string name="ui_settings_summary">Personalizza i colori dell\'UI, icone, font etc</string>								 
+    <string name="ui_settings_summary">Personalizza colori UI, icone, font etc</string>						 
 </resources>
