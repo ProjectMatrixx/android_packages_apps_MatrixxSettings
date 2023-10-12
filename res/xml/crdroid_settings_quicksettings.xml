@@ -54,7 +54,6 @@
             settings:min="10"
             settings:interval="1"
             android:defaultValue="14"
-            android:dependency="show_qs_clock"
             settings:units="@string/unit_pixels" />
 
         <!-- QS date
