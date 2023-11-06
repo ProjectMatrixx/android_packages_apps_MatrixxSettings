@@ -1,5 +1,5 @@
 <!--
-     Copyright (C) 2017 crDroid Android Project
+     Copyright (C) 2017-2023 crDroid Android Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -13,15 +13,15 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
  
- <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-     android:layout_width="fill_parent"
-     android:layout_height="fill_parent"
-     android:gravity="top">
- 
-         <ImageView
-             android:layout_width="fill_parent"
-             android:layout_height="fill_parent"
-             android:gravity="top"
-             android:src="@drawable/ic_drill_pic"/>
- </LinearLayout>
+    <ImageView
+        android:layout_gravity="center"
+        android:src="@drawable/ic_drill_pic"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY" />
+
+</LinearLayout>

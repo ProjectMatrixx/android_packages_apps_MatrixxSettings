@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2017-2022 crDroid Android Project
+ * Copyright (C) 2017-2023 crDroid Android Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -44,10 +44,10 @@ import com.android.settings.SettingsPreferenceFragment;
 import com.crdroid.settings.fragments.About;
 import com.crdroid.settings.fragments.Buttons;
 import com.crdroid.settings.fragments.LockScreen;
-import com.crdroid.settings.fragments.QuickSettings;
 import com.crdroid.settings.fragments.Miscellaneous;
 import com.crdroid.settings.fragments.Navigation;
 import com.crdroid.settings.fragments.Notifications;
+import com.crdroid.settings.fragments.QuickSettings;
 import com.crdroid.settings.fragments.Sound;
 import com.crdroid.settings.fragments.StatusBar;
 import com.crdroid.settings.fragments.UserInterface;
@@ -133,13 +133,15 @@ public class crDroidSettingsLayout extends SettingsPreferenceFragment {
         protected Void doInBackground(Void... params) {
             Buttons.reset(rContext);
             LockScreen.reset(rContext);
-            QuickSettings.reset(rContext);
             Miscellaneous.reset(rContext);
             Navigation.reset(rContext);
             Notifications.reset(rContext);
+            QuickSettings.reset(rContext);
             Sound.reset(rContext);
             StatusBar.reset(rContext);
             UserInterface.reset(rContext);
+/*
+*/
             finish();
             startActivity(getIntent());
             return null;

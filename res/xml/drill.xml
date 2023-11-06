@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright (C) 2017 crDroid Android Project
+     Copyright (C) 2017-2023 crDroid Android Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -18,10 +18,9 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/drill_title" >
 
-        <PreferenceScreen
-            android:key="cr_drill"
-            android:enabled="false"
-            android:selectable="false"
-            android:layout="@layout/drill"/>
+    <com.android.settingslib.widget.LayoutPreference
+        android:key="cr_drill"
+        android:layout="@layout/drill"
+        android:selectable="false" />
 
 </PreferenceScreen>
