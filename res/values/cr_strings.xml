@@ -72,10 +72,6 @@
     <string name="about_crdroid">About Matrixx</string>
     <string name="about_device_name">Device</string>
 
-    <!-- Matrixx -->
-    <string name="get_matrixx_title">Step into Matrixx</string>
-    <string name="get_matrixx_summary">Know everything to experience Matrixx</string>
-
     <!-- Share crDroid -->
     <string name="share_crdroid_title">Share Matrixx</string>
     <string name="share_crdroid_summary">Let others know about Matrixx</string>

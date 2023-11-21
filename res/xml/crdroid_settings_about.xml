@@ -24,43 +24,86 @@
         android:key="matrixx_about"
         android:layout="@layout/matrixx_about" />
         
-    <!-- crDroid Changelog -->
+    <PreferenceCategory
+        android:key="matrixx_dev"
+        android:title="@string/devs_header" >
     <Preference
-        android:key="crdroid_changelog"
-        android:icon="@drawable/ic_matrixx_logo"
-        android:title="@string/get_matrixx_title"
-        android:summary="@string/get_matrixx_summary">
-        <intent
-            android:action="android.intent.action.VIEW"
-            android:data="https://projectmatrixx.github.io/" />
+        android:title="@string/dev_1"
+        android:summary="@string/dev1_desc"
+        android:icon="@drawable/ic_devs_pc" >
+    <intent
+        android:action="android.intent.action.VIEW"
+        android:data="https://xdaforums.com/m/mukesh22584.5678679/" />
+    </Preference>
+    <Preference
+        android:title="@string/dev_2"
+        android:summary="@string/dev2_desc"
+        android:icon="@drawable/ic_devs_pc" >
+    <intent
+        android:action="android.intent.action.VIEW"
+        android:data="https://xdaforums.com/m/mrick343.12517809/" />
+    </Preference>
+    <Preference
+        android:title="@string/dev_3"
+        android:summary="@string/dev3_desc"
+        android:icon="@drawable/ic_color_bucket" >
+    <intent
+        android:action="android.intent.action.VIEW"
+        android:data="https://xdaforums.com/m/roger-t.5545371/" />
+    </Preference>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="matrixx_dev"
+        android:title="@string/special_thanks" >
+    <Preference
+        android:title="@string/helping_hand"
+        android:summary="@string/helping_hand_desc"
+        android:icon="@drawable/ic_handshake" >
+    <intent
+        android:action="android.intent.action.VIEW"
+        android:data="https://xdaforums.com/m/superdroidbond.8829870/" />
+    </Preference>
+ 
+    <PreferenceCategory
+        android:key="matrixx_about"
+        android:title="@string/about_matrixx" >            
+    <Preference
+        android:title="@string/devices_title"
+        android:summary="@string/devices_summary"
+        android:icon="@drawable/ic_devs_phone" >
+    <intent
+        android:action="android.intent.action.VIEW"
+        android:data="https://matrixx-devices.github.io/devices.html" />
     </Preference>
 
-    <!-- crDroid Translate -->
     <Preference
-        android:key="crdroid_translate"
-        android:icon="@drawable/ic_translate"
-        android:title="@string/crdroid_translate_title"
-        android:summary="@string/crdroid_translate_summary" />
+        android:key="matrixx_changelog"
+        android:icon="@drawable/ic_matrixx_logo"
+        android:title="@string/get_changelogs_title"
+        android:summary="@string/get_changelogs_summary">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://matrixx-devices.github.io/changelog.html" />
+    </Preference>
 
-    <!-- crDroid Source -->
     <Preference
         android:key="crdroid_source"
         android:icon="@drawable/ic_source"
         android:title="@string/crdroid_source_title"
         android:summary="@string/crdroid_source_summary" />
-
-    <!-- Matrixx Telegram  -->
+    
     <Preference
         android:key="crdroid_telegram"
         android:icon="@drawable/ic_telegram"
         android:title="@string/crdroid_telegram_title"
         android:summary="@string/crdroid_telegram_summary" />
 
-    <!-- crDroid Drill -->
     <Preference
-        android:key="crdroid_drill"
-        android:icon="@drawable/ic_drill"
-        android:title="@string/drill_title"
-        android:summary="@string/drill_summary"
-        android:fragment="com.crdroid.settings.fragments.about.Drill" />
+        android:key="crdroid_translate"
+        android:icon="@drawable/ic_translate"
+        android:title="@string/crdroid_translate_title"
+        android:summary="@string/crdroid_translate_summary" />
+    
+    </PreferenceCategory>        
 </PreferenceScreen>
