@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2023 Project Matrixx
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+	<PreferenceScreen
+    	xmlns:android="http://schemas.android.com/apk/res/android"
+    	xmlns:lineage="http://schemas.android.com/apk/res-auto"
+    	xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+        android:title="Team Matrixx">
+
+    <com.android.settingslib.widget.IllustrationPreference
+        android:key="team_illustration"
+        lineage:lottie_rawRes="@raw/team_illustration" />
+
+    <PreferenceCategory
+        android:key="matrixx_dev"
+        android:title="@string/devs_header" >
+    <Preference
+        android:title="@string/dev_1"
+        android:summary="@string/dev1_desc"
+        android:icon="@drawable/ic_devs_pc" >
+    <intent
+        android:action="android.intent.action.VIEW"
+        android:data="https://xdaforums.com/m/mukesh22584.5678679/" />
+    </Preference>
+    <Preference
+        android:title="@string/dev_2"
+        android:summary="@string/dev2_desc"
+        android:icon="@drawable/ic_devs_pc" >
+    <intent
+        android:action="android.intent.action.VIEW"
+        android:data="https://xdaforums.com/m/mrick343.12517809/" />
+    </Preference>
+    <Preference
+        android:title="@string/dev_3"
+        android:summary="@string/dev3_desc"
+        android:icon="@drawable/ic_themes" >
+    <intent
+        android:action="android.intent.action.VIEW"
+        android:data="https://xdaforums.com/m/roger-t.5545371/" />
+    </Preference>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="matrixx_dev"
+        android:title="@string/special_thanks" >
+    <Preference
+        android:title="@string/helping_hand"
+        android:summary="@string/helping_hand_desc"
+        android:icon="@drawable/ic_handshake" >
+    <intent
+        android:action="android.intent.action.VIEW"
+        android:data="https://xdaforums.com/m/superdroidbond.8829870/" />
+    </Preference>
+    </PreferenceCategory>
+
+   <PreferenceCategory
+        android:key="matrixx_dev"
+        android:title="@string/team_members" >
+    <Preference
+        android:title="@string/team_member_1"
+        android:summary="@string/team_member_1_desc"
+        android:icon="@drawable/ic_alpha_k_circle" >
+    <intent
+        android:action="android.intent.action.VIEW"
+        android:data="https://xdaforums.com/m/kssrao13882.11649931/" />
+    </Preference>
+
+    <Preference
+        android:title="@string/team_member_2"
+        android:summary="@string/team_member_2_desc"
+        android:icon="@drawable/ic_alpha_a_circle" >
+    <intent
+        android:action="android.intent.action.VIEW"
+        android:data="https://xdaforums.com/m/whyred_404.12444399/" />
+    </Preference>
+
+    <Preference
+        android:title="@string/team_member_3"
+        android:summary="@string/team_member_3_desc"
+        android:icon="@drawable/ic_alpha_d_circle" >
+    <intent
+        android:action="android.intent.action.VIEW"
+        android:data="https://t.me/DynamicPanda11" />
+    </Preference>
+
+    <Preference
+        android:title="@string/team_member_4"
+        android:summary="@string/team_member_4_desc"
+        android:icon="@drawable/ic_alpha_z_circle" >
+    <intent
+        android:action="android.intent.action.VIEW"
+        android:data="https://t.me/twinchin96" />
+    </Preference>
+
+    <Preference
+        android:title="@string/team_member_5"
+        android:summary="@string/team_member_5_desc"
+        android:icon="@drawable/ic_alpha_a_circle" >
+    <intent
+        android:action="android.intent.action.VIEW"
+        android:data="https://t.me/AAMIRR_ALI" />
+    </Preference>
+    </PreferenceCategory>    
+</PreferenceScreen>    
