@@ -69,4 +69,13 @@
     <string name="function_font_notoserif_bold">NotoSerif Bold</string>
     <string name="function_font_notoserif_bold_italic">NotoSerif Bold Italic</string>
    
+    <!-- Matrixx -->
+    <string name="team_matrixx">Team Matrixx</string>
+    <string name="team_matrixx_desc">Hey! We are Team Matrixx</string>
+    <string name="devices_summary">Official devices list</string>
+    <string name="matrixx_devices_title">Official Devices</string>
+    <string name="get_changelogs_title">Latest changelog</string>
+    <string name="get_changelogs_summary">Check latest changes</string>
+    <string name="matrixx_legal">Matrixx legal</string>
+    <string name="matrixx_legal_desc">Legal terms of use</string>    
 </resources>

@@ -69,30 +69,12 @@
     <string name="changelog_crdroid_error">Unable to load changelog</string>
 
     <!-- About Matrixx -->
-    <string name="about_crdroid">About Matrixx</string>
+    <string name="about_matrixx">About Matrixx</string>
     <string name="about_device_name">Device</string>
-
-    <!-- Share Matrixx -->
-    <string name="share_crdroid_title">Share Matrixx</string>
-    <string name="share_crdroid_summary">Let others know about Matrixx</string>
-    <string name="share_message">Check out if ProjectMatrixx is available for your device @ https://projectmatrixx.org/</string>
-    <string name="share_chooser_title">Share Matrixx</string>
-
-    <!-- Sites Matrixx -->
-    <string name="crdroid_source_title">GitHub</string>
-    <string name="crdroid_source_summary">We love open source, check us out</string>
-    <string name="crdroid_telegram_title">Matrixx community</string>
-    <string name="crdroid_telegram_summary">We are on telegram. Join us!</string>
-    <string name="crdroid_telegram_channel_title">Updates channel</string>
-    <string name="crdroid_telegram_channel_summary">Get notified of new builds on Telegram</string>
-    <string name="crdroid_website_title">Official website</string>
-    <string name="crdroid_website_summary">Visit our official website</string>
-    <string name="crdroid_translate_title">Translations</string>
-    <string name="crdroid_translate_summary">Help with localisation of ROM in your language!</string>
-    <string name="crdroid_sponsor_title" translatable="false">ScopeHosts</string>
-    <string name="crdroid_sponsor_summary">Visit our website host partner</string>
-    <string name="crdroid_buildserversponsor_title" translatable="false">InterServer</string>
-    <string name="crdroid_buildserversponsor_summary">We recommend their servers if interested in one</string>
+    <string name="matrixx_source_title">GitHub</string>
+    <string name="matrixx_source_summary">We love open source, check us out</string>
+    <string name="matrixx_telegram_title">Matrixx community</string>
+    <string name="matrixx_telegram_summary">We are on telegram. Join us!</string>
 
     <!-- Donate Matrixx -->
     <string name="donate_crdroid_title">Support us</string>
@@ -105,8 +87,8 @@
     <string name="drill_summary">Found a bug? Ran into an issue?</string>
 
     <!-- OTA -->
-    <string name="crdroid_update_title">Updates</string>
-    <string name="crdroid_update_summary">Check and download latest update</string>
+    <string name="matrixx_update_title">Updates</string>
+    <string name="matrixx_update_summary">Check and download latest update</string>
 
     <!-- App details: open play store link if app is user installed -->
     <string name="app_play_store">Google Play</string>
