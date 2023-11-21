@@ -26,7 +26,7 @@
         <Preference
             android:icon="@drawable/ic_settings_about"
             settings:layout="@layout/top_level_preference_solo_card"
-            android:title="@string/about_crdroid"
+            android:title="@string/about_matrixx"
             android:summary="@string/about_matrixx_summary"
             android:fragment="com.crdroid.settings.fragments.About" />
 
