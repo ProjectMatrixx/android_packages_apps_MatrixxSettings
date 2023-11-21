@@ -72,10 +72,6 @@
     <string name="about_crdroid">About Matrixx</string>
     <string name="about_device_name">Device</string>
 
-    <!-- Matrixx -->
-    <string name="get_matrixx_title">Step into Matrixx</string>
-    <string name="get_matrixx_summary">Know everything to experience Matrixx</string>
-
     <!-- Share crDroid -->
     <string name="share_crdroid_title">Share Matrixx</string>
     <string name="share_crdroid_summary">Let others know about Matrixx</string>
@@ -109,8 +105,8 @@
     <string name="drill_summary">Found a bug? Ran into an issue?</string>
 
     <!-- OTA -->
-    <string name="crdroid_update_title">Updates</string>
-    <string name="crdroid_update_summary">Check and download latest update</string>
+    <string name="matrixx_update_title">Updates</string>
+    <string name="matrixx_update_summary">Check and download latest update</string>
 
     <!-- App details: open play store link if app is user installed -->
     <string name="app_play_store">Google Play</string>

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2023 Project Matrixx
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+	<PreferenceScreen
+    	xmlns:android="http://schemas.android.com/apk/res/android"
+    	xmlns:lineage="http://schemas.android.com/apk/res-auto"
+    	xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+        android:title="Team Matrixx">
+
+    <com.android.settingslib.widget.IllustrationPreference
+        android:key="team_illustration"
+        lineage:lottie_rawRes="@raw/team_illustration" />
+
+    <PreferenceCategory
+        android:title="@string/devs_header" >
+
+    <Preference
+        android:title="@string/helping_hand"
+        android:summary="@string/helping_hand_desc"
+        settings:layout="@layout/top_level_preference_top_card"
+        android:icon="@drawable/ic_handshake" >
+    <intent
+        android:action="android.intent.action.VIEW"
+        android:data="https://xdaforums.com/m/superdroidbond.8829870/" />
+    </Preference>
+    <Preference
+        android:title="@string/dev_3"
+        android:summary="@string/dev3_desc"
+        settings:layout="@layout/top_level_preference_middle_card"
+        android:icon="@drawable/ic_themes" >
+    <intent
+        android:action="android.intent.action.VIEW"
+        android:data="https://xdaforums.com/m/roger-t.5545371/" />
+    </Preference>
+    <Preference
+        android:title="@string/dev_1"
+        android:summary="@string/dev1_desc"
+        settings:layout="@layout/top_level_preference_middle_card"
+        android:icon="@drawable/ic_oneplus" >
+    <intent
+        android:action="android.intent.action.VIEW"
+        android:data="https://xdaforums.com/m/mukesh22584.5678679/" />
+    </Preference>
+    <Preference
+        android:title="@string/dev_2"
+        android:summary="@string/dev2_desc"
+        settings:layout="@layout/top_level_preference_bottom_card"
+        android:icon="@drawable/ic_oneplus" >
+    <intent
+        android:action="android.intent.action.VIEW"
+        android:data="https://xdaforums.com/m/mrick343.12517809/" />
+    </Preference>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/team_matrixx" >
+
+    <Preference
+        android:title="@string/maintainer_pixel_6_series"
+        android:summary="@string/device_pixel_6_series_desc"
+        settings:layout="@layout/top_level_preference_top_card"
+        android:icon="@drawable/ic_google" >
+    <intent
+        android:action="android.intent.action.VIEW"
+        android:data="https://t.me/einargednochsson" />
+    </Preference>
+    <Preference
+        android:title="@string/maintainer_cepheus"
+        android:summary="@string/device_cepheus_desc"
+        settings:layout="@layout/top_level_preference_middle_card"
+        android:icon="@drawable/ic_xiaomi" >
+    <intent
+        android:action="android.intent.action.VIEW"
+        android:data="https://t.me/RDS_07" />
+    </Preference>
+    <Preference
+        android:title="@string/maintainer_alioth"
+        android:summary="@string/device_alioth_desc"
+        settings:layout="@layout/top_level_preference_middle_card"
+        android:icon="@drawable/ic_poco" >
+    <intent
+        android:action="android.intent.action.VIEW"
+        android:data="https://t.me/Roxor007" />
+    </Preference>
+    <Preference
+        android:title="@string/maintainer_marble"
+        android:summary="@string/device_marble_desc"
+        settings:layout="@layout/top_level_preference_middle_card"
+        android:icon="@drawable/ic_poco" >
+    <intent
+        android:action="android.intent.action.VIEW"
+        android:data="https://t.me/kssrao13882" />
+    </Preference>
+    <Preference
+        android:title="@string/maintainer_veux"
+        android:summary="@string/device_veux_desc"
+        settings:layout="@layout/top_level_preference_bottom_card"
+        android:icon="@drawable/ic_poco" >
+    <intent
+        android:action="android.intent.action.VIEW"
+        android:data="https://t.me/iaswinop" />
+    </Preference>
+
+    <Preference
+        android:title="@string/maintainer_sakura"
+        android:summary="@string/device_sakura_desc"
+        settings:layout="@layout/top_level_preference_top_card"
+        android:icon="@drawable/ic_redmi" >
+    <intent
+        android:action="android.intent.action.VIEW"
+        android:data="https://t.me/obito_svha" />
+    </Preference>
+    <Preference
+        android:title="@string/maintainer_whyred"
+        android:summary="@string/device_whyred_desc"
+        settings:layout="@layout/top_level_preference_middle_card"
+        android:icon="@drawable/ic_redmi" >
+    <intent
+        android:action="android.intent.action.VIEW"
+        android:data="https://t.me/Whyred_404" />
+    </Preference>
+    <Preference
+        android:title="@string/maintainer_sweet"
+        android:summary="@string/device_sweet_desc"
+        settings:layout="@layout/top_level_preference_middle_card"
+        android:icon="@drawable/ic_redmi" >
+    <intent
+        android:action="android.intent.action.VIEW"
+        android:data="https://t.me/JazzeeBlaze" />
+    </Preference>
+    <Preference
+        android:title="@string/maintainer_spes"
+        android:summary="@string/device_spes_desc"
+        settings:layout="@layout/top_level_preference_middle_card"
+        android:icon="@drawable/ic_redmi" >
+    <intent
+        android:action="android.intent.action.VIEW"
+        android:data="https://t.me/sayann70" />
+    </Preference>
+    <Preference
+        android:title="@string/maintainer_violet"
+        android:summary="@string/device_violet_desc"
+        settings:layout="@layout/top_level_preference_bottom_card"
+        android:icon="@drawable/ic_redmi" >
+    <intent
+        android:action="android.intent.action.VIEW"
+        android:data="https://t.me/The_Riderrr" />
+    </Preference>
+    
+    <Preference
+        android:title="@string/maintainer_devon"
+        android:summary="@string/device_devon_desc"
+        settings:layout="@layout/top_level_preference_top_card"
+        android:icon="@drawable/ic_motorola" >
+    <intent
+        android:action="android.intent.action.VIEW"
+        android:data="https://t.me/DhruvOz" />
+    </Preference>
+    <Preference
+        android:title="@string/maintainer_spacewar_op8_series"
+        android:summary="@string/device_spacewar_op8_desc"
+        settings:layout="@layout/top_level_preference_middle_card"
+        android:icon="@drawable/ic_nothing" >
+    <intent
+        android:action="android.intent.action.VIEW"
+        android:data="https://t.me/twinchin96" />
+    </Preference>
+    <Preference
+        android:title="@string/maintainer_bladerunner"
+        android:summary="@string/device_bladerunner_desc"
+        settings:layout="@layout/top_level_preference_middle_card"
+        android:icon="@drawable/ic_realme" >
+    <intent
+        android:action="android.intent.action.VIEW"
+        android:data="https://t.me/AAMIRR_ALI" />
+    </Preference>
+    <Preference
+        android:title="@string/maintainer_rmx2020"
+        android:summary="@string/device_rmx2020_desc"
+        settings:layout="@layout/top_level_preference_bottom_card"
+        android:icon="@drawable/ic_realme" >
+    <intent
+        android:action="android.intent.action.VIEW"
+        android:data="https://t.me/rintokhan" />
+    </Preference>
+
+    </PreferenceCategory>
+</PreferenceScreen>    

@@ -69,4 +69,64 @@
     <string name="function_font_notoserif_bold">NotoSerif Bold</string>
     <string name="function_font_notoserif_bold_italic">NotoSerif Bold Italic</string>
    
+    <!-- Matrixx -->
+    <string name="about_matrixx">Important Links</string>
+    <string name="dev_1">mukesh22584</string>
+    <string name="dev_2">Mrick343</string>
+    <string name="dev_3">Roger.T</string>    
+    <string name="dev1_desc">Oneplus 7t/Pro, 9/Pro</string>
+    <string name="dev2_desc">Oneplus 9rt (martini)</string>
+    <string name="dev3_desc">Graphics Designer </string>    
+    <string name="devices_summary">Official devices list</string>
+    <string name="matrixx_devices_title">Official Devices</string>
+    <string name="devs_header">Core Dev Team</string>
+    <string name="get_changelogs_title">Latest changelog</string>
+    <string name="get_changelogs_summary">Check latest changes</string>
+    <string name="helping_hand">SuperDroidBond</string>
+    <string name="helping_hand_desc">Our helping hands anytime.</string>    
+    <string name="team_desc">Hey! We are Team Matrixx</string>    
+
+    <!-- Team Matrixx -->
+    <string name="team_matrixx">Team Matrixx</string>
+    <string name="maintainer_pixel_6_series">Einar Gednochsson</string>
+    <string name="device_pixel_6_series_desc">Bluejay, Oriole, Raven (Pixel 6 Series)</string>
+
+    <string name="maintainer_cepheus">RDS_07</string>
+    <string name="device_cepheus_desc">Cepheus (Xiaomi MI 9)</string>
+
+    <string name="maintainer_alioth">Roxor-007</string>
+    <string name="device_alioth_desc">Alioth/AliothinPoco (F3/K40/Mi 11X)</string>
+
+    <string name="maintainer_marble">K. Samba Siva Rao</string>
+    <string name="device_marble_desc">Marble (Poco F5/Redmi Note 12 Turbo)</string>
+
+    <string name="maintainer_veux">Aswin OP</string>
+    <string name="device_veux_desc">Veux/Peux (Poco X4 Pro/Redmi Note11 ProPlus 5g</string>
+
+    <string name="maintainer_sakura">Obito Svha</string>
+    <string name="device_sakura_desc">Sakura (Redmi 6 Pro)</string>
+
+    <string name="maintainer_whyred">Arijit Saha</string>
+    <string name="device_whyred_desc">Whyred (Redmi Note 5 Pro)</string>
+
+    <string name="maintainer_sweet">JazzeeBlaze</string>
+    <string name="device_sweet_desc">Sweet (Redmi Note 10 Pro)</string>
+
+    <string name="maintainer_spes">Sayann Sarkar</string>
+    <string name="device_spes_desc">Spes (Redmi Note 11)</string>
+    
+    <string name="maintainer_violet">Aryan</string>
+    <string name="device_violet_desc">Violet (Redmi Note 7 PRO)</string>    
+
+    <string name="maintainer_devon">Jay</string>
+    <string name="device_devon_desc">Motorola G32, G42, G52</string>
+
+    <string name="maintainer_spacewar_op8_series">Zahid H</string>
+    <string name="device_spacewar_op8_desc">Nothing Phone 1, Oneplus 8 Series</string>
+
+    <string name="maintainer_bladerunner">AAMIRR ALI</string>
+    <string name="device_bladerunner_desc">BladeRunner (Realme X50 Pro/Player 5G)</string>
+
+    <string name="maintainer_rmx2020">Rinto Khan</string>
+    <string name="device_rmx2020_desc">Realme C3/N10a (RMX2020)</string>            
 </resources>

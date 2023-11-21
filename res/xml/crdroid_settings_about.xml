@@ -24,43 +24,56 @@
         android:key="matrixx_about"
         android:layout="@layout/matrixx_about" />
         
-    <!-- crDroid Changelog -->
     <Preference
-        android:key="crdroid_changelog"
-        android:icon="@drawable/ic_matrixx_logo"
-        android:title="@string/get_matrixx_title"
-        android:summary="@string/get_matrixx_summary">
-        <intent
-            android:action="android.intent.action.VIEW"
-            android:data="https://projectmatrixx.github.io/" />
+        android:key="about_team"
+        android:title="@string/team_matrixx"
+        android:summary="@string/team_desc"
+        settings:layout="@layout/top_level_preference_solo_card"
+        android:icon="@drawable/ic_team"
+        android:fragment="com.crdroid.settings.fragments.TeamMatrixx" /> 
+
+    <Preference
+        android:title="@string/matrixx_devices_title"
+        android:summary="@string/devices_summary"
+        settings:layout="@layout/top_level_preference_top_card"
+        android:icon="@drawable/ic_devs_phone" >
+    <intent
+        android:action="android.intent.action.VIEW"
+        android:data="https://matrixx-devices.github.io/devices.html" />
     </Preference>
 
-    <!-- crDroid Translate -->
     <Preference
-        android:key="crdroid_translate"
-        android:icon="@drawable/ic_translate"
-        android:title="@string/crdroid_translate_title"
-        android:summary="@string/crdroid_translate_summary" />
+        android:key="matrixx_changelog"
+        android:icon="@drawable/ic_matrixx_logo"
+        android:title="@string/get_changelogs_title"
+        settings:layout="@layout/top_level_preference_middle_card"
+        android:summary="@string/get_changelogs_summary">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://matrixx-devices.github.io/changelog.html" />
+    </Preference>
 
-    <!-- crDroid Source -->
+    <Preference
+        android:key="system_update_settings"
+        android:title="@string/matrixx_update_title"
+        android:summary="@string/matrixx_update_summary"
+        settings:layout="@layout/top_level_preference_middle_card"
+        android:icon="@drawable/ic_update"
+        settings:controller="com.android.settings.system.SystemUpdatePreferenceController">
+        <intent android:action="android.settings.SYSTEM_UPDATE_SETTINGS" />
+    </Preference>
+
     <Preference
         android:key="crdroid_source"
         android:icon="@drawable/ic_source"
         android:title="@string/crdroid_source_title"
+        settings:layout="@layout/top_level_preference_middle_card"
         android:summary="@string/crdroid_source_summary" />
-
-    <!-- Matrixx Telegram  -->
+    
     <Preference
         android:key="crdroid_telegram"
         android:icon="@drawable/ic_telegram"
         android:title="@string/crdroid_telegram_title"
+        settings:layout="@layout/top_level_preference_bottom_card"
         android:summary="@string/crdroid_telegram_summary" />
-
-    <!-- crDroid Drill -->
-    <Preference
-        android:key="crdroid_drill"
-        android:icon="@drawable/ic_drill"
-        android:title="@string/drill_title"
-        android:summary="@string/drill_summary"
-        android:fragment="com.crdroid.settings.fragments.about.Drill" />
 </PreferenceScreen>
