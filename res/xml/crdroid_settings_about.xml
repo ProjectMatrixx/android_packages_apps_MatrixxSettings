@@ -24,47 +24,13 @@
         android:key="matrixx_about"
         android:layout="@layout/matrixx_about" />
         
-    <PreferenceCategory
-        android:key="matrixx_dev"
-        android:title="@string/devs_header" >
     <Preference
-        android:title="@string/dev_1"
-        android:summary="@string/dev1_desc"
-        android:icon="@drawable/ic_devs_pc" >
-    <intent
-        android:action="android.intent.action.VIEW"
-        android:data="https://xdaforums.com/m/mukesh22584.5678679/" />
-    </Preference>
-    <Preference
-        android:title="@string/dev_2"
-        android:summary="@string/dev2_desc"
-        android:icon="@drawable/ic_devs_pc" >
-    <intent
-        android:action="android.intent.action.VIEW"
-        android:data="https://xdaforums.com/m/mrick343.12517809/" />
-    </Preference>
-    <Preference
-        android:title="@string/dev_3"
-        android:summary="@string/dev3_desc"
-        android:icon="@drawable/ic_color_bucket" >
-    <intent
-        android:action="android.intent.action.VIEW"
-        android:data="https://xdaforums.com/m/roger-t.5545371/" />
-    </Preference>
-    </PreferenceCategory>
+        android:key="about_team"
+        android:title="@string/team_matrixx"
+        android:summary="@string/team_desc"
+        android:icon="@drawable/ic_team"
+        android:fragment="com.crdroid.settings.fragments.TeamMatrixx" /> 
 
-    <PreferenceCategory
-        android:key="matrixx_dev"
-        android:title="@string/special_thanks" >
-    <Preference
-        android:title="@string/helping_hand"
-        android:summary="@string/helping_hand_desc"
-        android:icon="@drawable/ic_handshake" >
-    <intent
-        android:action="android.intent.action.VIEW"
-        android:data="https://xdaforums.com/m/superdroidbond.8829870/" />
-    </Preference>
- 
     <PreferenceCategory
         android:key="matrixx_about"
         android:title="@string/about_matrixx" >            
