@@ -34,4 +34,23 @@
     <string name="special_thanks">Special Thanks</string>
     <string name="team_matrixx">Team Matrixx</string>
     <string name="team_desc">Meet with Team Matrixx</string>    
+
+    <!-- Team Matrixx -->
+    <string name="team_members">Team Members</string>
+
+    <string name="team_member_1">K. Samba Siva Rao</string>
+    <string name="team_member_1_desc">Poco F5, Redmi Note 12 Turbo (marble)</string>
+    
+    <string name="team_member_2">Arijit Saha</string>
+    <string name="team_member_2_desc">Redmi Note 5 Pro (whyred)</string>
+
+    <string name="team_member_3">DynamicPanda</string>
+    <string name="team_member_3_desc">Galaxy A70 (a70q)</string>
+
+    <string name="team_member_4">Zahid H</string>
+    <string name="team_member_4_desc">OnePlus 8 Series (instantnoodle,kebab,instantnoodlep)</string>
+
+    <string name="team_member_5">AAMIRR ALI</string>
+    <string name="team_member_5_desc">Realme X50 Pro/Player 5G (bladerunner)</string>
+    
 </resources>

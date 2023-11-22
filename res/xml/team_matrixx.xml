@@ -61,4 +61,53 @@
         android:data="https://xdaforums.com/m/superdroidbond.8829870/" />
     </Preference>
     </PreferenceCategory>
+
+   <PreferenceCategory
+        android:key="matrixx_dev"
+        android:title="@string/team_members" >
+    <Preference
+        android:title="@string/team_member_1"
+        android:summary="@string/team_member_1_desc"
+        android:icon="@drawable/ic_alpha_k_circle" >
+    <intent
+        android:action="android.intent.action.VIEW"
+        android:data="https://xdaforums.com/m/kssrao13882.11649931/" />
+    </Preference>
+
+    <Preference
+        android:title="@string/team_member_2"
+        android:summary="@string/team_member_2_desc"
+        android:icon="@drawable/ic_alpha_a_circle" >
+    <intent
+        android:action="android.intent.action.VIEW"
+        android:data="https://xdaforums.com/m/whyred_404.12444399/" />
+    </Preference>
+
+    <Preference
+        android:title="@string/team_member_3"
+        android:summary="@string/team_member_3_desc"
+        android:icon="@drawable/ic_alpha_d_circle" >
+    <intent
+        android:action="android.intent.action.VIEW"
+        android:data="https://t.me/DynamicPanda11" />
+    </Preference>
+
+    <Preference
+        android:title="@string/team_member_4"
+        android:summary="@string/team_member_4_desc"
+        android:icon="@drawable/ic_alpha_z_circle" >
+    <intent
+        android:action="android.intent.action.VIEW"
+        android:data="https://t.me/twinchin96" />
+    </Preference>
+
+    <Preference
+        android:title="@string/team_member_5"
+        android:summary="@string/team_member_5_desc"
+        android:icon="@drawable/ic_alpha_a_circle" >
+    <intent
+        android:action="android.intent.action.VIEW"
+        android:data="https://t.me/AAMIRR_ALI" />
+    </Preference>
+    </PreferenceCategory>    
 </PreferenceScreen>    
