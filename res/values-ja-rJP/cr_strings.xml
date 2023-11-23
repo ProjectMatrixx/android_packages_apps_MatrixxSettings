@@ -234,18 +234,6 @@
     <!-- UI settings -->
     <string name="monet_title">Monet 設定</string>
     <string name="monet_summary">Monet テーマエンジンをカスタマイズします</string>
-    <!-- Monet Engine -->
-    <string name="monet_engine_custom_color_title">アクセントカラー</string>
-    <string name="monet_engine_custom_color_summary">アクセントのカスタムカラーを選択</string>
-    <string name="monet_engine_custom_bgcolor_title">背景色</string>
-    <string name="monet_engine_custom_bgcolor_summary">カスタム背景色を選択</string>
-    <string name="monet_engine_color_override_title">カスタム色</string>
-    <string name="monet_engine_luminance_factor_title">輝度</string>
-    <string name="monet_engine_luminance_factor_summary">値が高いほど明るい色になります</string>
-    <string name="monet_engine_chroma_factor_title">彩度係数</string>
-    <string name="monet_engine_chroma_factor_summary">値が高いほど色が濃くなります</string>
-    <string name="monet_engine_tint_background_title">背景を明るくする</string>
-    <string name="monet_engine_tint_background_summary">選択した輝度と彩度が背景色にも影響するようにします</string>
     <!-- Quick unlock -->
     <string name="unlock_quick_unlock_control_title">クイックロック解除</string>
     <string name="unlock_quick_unlock_control_summary">正しい PIN / パスワードを入力すると自動的にロック解除します</string>
@@ -381,8 +369,20 @@
     <string name="status_bar_battery_style_filled_circle">塗り潰した円</string>
     <string name="status_bar_battery_style_text">テキスト</string>
     <string name="status_bar_battery_style_hidden">非表示</string>
+    <string name="status_bar_battery_style_icon_landscape_buddy">Landscape Capsule</string>
+    <string name="status_bar_battery_style_icon_landscape_line">Landscape Lorn</string>
+    <string name="status_bar_battery_style_icon_landscape_musku">Portrait IOS</string>
+    <string name="status_bar_battery_style_icon_landscape_pill">Portrait Mx</string>
+    <string name="status_bar_battery_style_icon_landscape_signal">Landscape Airoo</string>
+    <string name="status_bar_battery_style_icon_rlandscape_style_a">Landscape R Style A</string>
+    <string name="status_bar_battery_style_icon_landscape_style_a">Landscape L Style A</string>
+    <string name="status_bar_battery_style_icon_rlandscape_style_b">Landscape R Style B</string>
+    <string name="status_bar_battery_style_icon_landscape_style_b">Landscape L Style B</string>
     <string name="status_bar_battery_percent_title">バッテリーパーセント表示</string>
     <string name="status_bar_battery_percent_hidden">非表示</string>
+    <string name="status_bar_battery_style_icon_landscape_ios15">Landscape iOS 15</string>
+    <string name="status_bar_battery_style_icon_landscape_ios16">Landscape iOS 16</string>
+    <string name="status_bar_battery_style_icon_landscape_origami">Landscape Origami</string>
     <string name="status_bar_battery_percent_text_inside">アイコンの内側</string>
     <string name="status_bar_battery_percent_text_next_right">アイコンの隣（右）</string>
     <string name="status_bar_battery_percent_text_next_left">アイコンの隣（左）</string>
@@ -563,6 +563,7 @@
     <!-- Device Info screen. crDroid legal. -->
     <string name="crdroid_license_title">Matrixx ライセンス</string>
     <!-- Quick Settings brightness slider -->
+    <string name="qs_brightness_slider_category">Brightness slider</string>
     <string name="qs_show_brightness_slider_title">明るさスライダー</string>
     <string name="qs_show_brightness_slider_never">表示しない</string>
     <string name="qs_show_brightness_slider_expanded">展開時に表示</string>
@@ -942,6 +943,34 @@
     <!-- Statusbar Clock background chip -->
     <string name="statusbar_clock_chip_title">バックグラウンドチップ</string>
     <string name="statusbar_clock_chip_summary">アクセント付きチップを時計の後ろに表示する</string>
+    <string name="status_bar_clock_font_style_title">Clock font style</string>
+    <string name="status_bar_clock_color_title">Clock font color</string>
+    <!-- Font Customizations for Functions -->
+    <string name="function_font_stock">Normal (default)</string>
+    <string name="function_font_bold">Bold</string>
+    <string name="function_font_italic">Italic</string>
+    <string name="function_font_bold_italic">Bold Italic</string>
+    <string name="function_font_light_italic">Light Italic</string>
+    <string name="function_font_thin_italic">Thin Italic</string>
+    <string name="function_font_light">Light</string>
+    <string name="function_font_thin">Thin</string>
+    <string name="function_font_condensed_normal">Condensed</string>
+    <string name="function_font_condensed_italic">Condensed Italic</string>
+    <string name="function_font_condensed_bold">Condensed Bold</string>
+    <string name="function_font_condensed_bold_italic">Condensed Bold Italic</string>
+    <string name="function_font_condensed_light">Condensed Light</string>
+    <string name="function_font_condensed_light_italic">Condensed Light Italic</string>
+    <string name="function_font_medium_normal">Medium</string>
+    <string name="function_font_medium_italic">Medium Italic</string>
+    <string name="function_font_black">Black</string>
+    <string name="function_font_black_italic">Black Italic</string>
+    <string name="function_font_dancingscript">DancingScript</string>
+    <string name="function_font_dancingscript_bold">DancingScript Bold</string>
+    <string name="function_font_comingsoon">ComingSoon</string>
+    <string name="function_font_notoserif">NotoSerif Normal</string>
+    <string name="function_font_notoserif_italic">NotoSerif Italic</string>
+    <string name="function_font_notoserif_bold">NotoSerif Bold</string>
+    <string name="function_font_notoserif_bold_italic">NotoSerif Bold Italic</string>
     <!-- Weather -->
     <string name="weather_settings_title">天気の設定</string>
     <string name="weather_settings_summary">アイコンパックと天気サービスを設定します</string>
@@ -962,7 +991,7 @@
     <string name="status_bar_logo_summary">ステータスバーの左右にカスタムロゴを表示します</string>
     <string name="status_bar_logo_position_title">ロゴの位置</string>
     <string name="status_bar_logo_style_title">ロゴのスタイル</string>
-    <string name="status_bar_logo_style_crdroid">CrDroid</string>
+    <string name="status_bar_logo_style_matrixx">Matrixx</string>
     <string name="status_bar_logo_style_android">Android</string>
     <string name="status_bar_logo_style_adidas">Adidas</string>
     <string name="status_bar_logo_style_alien">宇宙人</string>
@@ -1091,4 +1120,57 @@
     <string name="kg_custom_clock_top_margin_title">ダブルライン時計の位置</string>
     <string name="kg_small_clock_text_size_title">小さい時計のサイズ</string>
     <string name="kg_large_clock_text_size_title">ダブルライン時計のサイズ</string>
+    <!-- Ignore secure window -->
+    <string name="ignore_window_secure_title">Ignore window secure flags</string>
+    <string name="ignore_window_secure_summary">Fixes black screenshots and recordings, May lead to privacy leaks, Restart apps to apply changes</string>
+    <!-- Hide developer status -->
+    <string name="hide_developer_status_title">Hide developer status</string>
+    <string name="hide_developer_status_summary">Hide developer status from apps</string>
+    <string name="search">Search</string>
+    <string name="search_apps">Search apps</string>
+    <!-- Matrixx Dashboard -->
+    <string name="about_matrixx_summary">Information about Matrixx</string>
+    <string name="buttons_settings_summary">Tweak hardware buttons</string>
+    <string name="lockscreen_settings_summary">Customize lockscreen interface</string>
+    <string name="misc_settings_summary">Misc uncategorized stuffs</string>
+    <string name="nav_settings_summary">Customize navigation behavior</string>
+    <string name="notif_settings_summary">Control notifications and more</string>
+    <string name="qs_settings_summary">QuickSettings customizations</string>
+    <string name="sound_settings_summary">Sound and vibrations customizations</string>
+    <string name="sb_settings_summary">Customize statusbar icons, layout etc</string>
+    <string name="ui_settings_summary">Customize UI colors, icons, fonts etc</string>
+    <!-- Monet settings -->
+    <string name="monet_settings_title">Advanced monet settings</string>
+    <string name="monet_settings_summary">Additional settings to customize monet engine</string>
+    <string name="theme_style_title">Theme style</string>
+    <string name="theme_style_tonal_spot">Tonal Spot (Default)</string>
+    <string name="theme_style_vibrant">Vibrant</string>
+    <string name="theme_style_expressive">Expressive</string>
+    <string name="theme_style_spritz">Spritz</string>
+    <string name="theme_style_rainbow">Rainbow</string>
+    <string name="theme_style_fruit_salad">Fruit Salad</string>
+    <string name="theme_style_muted">Muted</string>
+    <string name="theme_style_content">Content</string>
+    <string name="color_source_title">Color source</string>
+    <string name="color_source_both">Both (Default)</string>
+    <string name="color_source_home">Home wallpaper</string>
+    <string name="color_source_lock">Lock wallpaper</string>
+    <string name="color_source_preset">Preset</string>
+    <string name="accent_color_title">Accent Color</string>
+    <string name="accent_color_summary">Override default accent color</string>
+    <string name="accent_background_title">Accent background</string>
+    <string name="accent_background_summary">Choose a different accent color for background</string>
+    <string name="bg_color_title">Background Color</string>
+    <string name="bg_color_summary">Override default background accent color</string>
+    <string name="luminance_factor_title">Luminance</string>
+    <string name="luminance_factor_summary">Higher values produce brighter colors</string>
+    <string name="chroma_factor_title">Chroma</string>
+    <string name="chroma_factor_summary">Higher values produce stronger colors</string>
+    <string name="tint_background_title">Tint Background</string>
+    <string name="tint_background_summary">Make Luminance and Chroma selection affect background colors as well</string>
+    <!-- Status bar padding -->
+    <string name="statusbar_padding">Status bar padding</string>
+    <string name="statusbar_top_padding">Top padding</string>
+    <string name="statusbar_left_padding">Left padding</string>
+    <string name="statusbar_right_padding">Right padding</string>
 </resources>
