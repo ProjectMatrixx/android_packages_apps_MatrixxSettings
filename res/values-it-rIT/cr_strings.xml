@@ -63,9 +63,6 @@
     <!-- About crDroid -->
     <string name="about_crdroid">Informazioni su Matrixx</string>
     <string name="about_device_name">Dispositivo</string>
-	<!-- Matrixx -->
-    <string name="get_matrixx_title">Salta in Matrixx</string>
-    <string name="get_matrixx_summary">Know everything to experience Matrixx</string>																		 
     <!-- Share crDroid -->
     <string name="share_crdroid_title">Condividi Matrixx</string>
     <string name="share_crdroid_summary">Fai conoscere Matrixx agli altri</string>
@@ -209,8 +206,8 @@
     <string name="backlight_summary_enabled_with_timeout">Abilita per <xliff:g id="timeout">%s</xliff:g></string>
     <string name="backlight_summary_enabled">Abilitato</string>
     <plurals name="backlight_timeout_time">
-        <item quantity="one"><xliff:g id="seconds"> %d </xliff:g> secondo</item>
-        <item quantity="other"><xliff:g id="seconds"> %d </xliff:g> secondi</item>
+        <item quantity="one"><xliff:g id="seconds">%d</xliff:g> second</item>
+        <item quantity="other"><xliff:g id="seconds">%d</xliff:g> seconds</item>
     </plurals>
     <!-- Power menu -->
     <string name="power_menu_title">Menù alimentazione</string>
@@ -238,7 +235,6 @@
     <!-- UI settings -->
     <string name="monet_title">Impostazioni di Monet</string>
     <string name="monet_summary">Personalizza il motore del tema Monet</string>
-    
     <!-- Quick unlock -->
     <string name="unlock_quick_unlock_control_title">Sblocco rapido</string>
     <string name="unlock_quick_unlock_control_summary">Sblocca automaticamente quando il PIN/la password viene inserito in modo corretto</string>
@@ -374,8 +370,20 @@
     <string name="status_bar_battery_style_filled_circle">Cerchio pieno</string>
     <string name="status_bar_battery_style_text">Testo</string>
     <string name="status_bar_battery_style_hidden">Nascosta</string>
+    <string name="status_bar_battery_style_icon_landscape_buddy">Landscape Capsule</string>
+    <string name="status_bar_battery_style_icon_landscape_line">Landscape Lorn</string>
+    <string name="status_bar_battery_style_icon_landscape_musku">Portrait IOS</string>
+    <string name="status_bar_battery_style_icon_landscape_pill">Portrait Mx</string>
+    <string name="status_bar_battery_style_icon_landscape_signal">Landscape Airoo</string>
+    <string name="status_bar_battery_style_icon_rlandscape_style_a">Landscape R Style A</string>
+    <string name="status_bar_battery_style_icon_landscape_style_a">Landscape L Style A</string>
+    <string name="status_bar_battery_style_icon_rlandscape_style_b">Landscape R Style B</string>
+    <string name="status_bar_battery_style_icon_landscape_style_b">Landscape L Style B</string>
     <string name="status_bar_battery_percent_title">Percentuale batteria</string>
     <string name="status_bar_battery_percent_hidden">Nascosta</string>
+    <string name="status_bar_battery_style_icon_landscape_ios15">Landscape iOS 15</string>
+    <string name="status_bar_battery_style_icon_landscape_ios16">Landscape iOS 16</string>
+    <string name="status_bar_battery_style_icon_landscape_origami">Landscape Origami</string>
     <string name="status_bar_battery_percent_text_inside">All\'interno dell\'icona</string>
     <string name="status_bar_battery_percent_text_next_right">Accanto all\'icona (a destra)</string>
     <string name="status_bar_battery_percent_text_next_left">Accanto all\'icona (a sinistra)</string>
@@ -556,6 +564,7 @@
     <!-- Device Info screen. crDroid legal. -->
     <string name="crdroid_license_title">team Matrixx</string>
     <!-- Quick Settings brightness slider -->
+    <string name="qs_brightness_slider_category">Brightness slider</string>
     <string name="qs_show_brightness_slider_title">Cursore luminosità</string>
     <string name="qs_show_brightness_slider_never">Non mostrare</string>
     <string name="qs_show_brightness_slider_expanded">Mostra quando espanso</string>
@@ -936,6 +945,34 @@
     <!-- Statusbar Clock background chip -->
     <string name="statusbar_clock_chip_title">Sfondo dell\'orologio colorato</string>
     <string name="statusbar_clock_chip_summary">Colora lo sfondo dell\'orologio nella barra di stato</string>
+    <string name="status_bar_clock_font_style_title">Clock font style</string>
+    <string name="status_bar_clock_color_title">Clock font color</string>
+    <!-- Font Customizations for Functions -->
+    <string name="function_font_stock">Normal (default)</string>
+    <string name="function_font_bold">Bold</string>
+    <string name="function_font_italic">Italic</string>
+    <string name="function_font_bold_italic">Bold Italic</string>
+    <string name="function_font_light_italic">Light Italic</string>
+    <string name="function_font_thin_italic">Thin Italic</string>
+    <string name="function_font_light">Light</string>
+    <string name="function_font_thin">Thin</string>
+    <string name="function_font_condensed_normal">Condensed</string>
+    <string name="function_font_condensed_italic">Condensed Italic</string>
+    <string name="function_font_condensed_bold">Condensed Bold</string>
+    <string name="function_font_condensed_bold_italic">Condensed Bold Italic</string>
+    <string name="function_font_condensed_light">Condensed Light</string>
+    <string name="function_font_condensed_light_italic">Condensed Light Italic</string>
+    <string name="function_font_medium_normal">Medium</string>
+    <string name="function_font_medium_italic">Medium Italic</string>
+    <string name="function_font_black">Black</string>
+    <string name="function_font_black_italic">Black Italic</string>
+    <string name="function_font_dancingscript">DancingScript</string>
+    <string name="function_font_dancingscript_bold">DancingScript Bold</string>
+    <string name="function_font_comingsoon">ComingSoon</string>
+    <string name="function_font_notoserif">NotoSerif Normal</string>
+    <string name="function_font_notoserif_italic">NotoSerif Italic</string>
+    <string name="function_font_notoserif_bold">NotoSerif Bold</string>
+    <string name="function_font_notoserif_bold_italic">NotoSerif Bold Italic</string>
     <!-- Weather -->
     <string name="weather_settings_title">Impostazioni meteo</string>
     <string name="weather_settings_summary">Configura pacchetto icone e servizio meteo</string>
@@ -956,7 +993,7 @@
     <string name="status_bar_logo_summary">Mostra un logo personalizzato a sinistra o a destra della barra di stato</string>
     <string name="status_bar_logo_position_title">Posizione logo</string>
     <string name="status_bar_logo_style_title">Stile logo</string>
-    <string name="status_bar_logo_style_crdroid">Matrixx</string>
+    <string name="status_bar_logo_style_matrixx">Matrixx</string>
     <string name="status_bar_logo_style_android">Android</string>
     <string name="status_bar_logo_style_adidas">Adidas</string>
     <string name="status_bar_logo_style_alien">Alieno</string>
@@ -1055,8 +1092,8 @@
     <!-- App lock -->
     <string name="app_lock_title">Blocco app</string>
     <plurals name="app_lock_summary">
-        <item quantity="one"><xliff:g example="2" id="Numero delle applicazioni">%1$d</xliff:g> applicazioni sono protette</item>
-        <item quantity="other"><xliff:g example="10" id="Numero delle applicazioni">%1$d</xliff:g> applicazioni sono protette</item>
+        <item quantity="one"><xliff:g example="1" id="Number of applications">%1$d</xliff:g> application is protected</item>
+        <item quantity="other"><xliff:g example="10" id="Number of applications">%1$d</xliff:g> applications are protected</item>
     </plurals>
     <string name="app_lock_authentication_dialog_title">Sblocco</string>
     <string name="enable_debugging">Abilita debug</string>
@@ -1087,16 +1124,25 @@
     <string name="kg_custom_clock_top_margin_title">Posizione orologio doppia linea</string>
     <string name="kg_small_clock_text_size_title">Piccola dimensione dell\'orologio</string>
     <string name="kg_large_clock_text_size_title">Dimensione orologio doppia linea</string>
-	<!-- Ignore secure window -->
+    <!-- Ignore secure window -->
     <string name="ignore_window_secure_title">Ignora flag sicurezza</string>
     <string name="ignore_window_secure_summary">Fixes black screenshots and recordings, May lead to privacy leaks, Restart apps to apply changes</string>
-
     <!-- Hide developer status -->
     <string name="hide_developer_status_title">Nascondi stato sviluppatore</string>
     <string name="hide_developer_status_summary">Nascondi stato sviluppatore per app</string>
     <string name="search">Cerca</string>
     <string name="search_apps">Cerca app</string>
-
+    <!-- Matrixx Dashboard -->
+    <string name="about_matrixx_summary">Informazioni su Matrixx</string>
+    <string name="buttons_settings_summary">Personalizza tasti hardware</string>
+    <string name="lockscreen_settings_summary">Personalizza interfaccia schermata di blocco</string>
+    <string name="misc_settings_summary">Personalizzazioni varie</string>
+    <string name="nav_settings_summary">Personalizza comportamento navbar</string>
+    <string name="notif_settings_summary">Controllo notifiche e altro</string>
+    <string name="qs_settings_summary">Personalizzazione impostazioni rapide</string>
+    <string name="sound_settings_summary">Personalizzazione suoni e vibrazione</string>
+    <string name="sb_settings_summary">Personalizza icone barra di stato, layout etc</string>
+    <string name="ui_settings_summary">Personalizza colori UI, icone, font etc</string>
     <!-- Monet settings -->
     <string name="monet_settings_title">Impostazioni avanzate Monet</string>
     <string name="monet_settings_summary">Impostazioni aggiuntive per personalizzare l\'engine Monet</string>
@@ -1109,7 +1155,6 @@
     <string name="theme_style_fruit_salad">Fruit Salad</string>
     <string name="theme_style_muted">Muted</string>
     <string name="theme_style_content">Content</string>
-    <string name="theme_style_monochromatic">Monochromatic</string>
     <string name="color_source_title">Sorgente Colore</string>
     <string name="color_source_both">Entrambi (Predefinito)</string>
     <string name="color_source_home">Sfondo Home</string>
@@ -1127,116 +1172,9 @@
     <string name="chroma_factor_summary">Valori più alti producono colori più forti</string>
     <string name="tint_background_title">Tinta sfondo</string>
     <string name="tint_background_summary">Fai in modo che la selezione di Luminanza e Fattore Cromatico influisca anche sui colori di sfondo</string>
-
     <!-- Status bar padding -->
     <string name="statusbar_padding">Status bar padding</string>
     <string name="statusbar_top_padding">Top padding</string>
     <string name="statusbar_left_padding">Left padding</string>
     <string name="statusbar_right_padding">Right padding</string>
-
-    <!-- Ambient Customization -->
-    <string name="default_string">Predefinito</string>
-    <string name="ambient_text_category">Personalizzazioni Testo</string>
-    <string name="ambient_image_category">Personalizzazioni Immagini</string>
-    <string name="ambient_text_category_title">Personalizzazioni Ambient</string>
-    <string name="ambient_text_category_summary">Personalizza il look dell\'ambient display</string>
-    <string name="ambient_text_title">Testo Ambient</string>
-    <string name="ambient_text_summary">Mostra un testo in AoD</string>
-    <string name="ambient_text_animation_title">Animazione testo Ambient</string>
-    <string name="ambient_text_animation_summary">Mostra animazione quando viene mostrato l\'AoD</string>
-    <string name="ambient_text_size_title">Dimensione testo Ambient</string>
-    <string name="ambient_text_font_title">Font test Ambient</string>
-    <string name="ambient_text_string_title">Imposta testo Ambient</string>
-    <string name="ambient_text_align_title">Allineamento testo Ambient</string>
-    <string name="ambient_text_align_start_top">In alto a dx</string>
-    <string name="ambient_text_align_start_center">Right n center</string>
-    <string name="ambient_text_align_start_bottom">Right n bottom</string>
-    <string name="ambient_text_align_center">Centro</string>
-    <string name="ambient_text_align_end_top">In alto a sx</string>
-    <string name="ambient_text_align_end_center">Centro Destra</string>
-    <string name="ambient_text_align_end_bottom">In basso a Sinistra</string>
-    <string name="ambient_text_type_color_title">Colore testo Ambient</string>
-    <string name="ambient_text_color_title">Ambient text color</string>
-    <string name="ambient_notification_light_color_mode_accent">Colore accento di sistema</string>
-    <string name="ambient_notification_light_color_mode_custom">Colore personalizzato</string>
-    <string name="ambient_notification_light_color_mode_wall">Colore Sfondo</string>
-    <string name="ambient_image_title">Immagine Ambient</string>
-    <string name="file_header_select_title">Seleziona Immagine Locale</string>
-    <string name="file_header_select_summary">Seleziona immagine dall\'archivio</string>
-
-    <!-- UI styles -->
-    <string name="theme_customization_ui_style_title">Stile UI</string>
-    <string name="theme_customization_ui_style_summary">Imposta uno stile personalizzato per l\'interfaccia</string>
-
-    <string name="clock_use_single_line_title">Formato orario Lockscreen</string>
-    <string name="single_line">Linea Singola</string>
-    <string name="double_line">Doppia Linea</string>
-
-    <!-- Custom FOD Icon -->
-    <string name="custom_fp_icon_title">Icona UDFPS Personalizzata</string>
-    <string name="custom_fp_icon_summary">Enable custom UDFPS Icon from files</string>
-    <string name="custom_fp_select_title">Select Custom UDFPS Icon</string>
-    <string name="custom_fp_select_summary">Select custom image from your saved files or gallery</string>
-
-    <!-- QS Footer Text -->
-    <string name="qs_footer_text_title">QS footer text</string>
-    <string name="qs_footer_text_summary">Mostra un testo in fondo al pannello Impostazioni Rapide</string>
-    <string name="qs_footer_text_string_title">Personalizza testo</string>
-    <string name="qs_footer_text_string_summary">Lascia vuoto per predefinito Matrixx</string> 
-
-    <!-- Status bar - Battery custom charging symbol -->
-    <string name="text_charging_symbol_title">Simbolo personalizzato per la ricarica</string>
-    <string name="text_charging_symbol_dialog">Simbolo personalizzato per la ricarica affianco il testo della percentuale batteria</string>
-    <string name="text_charging_symbol_default">Disabilitato</string>
-    <string name="text_charging_symbol_flash">Flash</string>
-    <string name="text_charging_symbol_tilde">Tilde</string>
-    <string name="text_charging_symbol_plus">Plus</string>
-    <string name="text_charging_symbol_star">Star</string>
-    <string name="text_charging_symbol_rupee">Rupie</string>
-    <string name="text_charging_symbol_dollar">Dollati</string>
-    <string name="text_charging_symbol_euro">Euro</string>
-    <string name="text_charging_symbol_cent">Cent</string>
-
-    <!-- Lockscreen Weather styles -->
-    <string name="lockscreen_weather_selection_title">Stile Sfondo Meteo</string>
-    <string name="lockscreen_weather_selection_default">Predefinito</string>
-    <string name="lockscreen_weather_selection_str_box">Box Semi-trasparente</string>
-    <string name="lockscreen_weather_selection_str_round">Box Semi-trasparente (arrotondato)</string>
-    <string name="lockscreen_weather_selection_qbeta_style">Q-Beta pill</string>
-    <string name="lockscreen_weather_selection_str_accent">Arrotondato, semplice con accento</string>
-    <string name="lockscreen_weather_selection_str_accent_transparent">Arrotondato, Trasparente con accento</string>
-    <string name="lockscreen_weather_selection_str_gradient">Gradiente</string>
-    <string name="lockscreen_weather_selection_str_border_accent">Scuro con bordi accentati</string>
-    <string name="lockscreen_weather_selection_str_border_gradient">Scuro con bordi gradienti</string>
-
-    <!-- Adaptive Charging Settings -->
-    <string name="sys_adaptive_charging_title">Modalità Caricamento Adattiva</string>
-    <string name="sys_adaptive_charging_summary">Il sistema entrerà in modalità adattiva per ottimizzare i consumi mentre è in ricarica.</string>
-    
-    <!-- Desktop Mode Settings -->
-    <string name="desktop_mode_pc_title">Mdalità Desktop</string>
-    <string name="desktop_mode_pc_summary">Modalità desktop su display esterno o PC</string>
-    
-    <!-- Sound settings -->
-    <string name="notification_sounds_title">Suoni di notifica</string>
-    <string name="system_sounds_title">Suoni di sistema</string>
-    <string name="other_sounds_title">Altri suoni</string>
-    
-    <string name="qs_battery_styles_title">QuickSetting batteria</string>
-
-    <!-- QS Dual Tone Colors -->
-    <string name="qs_dual_tone_title">QS doppio tono</string>
-    <string name="qs_dual_tone_summary">Una un doppio tono per il colore di sfondo</string>
-
-   <!-- Matrixx Dashboard -->
-    <string name="about_matrixx_summary">Informazioni su Matrixx</string>
-    <string name="buttons_settings_summary">Personalizza tasti hardware</string>
-    <string name="lockscreen_settings_summary">Personalizza interfaccia schermata di blocco</string>
-    <string name="misc_settings_summary">Personalizzazioni varie</string>
-    <string name="nav_settings_summary">Personalizza comportamento navbar</string>
-    <string name="notif_settings_summary">Controllo notifiche e altro</string>
-    <string name="qs_settings_summary">Personalizzazione impostazioni rapide</string>
-    <string name="sound_settings_summary">Personalizzazione suoni e vibrazione</string>
-    <string name="sb_settings_summary">Personalizza icone barra di stato, layout etc</string>
-    <string name="ui_settings_summary">Personalizza colori UI, icone, font etc</string>						 
 </resources>
