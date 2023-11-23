@@ -278,4 +278,10 @@
     <string name="toast_SlideLeftRight_animation">Slide left to right</string>
     <string name="toast_SlideRightLeft_animation">Slide right to left</string>
     <string name="toast_rotate_animation">Rotate</string>
+
+    <!-- Font styles -->
+    <string name="font_styles_title">Font Styles</string>
+    <string name="font_styles_summary">Change system font style</string>
+    <string name="font_preview_text">The quick brown\nfox jumps over the\nlazy dog\n\nABCDEFGHIJKLM\nNOPQRSTUVWXYZ\nabcdefghijkl\nmnopqrstuvwxyz\n1234567890</string>
+    <string name="apply_button_text">Apply</string>
 </resources>
