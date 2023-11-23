@@ -239,18 +239,6 @@
     <!-- UI settings -->
     <string name="monet_title">إعدادات أخرى</string>
     <string name="monet_summary">تخصيص محرك قالب Monet</string>
-    <!-- Monet Engine -->
-    <string name="monet_engine_custom_color_title">لون المظهر</string>
-    <string name="monet_engine_custom_color_summary">اختر لونًا للسمة العامة</string>
-    <string name="monet_engine_custom_bgcolor_title">لون الخلفية</string>
-    <string name="monet_engine_custom_bgcolor_summary">اختر لونًا للخلفية</string>
-    <string name="monet_engine_color_override_title">لون مخصص</string>
-    <string name="monet_engine_luminance_factor_title">الإضاءة</string>
-    <string name="monet_engine_luminance_factor_summary">إدخال قيم أعلى ينتج ألوانًا أسطع</string>
-    <string name="monet_engine_chroma_factor_title">عامل Chroma</string>
-    <string name="monet_engine_chroma_factor_summary">إدخال قيم أعلى تنتج ألوانًا أكثر تشبعًا</string>
-    <string name="monet_engine_tint_background_title">خلفية التظليل</string>
-    <string name="monet_engine_tint_background_summary">اجعل لون الإضاءة والكروما يؤثران على ألوان الخلفية</string>
     <!-- Quick unlock -->
     <string name="unlock_quick_unlock_control_title">فتح سريع للقفل</string>
     <string name="unlock_quick_unlock_control_summary">فتح تلقائياً عندما يتم إدخال PIN او كلمة السر صحيحة</string>
@@ -386,8 +374,20 @@
     <string name="status_bar_battery_style_filled_circle">دائرة معبأة</string>
     <string name="status_bar_battery_style_text">نص</string>
     <string name="status_bar_battery_style_hidden">إخفاء</string>
+    <string name="status_bar_battery_style_icon_landscape_buddy">Landscape Capsule</string>
+    <string name="status_bar_battery_style_icon_landscape_line">Landscape Lorn</string>
+    <string name="status_bar_battery_style_icon_landscape_musku">Portrait IOS</string>
+    <string name="status_bar_battery_style_icon_landscape_pill">Portrait Mx</string>
+    <string name="status_bar_battery_style_icon_landscape_signal">Landscape Airoo</string>
+    <string name="status_bar_battery_style_icon_rlandscape_style_a">Landscape R Style A</string>
+    <string name="status_bar_battery_style_icon_landscape_style_a">Landscape L Style A</string>
+    <string name="status_bar_battery_style_icon_rlandscape_style_b">Landscape R Style B</string>
+    <string name="status_bar_battery_style_icon_landscape_style_b">Landscape L Style B</string>
     <string name="status_bar_battery_percent_title">نسبة البطارية</string>
     <string name="status_bar_battery_percent_hidden">إخفاء</string>
+    <string name="status_bar_battery_style_icon_landscape_ios15">Landscape iOS 15</string>
+    <string name="status_bar_battery_style_icon_landscape_ios16">Landscape iOS 16</string>
+    <string name="status_bar_battery_style_icon_landscape_origami">Landscape Origami</string>
     <string name="status_bar_battery_percent_text_inside">داخل أيقونة البطارية</string>
     <string name="status_bar_battery_percent_text_next_right">بجانب الأيقونة (يمين)</string>
     <string name="status_bar_battery_percent_text_next_left">بجانب الأيقونة (يسار)</string>
@@ -568,6 +568,7 @@
     <!-- Device Info screen. crDroid legal. -->
     <string name="crdroid_license_title">فريق crDroid</string>
     <!-- Quick Settings brightness slider -->
+    <string name="qs_brightness_slider_category">Brightness slider</string>
     <string name="qs_show_brightness_slider_title">شريط السطوع</string>
     <string name="qs_show_brightness_slider_never">لا تُظهر أبداً</string>
     <string name="qs_show_brightness_slider_expanded">إظهار عند التوسيع</string>
@@ -952,6 +953,34 @@
     <!-- Statusbar Clock background chip -->
     <string name="statusbar_clock_chip_title">رقاقة الخلفية</string>
     <string name="statusbar_clock_chip_summary">عرض رقاقة مميزة خلف الساعة</string>
+    <string name="status_bar_clock_font_style_title">Clock font style</string>
+    <string name="status_bar_clock_color_title">Clock font color</string>
+    <!-- Font Customizations for Functions -->
+    <string name="function_font_stock">Normal (default)</string>
+    <string name="function_font_bold">Bold</string>
+    <string name="function_font_italic">Italic</string>
+    <string name="function_font_bold_italic">Bold Italic</string>
+    <string name="function_font_light_italic">Light Italic</string>
+    <string name="function_font_thin_italic">Thin Italic</string>
+    <string name="function_font_light">Light</string>
+    <string name="function_font_thin">Thin</string>
+    <string name="function_font_condensed_normal">Condensed</string>
+    <string name="function_font_condensed_italic">Condensed Italic</string>
+    <string name="function_font_condensed_bold">Condensed Bold</string>
+    <string name="function_font_condensed_bold_italic">Condensed Bold Italic</string>
+    <string name="function_font_condensed_light">Condensed Light</string>
+    <string name="function_font_condensed_light_italic">Condensed Light Italic</string>
+    <string name="function_font_medium_normal">Medium</string>
+    <string name="function_font_medium_italic">Medium Italic</string>
+    <string name="function_font_black">Black</string>
+    <string name="function_font_black_italic">Black Italic</string>
+    <string name="function_font_dancingscript">DancingScript</string>
+    <string name="function_font_dancingscript_bold">DancingScript Bold</string>
+    <string name="function_font_comingsoon">ComingSoon</string>
+    <string name="function_font_notoserif">NotoSerif Normal</string>
+    <string name="function_font_notoserif_italic">NotoSerif Italic</string>
+    <string name="function_font_notoserif_bold">NotoSerif Bold</string>
+    <string name="function_font_notoserif_bold_italic">NotoSerif Bold Italic</string>
     <!-- Weather -->
     <string name="weather_settings_title">إعدادات الطقس</string>
     <string name="weather_settings_summary">إعداد حزمة الأيقونات وخدمة الطقس</string>
@@ -972,7 +1001,7 @@
     <string name="status_bar_logo_summary">عرض شعار مخصص على اليسار أو اليمين من شريط الحالة</string>
     <string name="status_bar_logo_position_title">موقع الشعار</string>
     <string name="status_bar_logo_style_title">نمط الشعار</string>
-    <string name="status_bar_logo_style_crdroid">كردرويد</string>
+    <string name="status_bar_logo_style_matrixx">Matrixx</string>
     <string name="status_bar_logo_style_android">أندرويد</string>
     <string name="status_bar_logo_style_adidas">أديداس</string>
     <string name="status_bar_logo_style_alien">كائن فضائي</string>
@@ -1106,4 +1135,57 @@
     <string name="kg_custom_clock_top_margin_title">ساعة ذات خط مزدوج</string>
     <string name="kg_small_clock_text_size_title">ساعة صغيرة</string>
     <string name="kg_large_clock_text_size_title">حجم الساعة بخطين</string>
+    <!-- Ignore secure window -->
+    <string name="ignore_window_secure_title">Ignore window secure flags</string>
+    <string name="ignore_window_secure_summary">Fixes black screenshots and recordings, May lead to privacy leaks, Restart apps to apply changes</string>
+    <!-- Hide developer status -->
+    <string name="hide_developer_status_title">Hide developer status</string>
+    <string name="hide_developer_status_summary">Hide developer status from apps</string>
+    <string name="search">Search</string>
+    <string name="search_apps">Search apps</string>
+    <!-- Matrixx Dashboard -->
+    <string name="about_matrixx_summary">Information about Matrixx</string>
+    <string name="buttons_settings_summary">Tweak hardware buttons</string>
+    <string name="lockscreen_settings_summary">Customize lockscreen interface</string>
+    <string name="misc_settings_summary">Misc uncategorized stuffs</string>
+    <string name="nav_settings_summary">Customize navigation behavior</string>
+    <string name="notif_settings_summary">Control notifications and more</string>
+    <string name="qs_settings_summary">QuickSettings customizations</string>
+    <string name="sound_settings_summary">Sound and vibrations customizations</string>
+    <string name="sb_settings_summary">Customize statusbar icons, layout etc</string>
+    <string name="ui_settings_summary">Customize UI colors, icons, fonts etc</string>
+    <!-- Monet settings -->
+    <string name="monet_settings_title">Advanced monet settings</string>
+    <string name="monet_settings_summary">Additional settings to customize monet engine</string>
+    <string name="theme_style_title">Theme style</string>
+    <string name="theme_style_tonal_spot">Tonal Spot (Default)</string>
+    <string name="theme_style_vibrant">Vibrant</string>
+    <string name="theme_style_expressive">Expressive</string>
+    <string name="theme_style_spritz">Spritz</string>
+    <string name="theme_style_rainbow">Rainbow</string>
+    <string name="theme_style_fruit_salad">Fruit Salad</string>
+    <string name="theme_style_muted">Muted</string>
+    <string name="theme_style_content">Content</string>
+    <string name="color_source_title">Color source</string>
+    <string name="color_source_both">Both (Default)</string>
+    <string name="color_source_home">Home wallpaper</string>
+    <string name="color_source_lock">Lock wallpaper</string>
+    <string name="color_source_preset">Preset</string>
+    <string name="accent_color_title">Accent Color</string>
+    <string name="accent_color_summary">Override default accent color</string>
+    <string name="accent_background_title">Accent background</string>
+    <string name="accent_background_summary">Choose a different accent color for background</string>
+    <string name="bg_color_title">Background Color</string>
+    <string name="bg_color_summary">Override default background accent color</string>
+    <string name="luminance_factor_title">Luminance</string>
+    <string name="luminance_factor_summary">Higher values produce brighter colors</string>
+    <string name="chroma_factor_title">Chroma</string>
+    <string name="chroma_factor_summary">Higher values produce stronger colors</string>
+    <string name="tint_background_title">Tint Background</string>
+    <string name="tint_background_summary">Make Luminance and Chroma selection affect background colors as well</string>
+    <!-- Status bar padding -->
+    <string name="statusbar_padding">Status bar padding</string>
+    <string name="statusbar_top_padding">Top padding</string>
+    <string name="statusbar_left_padding">Left padding</string>
+    <string name="statusbar_right_padding">Right padding</string>
 </resources>
