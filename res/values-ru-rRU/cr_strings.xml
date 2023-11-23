@@ -237,18 +237,6 @@
     <!-- UI settings -->
     <string name="monet_title">Настройки Monet</string>
     <string name="monet_summary">Настройки движка Monet темы</string>
-    <!-- Monet Engine -->
-    <string name="monet_engine_custom_color_title">Цветовой акцент</string>
-    <string name="monet_engine_custom_color_summary">Выбрать свой цвет акцента</string>
-    <string name="monet_engine_custom_bgcolor_title">Цвет фона</string>
-    <string name="monet_engine_custom_bgcolor_summary">Выбрать свой цвет фона</string>
-    <string name="monet_engine_color_override_title">Собственный цвет</string>
-    <string name="monet_engine_luminance_factor_title">Яркость</string>
-    <string name="monet_engine_luminance_factor_summary">Чем больше значение, тем ярче цвета</string>
-    <string name="monet_engine_chroma_factor_title">Коэффициент цветности</string>
-    <string name="monet_engine_chroma_factor_summary">Чем больше значение, тем насыщеннее цвета</string>
-    <string name="monet_engine_tint_background_title">Оттенок фона</string>
-    <string name="monet_engine_tint_background_summary">Выбор яркости и цветности, позволяет также влиять на цвета фона</string>
     <!-- Quick unlock -->
     <string name="unlock_quick_unlock_control_title">Быстрая разблокировка</string>
     <string name="unlock_quick_unlock_control_summary">При вводе правильного PIN-кода/пароля разблокировать без нажатия на ОК</string>
@@ -384,8 +372,20 @@
     <string name="status_bar_battery_style_filled_circle">Заполненный круг</string>
     <string name="status_bar_battery_style_text">Текст</string>
     <string name="status_bar_battery_style_hidden">Скрытый</string>
+    <string name="status_bar_battery_style_icon_landscape_buddy">Landscape Capsule</string>
+    <string name="status_bar_battery_style_icon_landscape_line">Landscape Lorn</string>
+    <string name="status_bar_battery_style_icon_landscape_musku">Portrait IOS</string>
+    <string name="status_bar_battery_style_icon_landscape_pill">Portrait Mx</string>
+    <string name="status_bar_battery_style_icon_landscape_signal">Landscape Airoo</string>
+    <string name="status_bar_battery_style_icon_rlandscape_style_a">Landscape R Style A</string>
+    <string name="status_bar_battery_style_icon_landscape_style_a">Landscape L Style A</string>
+    <string name="status_bar_battery_style_icon_rlandscape_style_b">Landscape R Style B</string>
+    <string name="status_bar_battery_style_icon_landscape_style_b">Landscape L Style B</string>
     <string name="status_bar_battery_percent_title">Процент заряда батареи</string>
     <string name="status_bar_battery_percent_hidden">Скрытый</string>
+    <string name="status_bar_battery_style_icon_landscape_ios15">Landscape iOS 15</string>
+    <string name="status_bar_battery_style_icon_landscape_ios16">Landscape iOS 16</string>
+    <string name="status_bar_battery_style_icon_landscape_origami">Landscape Origami</string>
     <string name="status_bar_battery_percent_text_inside">Внутри иконки</string>
     <string name="status_bar_battery_percent_text_next_right">Рядом со значком (справа)</string>
     <string name="status_bar_battery_percent_text_next_left">Рядом со значком (слева)</string>
@@ -566,6 +566,7 @@
     <!-- Device Info screen. crDroid legal. -->
     <string name="crdroid_license_title">О crDroid</string>
     <!-- Quick Settings brightness slider -->
+    <string name="qs_brightness_slider_category">Brightness slider</string>
     <string name="qs_show_brightness_slider_title">Регулятор яркости</string>
     <string name="qs_show_brightness_slider_never">Никогда не показывать</string>
     <string name="qs_show_brightness_slider_expanded">Показывать в развернутом виде</string>
@@ -948,6 +949,34 @@
     <!-- Statusbar Clock background chip -->
     <string name="statusbar_clock_chip_title">Фон под часами</string>
     <string name="statusbar_clock_chip_summary">Показывать акцентированный фон позади часов</string>
+    <string name="status_bar_clock_font_style_title">Clock font style</string>
+    <string name="status_bar_clock_color_title">Clock font color</string>
+    <!-- Font Customizations for Functions -->
+    <string name="function_font_stock">Normal (default)</string>
+    <string name="function_font_bold">Bold</string>
+    <string name="function_font_italic">Italic</string>
+    <string name="function_font_bold_italic">Bold Italic</string>
+    <string name="function_font_light_italic">Light Italic</string>
+    <string name="function_font_thin_italic">Thin Italic</string>
+    <string name="function_font_light">Light</string>
+    <string name="function_font_thin">Thin</string>
+    <string name="function_font_condensed_normal">Condensed</string>
+    <string name="function_font_condensed_italic">Condensed Italic</string>
+    <string name="function_font_condensed_bold">Condensed Bold</string>
+    <string name="function_font_condensed_bold_italic">Condensed Bold Italic</string>
+    <string name="function_font_condensed_light">Condensed Light</string>
+    <string name="function_font_condensed_light_italic">Condensed Light Italic</string>
+    <string name="function_font_medium_normal">Medium</string>
+    <string name="function_font_medium_italic">Medium Italic</string>
+    <string name="function_font_black">Black</string>
+    <string name="function_font_black_italic">Black Italic</string>
+    <string name="function_font_dancingscript">DancingScript</string>
+    <string name="function_font_dancingscript_bold">DancingScript Bold</string>
+    <string name="function_font_comingsoon">ComingSoon</string>
+    <string name="function_font_notoserif">NotoSerif Normal</string>
+    <string name="function_font_notoserif_italic">NotoSerif Italic</string>
+    <string name="function_font_notoserif_bold">NotoSerif Bold</string>
+    <string name="function_font_notoserif_bold_italic">NotoSerif Bold Italic</string>
     <!-- Weather -->
     <string name="weather_settings_title">Настройки погоды</string>
     <string name="weather_settings_summary">Настроить набор значков и службу погоды</string>
@@ -968,7 +997,7 @@
     <string name="status_bar_logo_summary">Показывать выбранный логотип слева или справа в строке состояния</string>
     <string name="status_bar_logo_position_title">Расположение логотипа</string>
     <string name="status_bar_logo_style_title">Стиль логотипа</string>
-    <string name="status_bar_logo_style_crdroid">Matrixx</string>
+    <string name="status_bar_logo_style_matrixx">Matrixx</string>
     <string name="status_bar_logo_style_android">Android</string>
     <string name="status_bar_logo_style_adidas">Adidas</string>
     <string name="status_bar_logo_style_alien">Пришелец</string>
@@ -1068,8 +1097,8 @@
     <string name="app_lock_title">Блокировка приложений</string>
     <plurals name="app_lock_summary">
         <item quantity="one"><xliff:g example="1" id="Number of applications">%1$d</xliff:g> приложение защищено</item>
-        <item quantity="few"><xliff:g example="1" id="Number of applications">%1$d</xliff:g> приложения защищено</item>
-        <item quantity="many"><xliff:g example="1" id="Number of applications">%1$d</xliff:g> приложений защищено</item>
+        <item quantity="few"><xliff:g example="10" id="Number of applications">%1$d</xliff:g> applications are protected</item>
+        <item quantity="many"><xliff:g example="10" id="Number of applications">%1$d</xliff:g> applications are protected</item>
         <item quantity="other"><xliff:g example="10" id="Number of applications">%1$d</xliff:g> приложений защищено</item>
     </plurals>
     <string name="app_lock_authentication_dialog_title">Разблокировка</string>
@@ -1100,4 +1129,57 @@
     <string name="kg_custom_clock_top_margin_title">Положение вертикальных часов</string>
     <string name="kg_small_clock_text_size_title">Размер маленьких часов</string>
     <string name="kg_large_clock_text_size_title">Размер вертикальных часов</string>
+    <!-- Ignore secure window -->
+    <string name="ignore_window_secure_title">Ignore window secure flags</string>
+    <string name="ignore_window_secure_summary">Fixes black screenshots and recordings, May lead to privacy leaks, Restart apps to apply changes</string>
+    <!-- Hide developer status -->
+    <string name="hide_developer_status_title">Hide developer status</string>
+    <string name="hide_developer_status_summary">Hide developer status from apps</string>
+    <string name="search">Search</string>
+    <string name="search_apps">Search apps</string>
+    <!-- Matrixx Dashboard -->
+    <string name="about_matrixx_summary">Information about Matrixx</string>
+    <string name="buttons_settings_summary">Tweak hardware buttons</string>
+    <string name="lockscreen_settings_summary">Customize lockscreen interface</string>
+    <string name="misc_settings_summary">Misc uncategorized stuffs</string>
+    <string name="nav_settings_summary">Customize navigation behavior</string>
+    <string name="notif_settings_summary">Control notifications and more</string>
+    <string name="qs_settings_summary">QuickSettings customizations</string>
+    <string name="sound_settings_summary">Sound and vibrations customizations</string>
+    <string name="sb_settings_summary">Customize statusbar icons, layout etc</string>
+    <string name="ui_settings_summary">Customize UI colors, icons, fonts etc</string>
+    <!-- Monet settings -->
+    <string name="monet_settings_title">Advanced monet settings</string>
+    <string name="monet_settings_summary">Additional settings to customize monet engine</string>
+    <string name="theme_style_title">Theme style</string>
+    <string name="theme_style_tonal_spot">Tonal Spot (Default)</string>
+    <string name="theme_style_vibrant">Vibrant</string>
+    <string name="theme_style_expressive">Expressive</string>
+    <string name="theme_style_spritz">Spritz</string>
+    <string name="theme_style_rainbow">Rainbow</string>
+    <string name="theme_style_fruit_salad">Fruit Salad</string>
+    <string name="theme_style_muted">Muted</string>
+    <string name="theme_style_content">Content</string>
+    <string name="color_source_title">Color source</string>
+    <string name="color_source_both">Both (Default)</string>
+    <string name="color_source_home">Home wallpaper</string>
+    <string name="color_source_lock">Lock wallpaper</string>
+    <string name="color_source_preset">Preset</string>
+    <string name="accent_color_title">Accent Color</string>
+    <string name="accent_color_summary">Override default accent color</string>
+    <string name="accent_background_title">Accent background</string>
+    <string name="accent_background_summary">Choose a different accent color for background</string>
+    <string name="bg_color_title">Background Color</string>
+    <string name="bg_color_summary">Override default background accent color</string>
+    <string name="luminance_factor_title">Luminance</string>
+    <string name="luminance_factor_summary">Higher values produce brighter colors</string>
+    <string name="chroma_factor_title">Chroma</string>
+    <string name="chroma_factor_summary">Higher values produce stronger colors</string>
+    <string name="tint_background_title">Tint Background</string>
+    <string name="tint_background_summary">Make Luminance and Chroma selection affect background colors as well</string>
+    <!-- Status bar padding -->
+    <string name="statusbar_padding">Status bar padding</string>
+    <string name="statusbar_top_padding">Top padding</string>
+    <string name="statusbar_left_padding">Left padding</string>
+    <string name="statusbar_right_padding">Right padding</string>
 </resources>
