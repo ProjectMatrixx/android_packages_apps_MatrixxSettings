@@ -61,7 +61,7 @@ public class QsLayoutSettings extends SettingsPreferenceFragment
     @Override
     public void onCreate(Bundle savedInstance) {
         super.onCreate(savedInstance);
-        addPreferencesFromResource(R.xml.superior_lab_quicksettings);
+        addPreferencesFromResource(R.xml.crdroid_settings_quicksettings);
     }
 
     @Override
