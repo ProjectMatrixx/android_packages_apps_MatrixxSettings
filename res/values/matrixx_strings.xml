@@ -156,7 +156,7 @@
     <string name="qs_thin">ThinLine</string>
 
     <!-- QS tiles layout -->
-    <string name="qs_layout_category_title">QuickSettings</string>
+    <string name="qs_layout_category_title">QuickSettings Layout</string>
     <string name="qs_tile_layout_title">QS tiles layout</string>
     <string name="qs_tile_layout_summary">Customize QuickSettings panel</string>
     <string name="qs_tiles_layout_category">Tiles layout</string>
@@ -169,7 +169,6 @@
     <string name="qs_tile_hide_label_summary">Show only icon for QS tiles</string>
     <string name="qs_tile_vertical_layout_title">Vertical layout</string>
     <string name="qs_tile_vertical_layout_summary">Enable vertical layout for QS tiles</string>
-    <string name="qs_tile_label_size_title">Label text size</string>
     <string name="qs_ui_title">Quick Settings UI</string>
     <string name="android_eleven">Android 11</string>
 

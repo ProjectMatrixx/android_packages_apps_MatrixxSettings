@@ -38,6 +38,7 @@ import com.android.internal.util.crdroid.ThemeUtils;
 import com.android.settingslib.widget.LayoutPreference;
 
 import com.crdroid.settings.preferences.SystemSettingSeekBarPreference;
+import com.crdroid.settings.preferences.CustomSeekBarPreference;
 import com.crdroid.settings.preferences.SystemSettingSwitchPreference;
 import com.crdroid.settings.preferences.SystemSettingListPreference;
 
@@ -55,9 +56,9 @@ public class QsLayoutSettings extends SettingsPreferenceFragment
 
     private Context mContext;
 
-    private SystemSettingSeekBarPreference mQsColumns;
-    private SystemSettingSeekBarPreference mQsRows;
-    private SystemSettingSeekBarPreference mQqsRows;
+    private CustomSeekBarPreference mQsColumns;
+    private CustomSeekBarPreference mQsRows;
+    private CustomSeekBarPreference mQqsRows;
     private SystemSettingListPreference mQsUI;
     private Handler mHandler;
     private ThemeUtils mThemeUtils;
@@ -72,7 +73,7 @@ public class QsLayoutSettings extends SettingsPreferenceFragment
     @Override
     public void onCreate(Bundle savedInstance) {
         super.onCreate(savedInstance);
-        addPreferencesFromResource(R.xml.crdroid_settings_quicksettings);
+        addPreferencesFromResource(R.xml.qs_tile_layout);
         
         mThemeUtils = new ThemeUtils(getActivity());
 
@@ -84,13 +85,13 @@ public class QsLayoutSettings extends SettingsPreferenceFragment
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        mQsColumns = (SystemSettingSeekBarPreference) findPreference(KEY_QS_COLUMN_PORTRAIT);
+        mQsColumns = (CustomSeekBarPreference) findPreference(KEY_QS_COLUMN_PORTRAIT);
         mQsColumns.setOnPreferenceChangeListener(this);
 
-        mQsRows = (SystemSettingSeekBarPreference) findPreference(KEY_QS_ROW_PORTRAIT);
+        mQsRows = (CustomSeekBarPreference) findPreference(KEY_QS_ROW_PORTRAIT);
         mQsRows.setOnPreferenceChangeListener(this);
 
-        mQqsRows = (SystemSettingSeekBarPreference) findPreference(KEY_QQS_ROW_PORTRAIT);
+        mQqsRows = (CustomSeekBarPreference) findPreference(KEY_QQS_ROW_PORTRAIT);
         mQqsRows.setOnPreferenceChangeListener(this);
 
         mContext = getContext();
@@ -134,6 +135,7 @@ public class QsLayoutSettings extends SettingsPreferenceFragment
 
         mVertical = (SystemSettingSwitchPreference) findPreference(KEY_QS_VERTICAL_LAYOUT);
         mVertical.setEnabled(!hideLabel);
+
     }
 
     @Override
