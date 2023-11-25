@@ -138,8 +138,10 @@
             android:title="@string/qs_show_auto_brightness_title"
             android:summary="@string/qs_show_auto_brightness_summary"
             android:defaultValue="true" />
+    </PreferenceCategory>
 
-        <!-- QS styles -->
+    <PreferenceCategory
+            android:title="@string/qs_panel_category">
         <com.crdroid.settings.preferences.SystemSettingListPreference
             android:key="qs_panel_style"
             android:icon="@drawable/ic_color_bucket"
