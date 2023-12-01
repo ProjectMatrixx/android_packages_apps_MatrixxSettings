@@ -42,8 +42,11 @@ import com.android.settingslib.search.SearchIndexable;
 import com.crdroid.settings.fragments.statusbar.BatteryBar;
 import com.crdroid.settings.fragments.statusbar.Clock;
 import com.crdroid.settings.fragments.statusbar.NetworkTrafficSettings;
+import com.crdroid.settings.preferences.CustomSeekBarPreference;
+import com.crdroid.settings.preferences.SystemSettingListPreference;
 import com.crdroid.settings.preferences.SystemSettingSeekBarPreference;
 import com.crdroid.settings.utils.DeviceUtils;
+import com.crdroid.settings.utils.ResourceUtils;
 
 import lineageos.preference.LineageSystemSettingListPreference;
 import lineageos.providers.LineageSettings;
@@ -61,6 +64,9 @@ public class StatusBar extends SettingsPreferenceFragment implements
     private static final String KEY_STATUS_BAR_SHOW_BATTERY_PERCENT = "status_bar_show_battery_percent";
     private static final String KEY_STATUS_BAR_BATTERY_STYLE = "status_bar_battery_style";
     private static final String KEY_STATUS_BAR_BATTERY_TEXT_CHARGING = "status_bar_battery_text_charging";
+    private static final String KEY_STATUSBAR_TOP_PADDING = "statusbar_top_padding";
+    private static final String KEY_STATUSBAR_LEFT_PADDING = "statusbar_left_padding";
+    private static final String KEY_STATUSBAR_RIGHT_PADDING = "statusbar_right_padding";
 
     private static final int PULLDOWN_DIR_NONE = 0;
     private static final int PULLDOWN_DIR_RIGHT = 1;
@@ -85,6 +91,7 @@ public class StatusBar extends SettingsPreferenceFragment implements
 
         ContentResolver resolver = getActivity().getContentResolver();
         Context mContext = getActivity().getApplicationContext();
+        final Resources res = getResources();
 
         final PreferenceScreen prefScreen = getPreferenceScreen();
 
@@ -92,7 +99,7 @@ public class StatusBar extends SettingsPreferenceFragment implements
                 (LineageSystemSettingListPreference) findPreference(STATUS_BAR_CLOCK_STYLE);
 
         // Adjust status bar preferences for RTL
-        if (getResources().getConfiguration().getLayoutDirection() == View.LAYOUT_DIRECTION_RTL) {
+        if (res.getConfiguration().getLayoutDirection() == View.LAYOUT_DIRECTION_RTL) {
             if (DeviceUtils.hasCenteredCutout(mContext)) {
                 mStatusBarClock.setEntries(R.array.status_bar_clock_position_entries_notch_rtl);
                 mStatusBarClock.setEntryValues(R.array.status_bar_clock_position_values_notch_rtl);
@@ -105,9 +112,9 @@ public class StatusBar extends SettingsPreferenceFragment implements
             mStatusBarClock.setEntryValues(R.array.status_bar_clock_position_values_notch);
         }
 
-        int batterystyle = Settings.System.getIntForUser(getContentResolver(),
+        int batterystyle = Settings.System.getIntForUser(resolver,
                 Settings.System.STATUS_BAR_BATTERY_STYLE, BATTERY_STYLE_PORTRAIT, UserHandle.USER_CURRENT);
-        int batterypercent = Settings.System.getIntForUser(getContentResolver(),
+        int batterypercent = Settings.System.getIntForUser(resolver,
                 Settings.System.STATUS_BAR_SHOW_BATTERY_PERCENT, 0, UserHandle.USER_CURRENT);
 
         mBatteryStyle = (SystemSettingListPreference) findPreference(KEY_STATUS_BAR_BATTERY_STYLE);
@@ -128,10 +135,25 @@ public class StatusBar extends SettingsPreferenceFragment implements
         updateQuickPulldownSummary(mQuickPulldown.getIntValue(0));
 
         // Adjust status bar preferences for RTL
-        if (getResources().getConfiguration().getLayoutDirection() == View.LAYOUT_DIRECTION_RTL) {
+        if (res.getConfiguration().getLayoutDirection() == View.LAYOUT_DIRECTION_RTL) {
             mQuickPulldown.setEntries(R.array.status_bar_quick_qs_pulldown_entries_rtl);
             mQuickPulldown.setEntryValues(R.array.status_bar_quick_qs_pulldown_values_rtl);
         }
+
+        final int defaultLeftPadding = ResourceUtils.getIntDimensionDp(res,
+                com.android.internal.R.dimen.status_bar_padding_start);
+        CustomSeekBarPreference seekBar = findPreference(KEY_STATUSBAR_LEFT_PADDING);
+        seekBar.setDefaultValue(defaultLeftPadding, true);
+
+        final int defaultRightPadding = ResourceUtils.getIntDimensionDp(res,
+                com.android.internal.R.dimen.status_bar_padding_end);
+        seekBar = findPreference(KEY_STATUSBAR_RIGHT_PADDING);
+        seekBar.setDefaultValue(defaultRightPadding, true);
+
+        final int defaultTopPadding = ResourceUtils.getIntDimensionDp(res,
+                com.android.internal.R.dimen.status_bar_padding_top);
+        seekBar = findPreference(KEY_STATUSBAR_TOP_PADDING);
+        seekBar.setDefaultValue(defaultTopPadding, true);
     }
 
     @Override
@@ -162,6 +184,14 @@ public class StatusBar extends SettingsPreferenceFragment implements
 
     public static void reset(Context mContext) {
         ContentResolver resolver = mContext.getContentResolver();
+        final Resources res = mContext.getResources();
+
+        final int defaultLeftPadding = ResourceUtils.getIntDimensionDp(res,
+                com.android.internal.R.dimen.status_bar_padding_start);
+        final int defaultRightPadding = ResourceUtils.getIntDimensionDp(res,
+                com.android.internal.R.dimen.status_bar_padding_end);
+        final int defaultTopPadding = ResourceUtils.getIntDimensionDp(res,
+                com.android.internal.R.dimen.status_bar_padding_top);
 
         LineageSettings.System.putIntForUser(resolver,
                 LineageSettings.System.DOUBLE_TAP_SLEEP_GESTURE, 1, UserHandle.USER_CURRENT);
@@ -201,7 +231,12 @@ public class StatusBar extends SettingsPreferenceFragment implements
                 Settings.System.ROAMING_INDICATOR_ICON, 1, UserHandle.USER_CURRENT);
         Settings.System.putIntForUser(resolver,
                 Settings.System.WIFI_STANDARD_ICON, 0, UserHandle.USER_CURRENT);
-
+        Settings.System.putIntForUser(resolver,
+                Settings.System.STATUSBAR_LEFT_PADDING, defaultLeftPadding, UserHandle.USER_CURRENT);
+        Settings.System.putIntForUser(resolver,
+                Settings.System.STATUSBAR_RIGHT_PADDING, defaultRightPadding, UserHandle.USER_CURRENT);
+        Settings.System.putIntForUser(resolver,
+                Settings.System.STATUSBAR_TOP_PADDING, defaultTopPadding, UserHandle.USER_CURRENT);
         BatteryBar.reset(mContext);
         Clock.reset(mContext);
         NetworkTrafficSettings.reset(mContext);
