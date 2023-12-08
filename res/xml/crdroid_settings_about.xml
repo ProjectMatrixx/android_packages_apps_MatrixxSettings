@@ -66,10 +66,13 @@
         android:summary="@string/crdroid_telegram_summary" />
 
     <Preference
-        android:key="crdroid_translate"
-        android:icon="@drawable/ic_translate"
-        android:title="@string/crdroid_translate_title"
-        android:summary="@string/crdroid_translate_summary" />
+        android:key="system_update_settings"
+        android:title="@string/matrixx_update_title"
+        android:summary="@string/matrixx_update_summary"
+        android:icon="@drawable/ic_update"
+        settings:controller="com.android.settings.system.SystemUpdatePreferenceController">
+        <intent android:action="android.settings.SYSTEM_UPDATE_SETTINGS" />
+    </Preference>
     
     </PreferenceCategory>        
 </PreferenceScreen>
