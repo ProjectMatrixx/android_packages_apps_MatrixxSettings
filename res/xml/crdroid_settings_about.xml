@@ -35,7 +35,7 @@
         android:key="matrixx_about"
         android:title="@string/about_matrixx" >            
     <Preference
-        android:title="@string/devices_title"
+        android:title="@string/matrixx_devices_title"
         android:summary="@string/devices_summary"
         android:icon="@drawable/ic_devs_phone" >
     <intent
@@ -54,6 +54,15 @@
     </Preference>
 
     <Preference
+        android:key="system_update_settings"
+        android:title="@string/matrixx_update_title"
+        android:summary="@string/matrixx_update_summary"
+        android:icon="@drawable/ic_update"
+        settings:controller="com.android.settings.system.SystemUpdatePreferenceController">
+        <intent android:action="android.settings.SYSTEM_UPDATE_SETTINGS" />
+    </Preference>
+
+    <Preference
         android:key="crdroid_source"
         android:icon="@drawable/ic_source"
         android:title="@string/crdroid_source_title"
@@ -65,14 +74,5 @@
         android:title="@string/crdroid_telegram_title"
         android:summary="@string/crdroid_telegram_summary" />
 
-    <Preference
-        android:key="system_update_settings"
-        android:title="@string/matrixx_update_title"
-        android:summary="@string/matrixx_update_summary"
-        android:icon="@drawable/ic_update"
-        settings:controller="com.android.settings.system.SystemUpdatePreferenceController">
-        <intent android:action="android.settings.SYSTEM_UPDATE_SETTINGS" />
-    </Preference>
-    
     </PreferenceCategory>        
 </PreferenceScreen>

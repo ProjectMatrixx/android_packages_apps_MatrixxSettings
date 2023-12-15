@@ -76,10 +76,10 @@
     <string name="dev1_desc">mukesh22584</string>
     <string name="dev2_desc">Mrick343</string>
     <string name="dev3_desc">Graphics Designer </string>    
-    <string name="devices_summary">Devices We Support Currently</string>
-    <string name="devices_title">Official Devices</string>
+    <string name="devices_summary">Official devices list</string>
+    <string name="matrixx_devices_title">Official Devices</string>
     <string name="devs_header">Core Dev Team</string>
-    <string name="get_changelogs_title">Latest Changes</string>
+    <string name="get_changelogs_title">Latest changelog</string>
     <string name="get_changelogs_summary">Check latest changes</string>
     <string name="helping_hand">SuperDroidBond</string>
     <string name="helping_hand_desc">Thanks Bhaiji to help us anytime.</string>    
