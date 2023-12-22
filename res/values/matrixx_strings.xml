@@ -85,6 +85,8 @@
     <string name="helping_hand">SuperDroidBond</string>
     <string name="helping_hand_desc">Our helping hands anytime.</string>    
     <string name="team_desc">Hey! We are Team Matrixx</string>    
+    <string name="settings_homepage_widgets_title">Settings homepage widgets</string>
+    <string name="settings_homepage_widgets_summary">Enable settings homepage widgets</string>
 
     <!-- Team Matrixx -->
     <string name="team_matrixx">Team Matrixx</string>
