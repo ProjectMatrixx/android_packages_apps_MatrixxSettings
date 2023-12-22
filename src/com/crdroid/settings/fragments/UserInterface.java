@@ -42,18 +42,24 @@ import com.crdroid.settings.fragments.ui.DozeSettings;
 import com.crdroid.settings.fragments.ui.SmartPixels;
 import com.crdroid.settings.fragments.ui.MonetSettings;
 
+import com.android.internal.util.crdroid.systemUtils;
+
 import java.util.List;
 
 @SearchIndexable
-public class UserInterface extends SettingsPreferenceFragment {
+public class UserInterface extends SettingsPreferenceFragment implements
+         OnPreferenceChangeListener {
 
     public static final String TAG = "UserInterface";
 
     private static final String KEY_FORCE_FULL_SCREEN = "display_cutout_force_fullscreen_settings";
     private static final String SMART_PIXELS = "smart_pixels";
+    private static final String KEY_SETTINGS_HOMEPAGE_WIDGETS = "settings_homepage_widgets";
+
 
     private Preference mShowCutoutForce;
     private Preference mSmartPixels;
+    private SwitchPreference mHomepageWidgetToggle;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -77,6 +83,21 @@ public class UserInterface extends SettingsPreferenceFragment {
                 com.android.internal.R.bool.config_supportSmartPixels);
         if (!mSmartPixelsSupported)
             prefScreen.removePreference(mSmartPixels);
+
+        mHomepageWidgetToggle = (SwitchPreference) findPreference(KEY_SETTINGS_HOMEPAGE_WIDGETS);
+        mHomepageWidgetToggle.setChecked(Settings.System.getIntForUser(getActivity().getContentResolver(),
+                "settings_homepage_widgets", 0, UserHandle.USER_CURRENT) != 0);
+        mHomepageWidgetToggle.setOnPreferenceChangeListener(this);
+    }
+
+    public boolean onPreferenceChange(Preference preference, Object newValue) {
+        if (preference == mHomepageWidgetToggle) {
+            boolean value = (Boolean) newValue;
+			Settings.System.putInt(getActivity().getContentResolver(), "settings_homepage_widgets", value ? 1 : 0);
+			systemUtils.showSettingsRestartDialog(getActivity());
+        return true;
+		}
+	return false;
     }
 
     public static void reset(Context mContext) {
