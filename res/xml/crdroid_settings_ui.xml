@@ -17,12 +17,20 @@
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:lineage="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/ui_title">    
 
     <com.android.settingslib.widget.IllustrationPreference
         android:key="ui_illustration"
         lineage:lottie_rawRes="@raw/ui_illustration" />
+
+    <com.android.settings.preferences.SystemSwitchPreference
+        android:key="settings_homepage_widgets"
+        android:title="@string/settings_homepage_widgets_title"
+        android:summary="@string/settings_homepage_widgets_summary"
+        android:defaultValue="false"
+        app:restart_level="settings" />
 
     <!-- Ambient Display -->
     <Preference
