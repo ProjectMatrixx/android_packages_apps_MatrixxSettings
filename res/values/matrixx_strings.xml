@@ -83,6 +83,8 @@
     <string name="get_changelogs_summary">Check latest changes</string>
     <string name="helping_hand">SuperDroidBond</string>
     <string name="helping_hand_desc">Thanks Bhaiji to help us anytime.</string>    
+    <string name="settings_homepage_widgets_title">Settings homepage widgets</string>
+    <string name="settings_homepage_widgets_summary">Enable settings homepage widgets</string>
     <string name="special_thanks">Special Thanks</string>
     <string name="team_matrixx">Team Matrixx</string>
     <string name="team_desc">Meet with Team Matrixx</string>    
