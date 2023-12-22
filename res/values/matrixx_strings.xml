@@ -79,6 +79,10 @@
     <string name="matrixx_legal">Matrixx legal</string>
     <string name="matrixx_legal_desc">Legal terms of use</string>    
 
+    <!-- Homepage widgets -->    
+    <string name="settings_homepage_widgets_title">Settings homepage widgets</string>
+    <string name="settings_homepage_widgets_summary">Enable settings homepage widgets</string>
+
     <!-- UI styles -->
     <string name="theme_customization_ui_style_title">UI Style</string>
     <string name="theme_customization_ui_style_summary">Set custom style for your interface</string>
