@@ -58,6 +58,7 @@
     <string name="choose_app">Choose app</string>
     <string name="enable">Enable</string>
     <string name="disable">Disable</string>
+    <string name="default_string">Default</string>    
     <string name="accent_color">Accent color (Default)</string>
     <string name="notification_color">Notification color</string>
     <string name="wallpaper_color">Wallpaper color</string>
