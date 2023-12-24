@@ -172,22 +172,6 @@
         android:key="qs_layout_category"
         android:title="@string/qs_layout_category_title">
 
-        <ListPreference
-            android:key="qs_tile_ui_style"
-            android:icon="@drawable/ic_shapes"
-            android:title="@string/qs_tile_ui_style_title"
-            android:entries="@array/qs_tile_ui_style_entries"
-            android:entryValues="@array/qs_tile_ui_style_values"
-            android:defaultValue="0" />
-
-        <ListPreference
-            android:key="qs_panel_style"
-            android:icon="@drawable/ic_color_bucket"
-            android:title="@string/qs_panel_style_title"
-            android:entries="@array/qs_panel_style_entries"
-            android:entryValues="@array/qs_panel_style_values"
-            android:defaultValue="0" />
-
         <com.crdroid.settings.preferences.SystemSettingSwitchPreference
             android:key="qs_tile_label_hide"
             android:icon="@drawable/ic_text"
@@ -225,28 +209,10 @@
             android:key="qs_layout_columns_landscape"
             android:icon="@drawable/ic_qs_tile"
             android:title="@string/qs_columns_landscape_title"
-            android:max="5"
+            android:max="6"
             settings:min="2"
             settings:interval="1"
-            android:defaultValue="2" />
-
-        <com.crdroid.settings.preferences.SystemSettingSeekBarPreference
-            android:key="qqs_layout_rows"
-            android:icon="@drawable/ic_qs_tile"
-            android:title="@string/qqs_rows_portrait_title"
-            android:max="3"
-            settings:min="1"
-            settings:interval="1"
-            android:defaultValue="2" />
-
-        <com.crdroid.settings.preferences.SystemSettingSeekBarPreference
-            android:key="qqs_layout_rows_landscape"
-            android:icon="@drawable/ic_qs_tile"
-            android:title="@string/qqs_rows_landscape_title"
-            android:max="3"
-            settings:min="1"
-            settings:interval="1"
-            android:defaultValue="2" />
+            android:defaultValue="4" />
     </PreferenceCategory>
 
     <PreferenceCategory
