@@ -166,6 +166,8 @@
     <string name="qs_apply_change_button_title">Apply change</string>
     <string name="qs_apply_change_failed">Failed to apply change</string>
     <string name="qs_tile_hide_label_title">Hide labels</string>
+    <string name="qs_tile_secondary_label_size_title">Secondary Label text size</string>
+    <string name="qs_tile_label_size_title">Label text size</string>
     <string name="qs_tile_hide_label_summary">Show only icon for QS tiles</string>
     <string name="qs_tile_vertical_layout_title">Vertical layout</string>
     <string name="qs_tile_vertical_layout_summary">Enable vertical layout for QS tiles</string>
