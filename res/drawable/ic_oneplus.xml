@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: 2023 Project Matrixx
+     SPDX-License-Identifier: Apache-2.0
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+  <path
+      android:pathData="M0,3.74L0,24h20.26L20.26,12.428h-2.256v9.317L2.254,21.745L2.254,5.995h9.318L11.572,3.742zM18.004,0v3.74h-3.758v2.256h3.758v3.758h2.255L20.259,5.996L24,5.996L24,3.74h-3.758L20.242,0zM11.554,18.756L11.554,8.862L9.562,8.862c0,0.682 -0.228,1.189 -0.577,1.504c-0.367,0.297 -0.91,0.437 -1.556,0.437h-0.245v1.625h2.133v6.31h2.237z"
+      android:fillColor="#000000"/>
+</vector>
