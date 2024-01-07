@@ -21,13 +21,20 @@
     xmlns:lineage="http://schemas.android.com/apk/res-auto"
     android:title="@string/lockscreen_title">
 
-    <com.android.settingslib.widget.IllustrationPreference
-        android:key="lockscreen_illustration"
-        app:lottie_rawRes="@raw/lockscreen_illustration" />
+     <Preference
+        android:key="lockscreen_preview"
+        settings:layout="@layout/lockscreen_preview" />
 
-    <PreferenceCategory
-        android:key="lockscreen_clock_category"
-        android:title="@string/qs_clock_title">
+     <PreferenceCategory
+        android:title="Lockscreen Clock">
+
+        <com.crdroid.settings.preferences.SystemSettingListPreference
+            android:entries="@array/clock_style_entries"
+            android:icon="@drawable/ic_clock"
+            android:title="Custom Clock style"
+            android:key="clock_style"
+            android:defaultValue="0"
+            android:entryValues="@array/clock_style_values" />
 
         <!-- Lockscreen Clock Font style -->
         <Preference
