@@ -24,6 +24,8 @@
         android:key="misc_illustration"
         lineage:lottie_rawRes="@raw/misc_illustration" />
 
+    <PreferenceCategory
+            android:title="@string/gaming_category">
     <!-- Gaming mode -->
     <Preference
         android:key="gaming_mode"
@@ -44,6 +46,11 @@
         android:title="@string/use_games_spoof_title"
         android:summary="@string/use_games_spoof_summary" />
 
+    </PreferenceCategory>
+
+    <PreferenceCategory
+            android:title="@string/spoofing_category">
+    
     <!-- Unlimited google photos storage -->
     <com.crdroid.settings.preferences.SystemPropertySwitchPreference
         android:key="persist.sys.pixelprops.gphotos"
@@ -59,6 +66,8 @@
         android:title="@string/netflix_spoof_title"
         android:summary="@string/netflix_spoof_summary"
         android:defaultValue="false" />
+
+    </PreferenceCategory>
 
     <!-- Google services
     <Preference
@@ -78,6 +87,9 @@
             android:targetPackage="ink.kscope.parallelspace"
             android:targetClass="ink.kscope.parallelspace.MainActivity" />
     </Preference> -->
+
+    <PreferenceCategory
+            android:title="@string/misc_category">
 
     <!-- Three-fingers-swipe to screenshot -->
     <com.crdroid.settings.preferences.SystemSettingSwitchPreference
@@ -117,4 +129,6 @@
         android:summary="@string/hide_developer_status_summary"
         android:fragment="com.android.settings.security.HideDeveloperStatusSettings"
         settings:controller="com.android.settings.security.HideDeveloperStatusPreferenceController" />            
+
+    </PreferenceCategory>
 </PreferenceScreen>

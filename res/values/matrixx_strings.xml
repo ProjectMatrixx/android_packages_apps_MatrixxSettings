@@ -208,4 +208,8 @@
     <string name="outline_style">Outline style</string>
     <string name="shaded_layer_style">Shaded Layer style</string>
     <string name="volume_style_title">Volume panel styles</string>
+
+    <string name="gaming_category">Gaming</string>
+    <string name="spoofing_category">Spoofing</string>
+    <string name="misc_category">Miscellaneous</string>        
 </resources>
