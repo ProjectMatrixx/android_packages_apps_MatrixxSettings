@@ -20,9 +20,9 @@
     xmlns:lineage="http://schemas.android.com/apk/res-auto"
     android:title="@string/about_crdroid" >
 
-    <com.android.settingslib.widget.LayoutPreference
-        android:key="matrixx_about"
-        android:layout="@layout/matrixx_about" />
+        <com.android.settingslib.widget.LayoutPreference
+            android:layout="@layout/matrixx_dashboard_banner"
+            android:key="matrixx_banner" />
         
     <Preference
         android:key="about_team"

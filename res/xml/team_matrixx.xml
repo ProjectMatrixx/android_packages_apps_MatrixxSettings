@@ -89,7 +89,7 @@
         android:icon="@drawable/ic_poco" >
     <intent
         android:action="android.intent.action.VIEW"
-        android:data="https://t.me/Roxor007" />
+        android:data="https://t.me/darkphnx" />
     </Preference>
     <Preference
         android:title="@string/maintainer_marble"
