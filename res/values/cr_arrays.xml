@@ -725,6 +725,8 @@
         <item>@string/brightness_slider_style_thumbslider</item>
         <item>@string/brightness_slider_style_line</item>
         <item>@string/brightness_slider_style_lighty</item>
+        <item>@string/brightness_slider_style_acun</item>
+	<item>@string/brightness_slider_style_bang</item>
     </string-array>
 
     <string-array name="brightness_slider_style_values">
@@ -745,6 +747,8 @@
         <item>14</item>
         <item>15</item>
         <item>16</item>
+        <item>17</item>
+        <item>18</item>
     </string-array>
 
     <!-- Custom logo style -->

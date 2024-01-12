@@ -1151,6 +1151,8 @@
     <string name="brightness_slider_style_thumbslider">Thumb Slider</string>
     <string name="brightness_slider_style_line">Thin Outline</string>
     <string name="brightness_slider_style_lighty">Lighty</string>
+    <string name="brightness_slider_style_acun">Acun</string>
+    <string name="brightness_slider_style_bang">Bang</string>
 
     <!-- Custom logo -->
     <string name="status_bar_logo_title">Logo</string>
