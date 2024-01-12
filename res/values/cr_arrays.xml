@@ -706,6 +706,47 @@
         <item>1</item>
     </string-array>
 
+    <!-- Brightness slider styles -->
+    <string-array name="brightness_slider_style_entries" translatable="false">
+        <item>@string/brightness_slider_style_default</item>
+        <item>@string/brightness_slider_style_filled</item>
+        <item>@string/brightness_slider_style_thin</item>
+        <item>@string/brightness_slider_style_cyberpunk</item>
+        <item>@string/brightness_slider_style_gradiant</item>
+        <item>@string/brightness_slider_style_neumorph</item>
+        <item>@string/brightness_slider_style_outline</item>
+        <item>@string/brightness_slider_style_shaded</item>
+        <item>@string/brightness_slider_style_thinoutline</item>
+        <item>@string/brightness_slider_style_translucent</item>
+        <item>@string/brightness_slider_style_leafyoutline</item>
+        <item>@string/brightness_slider_style_minimalthumb</item>
+        <item>@string/brightness_slider_style_oldschoolthumb</item>
+        <item>@string/brightness_slider_style_roundedclip</item>
+        <item>@string/brightness_slider_style_thumbslider</item>
+        <item>@string/brightness_slider_style_line</item>
+        <item>@string/brightness_slider_style_lighty</item>
+    </string-array>
+
+    <string-array name="brightness_slider_style_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+    </string-array>
+
     <!-- Custom logo style -->
     <string-array name="status_bar_logo_style_entries" translatable="false">
         <item>@string/status_bar_logo_style_crdroid</item>
