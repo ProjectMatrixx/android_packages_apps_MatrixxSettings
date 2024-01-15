@@ -71,6 +71,12 @@
              android:summary="%s"
              android:defaultValue="0" />
 
+        <com.crdroid.settings.preferences.SystemSettingSwitchPreference
+            android:key="volume_panel_haptic_feedback"
+            android:icon="@drawable/ic_vibrate"
+            android:title="@string/volume_panel_haptic_feedback_title"
+            android:defaultValue="false" />
+
         <lineageos.preference.LineageSecureSettingSwitchPreference
             android:key="volume_panel_on_left"
             android:icon="@drawable/ic_settings_sound"
