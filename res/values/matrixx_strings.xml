@@ -125,6 +125,10 @@
     <string name="shaded_layer_style">Shaded Layer style</string>
     <string name="volume_style_title">Volume panel styles</string>
 
+    <!-- Volume Haptic feedback -->
+    <string name="haptic_feedback_category">Haptic Feedback Settings</string>
+    <string name="volume_panel_haptic_feedback_title">Vibrate on changing volume</string>
+
     <string name="gaming_category">Gaming</string>
     <string name="spoofing_category">Spoofing</string>
     <string name="misc_category">Miscellaneous</string>        
