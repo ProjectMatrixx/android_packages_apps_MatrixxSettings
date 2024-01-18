@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2023 Project Matrixx
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- Ignore secure window -->
+    <string name="ignore_window_secure_title">Ignorar sinalizadores de segurança de janela</string>
+    <string name="ignore_window_secure_summary">Corrige capturas de tela e gravações pretas, pode levar a vazamentos de privacidade, reinicie o app para aplicar alterações</string>
+
+    <!-- Hide developer status -->
+    <string name="hide_developer_status_title">Ocultar status de desenvolvedor</string>
+    <string name="hide_developer_status_summary">Ocultar o status de desenvolvedor dos aplicativos</string>
+    <string name="search">Pesquisar</string>
+    <string name="search_apps">Pesquisar aplicativos</string>
+
+   <!-- Matrixx Dashboard -->
+    <string name="about_matrixx_summary">Informações sobre MatrixX</string>
+    <string name="buttons_settings_summary">Ajustar botões de hardware</string>
+    <string name="lockscreen_settings_summary">Personalize a interface da tela de bloqueio</string>
+    <string name="misc_settings_summary">Configurações aleatórias</string>
+    <string name="nav_settings_summary">Personalize o comportamento de navegação</string>
+    <string name="notif_settings_summary">Controle notificações e muito mais</string>
+    <string name="qs_settings_summary">Personalizações das configurações rápidas</string>
+    <string name="sound_settings_summary">Personalizações de som e vibrações</string>
+    <string name="sb_settings_summary">Personalize ícones da barra de status, layout, etc</string>
+    <string name="ui_settings_summary">Personalize cores, ícones, fontes da interface do usuário, etc</string>
+
+    <!-- Monet settings -->
+    <string name="monet_settings_title">Configurações avançadas de monet</string>
+    <string name="monet_settings_summary">Configurações adicionais para personalizar o mecanismo monet</string>
+    <string name="theme_style_title">Estilo do tema</string>
+    <string name="theme_style_tonal_spot">Ponto tonal (padrão)</string>
+    <string name="theme_style_vibrant">Vibrante</string>
+    <string name="theme_style_expressive">Expressivo</string>
+    <string name="theme_style_spritz">Spritz</string>
+    <string name="theme_style_rainbow">Arco-íris</string>
+    <string name="theme_style_fruit_salad">Salada de frutas</string>
+    <string name="theme_style_content">Contente</string>
+    <string name="color_source_title">Fonte de cor</string>
+    <string name="color_source_both">Ambos (padrão)</string>
+    <string name="color_source_home">Papel de parede da tela inicial</string>
+    <string name="color_source_lock">Papel de parede da tela de bloqueio</string>
+    <string name="color_source_preset">Predefinição</string>
+    <string name="accent_color_title">Cor de destaque</string>
+    <string name="accent_color_summary">Substituir cor de destaque padrão</string>
+    <string name="accent_background_title">Fundo de destaque</string>
+    <string name="accent_background_summary">Escolha uma cor de destaque diferente para o fundo</string>
+    <string name="bg_color_title">Cor de fundo</string>
+    <string name="bg_color_summary">Substituir a cor de destaque padrão do plano de fundo</string>
+    <string name="luminance_factor_title">Luminância</string>
+    <string name="luminance_factor_summary">Valores mais altos produzem cores mais brilhantes</string>
+    <string name="chroma_factor_title">Croma</string>
+    <string name="chroma_factor_summary">Valores mais altos produzem cores mais fortes</string>
+    <string name="tint_background_title">Matiz de fundo</string>
+    <string name="tint_background_summary">Faça com que a seleção de Luminância e Croma também afete as cores de fundo</string>
+
+    <!-- Matrixx -->
+    <string name="about_matrixx">Links importantes</string>
+    <string name="dev_1">mukesh22584</string>
+    <string name="dev_2">Mrick343</string>
+    <string name="dev_3">Roger.T</string>    
+    <string name="dev1_desc">Oneplus 7t/Pro, 9/Pro</string>
+    <string name="dev2_desc">Oneplus 9rt (martini)</string>
+    <string name="dev3_desc">Designer gráfico</string>    
+    <string name="devices_summary">Lista oficial de dispositivos</string>
+    <string name="matrixx_devices_title">Dispositivos Oficiais</string>
+    <string name="devs_header">Equipe principal de desenvolvimento</string>
+    <string name="get_changelogs_title">Último registro de alterações</string>
+    <string name="get_changelogs_summary">Verifique as últimas alterações</string>
+    <string name="helping_hand">SuperDroidBond</string>
+    <string name="helping_hand_desc">Obrigado Bhaiji por nos ajudar a qualquer hora.</string>    
+    <string name="settings_homepage_widgets_title">Widgets nas configurações</string>
+    <string name="settings_homepage_widgets_summary">Habilita widgets na página inicial de configurações</string>
+    <string name="special_thanks">Agradecimentos especiais</string>
+    <string name="team_desc">Reúna-se com a equipe Matrixx</string>    
+
+    <!-- Team Matrixx -->
+    <string name="team_matrixx">Time Matrixx</string>
+    <string name="maintainer_pixel_6_series">Einar Gednochsson</string>
+    <string name="device_pixel_6_series_desc">Bluejay, Oriole, Raven (Pixel 6 Series)</string>
+
+    <string name="maintainer_cepheus">RDS_07</string>
+    <string name="device_cepheus_desc">Cepheus (Xiaomi MI 9)</string>
+
+    <string name="maintainer_alioth">Roxor-007</string>
+    <string name="device_alioth_desc">Alioth/AliothinPoco (F3/K40/Mi 11X)</string>
+
+    <string name="maintainer_marble">K. Samba Siva Rao</string>
+    <string name="device_marble_desc">Marble (Poco F5/Redmi Note 12 Turbo)</string>
+
+    <string name="maintainer_veux">Aswin OP</string>
+    <string name="device_veux_desc">Veux/Peux (Poco X4 Pro/Redmi Note11 ProPlus 5g</string>
+
+    <string name="maintainer_sakura">Obito Svha</string>
+    <string name="device_sakura_desc">Sakura (Redmi 6 Pro)</string>
+
+    <string name="maintainer_whyred">Arijit Saha</string>
+    <string name="device_whyred_desc">Whyred (Redmi Note 5 Pro)</string>
+
+    <string name="maintainer_sweet">JazzeeBlaze</string>
+    <string name="device_sweet_desc">Sweet (Redmi Note 10 Pro)</string>
+
+    <string name="maintainer_spes">Sayann Sarkar</string>
+    <string name="device_spes_desc">Spes (Redmi Note 11)</string>
+
+    <string name="maintainer_devon">Jay</string>
+    <string name="device_devon_desc">Motorola G32, G42, G52</string>
+
+    <string name="maintainer_spacewar_op8_series">Zahid H</string>
+    <string name="device_spacewar_op8_desc">Nothing Phone 1, Oneplus 8 Series</string>
+
+    <string name="maintainer_bladerunner">AAMIRR ALI</string>
+    <string name="device_bladerunner_desc">BladeRunner (Realme X50 Pro/Player 5G)</string>
+
+    <string name="maintainer_rmx2020">Rinto Khan</string>
+    <string name="device_rmx2020_desc">Realme C3/N10a (RMX2020)</string>            
+
+    <string name="maintainer_a70q">DynamicPanda</string>
+    <string name="device_a70q_desc">Samsung galaxy A70 (a70q)</string>
+
+    <!-- UI styles -->
+    <string name="theme_customization_ui_style_title">Estilo da IU</string>
+    <string name="theme_customization_ui_style_summary">Defina um estilo personalizado para sua interface</string>
+
+    <!-- Status bar padding -->
+    <string name="statusbar_padding">Preenchimento da barra de status</string>
+    <string name="statusbar_top_padding">Preenchimento superior</string>
+    <string name="statusbar_left_padding">Preenchimento esquerdo</string>
+    <string name="statusbar_right_padding">Preenchimento direito</string>
+
+    <!-- Quick settings styles -->
+    <string name="default_string">Padrão</string>
+    <string name="qs_styles_title">Estilos das configurações rápidas</string>
+    <string name="qs_outline">Outline</string>
+    <string name="qs_two_tone">Two-Tone Accent</string>
+    <string name="qs_color_pop">Color Pop</string>
+    <string name="qs_shaded">Shaded</string>
+    <string name="qs_cyberpunk">Cyberpunk</string>
+    <string name="qs_neumorph">Neumorph</string>
+    <string name="qs_reflected">Reflected</string>
+    <string name="qs_surround">Surround</string>
+    <string name="qs_thin">ThinLine</string>
+
+    <!-- QS tiles layout -->
+    <string name="qs_layout_category_title">Layout das configurações rápidas</string>
+    <string name="qs_tile_layout_title">Layout dos blocos das configurações rápidas</string>
+    <string name="qs_tile_layout_summary">Customize o painel de configurações rápidas</string>
+    <string name="qs_tiles_layout_category">Layout de blocos</string>
+    <string name="qs_rows_portrait_title">Linhas (Retrato)</string>
+    <string name="qqs_rows_portrait_title">Linhas (retrato QS rápido)</string>
+    <string name="qs_columns_portrait_title">Colunas (Retrato)</string>
+    <string name="qs_apply_change_button_title">Aplicar alteração</string>
+    <string name="qs_apply_change_failed">Falha ao aplicar a alteração</string>
+    <string name="qs_tile_hide_label_title">Esconda etiquetas</string>
+    <string name="qs_tile_secondary_label_size_title">Tamanho do texto do rótulo secundário</string>
+    <string name="qs_tile_label_size_title">Tamanho do texto da etiqueta</string>
+    <string name="qs_tile_hide_label_summary">Mostrar apenas ícone para blocos</string>
+    <string name="qs_tile_vertical_layout_title">Layout vertical</string>
+    <string name="qs_tile_vertical_layout_summary">Habilitar layout vertical para os blocos</string>
+    <string name="qs_ui_title">IU de configurações rápidas</string>
+    <string name="android_eleven">Android 11</string>
+    <string name="qs_panel_category">Painel QS</string>
+
+    <!-- QS tile shape -->
+    <string name="qs_tile_shape">Formato do bloco QS</string>
+    <string name="qs_tile_round">Redondo</string>
+    <string name="qs_tile_rect">Retângulo arredondado</string>
+    <string name="qs_tile_mix">Redondo para blocos ativos e Retângulo arredondado para blocos inativos</string>
+
+    <!-- Statusbar Clock background chip -->
+    <string name="statusbar_clock_chip_title">Chip de fundo</string>
+    <string name="statusbar_clock_chip_summary">Exibir chip acentuado atrás do relógio</string>
+    <string name="solid_accent">Cor sólida</string>
+    <string name="outline">Contorno</string>
+    <string name="solid_accent_gradient">Gradiente de destaque de cor sólida</string>   
+    <string name="solid_gradient">Lado gradiente sólido</string>
+    <string name="solid_gradient_corner">Gradiente de destaque sólido nítido</string>
+    <string name="solid_gradient_void">Gradiente vazio</string>
+    <string name="solid_gradient_neumorph">Gradiente neumorfo</string>
+    <string name="solid_gradient_stroke">Curso gradiente nítido</string>
+    <string name="solid_accent_transperent">Destaque transparente</string>    
+    <string name="solid_gradient_light">Luz gradiente</string>
+    <string name="solid_gradient_shape">Canto gradiente nítido</string>
+    <string name="solid_gradient_void_light">Luz gradiente vazia</string>
+
+    <!-- Volume Styles -->
+    <string name="revamped_aosp_style">Estilo de UI AOSP renovado</string>
+    <string name="rui_style">Estilo de IU Realme</string>
+    <string name="rising_style">Estilo de IU Rising</string>
+    <string name="double_layer_style">Estilo de camada dupla</string>
+    <string name="gradient_style">Estilo gradiente</string>
+    <string name="neumorph_style">Estilo Neumorfo</string>
+    <string name="neumorph_outline_style">Estilo Neumorfo Contorno</string>
+    <string name="outline_style">Estilo de contorno</string>
+    <string name="shaded_layer_style">Estilo de camada sombreada</string>
+    <string name="volume_style_title">Estilos de painel de volume</string>
+
+    <string name="gaming_category">Gaming</string>
+    <string name="spoofing_category">Spoofing</string>
+    <string name="misc_category">Diversos</string>        
+</resources>

@@ -1095,29 +1095,29 @@
     <string name="kg_small_clock_text_size_title">Tamanho do relógio pequeno</string>
     <string name="kg_large_clock_text_size_title">Tamanho do relógio em duas linhas</string>
     <!-- Island Notification -->
-    <string name="island_notification_title">Island notification</string>
-    <string name="island_notification_summary">Display heads-up notification in Dynamic Island style</string>
-    <string name="island_notification_now_playing_title">Now playing</string>
-    <string name="island_notification_now_playing_summary">Display currently playing song in Dynamic Island style</string>
-    <string name="island_notification_footer_text">        The Island notification feature, inspired by iOS\'s Dynamic Island, transforms Android\'s heads-up notifications into quick-access and compact notification utility.\n\nIsland Quick Access Controls includes the following features:\n1. Tap island notification to quick answer phone calls.\n2. Long press island notification to reject phone calls.\n3. Long press island notification to expand the island notification preview.
+    <string name="island_notification_title">Notificação Island</string>
+    <string name="island_notification_summary">Exibir notificação de alerta no estilo Dynamic Island</string>
+    <string name="island_notification_now_playing_title">Tocando agora</string>
+    <string name="island_notification_now_playing_summary">Exibir a música atualmente tocando no estilo Dynamic Island</string>
+    <string name="island_notification_footer_text">O recurso de notificação Island, inspirado no Dynamic Island do iOS, transforma as notificações de alerta do Android em um utilitário de notificação compacto e de acesso rápido.\n\nOs controles de acesso rápido Island incluem os seguintes recursos:\n1. Toque na notificação Island para atender chamadas rapidamente.\n2. Pressione longamente a notificação Island para rejeitar chamadas.\n3. Pressione longamente a notificação Island para expandir a visualização da notificação.
     </string>
     <!-- QS Dual Tone Colors -->
-    <string name="qs_dual_tone_title">Dual tone themed</string>
-    <string name="qs_dual_tone_summary">Use dual tone background colors instead of AOSP single tone</string>
+    <string name="qs_dual_tone_title">Tema de tom duplo</string>
+    <string name="qs_dual_tone_summary">Use cores de fundo de tom duplo em vez de tom único AOSP</string>
     <!-- QS Tiles Style -->
-    <string name="qs_tile_ui_style_title">QS tiles style</string>
-    <string name="qs_tile_ui_style_a11_circle">Circle tiles</string>
-    <string name="qs_tile_ui_style_a11_square">Square tiles</string>
-    <string name="qs_tile_ui_style_a11_mix">Circle &amp; Square tiles</string>
+    <string name="qs_tile_ui_style_title">Estilo de blocos QS</string>
+    <string name="qs_tile_ui_style_a11_circle">Blocos circulares</string>
+    <string name="qs_tile_ui_style_a11_square">Blocos quadrados</string>
+    <string name="qs_tile_ui_style_a11_mix">Blocos &amp; Círculo quadrado</string>
     <!-- QS Panel Style -->
-    <string name="qs_panel_style_title">QS panel style</string>
-    <string name="qs_panel_style_outline">Outline</string>
-    <string name="qs_panel_style_two_tone">Two-Tone accent</string>
-    <string name="qs_panel_style_color_pop">Color pop</string>
-    <string name="qs_panel_style_shaded">Shaded</string>
+    <string name="qs_panel_style_title">Estilo do painel QS</string>
+    <string name="qs_panel_style_outline">Contorno</string>
+    <string name="qs_panel_style_two_tone">Destaque em dois tons</string>
+    <string name="qs_panel_style_color_pop">Cor pop</string>
+    <string name="qs_panel_style_shaded">Sombreado</string>
     <string name="qs_panel_style_cyberpunk">Cyberpunk</string>
-    <string name="qs_panel_style_neumorph">Neumorph</string>
-    <string name="qs_panel_style_reflected">Reflected</string>
+    <string name="qs_panel_style_neumorph">Neumorfo</string>
+    <string name="qs_panel_style_reflected">Refletido</string>
     <string name="qs_panel_style_surround">Surround</string>
     <string name="qs_panel_style_thin">ThinLine</string>
     <!-- Label for a numbered SIM card.  [CHAR LIMIT=40] -->
