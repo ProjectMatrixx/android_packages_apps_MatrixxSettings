@@ -167,4 +167,9 @@
     <string name="keyguard_batterybar_white">Default white</string>
     <string name="keyguard_batterybar_accent">Accent Color</string>
     <string name="keyguard_batterybar_custom">Custom</string>
+
+    <!-- Lockscreen charge temperature unit -->
+    <string name="lockscreen_charge_temp_unit_title">Temperature unit</string>
+    <string name="lockscreen_charge_temp_unit_farhenheit">Fahrenheit</string>
+    <string name="lockscreen_charge_temp_unit_celsius">Celsius</string>
 </resources>
