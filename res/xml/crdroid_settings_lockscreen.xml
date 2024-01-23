@@ -96,6 +96,21 @@
             android:summary="@string/lockscreen_battery_info_summary"
             android:defaultValue="true" />
 
+        <com.crdroid.settings.preferences.SystemSettingSwitchPreference
+            android:key="sysui_keyguard_show_battery_bar"
+            android:icon="@drawable/ic_battery_charging"
+            android:title="@string/keyguard_show_battery_title"
+            android:summary="@string/keyguard_show_battery_summary"
+            android:defaultValue="false" />
+
+        <com.crdroid.settings.preferences.SystemSettingSwitchPreference
+            android:key="sysui_keyguard_show_battery_bar_always"
+            android:icon="@drawable/ic_battery_charging"
+            android:title="@string/keyguard_show_battery_always_title"
+            android:summary="@string/keyguard_show_battery_always_summary"
+            android:dependency="sysui_keyguard_show_battery_bar"
+            android:defaultValue="false" />
+
     </PreferenceCategory>
 
     <PreferenceCategory

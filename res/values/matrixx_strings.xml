@@ -154,4 +154,12 @@
     <string name="ambient_image_title">Ambient image</string>
     <string name="file_header_select_title">Select local image</string>
     <string name="file_header_select_summary">Select image from storage</string>
+
+    <!-- Ambient battery bar settings -->
+    <string name="ambient_battery_settings_title">Battery bar</string>
+    <string name="ambient_battery_settings_summary">Display a battery bar on the ambient display</string>
+    <string name="keyguard_show_battery_title">Battery bar when charging</string>
+    <string name="keyguard_show_battery_summary">Show a battery bar on the ambient display when charging</string>
+    <string name="keyguard_show_battery_always_title">Always show battery bar</string>
+    <string name="keyguard_show_battery_always_summary">Always show a battery bar on the ambient display</string>
 </resources>
