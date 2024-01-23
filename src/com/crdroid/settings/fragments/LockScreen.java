@@ -43,6 +43,8 @@ import com.android.settingslib.search.SearchIndexable;
 
 import com.crdroid.settings.fragments.lockscreen.UdfpsAnimation;
 import com.crdroid.settings.fragments.lockscreen.UdfpsIconPicker;
+import com.crdroid.settings.preferences.SystemSettingListPreference;
+import com.crdroid.settings.preferences.colorpicker.ColorPickerPreference;
 
 import java.util.List;
 
@@ -61,12 +63,16 @@ public class LockScreen extends SettingsPreferenceFragment
     private static final String KEY_UDFPS_ANIMATIONS = "udfps_recognizing_animation_preview";
     private static final String KEY_UDFPS_ICONS = "udfps_icon_picker";
     private static final String SCREEN_OFF_UDFPS_ENABLED = "screen_off_udfps_enabled";
+    private static final String CUSTOM_KEYGUARD_BATTERY_BAR_COLOR_SOURCE = "sysui_keyguard_battery_bar_color_source";
+    private static final String CUSTOM_KEYGUARD_BATTERY_BAR_CUSTOM_COLOR = "sysui_keyguard_battery_bar_custom_color";
 
     private Preference mUdfpsAnimations;
     private Preference mUdfpsIcons;
     private Preference mRippleEffect;
     private Preference mWeather;
     private Preference mScreenOffUdfps;
+    private SystemSettingListPreference mBarColorSource;
+    private ColorPickerPreference mBarCustomColor;
 
     private OmniJawsClient mWeatherClient;
 
@@ -106,6 +112,20 @@ public class LockScreen extends SettingsPreferenceFragment
                 gestCategory.removePreference(mScreenOffUdfps);
         }
 
+        // ambient batterybar color type
+        mBarColorSource = (SystemSettingListPreference) findPreference(CUSTOM_KEYGUARD_BATTERY_BAR_COLOR_SOURCE);
+        mBarColorSource.setValue(String.valueOf(Settings.System.getInt(
+                getContentResolver(), Settings.System.CUSTOM_KEYGUARD_BATTERY_BAR_COLOR_SOURCE, 0)));
+        mBarColorSource.setSummary(mBarColorSource.getEntry());
+        mBarColorSource.setOnPreferenceChangeListener(this);
+
+        mBarCustomColor = (ColorPickerPreference) findPreference(CUSTOM_KEYGUARD_BATTERY_BAR_CUSTOM_COLOR);
+        mBarCustomColor.setOnPreferenceChangeListener(this);
+        int batteryBarColor = Settings.System.getInt(getContentResolver(),
+                Settings.System.CUSTOM_KEYGUARD_BATTERY_BAR_CUSTOM_COLOR, 0xFF39FF42);
+        String batteryBarColorHex = String.format("#%08x", (0xFF39FF42 & batteryBarColor));
+        mBarCustomColor.setNewPreviewColor(batteryBarColor);
+
         mWeather = (Preference) findPreference(KEY_WEATHER);
         mWeatherClient = new OmniJawsClient(getContext());
         updateWeatherSettings();
@@ -113,6 +133,27 @@ public class LockScreen extends SettingsPreferenceFragment
 
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
+         if (preference == mBarColorSource) {
+             int value = Integer.valueOf((String) newValue);
+             int vIndex = mBarColorSource.findIndexOfValue((String) newValue);
+             mBarColorSource.setSummary(mBarColorSource.getEntries()[vIndex]);
+             Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.CUSTOM_KEYGUARD_BATTERY_BAR_COLOR_SOURCE, value);
+            if (value == 2) {
+                mBarCustomColor.setEnabled(true);
+            } else {
+                mBarCustomColor.setEnabled(false);
+            }
+            return true;
+        } else if (preference == mBarCustomColor) {
+            String hex = ColorPickerPreference.convertToARGB(
+                    Integer.valueOf(String.valueOf(newValue)));
+            preference.setSummary(hex);
+            int intHex = ColorPickerPreference.convertToColorInt(hex);
+            Settings.System.putInt(getContentResolver(),
+                    Settings.System.CUSTOM_KEYGUARD_BATTERY_BAR_CUSTOM_COLOR, intHex);
+            return true;
+        }
         return false;
     }
 

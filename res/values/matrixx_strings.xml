@@ -162,4 +162,9 @@
     <string name="keyguard_show_battery_summary">Show a battery bar on the ambient display when charging</string>
     <string name="keyguard_show_battery_always_title">Always show battery bar</string>
     <string name="keyguard_show_battery_always_summary">Always show a battery bar on the ambient display</string>
+    <string name="keyguard_batterybar_color_source">Battery Bar Color Source</string>
+    <string name="keyguard_batterybar_custom_color">Battery Bar Custom Color</string>
+    <string name="keyguard_batterybar_white">Default white</string>
+    <string name="keyguard_batterybar_accent">Accent Color</string>
+    <string name="keyguard_batterybar_custom">Custom</string>
 </resources>
