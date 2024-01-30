@@ -25,6 +25,25 @@
         lineage:lottie_rawRes="@raw/misc_illustration" />
 
     <PreferenceCategory
+            android:title="@string/dev_category">
+
+    <Preference
+    	android:key="hide_developer_status_settings"
+    	android:icon="@drawable/ic_hide"
+        android:title="@string/hide_developer_status_title"
+        android:summary="@string/hide_developer_status_summary"
+        android:fragment="com.android.settings.security.HideDeveloperStatusSettings"
+        settings:controller="com.android.settings.security.HideDeveloperStatusPreferenceController" />            
+
+    <com.crdroid.settings.preferences.SecureSettingSwitchPreference
+        android:key="window_ignore_secure"
+        android:icon="@drawable/ic_unlock_alert"
+        android:title="@string/ignore_window_secure_title"
+        android:summary="@string/ignore_window_secure_summary"
+        android:defaultValue="false"/>
+
+    </PreferenceCategory>
+    <PreferenceCategory
             android:title="@string/gaming_category">
     <!-- Gaming mode -->
     <Preference
@@ -114,21 +133,6 @@
         android:title="@string/pocket_judge_title"
         android:summary="@string/pocket_judge_summary"
         android:defaultValue="false" />
-
-    <com.crdroid.settings.preferences.SecureSettingSwitchPreference
-            android:key="window_ignore_secure"
-            android:icon="@drawable/ic_unlock_alert"
-            android:title="@string/ignore_window_secure_title"
-            android:summary="@string/ignore_window_secure_summary"
-            android:defaultValue="false"/>
-            
-    <Preference
-    	android:key="hide_developer_status_settings"
-    	android:icon="@drawable/ic_hide"
-        android:title="@string/hide_developer_status_title"
-        android:summary="@string/hide_developer_status_summary"
-        android:fragment="com.android.settings.security.HideDeveloperStatusSettings"
-        settings:controller="com.android.settings.security.HideDeveloperStatusPreferenceController" />            
 
     </PreferenceCategory>
 </PreferenceScreen>
