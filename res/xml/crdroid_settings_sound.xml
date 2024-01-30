@@ -24,6 +24,9 @@
         android:key="sound_illustration"
         lineage:lottie_rawRes="@raw/sound_illustration" />
 
+    <PreferenceCategory 
+         android:title="@string/misc_category">
+
     <!-- Pulse music visualizer -->
     <Preference
         android:key="pulse_settings"
@@ -55,6 +58,7 @@
         android:title="@string/adaptive_playback_screen_title"
         android:fragment="com.crdroid.settings.sound.AdaptivePlaybackSoundSettings"
         settings:controller="com.crdroid.settings.sound.AdaptivePlaybackParentPreferenceController" />
+    </PreferenceCategory>
 
     <!-- Volume panel -->
     <PreferenceCategory
