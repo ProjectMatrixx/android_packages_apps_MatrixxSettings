@@ -25,6 +25,7 @@
     <string name="hide_developer_status_summary">Hide developer status from apps</string>
     <string name="search">Search</string>
     <string name="search_apps">Search apps</string>
+    <string name="dev_category">Dev options</string>
 
    <!-- Matrixx Dashboard -->
     <string name="about_matrixx_summary">Information about Matrixx</string>
@@ -37,6 +38,7 @@
     <string name="sound_settings_summary">Sound and vibrations customizations</string>
     <string name="sb_settings_summary">Customize statusbar icons, layout etc</string>
     <string name="ui_settings_summary">Customize UI colors, icons, fonts etc</string>
+    <string name="navbar_category">Navbar</string>
     
     <!-- Statusbar Clock color and font -->
     <string name="status_bar_clock_font_style_title">Clock font style</string>
@@ -132,6 +134,8 @@
     <string name="gaming_category">Gaming</string>
     <string name="spoofing_category">Spoofing</string>
     <string name="misc_category">Miscellaneous</string>        
+    <string name="style_category">Themes and Styles</string>        
+    <string name="icon_theme_category">Icon pack and Styles</string>        
 
     <!-- Ambient Customization -->
     <string name="ambient_text_category">Text customization</string>

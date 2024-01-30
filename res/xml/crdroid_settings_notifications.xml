@@ -24,6 +24,17 @@
         android:key="notification_illustration"
         lineage:lottie_rawRes="@raw/notification_illustration" />
 
+    <PreferenceCategory
+            android:title="@string/misc_category">
+
+    <!-- Show clipboard overlay -->
+    <com.crdroid.settings.preferences.SecureSettingSwitchPreference
+        android:key="show_clipboard_overlay"
+        android:icon="@drawable/ic_clipboard_alert"
+        android:title="@string/show_clipboard_overlay_title"
+        android:summary="@string/show_clipboard_overlay_summary"
+        android:defaultValue="true"/>
+
     <com.crdroid.settings.preferences.SystemSettingSwitchPreference
         android:key="alert_slider_notifications"
         android:icon="@drawable/ic_light_switch"
@@ -45,13 +56,7 @@
         android:title="@string/notification_guts_kill_app_button_title"
         android:summary="@string/notification_guts_kill_app_button_summary" />
 
-    <!-- Show clipboard overlay -->
-    <com.crdroid.settings.preferences.SecureSettingSwitchPreference
-        android:key="show_clipboard_overlay"
-        android:icon="@drawable/ic_clipboard_alert"
-        android:title="@string/show_clipboard_overlay_title"
-        android:summary="@string/show_clipboard_overlay_summary"
-        android:defaultValue="true"/>
+    </PreferenceCategory>
 
     <PreferenceCategory
         android:key="heads_up"

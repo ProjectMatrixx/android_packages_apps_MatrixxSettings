@@ -29,6 +29,13 @@
         android:key="extras_category"
         android:title="@string/extras_title" >
 
+        <lineageos.preference.LineageSystemSettingSwitchPreference
+            android:key="click_partial_screenshot"
+            android:icon="@drawable/ic_screenshot"
+            android:title="@string/click_partial_screenshot_title"
+            android:summary="@string/click_partial_screenshot_summary"
+            android:defaultValue="false" />
+
         <com.crdroid.settings.preferences.SystemSettingSwitchPreference
             android:key="hardware_keys_disable"
             android:icon="@drawable/ic_buttons"
@@ -49,13 +56,6 @@
             <intent
                  android:action="org.lineageos.settings.device.ADDITIONAL_BUTTONS_SETTINGS" />
         </lineageos.preference.RemotePreference>
-
-        <lineageos.preference.LineageSystemSettingSwitchPreference
-            android:key="click_partial_screenshot"
-            android:icon="@drawable/ic_screenshot"
-            android:title="@string/click_partial_screenshot_title"
-            android:summary="@string/click_partial_screenshot_summary"
-            android:defaultValue="false" />
 
         <com.crdroid.settings.fragments.buttons.ButtonBacklightBrightness
             android:key="button_backlight"
