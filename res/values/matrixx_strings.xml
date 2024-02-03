@@ -157,6 +157,9 @@
     <string name="qs_surround">Surround</string>
     <string name="qs_thin">ThinLine</string>
 
+    <string name="brightness_percent_title">Brightness Percentage</string>
+    <string name="brightness_percent_summary">Show hide brightness percentage text</string>    
+
     <!-- QS tiles layout -->
     <string name="qs_layout_category_title">QuickSettings Layout</string>
     <string name="qs_tile_layout_title">QS tiles layout</string>
