@@ -48,6 +48,14 @@
         android:summary="@string/screenshot_shutter_sound_summary"
         android:defaultValue="true" />
 
+    <!-- Adaptive Playback -->
+    <Preference
+        android:key="sound_adaptive_playback_summary"
+        android:icon="@drawable/ic_settings_sound"
+        android:title="@string/adaptive_playback_screen_title"
+        android:fragment="com.crdroid.settings.sound.AdaptivePlaybackSoundSettings"
+        settings:controller="com.crdroid.settings.sound.AdaptivePlaybackParentPreferenceController" />
+
     <!-- Volume panel -->
     <PreferenceCategory
         android:key="volume_panel"
