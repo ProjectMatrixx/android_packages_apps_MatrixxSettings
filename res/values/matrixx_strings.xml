@@ -94,6 +94,9 @@
     <string name="statusbar_left_padding">Left padding</string>
     <string name="statusbar_right_padding">Right padding</string>
 
+    <string name="brightness_percent_title">Brightness Percentage</string>
+    <string name="brightness_percent_summary">Show hide brightness percentage text</string>    
+
     <!-- Statusbar Clock background chip -->
     <string name="statusbar_clock_chip_title">Background chip</string>
     <string name="statusbar_clock_chip_summary">Display accented chip behind clock</string>
