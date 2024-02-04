@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
+<!-- 
      Copyright (C) 2023 Project Matrixx
 
      Licensed under the Apache License, Version 2.0 (the "License");
@@ -13,232 +12,203 @@
      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
      See the License for the specific language governing permissions and
      limitations under the License.
--->
+ -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-
-    <!-- Ignore secure window -->
-    <string name="ignore_window_secure_title">Ignore window secure flags</string>
-    <string name="ignore_window_secure_summary">Fixes black screenshots and recordings, May lead to privacy leaks, Restart apps to apply changes</string>
-
-    <!-- Hide developer status -->
-    <string name="hide_developer_status_title">Hide developer status</string>
-    <string name="hide_developer_status_summary">Hide developer status from apps</string>
-    <string name="search">Search</string>
-    <string name="search_apps">Search apps</string>
-
-   <!-- Matrixx Dashboard -->
-    <string name="about_matrixx_summary">Information about Matrixx</string>
-    <string name="buttons_settings_summary">Tweak hardware buttons</string>
-    <string name="lockscreen_settings_summary">Customize lockscreen interface</string>
-    <string name="misc_settings_summary">Misc uncategorized stuffs</string>
-    <string name="nav_settings_summary">Customize navigation behavior</string>
-    <string name="notif_settings_summary">Control notifications and more</string>
-    <string name="qs_settings_summary">QuickSettings customizations</string>
-    <string name="sound_settings_summary">Sound and vibrations customizations</string>
-    <string name="sb_settings_summary">Customize statusbar icons, layout etc</string>
-    <string name="ui_settings_summary">Customize UI colors, icons, fonts etc</string>
-    
-    <!-- Statusbar Clock color and font -->
-    <string name="status_bar_clock_font_style_title">Clock font style</string>
-    <string name="status_bar_clock_color_title">Clock font color</string>
-
-    <!-- Font Customizations for Functions -->
-    <string name="function_font_stock">Normal (default)</string>
-    <string name="function_font_bold">Bold</string>
-    <string name="function_font_italic">Italic</string>
-    <string name="function_font_bold_italic">Bold Italic</string>
-    <string name="function_font_light_italic">Light Italic</string>
-    <string name="function_font_thin_italic">Thin Italic</string>
-    <string name="function_font_light">Light</string>
-    <string name="function_font_thin">Thin</string>
-    <string name="function_font_condensed_normal">Condensed</string>
-    <string name="function_font_condensed_italic">Condensed Italic</string>
-    <string name="function_font_condensed_bold">Condensed Bold</string>
-    <string name="function_font_condensed_bold_italic">Condensed Bold Italic</string>
-    <string name="function_font_condensed_light">Condensed Light</string>
-    <string name="function_font_condensed_light_italic">Condensed Light Italic</string> 
-    <string name="function_font_medium_normal">Medium</string>
-    <string name="function_font_medium_italic">Medium Italic</string>
-    <string name="function_font_black">Black</string>
-    <string name="function_font_black_italic">Black Italic</string> 
-    <string name="function_font_dancingscript">DancingScript</string>
-    <string name="function_font_dancingscript_bold">DancingScript Bold</string>
-    <string name="function_font_comingsoon">ComingSoon</string>
-    <string name="function_font_notoserif">NotoSerif Normal</string>
-    <string name="function_font_notoserif_italic">NotoSerif Italic</string>
-    <string name="function_font_notoserif_bold">NotoSerif Bold</string>
-    <string name="function_font_notoserif_bold_italic">NotoSerif Bold Italic</string>
-   
-    <!-- Matrixx -->
-    <string name="about_matrixx">Important Links</string>
-    <string name="dev_1">mukesh22584</string>
-    <string name="dev_2">Mrick343</string>
-    <string name="dev_3">Roger.T</string>    
-    <string name="dev1_desc">Oneplus 7t/Pro, 9/Pro</string>
-    <string name="dev2_desc">Oneplus 9rt (martini)</string>
-    <string name="dev3_desc">Graphics Designer </string>    
-    <string name="devices_summary">Official devices list</string>
-    <string name="matrixx_devices_title">Official Devices</string>
-    <string name="devs_header">Core Dev Team</string>
-    <string name="get_changelogs_title">Latest changelog</string>
-    <string name="get_changelogs_summary">Check latest changes</string>
-    <string name="helping_hand">SuperDroidBond</string>
-    <string name="helping_hand_desc">Our helping hands anytime.</string>    
-    <string name="team_desc">Hey! We are Team Matrixx</string>    
-    <string name="settings_homepage_widgets_title">Settings homepage widgets</string>
-    <string name="settings_homepage_widgets_summary">Enable settings homepage widgets</string>
-
-    <!-- Team Matrixx -->
-    <string name="team_matrixx">Team Matrixx</string>
-    <string name="maintainer_pixel_6_series">Einar Gednochsson</string>
-    <string name="device_pixel_6_series_desc">Bluejay, Oriole, Raven (Pixel 6 Series)</string>
-
-    <string name="maintainer_cepheus">RDS_07</string>
-    <string name="device_cepheus_desc">Cepheus (Xiaomi MI 9)</string>
-
-    <string name="maintainer_alioth">Roxor-007</string>
-    <string name="device_alioth_desc">Alioth/AliothinPoco (F3/K40/Mi 11X)</string>
-
-    <string name="maintainer_marble">K. Samba Siva Rao</string>
-    <string name="device_marble_desc">Marble (Poco F5/Redmi Note 12 Turbo)</string>
-
-    <string name="maintainer_veux">Aswin OP</string>
-    <string name="device_veux_desc">Veux/Peux (Poco X4 Pro/Redmi Note11 ProPlus 5g</string>
-
-    <string name="maintainer_sakura">Obito Svha</string>
-    <string name="device_sakura_desc">Sakura (Redmi 6 Pro)</string>
-
-    <string name="maintainer_whyred">Arijit Saha</string>
-    <string name="device_whyred_desc">Whyred (Redmi Note 5 Pro)</string>
-
-    <string name="maintainer_sweet">JazzeeBlaze</string>
-    <string name="device_sweet_desc">Sweet (Redmi Note 10 Pro)</string>
-
-    <string name="maintainer_spes">Sayann Sarkar</string>
-    <string name="device_spes_desc">Spes (Redmi Note 11)</string>
-    
-    <string name="maintainer_violet">Aryan</string>
-    <string name="device_violet_desc">Violet (Redmi Note 7 PRO)</string>    
-
-    <string name="maintainer_devon">Jay</string>
-    <string name="device_devon_desc">Motorola G32, G42, G52</string>
-
-    <string name="maintainer_spacewar_op8_series">Zahid H</string>
-    <string name="device_spacewar_op8_desc">Nothing Phone 1, Oneplus 8 Series</string>
-
-    <string name="maintainer_bladerunner">AAMIRR ALI</string>
-    <string name="device_bladerunner_desc">BladeRunner (Realme X50 Pro/Player 5G)</string>
-
-    <string name="maintainer_rmx2020">Rinto Khan</string>
-    <string name="device_rmx2020_desc">Realme C3/N10a (RMX2020)</string>            
-
-    <!-- UI styles -->
-    <string name="theme_customization_ui_style_title">UI Style</string>
-    <string name="theme_customization_ui_style_summary">Set custom style for your interface</string>
-
-    <!-- Status bar padding -->
-    <string name="statusbar_padding">Status bar padding</string>
-    <string name="statusbar_top_padding">Top padding</string>
-    <string name="statusbar_left_padding">Left padding</string>
-    <string name="statusbar_right_padding">Right padding</string>
-
-    <!-- Quick settings styles -->
-    <string name="default_string">Default</string>
-    <string name="qs_styles_title">QS Panel Styles</string>
-    <string name="qs_outline">Outline</string>
-    <string name="qs_two_tone">Two-Tone Accent</string>
-    <string name="qs_color_pop">Color Pop</string>
-    <string name="qs_shaded">Shaded</string>
-    <string name="qs_cyberpunk">Cyberpunk</string>
-    <string name="qs_neumorph">Neumorph</string>
-    <string name="qs_reflected">Reflected</string>
-    <string name="qs_surround">Surround</string>
-    <string name="qs_thin">ThinLine</string>
-
-    <!-- QS tiles layout -->
-    <string name="qs_layout_category_title">QuickSettings Layout</string>
-    <string name="qs_tile_layout_title">QS tiles layout</string>
-    <string name="qs_tile_layout_summary">Customize QuickSettings panel</string>
-    <string name="qs_tiles_layout_category">Tiles layout</string>
-    <string name="qs_rows_portrait_title">Rows (Portrait)</string>
-    <string name="qqs_rows_portrait_title">Rows (Quick QS portrait)</string>
-    <string name="qs_columns_portrait_title">Columns (Portrait)</string>
-    <string name="qs_apply_change_button_title">Apply change</string>
-    <string name="qs_apply_change_failed">Failed to apply change</string>
-    <string name="qs_tile_hide_label_title">Hide labels</string>
-    <string name="qs_tile_secondary_label_size_title">Secondary Label text size</string>
-    <string name="qs_tile_label_size_title">Label text size</string>
-    <string name="qs_tile_hide_label_summary">Show only icon for QS tiles</string>
-    <string name="qs_tile_vertical_layout_title">Vertical layout</string>
-    <string name="qs_tile_vertical_layout_summary">Enable vertical layout for QS tiles</string>
-    <string name="qs_ui_title">Quick Settings UI</string>
-    <string name="android_eleven">Android 11</string>
-    <string name="qs_panel_category">QS panel</string>
-
-    <!-- QS tile shape -->
-    <string name="qs_tile_shape">QS tile shape</string>
-    <string name="qs_tile_round">Round</string>
-    <string name="qs_tile_rect">Rounded Rectangle</string>
-    <string name="qs_tile_mix">Round for active tiles and Rounded Rectangle for inactive tiles</string>
-
-    <!-- Statusbar Clock background chip -->
-    <string name="statusbar_clock_chip_title">Background chip</string>
-    <string name="statusbar_clock_chip_summary">Display accented chip behind clock</string>
-    <string name="solid_accent">Solid color accent</string>
-    <string name="outline">Outline</string>
-    <string name="solid_accent_gradient">Solid color accent gradient</string>   
-    <string name="solid_gradient">Solid Gradient side</string>
-    <string name="solid_gradient_corner">Solid accent gradient sharp</string>
-    <string name="solid_gradient_void">Gradient Void</string>
-    <string name="solid_gradient_neumorph">Neumorph gradient</string>
-    <string name="solid_gradient_stroke">Sharp gradient stroke</string>
-    <string name="solid_accent_transperent">Accent transperent</string>    
-    <string name="solid_gradient_light">Gradient light</string>
-    <string name="solid_gradient_shape">Sharp gradient corner</string>
-    <string name="solid_gradient_void_light">Gradient Void light</string>
-
-    <!-- Volume Styles -->
-    <string name="revamped_aosp_style">Revamped AOSP UI style</string>
-    <string name="rui_style">Realme UI style</string>
-    <string name="rising_style">Rising UI style</string>
-    <string name="double_layer_style">Double Layer style</string>
-    <string name="gradient_style">Gradient style</string>
-    <string name="neumorph_style">Neumorph style</string>
-    <string name="neumorph_outline_style">Neumorph Outline style</string>
-    <string name="outline_style">Outline style</string>
-    <string name="shaded_layer_style">Shaded Layer style</string>
-    <string name="volume_style_title">Volume panel styles</string>
-
-    <string name="gaming_category">Gaming</string>
-    <string name="spoofing_category">Spoofing</string>
-    <string name="misc_category">Miscellaneous</string>        
-
-    <!-- Ambient Customization -->
-    <string name="ambient_text_category">Text customization</string>
-    <string name="ambient_image_category">Image customization</string>
-    <string name="ambient_text_category_title">Ambient customization</string>
-    <string name="ambient_text_category_summary">Customizing the looks of ambient display</string>
-    <string name="ambient_text_title">Ambient text</string>
-    <string name="ambient_text_summary">Show ambient text in AoD</string>
-    <string name="ambient_text_animation_title">Ambient text animation</string>
-    <string name="ambient_text_animation_summary">Show a animation when show AoD</string>
-    <string name="ambient_text_size_title">Ambient text size</string>
-    <string name="ambient_text_font_title">Ambient text font</string>
-    <string name="ambient_text_string_title">Set ambient text</string>
-    <string name="ambient_text_align_title">Ambient text align</string>
-    <string name="ambient_text_align_start_top">Right n top</string>
-    <string name="ambient_text_align_start_center">Right n center</string>
-    <string name="ambient_text_align_start_bottom">Right n bottom</string>
-    <string name="ambient_text_align_center">Center</string>
-    <string name="ambient_text_align_end_top">Left n top</string>
-    <string name="ambient_text_align_end_center">Left n center</string>
-    <string name="ambient_text_align_end_bottom">Left n bottom</string>
-    <string name="ambient_text_type_color_title">Ambient text type color</string>
-    <string name="ambient_text_color_title">Ambient text color</string>
-    <string name="ambient_notification_light_color_mode_accent">System accent color</string>
-    <string name="ambient_notification_light_color_mode_custom">Custom color</string>
-    <string name="ambient_notification_light_color_mode_wall">Wallpaper color</string>
-    <string name="ambient_image_title">Ambient image</string>
-    <string name="file_header_select_title">Select local image</string>
-    <string name="file_header_select_summary">Select image from storage</string>
+<!--  Ignore secure window  -->
+<string name="ignore_window_secure_title">Ignorer les drapeaux de sécurité des fenêtres</string>
+<string name="ignore_window_secure_summary">Corrige les captures d'écran et les enregistrements noirs, Peut entraîner des fuites de confidentialité, Redémarrer les applications pour appliquer les modifications</string>
+<!--  Hide developer status  -->
+<string name="hide_developer_status_title">Masquer le statut développeur</string>
+<string name="hide_developer_status_summary">Masquer le statut développeur pour les applications</string>
+<string name="search">Recherche</string>
+<string name="search_apps">Recherche applications</string>
+<!--  Matrixx Dashboard  -->
+<string name="about_matrixx_summary">Informations relatives à Matrixx</string>
+<string name="buttons_settings_summary">Modifier les boutons de l'appareil</string>
+<string name="lockscreen_settings_summary">Personnaliser l'interface de l'écran de verrouillage</string>
+<string name="misc_settings_summary">Diverses choses non catégorisées</string>
+<string name="nav_settings_summary">Personnaliser la navigation</string>
+<string name="notif_settings_summary">Contrôle des notifications et plus encore</string>
+<string name="qs_settings_summary">Personnalisation des réglages rapides</string>
+<string name="sound_settings_summary">Personnalisation des réglages rapides</string>
+<string name="sb_settings_summary">Personnaliser les icônes de la barre d'état, la disposition, etc.</string>
+<string name="ui_settings_summary">Personnaliser les couleurs de l'interface utilisateur, les icônes, les polices, etc.</string>
+<!--  Statusbar Clock color and font  -->
+<string name="status_bar_clock_font_style_title">Style de la police de l'horloge</string>
+<string name="status_bar_clock_color_title">Couleur de la police de l'horloge</string>
+<!--  Font Customizations for Functions  -->
+<string name="function_font_stock">Normal (par défaut)</string>
+<string name="function_font_bold">Gras</string>
+<string name="function_font_italic">Italique</string>
+<string name="function_font_bold_italic">Gras Italique</string>
+<string name="function_font_light_italic">Moyen Italique</string>
+<string name="function_font_thin_italic">Italique fin</string>
+<string name="function_font_light">Moyen</string>
+<string name="function_font_thin">Fin</string>
+<string name="function_font_condensed_normal">Condensé</string>
+<string name="function_font_condensed_italic">Condensé Italique</string>
+<string name="function_font_condensed_bold">Condensé Gras</string>
+<string name="function_font_condensed_bold_italic">Condensé Gras Italique</string>
+<string name="function_font_condensed_light">Condensé Léger</string>
+<string name="function_font_condensed_light_italic">Condensed Light Italic</string>
+<string name="function_font_medium_normal">Moyen</string>
+<string name="function_font_medium_italic">Moyen Italique</string>
+<string name="function_font_black">Noir</string>
+<string name="function_font_black_italic">Noir Italique</string>
+<string name="function_font_dancingscript">DancingScript</string>
+<string name="function_font_dancingscript_bold">DancingScript gras</string>
+<string name="function_font_comingsoon">A venir</string>
+<string name="function_font_notoserif">NotoSerif Normal</string>
+<string name="function_font_notoserif_italic">NotoSerif Italique</string>
+<string name="function_font_notoserif_bold">NotoSerif gras</string>
+<string name="function_font_notoserif_bold_italic">NotoSerif Gras Italique</string>
+<!--  Matrixx  -->
+<string name="about_matrixx">Liens importants</string>
+<string name="dev_1">mukesh22584</string>
+<string name="dev_2">Mrick343</string>
+<string name="dev_3">Roger.T</string>
+<string name="dev1_desc">Oneplus 7t/Pro, 9/Pro</string>
+<string name="dev2_desc">Oneplus 9rt (martini)</string>
+<string name="dev3_desc">Concepteur graphique </string>
+<string name="devices_summary">Liste officielle des appareils</string>
+<string name="matrixx_devices_title">Appareils officiels</string>
+<string name="devs_header">Équipe principale de développement</string>
+<string name="get_changelogs_title">Dernier journal des modifications</string>
+<string name="get_changelogs_summary">Vérifier les dernières modifications</string>
+<string name="helping_hand">SuperDroidBond</string>
+<string name="helping_hand_desc">Nous vous aidons à tout moment.</string>
+<string name="team_desc">Nous sommes l'équipe Matrixx</string>
+<string name="settings_homepage_widgets_title">Paramètres des widgets de la page d'accueil</string>
+<string name="settings_homepage_widgets_summary">Activer les paramètres des widgets de la page d'accueil</string>
+<!--  Team Matrixx  -->
+<string name="team_matrixx">L'équipe Matrixx</string>
+<string name="maintainer_pixel_6_series">Einar Gednochsson</string>
+<string name="device_pixel_6_series_desc">Bluejay, Oriole, Raven (Pixel 6 Series)</string>
+<string name="maintainer_cepheus">RDS_07</string>
+<string name="device_cepheus_desc">Cepheus (Xiaomi MI 9)</string>
+<string name="maintainer_alioth">Roxor-007</string>
+<string name="device_alioth_desc">Alioth/AliothinPoco (F3/K40/Mi 11X)</string>
+<string name="maintainer_marble">K. Samba Siva Rao</string>
+<string name="device_marble_desc">Marble (Poco F5/Redmi Note 12 Turbo)</string>
+<string name="maintainer_veux">Aswin OP</string>
+<string name="device_veux_desc">Veux/Peux (Poco X4 Pro/Redmi Note11 ProPlus 5g</string>
+<string name="maintainer_sakura">Obito Svha</string>
+<string name="device_sakura_desc">Sakura (Redmi 6 Pro)</string>
+<string name="maintainer_whyred">Arijit Saha</string>
+<string name="device_whyred_desc">Whyred (Redmi Note 5 Pro)</string>
+<string name="maintainer_sweet">JazzeeBlaze</string>
+<string name="device_sweet_desc">Sweet (Redmi Note 10 Pro)</string>
+<string name="maintainer_spes">Sayann Sarkar</string>
+<string name="device_spes_desc">Spes (Redmi Note 11)</string>
+<string name="maintainer_violet">Aryan</string>
+<string name="device_violet_desc">Violet (Redmi Note 7 PRO)</string>
+<string name="maintainer_devon">Jay</string>
+<string name="device_devon_desc">Motorola G32, G42, G52</string>
+<string name="maintainer_spacewar_op8_series">Zahid H</string>
+<string name="device_spacewar_op8_desc">Nothing Phone 1, Oneplus 8 Series</string>
+<string name="maintainer_bladerunner">AAMIRR ALI</string>
+<string name="device_bladerunner_desc">BladeRunner (Realme X50 Pro/Player 5G)</string>
+<string name="maintainer_rmx2020">Rinto Khan</string>
+<string name="device_rmx2020_desc">Realme C3/N10a (RMX2020)</string>
+<!--  UI styles  -->
+<string name="theme_customization_ui_style_title">Style de l'interface utilisateur</string>
+<string name="theme_customization_ui_style_summary">Personnalisez le style de votre interface</string>
+<!--  Status bar padding  -->
+<string name="statusbar_padding">Rembourrage de la barre d'état</string>
+<string name="statusbar_top_padding">Rembourrage du haut</string>
+<string name="statusbar_left_padding">Rembourrage à gauche</string>
+<string name="statusbar_right_padding">Remplissage à droite</string>
+<!--  Quick settings styles  -->
+<string name="default_string">Défaut</string>
+<string name="qs_styles_title">Styles de panneaux QS</string>
+<string name="qs_outline">Contour</string>
+<string name="qs_two_tone">Accent bicolore</string>
+<string name="qs_color_pop">Couleur éclatante</string>
+<string name="qs_shaded">Nuancé</string>
+<string name="qs_cyberpunk">Cyberpunk</string>
+<string name="qs_neumorph">Neumorphe</string>
+<string name="qs_reflected">Réfléchi</string>
+<string name="qs_surround">Surround</string>
+<string name="qs_thin">Ligne fine</string>
+<!--  QS tiles layout  -->
+<string name="qs_layout_category_title">Disposition des paramètres rapides</string>
+<string name="qs_tile_layout_title">Disposition des tuiles QS</string>
+<string name="qs_tile_layout_summary">Personnaliser le panneau des Paramètres rapides</string>
+<string name="qs_tiles_layout_category">Disposition des tuiles</string>
+<string name="qs_rows_portrait_title">Rangées (Portrait)</string>
+<string name="qqs_rows_portrait_title">Lignes (portrait Panneau rapide)</string>
+<string name="qs_columns_portrait_title">Colonnes (Portrait)</string>
+<string name="qs_apply_change_button_title">Appliquer la modification</string>
+<string name="qs_apply_change_failed">Le changement n'a pas été appliqué</string>
+<string name="qs_tile_hide_label_title">Masquer les étiquettes</string>
+<string name="qs_tile_secondary_label_size_title">Taille du texte des étiquettes secondaires</string>
+<string name="qs_tile_label_size_title">Taille du texte des étiquettes</string>
+<string name="qs_tile_hide_label_summary">Afficher uniquement l'icône pour les tuiles QS</string>
+<string name="qs_tile_vertical_layout_title">Disposition verticale</string>
+<string name="qs_tile_vertical_layout_summary">Activer la disposition verticale pour les tuiles QS</string>
+<string name="qs_ui_title">Interface de paramétrage rapide</string>
+<string name="android_eleven">Android 11</string>
+<string name="qs_panel_category">Panel QS</string>
+<!--  QS tile shape  -->
+<string name="qs_tile_shape">Forme de la tuile QS</string>
+<string name="qs_tile_round">Arrondi</string>
+<string name="qs_tile_rect">Rectangle arrondi</string>
+<string name="qs_tile_mix">Rond pour les tuiles actives et Rectangle arrondi pour les tuiles inactives</string>
+<!--  Statusbar Clock background chip  -->
+<string name="statusbar_clock_chip_title">Puce en arrière-plan</string>
+<string name="statusbar_clock_chip_summary">Affichage d'une puce accentuée derrière l'horloge</string>
+<string name="solid_accent">Dégradé de couleur unie</string>
+<string name="outline">Contour</string>
+<string name="solid_accent_gradient">Dégradé de couleur unie</string>
+<string name="solid_gradient">Côté dégradé uni</string>
+<string name="solid_gradient_corner">Dégradé d’accent solide et net</string>
+<string name="solid_gradient_void">Dégradé vide</string>
+<string name="solid_gradient_neumorph">Dégradé neumorphe</string>
+<string name="solid_gradient_stroke">Trait en dégradé net</string>
+<string name="solid_accent_transperent">Accent transperçant</string>
+<string name="solid_gradient_light">Lumière dégradée</string>
+<string name="solid_gradient_shape">Coin de dégradé net</string>
+<string name="solid_gradient_void_light">Dégradé lumière du vide</string>
+<!--  Volume Styles  -->
+<string name="revamped_aosp_style">Style d'interface utilisateur AOSP remanié</string>
+<string name="rui_style">Style d'interface utilisateur Realme</string>
+<string name="rising_style">Style de l'interface utilisateur Rising</string>
+<string name="double_layer_style">Style double couche</string>
+<string name="gradient_style">Style dégradé</string>
+<string name="neumorph_style">Style Neumorph</string>
+<string name="neumorph_outline_style">Style de contour neumorphe</string>
+<string name="outline_style">Style de calque ombré</string>
+<string name="shaded_layer_style">Style de calque ombré</string>
+<string name="volume_style_title">Styles du panneau de volume</string>
+<string name="gaming_category">Jeux</string>
+<string name="spoofing_category">Déguisements</string>
+<string name="misc_category">Divers</string>
+<!--  Ambient Customization  -->
+<string name="ambient_text_category">Personnalisation du texte</string>
+<string name="ambient_image_category">Personnalisation des images</string>
+<string name="ambient_text_category_title">Personnalisation ambiante</string>
+<string name="ambient_text_category_summary">Personnaliser l'apparence de l'affichage ambiant</string>
+<string name="ambient_text_title">Texte ambiant</string>
+<string name="ambient_text_summary">Afficher le texte ambiant dans l'AoD</string>
+<string name="ambient_text_animation_title">Animation de texte ambiant</string>
+<string name="ambient_text_animation_summary">Afficher une animation lors de l'affichage de l'AoD</string>
+<string name="ambient_text_size_title">Taille du texte ambiant</string>
+<string name="ambient_text_font_title">Police de texte ambiant</string>
+<string name="ambient_text_string_title">Définir le texte ambiant</string>
+<string name="ambient_text_align_title">Alignement du texte ambiant</string>
+<string name="ambient_text_align_start_top">En haut à droite</string>
+<string name="ambient_text_align_start_center">A droite et au centre</string>
+<string name="ambient_text_align_start_bottom">A droite et en bas</string>
+<string name="ambient_text_align_center">Centre</string>
+<string name="ambient_text_align_end_top">En haut à gauche</string>
+<string name="ambient_text_align_end_center">A gauche et au centre</string>
+<string name="ambient_text_align_end_bottom">A gauche et en bas</string>
+<string name="ambient_text_type_color_title">Couleur du texte ambiant</string>
+<string name="ambient_text_color_title">Couleur ambiante du texte</string>
+<string name="ambient_notification_light_color_mode_accent">Couleur d'accentuation du système</string>
+<string name="ambient_notification_light_color_mode_custom">Couleur personnalisée</string>
+<string name="ambient_notification_light_color_mode_wall">Couleur du fond d'écran</string>
+<string name="ambient_image_title">Image ambiante</string>
+<string name="file_header_select_title">Sélectionner une image locale</string>
+<string name="file_header_select_summary">Sélectionner une image dans la mémoire</string>
 </resources>
