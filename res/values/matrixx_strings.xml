@@ -24,18 +24,18 @@
 <string name="search_apps">Recherche applications</string>
 <!--  Matrixx Dashboard  -->
 <string name="about_matrixx_summary">Informations relatives à Matrixx</string>
-<string name="buttons_settings_summary">Modifier les boutons de l'appareil</string>
-<string name="lockscreen_settings_summary">Personnaliser l'interface de l'écran de verrouillage</string>
+<string name="buttons_settings_summary">Modifier les boutons de l\'appareil</string>
+<string name="lockscreen_settings_summary">Personnaliser l\'interface de l\'écran de verrouillage</string>
 <string name="misc_settings_summary">Diverses choses non catégorisées</string>
 <string name="nav_settings_summary">Personnaliser la navigation</string>
 <string name="notif_settings_summary">Contrôle des notifications et plus encore</string>
 <string name="qs_settings_summary">Personnalisation des réglages rapides</string>
 <string name="sound_settings_summary">Personnalisation des réglages rapides</string>
-<string name="sb_settings_summary">Personnaliser les icônes de la barre d'état, la disposition, etc.</string>
-<string name="ui_settings_summary">Personnaliser les couleurs de l'interface utilisateur, les icônes, les polices, etc.</string>
+<string name="sb_settings_summary">Personnaliser les icônes de la barre d\'état, la disposition, etc.</string>
+<string name="ui_settings_summary">Personnaliser les couleurs de l\'interface utilisateur, les icônes, les polices, etc.</string>
 <!--  Statusbar Clock color and font  -->
-<string name="status_bar_clock_font_style_title">Style de la police de l'horloge</string>
-<string name="status_bar_clock_color_title">Couleur de la police de l'horloge</string>
+<string name="status_bar_clock_font_style_title">Style de la police de l\'horloge</string>
+<string name="status_bar_clock_color_title">Couleur de la police de l\'horloge</string>
 <!--  Font Customizations for Functions  -->
 <string name="function_font_stock">Normal (par défaut)</string>
 <string name="function_font_bold">Gras</string>
@@ -77,8 +77,8 @@
 <string name="get_changelogs_summary">Vérifier les dernières modifications</string>
 <string name="helping_hand">SuperDroidBond</string>
 <string name="helping_hand_desc">Nous vous aidons à tout moment.</string>
-<string name="team_desc">Nous sommes l'équipe Matrixx</string>
-<string name="settings_homepage_widgets_title">Paramètres des widgets de la page d'accueil</string>
+<string name="team_desc">Nous sommes l\'équipe Matrixx</string>
+<string name="settings_homepage_widgets_title">Paramètres des widgets de la page d\'accueil</string>
 <string name="settings_homepage_widgets_summary">Activer les paramètres des widgets de la page d'accueil</string>
 <!--  Team Matrixx  -->
 <string name="team_matrixx">L'équipe Matrixx</string>
@@ -111,10 +111,10 @@
 <string name="maintainer_rmx2020">Rinto Khan</string>
 <string name="device_rmx2020_desc">Realme C3/N10a (RMX2020)</string>
 <!--  UI styles  -->
-<string name="theme_customization_ui_style_title">Style de l'interface utilisateur</string>
+<string name="theme_customization_ui_style_title">Style de l\'interface utilisateur</string>
 <string name="theme_customization_ui_style_summary">Personnalisez le style de votre interface</string>
 <!--  Status bar padding  -->
-<string name="statusbar_padding">Rembourrage de la barre d'état</string>
+<string name="statusbar_padding">Rembourrage de la barre d\'état</string>
 <string name="statusbar_top_padding">Rembourrage du haut</string>
 <string name="statusbar_left_padding">Rembourrage à gauche</string>
 <string name="statusbar_right_padding">Remplissage à droite</string>
@@ -139,16 +139,16 @@
 <string name="qqs_rows_portrait_title">Lignes (portrait Panneau rapide)</string>
 <string name="qs_columns_portrait_title">Colonnes (Portrait)</string>
 <string name="qs_apply_change_button_title">Appliquer la modification</string>
-<string name="qs_apply_change_failed">Le changement n'a pas été appliqué</string>
+<string name="qs_apply_change_failed">Le changement n\'a pas été appliqué</string>
 <string name="qs_tile_hide_label_title">Masquer les étiquettes</string>
 <string name="qs_tile_secondary_label_size_title">Taille du texte des étiquettes secondaires</string>
 <string name="qs_tile_label_size_title">Taille du texte des étiquettes</string>
-<string name="qs_tile_hide_label_summary">Afficher uniquement l'icône pour les tuiles QS</string>
+<string name="qs_tile_hide_label_summary">Afficher uniquement l\'icône pour les tuiles QS</string>
 <string name="qs_tile_vertical_layout_title">Disposition verticale</string>
 <string name="qs_tile_vertical_layout_summary">Activer la disposition verticale pour les tuiles QS</string>
 <string name="qs_ui_title">Interface de paramétrage rapide</string>
 <string name="android_eleven">Android 11</string>
-<string name="qs_panel_category">Panel QS</string>
+<string name="qs_panel_category">Panneau QS</string>
 <!--  QS tile shape  -->
 <string name="qs_tile_shape">Forme de la tuile QS</string>
 <string name="qs_tile_round">Arrondi</string>
@@ -156,7 +156,7 @@
 <string name="qs_tile_mix">Rond pour les tuiles actives et Rectangle arrondi pour les tuiles inactives</string>
 <!--  Statusbar Clock background chip  -->
 <string name="statusbar_clock_chip_title">Puce en arrière-plan</string>
-<string name="statusbar_clock_chip_summary">Affichage d'une puce accentuée derrière l'horloge</string>
+<string name="statusbar_clock_chip_summary">Affichage d'une puce accentuée derrière l\'horloge</string>
 <string name="solid_accent">Dégradé de couleur unie</string>
 <string name="outline">Contour</string>
 <string name="solid_accent_gradient">Dégradé de couleur unie</string>
@@ -171,8 +171,8 @@
 <string name="solid_gradient_void_light">Dégradé lumière du vide</string>
 <!--  Volume Styles  -->
 <string name="revamped_aosp_style">Style d'interface utilisateur AOSP remanié</string>
-<string name="rui_style">Style d'interface utilisateur Realme</string>
-<string name="rising_style">Style de l'interface utilisateur Rising</string>
+<string name="rui_style">Style d\'interface utilisateur Realme</string>
+<string name="rising_style">Style de l\'interface utilisateur Rising</string>
 <string name="double_layer_style">Style double couche</string>
 <string name="gradient_style">Style dégradé</string>
 <string name="neumorph_style">Style Neumorph</string>
@@ -187,11 +187,11 @@
 <string name="ambient_text_category">Personnalisation du texte</string>
 <string name="ambient_image_category">Personnalisation des images</string>
 <string name="ambient_text_category_title">Personnalisation ambiante</string>
-<string name="ambient_text_category_summary">Personnaliser l'apparence de l'affichage ambiant</string>
+<string name="ambient_text_category_summary">Personnaliser l\'apparence de l\'affichage ambiant</string>
 <string name="ambient_text_title">Texte ambiant</string>
-<string name="ambient_text_summary">Afficher le texte ambiant dans l'AoD</string>
+<string name="ambient_text_summary">Afficher le texte ambiant dans l\'AoD</string>
 <string name="ambient_text_animation_title">Animation de texte ambiant</string>
-<string name="ambient_text_animation_summary">Afficher une animation lors de l'affichage de l'AoD</string>
+<string name="ambient_text_animation_summary">Afficher une animation lors de l\'affichage de l\'AoD</string>
 <string name="ambient_text_size_title">Taille du texte ambiant</string>
 <string name="ambient_text_font_title">Police de texte ambiant</string>
 <string name="ambient_text_string_title">Définir le texte ambiant</string>
@@ -207,7 +207,7 @@
 <string name="ambient_text_color_title">Couleur ambiante du texte</string>
 <string name="ambient_notification_light_color_mode_accent">Couleur d'accentuation du système</string>
 <string name="ambient_notification_light_color_mode_custom">Couleur personnalisée</string>
-<string name="ambient_notification_light_color_mode_wall">Couleur du fond d'écran</string>
+<string name="ambient_notification_light_color_mode_wall">Couleur du fond d\'écran</string>
 <string name="ambient_image_title">Image ambiante</string>
 <string name="file_header_select_title">Sélectionner une image locale</string>
 <string name="file_header_select_summary">Sélectionner une image dans la mémoire</string>
