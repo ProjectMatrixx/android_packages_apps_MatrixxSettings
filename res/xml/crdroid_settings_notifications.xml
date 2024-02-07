@@ -66,6 +66,23 @@
 
     </PreferenceCategory>
 
+    <com.crdroid.settings.preferences.SystemSettingSwitchPreference
+         android:key="notif_panel_custom_notif"
+         android:icon="@drawable/ic_message_fast"
+         android:title="@string/notif_panel_maxnotif_title"
+         android:summary="@string/notif_panel_maxnotif_summary"
+         android:defaultValue="false" />
+
+    <com.crdroid.settings.preferences.CustomSeekBarPreference
+         android:key="notif_panel_max_notif_cofig"
+         android:icon="@drawable/ic_numbers"
+         android:title="@string/notif_panel_maxnotif_config"
+         android:max="6"
+         settings:min="1"
+         settings:units=""
+         android:persistent="false"
+         android:dependency="notif_panel_custom_notif" />
+
     <PreferenceCategory
         android:key="heads_up"
         android:title="@string/notification_heads_up_title">
