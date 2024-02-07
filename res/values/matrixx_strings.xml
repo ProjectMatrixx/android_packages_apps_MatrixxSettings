@@ -229,4 +229,9 @@
     <string name="lockscreen_maxnotif_title">Lockscreen notification count</string>
     <string name="lockscreen_maxnotif_summary">Enable adjustment of max lockscreen notifications</string>
     <string name="lockscreen_maxnotif_config">Max lockscreen notifications</string>
+
+    <!-- Notif Panel notif count -->
+    <string name="notif_panel_maxnotif_title">Notif. Panel notification count</string>
+    <string name="notif_panel_maxnotif_summary">Enable adjustment of max Notif. Panel notifications</string>
+    <string name="notif_panel_maxnotif_config">Max Notif. Panel notifications</string>
 </resources>
