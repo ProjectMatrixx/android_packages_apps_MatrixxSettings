@@ -59,6 +59,7 @@ public class Notifications extends SettingsPreferenceFragment implements
     private static final String FLASHLIGHT_DND_PREF = "flashlight_on_call_ignore_dnd";
     private static final String FLASHLIGHT_RATE_PREF = "flashlight_on_call_rate";
     private static final String HEADS_UP_TIMEOUT_PREF = "heads_up_timeout";
+    private static final String NOTIF_PANEL_MAX_NOTIF_CONFIG = "notif_panel_max_notif_cofig";
 
     private Preference mAlertSlider;
     private Preference mBatLights;
@@ -68,6 +69,7 @@ public class Notifications extends SettingsPreferenceFragment implements
     private SwitchPreference mFlashOnCallIgnoreDND;
     private CustomSeekBarPreference mFlashOnCallRate;
     private CustomSeekBarPreference mHeadsUpTimeOut;
+    private CustomSeekBarPreference mMaxNotifPanelNotifConfig;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -128,6 +130,12 @@ public class Notifications extends SettingsPreferenceFragment implements
             mFlashOnCallIgnoreDND.setEnabled(value > 1);
             mFlashOnCallRate.setEnabled(value > 0);
         }
+
+        mMaxNotifPanelNotifConfig = (CustomSeekBarPreference) findPreference(NOTIF_PANEL_MAX_NOTIF_CONFIG);
+        int nPconf = Settings.System.getInt(getContentResolver(),
+                Settings.System.NOTIF_PANEL_MAX_NOTIF_CONFIG, 3);
+        mMaxNotifPanelNotifConfig.setValue(nPconf);
+        mMaxNotifPanelNotifConfig.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -136,6 +144,11 @@ public class Notifications extends SettingsPreferenceFragment implements
             int value = Integer.parseInt((String) newValue);
             mFlashOnCallIgnoreDND.setEnabled(value > 1);
             mFlashOnCallRate.setEnabled(value > 0);
+            return true;
+        } else if (preference == mMaxNotifPanelNotifConfig) {
+            int nPconf = (Integer) newValue;
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.NOTIF_PANEL_MAX_NOTIF_CONFIG, nPconf);
             return true;
         }
         return false;
@@ -173,6 +186,10 @@ public class Notifications extends SettingsPreferenceFragment implements
                 Settings.System.NOTIFICATION_GUTS_KILL_APP_BUTTON, 0, UserHandle.USER_CURRENT);
         Settings.System.putIntForUser(resolver,
                 Settings.System.HEADS_UP_TIMEOUT, getDefaultDecay(mContext), UserHandle.USER_CURRENT);
+        Settings.System.putIntForUser(resolver,
+                Settings.System.NOTIF_PANEL_CUSTOM_NOTIF, 0, UserHandle.USER_CURRENT);
+        Settings.System.putIntForUser(resolver,
+                Settings.System.NOTIF_PANEL_MAX_NOTIF_CONFIG, 3, UserHandle.USER_CURRENT);
         IslandSettings.reset(mContext);
     }
 
