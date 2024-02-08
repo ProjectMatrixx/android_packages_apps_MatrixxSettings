@@ -88,6 +88,7 @@
 
     <com.crdroid.settings.preferences.SecureSettingSwitchPreference
         android:key="spoof_storage_encryption_status"
+        android:icon="@drawable/ic_data_encryption"
         android:title="@string/spoof_storage_encryption_status_title"
         android:summary="@string/spoof_storage_encryption_status_summary"
         android:defaultValue="false"/>
