@@ -389,6 +389,7 @@
         <item>@string/toast_Translucent_animation</item>
         <item>@string/toast_SlideLeftRight_animation</item>
         <item>@string/toast_SlideRightLeft_animation</item>
+        <item>@string/toast_rotate_animation</item>
     </string-array>
 
     <string-array name="toast_animation_values">
@@ -408,5 +409,6 @@
         <item>13</item>
         <item>14</item>
         <item>15</item>
+        <item>16</item>
     </string-array>
 </resources>
