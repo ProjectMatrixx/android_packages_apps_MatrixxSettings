@@ -1332,4 +1332,8 @@
     <string name="always_on_display_schedule_sunrise">Sunrise</string>
     <string name="always_on_display_schedule_mixed_sunset">Turns on from sunset till a time</string>
     <string name="always_on_display_schedule_mixed_sunrise">Turns on from a time till sunrise</string>
+
+    <!-- Custom switch -->
+    <string name="theme_customization_switch_title">Switch Style</string>
+    <string name="theme_customization_switch_summary">Set custom switch style</string>
 </resources>
