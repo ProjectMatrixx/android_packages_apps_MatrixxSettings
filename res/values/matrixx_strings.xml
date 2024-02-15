@@ -317,4 +317,8 @@
     <string name="pulse_custom_gravity_center">Center</string>
     <string name="visualizer_center_mirrored_title">Center mirrored</string>
     <string name="visualizer_center_mirrored_summary">Set the visualizer in center mirrored mode</string>
+
+    <!-- Custom switch -->
+    <string name="theme_customization_switch_title">Switch Style</string>
+    <string name="theme_customization_switch_summary">Set custom switch style</string>
 </resources>
