@@ -1323,4 +1323,8 @@
     <string name="max_call_volume_title">Calls</string>
     <string name="max_alarm_volume_title">Alarms</string>
     <string name="steps_unit">steps</string>
+
+    <!-- Custom switch -->
+    <string name="theme_customization_switch_title">Switch Style</string>
+    <string name="theme_customization_switch_summary">Set custom switch style</string>
 </resources>

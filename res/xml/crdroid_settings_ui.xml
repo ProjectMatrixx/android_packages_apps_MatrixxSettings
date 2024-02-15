@@ -65,6 +65,14 @@
         android:title="@string/font_styles_title"
         android:summary="@string/font_styles_summary"
         android:fragment="com.crdroid.settings.fragments.ui.FontPickerPreview"/>
+
+    <!-- Switch Styles -->
+    <Preference
+        android:key="android.theme.customization.style.switch"
+        android:icon="@drawable/ic_switch"
+        android:title="@string/theme_customization_switch_title"
+        android:summary="@string/theme_customization_switch_summary"
+        android:fragment="com.crdroid.settings.fragments.ui.SwitchStyle" />
     </PreferenceCategory>    
 
     <PreferenceCategory 
