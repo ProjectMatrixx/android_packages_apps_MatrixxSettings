@@ -92,20 +92,27 @@
 
     <!-- Team Matrixx -->
     <string name="team_matrixx">Team Matrixx</string>
+
+    <string name="maintainer_device_asus_zenfone_max_m2">AssunZain</string>
+    <string name="device_asus_zenfone_max_m2_desc">Asus Zenfone Max M2 (X01AD)</string>
+
     <string name="maintainer_pixel_6_series">Einar Gednochsson</string>
     <string name="device_pixel_6_series_desc">Bluejay, Oriole, Raven (Pixel 6 Series)</string>
+
+    <string name="maintainer_pixel_7_series">Anthony Pyrtle</string>
+    <string name="device_pixel_7_series_desc">Cheetah, Panther, Lynx (Pixel 7 Series)</string>
 
     <string name="maintainer_cepheus">RDS_07</string>
     <string name="device_cepheus_desc">Cepheus (Xiaomi MI 9)</string>
 
     <string name="maintainer_alioth">Roxor-007</string>
-    <string name="device_alioth_desc">Alioth/AliothinPoco (F3/K40/Mi 11X)</string>
+    <string name="device_alioth_desc">Alioth/Aliothin (Poco F3/K40/Mi 11X)</string>
 
     <string name="maintainer_marble">K. Samba Siva Rao</string>
     <string name="device_marble_desc">Marble (Poco F5/Redmi Note 12 Turbo)</string>
 
     <string name="maintainer_veux">Aswin OP</string>
-    <string name="device_veux_desc">Veux/Peux (Poco X4 Pro/Redmi Note11 ProPlus 5g</string>
+    <string name="device_veux_desc">Veux/Peux (Poco X4 Pro/Redmi Note11 Pro Plus 5g</string>
 
     <string name="maintainer_sakura">Obito Svha</string>
     <string name="device_sakura_desc">Sakura (Redmi 6 Pro)</string>
@@ -113,8 +120,8 @@
     <string name="maintainer_whyred">Arijit Saha</string>
     <string name="device_whyred_desc">Whyred (Redmi Note 5 Pro)</string>
 
-    <string name="maintainer_sweet">JazzeeBlaze</string>
-    <string name="device_sweet_desc">Sweet (Redmi Note 10 Pro)</string>
+    <string name="maintainer_sweet">kamlesh patel</string>
+    <string name="device_sweet_desc">sweet(redmi note 10 pro/pro max)</string>
 
     <string name="maintainer_spes">Sayann Sarkar</string>
     <string name="device_spes_desc">Spes (Redmi Note 11)</string>

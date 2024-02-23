@@ -65,27 +65,46 @@
         android:title="@string/team_matrixx" >
 
     <Preference
+        android:title="@string/maintainer_device_asus_zenfone_max_m2"
+        android:summary="@string/device_asus_zenfone_max_m2_desc"
+        settings:layout="@layout/top_level_preference_top_card"
+        android:icon="@drawable/ic_asus" >
+    <intent
+        android:action="android.intent.action.VIEW"
+        android:data="http://t.me/AssunZain" />
+    </Preference>
+    <Preference
         android:title="@string/maintainer_pixel_6_series"
         android:summary="@string/device_pixel_6_series_desc"
-        settings:layout="@layout/top_level_preference_top_card"
+        settings:layout="@layout/top_level_preference_middle_card"
         android:icon="@drawable/ic_google" >
     <intent
         android:action="android.intent.action.VIEW"
         android:data="https://t.me/einargednochsson" />
     </Preference>
     <Preference
+        android:title="@string/maintainer_pixel_7_series"
+        android:summary="@string/device_pixel_7_series_desc"
+        settings:layout="@layout/top_level_preference_middle_card"
+        android:icon="@drawable/ic_google" >
+    <intent
+        android:action="android.intent.action.VIEW"
+        android:data="https://t.me/Pyrtle93" />
+    </Preference>
+    <Preference
         android:title="@string/maintainer_cepheus"
         android:summary="@string/device_cepheus_desc"
-        settings:layout="@layout/top_level_preference_middle_card"
+        settings:layout="@layout/top_level_preference_bottom_card"
         android:icon="@drawable/ic_xiaomi" >
     <intent
         android:action="android.intent.action.VIEW"
         android:data="https://t.me/RDS_07" />
     </Preference>
+
     <Preference
         android:title="@string/maintainer_alioth"
         android:summary="@string/device_alioth_desc"
-        settings:layout="@layout/top_level_preference_middle_card"
+        settings:layout="@layout/top_level_preference_top_card"
         android:icon="@drawable/ic_poco" >
     <intent
         android:action="android.intent.action.VIEW"
@@ -103,7 +122,7 @@
     <Preference
         android:title="@string/maintainer_veux"
         android:summary="@string/device_veux_desc"
-        settings:layout="@layout/top_level_preference_bottom_card"
+        settings:layout="@layout/top_level_preference_middle_card"
         android:icon="@drawable/ic_poco" >
     <intent
         android:action="android.intent.action.VIEW"
@@ -113,16 +132,17 @@
     <Preference
         android:title="@string/maintainer_sakura"
         android:summary="@string/device_sakura_desc"
-        settings:layout="@layout/top_level_preference_top_card"
+        settings:layout="@layout/top_level_preference_bottom_card"
         android:icon="@drawable/ic_redmi" >
     <intent
         android:action="android.intent.action.VIEW"
         android:data="https://t.me/obito_svha" />
     </Preference>
+
     <Preference
         android:title="@string/maintainer_whyred"
         android:summary="@string/device_whyred_desc"
-        settings:layout="@layout/top_level_preference_middle_card"
+        settings:layout="@layout/top_level_preference_top_card"
         android:icon="@drawable/ic_redmi" >
     <intent
         android:action="android.intent.action.VIEW"
@@ -135,7 +155,7 @@
         android:icon="@drawable/ic_redmi" >
     <intent
         android:action="android.intent.action.VIEW"
-        android:data="https://t.me/JazzeeBlaze" />
+        android:data="https://t.me/kamleshpatidar" />
     </Preference>
     <Preference
         android:title="@string/maintainer_spes"
