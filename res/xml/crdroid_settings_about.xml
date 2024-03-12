@@ -76,6 +76,16 @@
         android:key="crdroid_telegram"
         android:icon="@drawable/ic_telegram"
         android:title="@string/crdroid_telegram_title"
-        settings:layout="@layout/top_level_preference_bottom_card"
+        settings:layout="@layout/top_level_preference_middle_card"
         android:summary="@string/crdroid_telegram_summary" />
+
+    <Preference
+        android:title="@string/matrixx_legal"
+        settings:layout="@layout/top_level_preference_bottom_card"
+        android:summary="@string/matrixx_legal_desc"
+        android:icon="@drawable/ic_legal" >
+    <intent
+        android:action="android.intent.action.VIEW"
+        android:data="https://www.projectmatrixx.org/legal" />
+    </Preference>
 </PreferenceScreen>
