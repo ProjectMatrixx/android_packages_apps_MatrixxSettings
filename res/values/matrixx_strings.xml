@@ -39,4 +39,10 @@
     <string name="search_apps">Search apps</string>
     <string name="hide_developer_status_title">Hide developer status</string>
     <string name="hide_developer_status_summary">Hide developer status from apps</string>
+
+    <!-- Font styles -->
+    <string name="font_styles_title">Font Styles</string>
+    <string name="font_styles_summary">Change system font style</string>
+    <string name="font_preview_text">The quick brown\nfox jumps over the\nlazy dog\n\nABCDEFGHIJKLM\nNOPQRSTUVWXYZ\nabcdefghijkl\nmnopqrstuvwxyz\n1234567890</string>
+    <string name="apply_button_text">Apply</string>
 </resources>

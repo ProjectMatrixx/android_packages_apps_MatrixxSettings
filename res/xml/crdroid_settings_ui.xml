@@ -117,7 +117,7 @@
         android:key="android.theme.customization.fonts"
         android:title="@string/theme_customization_font_title"
         android:summary="@string/theme_customization_font_summary"
-        android:fragment="com.crdroid.settings.fragments.ui.FontsPicker"/>
+        android:fragment="com.crdroid.settings.fragments.ui.FontPickerPreview"/>
 
     <!-- Icon pack -->
     <Preference
