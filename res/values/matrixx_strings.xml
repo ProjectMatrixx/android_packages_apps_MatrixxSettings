@@ -36,4 +36,10 @@
     <string name="qs_header_style2">Oxygen</string>
     <string name="qs_header_style3">Analog</string>
     <string name="qs_header_style4">Simple</string>
+
+    <!-- Font styles -->
+    <string name="font_styles_title">Font Styles</string>
+    <string name="font_styles_summary">Change system font style</string>
+    <string name="font_preview_text">The quick brown\nfox jumps over the\nlazy dog\n\nABCDEFGHIJKLM\nNOPQRSTUVWXYZ\nabcdefghijkl\nmnopqrstuvwxyz\n1234567890</string>
+    <string name="apply_button_text">Apply</string>
 </resources>
