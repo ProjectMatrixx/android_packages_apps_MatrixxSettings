@@ -16,7 +16,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- App Title -->
-    <string name="crdroid_settings_title">crDroid の設定</string>
+    <string name="crdroid_settings_title">Matrixx の設定</string>
     <string name="crdroid_settings_summary">高度な設定</string>
     <string name="reset_settings_title">設定のリセット</string>
     <string name="reset_settings_message">現在のユーザーのほとんどの crDroid 設定を初期設定に戻します。続行しますか？</string>
@@ -58,18 +58,18 @@
     <string name="changelog_crdroid_title">最近の更新履歴</string>
     <string name="changelog_crdroid_summary">インストールされている ROM の更新内容を確認します</string>
     <string name="changelog_crdroid_error">更新履歴を読み込めませんでした</string>
-    <!-- About crDroid -->
-    <string name="about_crdroid">crDroid について</string>
+    <!-- About Matrixx -->
+    <string name="about_crdroid">Matrixx について</string>
     <string name="about_device_name">デバイス</string>
-    <!-- Share crDroid -->
-    <string name="share_crdroid_title">crDroid についてシェアする</string>
+    <!-- Share Matrixx -->
+    <string name="share_crdroid_title">Matrixx についてシェアする</string>
     <string name="share_crdroid_summary">みんなに crDroid を知ってもらいましょう</string>
-    <string name="share_message">カスタム ROM #crDroidAndroid を使ってみて！ https://crdroid.net/</string>
-    <string name="share_chooser_title">crDroid をシェア</string>
-    <!-- Sites crDroid -->
+    <string name="share_message">カスタム ROM ProjectMatrixx を使ってみて！ https://projectmatrixx.org/</string>
+    <string name="share_chooser_title">Matrixx をシェア</string>
+    <!-- Sites Matrixx -->
     <string name="crdroid_source_title">GitHub</string>
     <string name="crdroid_source_summary">私たちはオープンソースを愛しています。見てみてください</string>
-    <string name="crdroid_telegram_title">crDroid コミュニティ</string>
+    <string name="crdroid_telegram_title">Matrixx コミュニティ</string>
     <string name="crdroid_telegram_summary">Telegram で話しましょう！</string>
     <string name="crdroid_telegram_channel_title">アップデートチャンネル</string>
     <string name="crdroid_telegram_channel_summary">Telegram で新しいビルドの通知を受けます</string>
@@ -79,10 +79,10 @@
     <string name="crdroid_translate_summary">あなたの言語に翻訳するのを手伝ってください！</string>
     <string name="crdroid_sponsor_summary">ウェブサイトのホストパートナーを開きます</string>
     <string name="crdroid_buildserversponsor_summary">興味があればこのサーバーをおすすめします</string>
-    <!-- Donate crDroid -->
+    <!-- Donate Matrixx -->
     <string name="donate_crdroid_title">私たちを支援する</string>
     <string name="donate_crdroid_summary">さらなる開発を支援するために寄付をお願いします</string>
-    <string name="donate_team_title">crDroid チーム</string>
+    <string name="donate_team_title">Matrixx チーム</string>
     <string name="donate_team_summary">寄付でホスティングサーバーや全体的な管理を助けてください</string>
     <!-- The Drill -->
     <string name="drill_title">正しいやり方</string>
@@ -546,8 +546,8 @@
     <string name="qs_footer_show_power_menu_title">電源メニューのショートカット</string>
     <string name="qs_footer_services_icon_title">実行中サービスのショートカット</string>
     <string name="qs_footer_settings_icon_title">設定のショートカット</string>
-    <!-- Device Info screen. crDroid legal. -->
-    <string name="crdroid_license_title">crDroid ライセンス</string>
+    <!-- Device Info screen. Matrixx legal. -->
+    <string name="crdroid_license_title">Matrixx ライセンス</string>
     <!-- Quick Settings brightness slider -->
     <string name="qs_brightness_slider_category">明るさスライダー</string>
     <string name="qs_show_brightness_slider_title">明るさスライダー</string>
@@ -946,7 +946,7 @@
     <string name="status_bar_logo_summary">ステータスバーの左右にカスタムロゴを表示します</string>
     <string name="status_bar_logo_position_title">ロゴの位置</string>
     <string name="status_bar_logo_style_title">ロゴのスタイル</string>
-    <string name="status_bar_logo_style_crdroid">crDroid</string>
+    <string name="status_bar_logo_style_crdroid">Matrixx</string>
     <string name="status_bar_logo_style_android">Android</string>
     <string name="status_bar_logo_style_adidas">Adidas</string>
     <string name="status_bar_logo_style_alien">宇宙人</string>
