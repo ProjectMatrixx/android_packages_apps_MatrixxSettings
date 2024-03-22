@@ -78,7 +78,7 @@ public class About extends SettingsPreferenceFragment {
     @Override
     public boolean onPreferenceTreeClick(Preference preference) {
         if (preference == mDonate) {
-            launchUrl("https://crdroid.net/donate.php");
+            launchUrl("https://projectmatrixx.org/donate.php");
         } else if (preference == mSourceUrl) {
             launchUrl("https://github.com/crdroidandroid");
         } else if (preference == mTelegramUrl) {
@@ -91,9 +91,9 @@ public class About extends SettingsPreferenceFragment {
                     getActivity().getString(R.string.share_message), Build.MODEL));
             startActivity(Intent.createChooser(intent, getActivity().getString(R.string.share_chooser_title)));
         } else if (preference == mTranslate) {
-            launchUrl("https://crdroid.net/translations.php");
+            launchUrl("https://projectmatrixx.org/translations.php");
         } else if (preference == mWebsite) {
-            launchUrl("https://crdroid.net");
+            launchUrl("https://projectmatrixx.org");
         } else if (preference == mTelegramChannelUrl) {
             launchUrl("https://t.me/crDroidUpdates");
         } else if (preference == mSponsor) {
