@@ -348,6 +348,16 @@ public class CustomSeekBarPreference extends Preference implements SeekBar.OnSee
         if (mSeekBar != null) mSeekBar.setProgress(getSeekValue(mValue));
     }
 
+    public void setMax(int max) {
+        mMaxValue = max;
+        mSeekBar.setMax(mMaxValue - mMinValue);
+    }
+
+    public void setMin(int min) {
+        mMinValue = min;
+        mSeekBar.setMax(mMaxValue - mMinValue);
+    }
+
     public void setValue(int newValue, boolean update) {
         newValue = getLimitedValue(newValue);
         if (mValue != newValue) {

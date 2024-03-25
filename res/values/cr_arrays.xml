@@ -831,35 +831,20 @@
     </string-array>
 
     <!-- QS Tiles Style -->
-    <string-array name="qs_tile_ui_style_entries">
-        <item>@string/color_default</item>
-        <item>@string/qs_tile_ui_style_a11_circle</item>
-        <item>@string/qs_tile_ui_style_a11_square</item>
-        <item>@string/qs_tile_ui_style_a11_mix</item>
+<string-array name="qs_styles_entries" translatable="false">
+        <item>@string/default_string</item>
+        <item>@string/qs_outline</item>
+        <item>@string/qs_two_tone</item>
+        <item>@string/qs_color_pop</item>
+        <item>@string/qs_shaded</item>
+        <item>@string/qs_cyberpunk</item>
+        <item>@string/qs_neumorph</item>
+        <item>@string/qs_reflected</item>
+        <item>@string/qs_surround</item>
+        <item>@string/qs_thin</item>
     </string-array>
 
-    <string-array name="qs_tile_ui_style_values">
-        <item>0</item>
-        <item>1</item>
-        <item>2</item>
-        <item>3</item>
-    </string-array>
-
-    <!-- QS Panel Style -->
-    <string-array name="qs_panel_style_entries" translatable="false">
-        <item>@string/color_default</item>
-        <item>@string/qs_panel_style_outline</item>
-        <item>@string/qs_panel_style_two_tone</item>
-        <item>@string/qs_panel_style_color_pop</item>
-        <item>@string/qs_panel_style_shaded</item>
-        <item>@string/qs_panel_style_cyberpunk</item>
-        <item>@string/qs_panel_style_neumorph</item>
-        <item>@string/qs_panel_style_reflected</item>
-        <item>@string/qs_panel_style_surround</item>
-        <item>@string/qs_panel_style_thin</item>
-    </string-array>
-
-    <string-array name="qs_panel_style_values" translatable="false">
+    <string-array name="qs_styles_values" translatable="false">
         <item>0</item>
         <item>1</item>
         <item>2</item>
@@ -870,6 +855,29 @@
         <item>7</item>
         <item>8</item>
         <item>9</item>
+    </string-array>
+
+    <string-array name="qs_ui_entries" translatable="false">
+        <item>@string/default_string</item>
+        <item>@string/android_eleven</item>
+    </string-array>
+
+    <string-array name="qs_ui_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+
+    <!-- QS tile shape -->
+    <string-array name="qs_tile_shape_entries">
+        <item>@string/qs_tile_round</item>
+        <item>@string/qs_tile_rect</item>
+        <item>@string/qs_tile_mix</item>
+    </string-array>
+
+    <string-array name="qs_tile_shape_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
     </string-array>
 
     <!-- Monet theme styles  -->
