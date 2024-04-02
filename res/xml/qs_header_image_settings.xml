@@ -83,4 +83,12 @@
          settings:interval="1"
          android:defaultValue="220" />
 
+    <com.crdroid.settings.preferences.SystemSettingSeekBarPreference
+         android:key="qqs_header_size"
+         android:title="@string/large_qqs_switch_title"
+         android:max="400"
+         settings:min="110"
+         settings:interval="1"
+         android:defaultValue="220" />
+
 </PreferenceScreen>
