@@ -1086,10 +1086,6 @@
     <string name="qqs_rows_portrait_title">Quick QS Rows (portrait)</string>
     <string name="qqs_rows_landscape_title">Quick QS Rows (landscape)</string>
 
-    <!-- Statusbar Clock background chip -->
-    <string name="statusbar_clock_chip_title">Background chip</string>
-    <string name="statusbar_clock_chip_summary">Display accented chip behind clock</string>
-
     <!-- Weather -->
     <string name="weather_settings_title">Weather settings</string>
     <string name="weather_settings_summary">Setup icon pack and weather service</string>
