@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2023 Project Matrixx
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- Ignore secure window -->
+    <string name="ignore_window_secure_title">Игнорировать флаги безопасности окна</string>
+    <string name="ignore_window_secure_summary">Исправляет черные скриншоты и записи.Может привести к утечке конфиденциальной информации.Перезапустите приложения, чтобы применить изменения</string>
+    <!-- Hide developer status -->
+    <string name="hide_developer_status_title">Скрыть статус разработчика</string>
+    <string name="hide_developer_status_summary">Скрыть статус разработчика в приложениях</string>
+    <string name="search">Поиск</string>
+    <string name="search_apps">Поиск приложений</string>
+    <string name="dev_category">Опции для разработчиков</string>
+   <!-- Matrixx Dashboard -->
+    <string name="about_matrixx_summary">Информация о Matrixx</string>
+    <string name="buttons_settings_summary">Настройка аппаратных кнопок</string>
+    <string name="lockscreen_settings_summary">Настройка интерфейса экрана блокировки</string>
+    <string name="misc_settings_summary">Настройки без категории</string>
+    <string name="nav_settings_summary">Настройка поведения навигации</string>
+    <string name="notif_settings_summary">Управление уведомлениями</string>
+    <string name="qs_settings_summary">Настройки QuickSettings</string>
+    <string name="sound_settings_summary">Настройки звука и вибрации</string>
+    <string name="sb_settings_summary">Настройки значков строки состояния</string>
+    <string name="ui_settings_summary">Настройки пользовательского интерфейса</string>
+    <string name="navbar_category">Панель навигации</string>
+    <!-- Statusbar Clock color and font -->
+    <string name="status_bar_clock_font_style_title">Стиль шрифта часов</string>
+    <string name="status_bar_clock_color_title">Цвет шрифта часов</string>
+    <!-- Font Customizations for Functions -->
+    <string name="function_font_stock">Normal (default)</string>
+    <string name="function_font_bold">Bold</string>
+    <string name="function_font_italic">Italic</string>
+    <string name="function_font_bold_italic">Bold Italic</string>
+    <string name="function_font_light_italic">Light Italic</string>
+    <string name="function_font_thin_italic">Thin Italic</string>
+    <string name="function_font_light">Light</string>
+    <string name="function_font_thin">Thin</string>
+    <string name="function_font_condensed_normal">Condensed</string>
+    <string name="function_font_condensed_italic">Condensed Italic</string>
+    <string name="function_font_condensed_bold">Condensed Bold</string>
+    <string name="function_font_condensed_bold_italic">Condensed Bold Italic</string>
+    <string name="function_font_condensed_light">Condensed Light</string>
+    <string name="function_font_condensed_light_italic">Condensed Light Italic</string> 
+    <string name="function_font_medium_normal">Medium</string>
+    <string name="function_font_medium_italic">Medium Italic</string>
+    <string name="function_font_black">Black</string>
+    <string name="function_font_black_italic">Black Italic</string> 
+    <string name="function_font_dancingscript">DancingScript</string>
+    <string name="function_font_dancingscript_bold">DancingScript Bold</string>
+    <string name="function_font_comingsoon">ComingSoon</string>
+    <string name="function_font_notoserif">NotoSerif Normal</string>
+    <string name="function_font_notoserif_italic">NotoSerif Italic</string>
+    <string name="function_font_notoserif_bold">NotoSerif Bold</string>
+    <string name="function_font_notoserif_bold_italic">NotoSerif Bold Italic</string>
+    <!-- Matrixx -->
+    <string name="team_matrixx">Команда Matrixx</string>
+    <string name="team_matrixx_desc">Привет! Мы команда Matrixx</string>
+    <string name="devices_summary">Официальный список устройств</string>
+    <string name="matrixx_devices_title">Официальные устройства</string>
+    <string name="get_changelogs_title">Последний журнал изменений</string>
+    <string name="get_changelogs_summary">Проверьте последние изменения</string>
+    <string name="matrixx_legal">Легальный Matrixx </string>
+    <string name="matrixx_legal_desc">Юридические условия использования</string>    
+    <string name="default_string">По умолчанию</string>
+    <!-- Homepage widgets -->    
+    <string name="settings_homepage_widgets_title">Настройки виджетов домашней страницы</string>
+    <string name="settings_homepage_widgets_summary">Включить настройки виджетов домашней страницы</string>
+    <!-- UI styles -->
+    <string name="theme_customization_ui_style_title">Стиль пользовательского интерфейса</string>
+    <string name="theme_customization_ui_style_summary">Установите собственный стиль вашего интерфейса</string>
+    <!-- Status bar padding -->
+    <string name="statusbar_padding">Отступы строки состояния</string>
+    <string name="statusbar_top_padding">Верхний отступ</string>
+    <string name="statusbar_left_padding">Левый отступ</string>
+    <string name="statusbar_right_padding">Правый отступ</string>
+    <string name="brightness_percent_title">Процент яркости</string>
+    <string name="brightness_percent_summary">Показать скрытый текст с процентами яркости</string>    
+    <!-- Volume Styles -->
+    <string name="revamped_aosp_style">Revamped AOSP UI.</string>
+    <string name="rui_style">Cтиль Realme UI</string>
+    <string name="rising_style">Cтиль Rising UI</string>
+    <string name="double_layer_style">Двухслойный стиль</string>
+    <string name="gradient_style">Градиентный стиль</string>
+    <string name="neumorph_style">Cтиль Neumorph</string>
+    <string name="neumorph_outline_style">Стиль Neumorph Outline</string>
+    <string name="outline_style">Cтиль Outline</string>
+    <string name="shaded_layer_style">Затемненный стиль</string>
+    <string name="volume_style_title">Стили панелей громкости</string>
+    <!-- Volume Haptic feedback -->
+    <string name="haptic_feedback_category">Настройки тактильной обратной связи</string>
+    <string name="volume_panel_haptic_feedback_title">Вибрация при изменении громкости</string>
+    <string name="gaming_category">Игры</string>
+    <string name="spoofing_category">Подмена</string>
+    <string name="misc_category">Разное</string>        
+    <string name="style_category">Темы и стили</string>        
+    <string name="icon_theme_category">Пакет значков и стилей</string>        
+    <!-- Ambient Customization -->
+    <string name="ambient_text_category">Настройка текста</string>
+    <string name="ambient_image_category">Настройка изображения</string>
+    <string name="ambient_text_category_title">Настройки Ambient</string>
+    <string name="ambient_text_category_summary">Настройка внешнего вида Ambient дисплея</string>
+    <string name="ambient_text_title">Ambient текст</string>
+    <string name="ambient_text_summary">Показать Ambient текст в AoD</string>
+    <string name="ambient_text_animation_title">Ambient текстовая анимация</string>
+    <string name="ambient_text_animation_summary">Показывать анимацию при показе AoD</string>
+    <string name="ambient_text_size_title">Ambient размер текста</string>
+    <string name="ambient_text_font_title">Ambient текстовый шрифт</string>
+    <string name="ambient_text_string_title">Установить текст ambient</string>
+    <string name="ambient_text_align_title">Ambient выравнивание текста</string>
+    <string name="ambient_text_align_start_top">Справа и сверху</string>
+    <string name="ambient_text_align_start_center">Справа и в центре</string>
+    <string name="ambient_text_align_start_bottom">Справа и снизу</string>
+    <string name="ambient_text_align_center">Центр</string>
+    <string name="ambient_text_align_end_top">Слева и сверху</string>
+    <string name="ambient_text_align_end_center">Слева и в центре</string>
+    <string name="ambient_text_align_end_bottom">Слева и снизу</string>
+    <string name="ambient_text_type_color_title">Ambient вид цвет текста</string>
+    <string name="ambient_text_color_title">Ambient цвет текста</string>
+    <string name="ambient_notification_light_color_mode_accent">Акцентный цвет системы</string>
+    <string name="ambient_notification_light_color_mode_custom">Пользовательский цвет</string>
+    <string name="ambient_notification_light_color_mode_wall">Цвет обоев</string>
+    <string name="ambient_image_title">Ambient изображение</string>
+    <string name="file_header_select_title">Выберите локальное изображение</string>
+    <string name="file_header_select_summary">Выберите изображение из хранилища</string>
+    <!-- Ambient battery bar settings -->
+    <string name="ambient_battery_settings_title">Панель батареи</string>
+    <string name="ambient_battery_settings_summary">Отображение индикатора заряда батареи на ambient дисплее</string>
+    <string name="keyguard_show_battery_title">Полоса заряда батареи при зарядке</string>
+    <string name="keyguard_show_battery_summary">Показывать полосу заряда батареи на ambient дисплее во время зарядки</string>
+    <string name="keyguard_show_battery_always_title">Всегда показывать индикатор заряда батареи</string>
+    <string name="keyguard_show_battery_always_summary">Всегда показывать полосу заряда батареи на ambient дисплее</string>
+    <string name="keyguard_batterybar_color_source">Источник цвета индикатора батареи</string>
+    <string name="keyguard_batterybar_custom_color">Пользовательский цвет индикатора батареи</string>
+    <string name="keyguard_batterybar_white">По умолчанию белый</string>
+    <string name="keyguard_batterybar_accent">Акцентный цвет</string>
+    <string name="keyguard_batterybar_custom">Собственный</string>
+    <!-- Lockscreen charge temperature unit -->
+    <string name="lockscreen_charge_temp_unit_title">Единица измерения температуры</string>
+    <string name="lockscreen_charge_temp_unit_farhenheit">Фаренгейт</string>
+    <string name="lockscreen_charge_temp_unit_celsius">Цельсия</string>
+    <!-- Show VoLTE icon on statusbar -->
+    <string name="volte_icon_style_title">Выбрать значок VoLTE/HD</string>
+    <string name="volte_icon_off">Выключить</string>
+    <string name="volte_icon_dynamic">Динамические значки VOLTE</string>
+    <string name="volte_icon_vo">Значок только голос</string>
+    <string name="volte_icon_volte">Значок VoLTE</string>
+    <string name="volte_icon_oos">Значок VoLTE OOS</string>
+    <string name="volte_icon_hd">Значок HD</string>
+    <string name="volte_icon_miui">Значок MIUI 11</string>
+    <string name="volte_icon_emui">Значок EMUI</string>
+    <string name="volte_icon_margaritov">Заполненный Значок HD</string>
+    <string name="volte_icon_margaritov2">Значок Margaritov VoLTE</string>
+    <string name="volte_icon_vivo">Значок Vivo</string>
+    <string name="volte_icon_aris">Значок Aris</string>
+    <string name="volte_icon_beast">Значок Aww</string>
+    <string name="volte_icon_ios">Значок Ios</string>
+    <string name="volte_icon_lr">Значок Livenge</string>
+    <string name="volte_icon_realme">Значок Realme</string>
+    <string name="volte_icon_typeA">Значок Mild</string>
+    <string name="volte_icon_typeB">Значок Filth</string>
+    <string name="volte_icon_typeC">Значок Mue</string>
+    <string name="volte_icon_typeD">Значок Sus</string>
+    <string name="volte_icon_typeE">Значок Acherus</string>
+    <string name="volte_icon_vcircle">Значок Circle</string>
+    <string name="volte_icon_vimeo">Значок Vimeo</string>
+    <string name="volte_icon_volit">Значок Volit</string>
+    <string name="volte_icon_zirco">Значок Ziroc</string>
+    <!-- VoWiFi icon -->
+    <string name="vowifi_icon_title">Значок VoWiFi</string>
+    <string name="vowifi_icon_summary">Отображение значка VoWiFi, если он доступен</string>
+    <string name="vowifi_icon_off">Выключить</string>
+    <string name="vowifi_icon_dynamic">Динамический значок VoWiFi</string>
+    <string name="vowifi_icon_asus">Значок Asus VoWiFi</string>
+    <string name="vowifi_icon_oneplus">Значок OnePlus VoWiFi</string>
+    <string name="vowifi_icon_moto">Значок Moto VoWiFi</string>
+    <string name="vowifi_icon_emui">Значок EMUI</string>
+    <!-- Status bar - Battery custom charging symbol -->
+    <string name="text_charging_symbol_title">Пользовательский символ зарядки для стиля текста</string>
+    <string name="text_charging_symbol_dialog">Пользовательский символ зарядки рядом с текстом о проценте заряда батареи</string>
+    <string name="text_charging_symbol_default">Disabled</string>
+    <string name="text_charging_symbol_flash">Flash</string>
+    <string name="text_charging_symbol_tilde">Tilde</string>
+    <string name="text_charging_symbol_plus">Plus</string>
+    <string name="text_charging_symbol_star">Star</string>
+    <string name="text_charging_symbol_rupee">Rupee</string>
+    <string name="text_charging_symbol_dollar">Dollar</string>
+    <string name="text_charging_symbol_euro">Euro</string>
+    <string name="text_charging_symbol_cent">Cent</string>
+    <string name="text_charging_symbol_timer">Sand Timer</string>
+    <string name="text_charging_symbol_rocket">Rocket</string>
+    <string name="text_charging_symbol_milk">Milk Bottle</string>
+    <string name="text_charging_symbol_flamingo">Flamingo</string>
+    <!-- Power menu Animations  -->
+    <string name="power_menu_animation_title">Анимация меню питания</string>
+    <string name="power_menu_animation_dialog_title">Выберите анимацию меню питания</string>
+    <string name="power_menu_animation_aosp">AOSP (по умолчанию)</string>
+    <string name="power_menu_animation_bottom">Bottom</string>
+    <string name="power_menu_animation_top">Top</string>
+    <string name="power_menu_animation_xylon">Fly</string>
+    <string name="power_menu_animation_slide">Slide</string>
+    <string name="power_menu_animation_turn">Turn</string>
+    <string name="power_menu_animation_fly">Glow</string>
+    <string name="power_menu_animation_card">3D</string>
+    <string name="power_menu_animation_translucent_top">Translucent (top)</string>
+    <string name="power_menu_animation_translucent_bottom">Translucent (bottom)</string>
+    <string name="power_menu_animation_rotate">Rotate</string>
+    <!-- Power menu and dialogs opacity -->
+    <string name="panel_porn_title">Дополнительные возможности меню питания</string>
+    <string name="power_menu_transparency">Power/Непрозрачное меню перезагрузки</string>
+    <string name="power_menu_dialog_dim">Power/Диалоговое окно перезагрузки, размер тусклого фона</string>
+    <!-- Toast Animation -->
+    <string name="toast_animation_title">Стиль появления уведомлений</string>
+    <string name="toast_none_animation">Нет</string>
+    <string name="toast_default_animation">По умолчанию</string>
+    <string name="toast_fade_animation">Тускнение</string>
+    <string name="toast_SlideRight_animation">Слайд справа</string>
+    <string name="toast_SlideLeft_animation">Слайд слева</string>
+    <string name="toast_Xylon_animation">Xylon</string>
+    <string name="toast_Toko_animation">Toko</string>
+    <string name="toast_Tn_animation">Tn</string>
+    <string name="toast_Honami_animation">Honami</string>
+    <string name="toast_FastFade_animation">Быстрое затухание</string>
+    <string name="toast_GrowFade_animation">Исчезновение</string>
+    <string name="toast_GrowFadeCenter_animation">Исчезновение в центре</string>
+    <string name="toast_GrowFadeBottom_animation">Исчезновение снизу</string>
+    <string name="toast_Translucent_animation">Полупрозрачный</string>
+    <string name="toast_SlideLeftRight_animation">Слайд слева направо</string>
+    <string name="toast_SlideRightLeft_animation">Слайд справа налево</string>
+    <string name="toast_rotate_animation">Поворот</string>
+    <!-- Font styles -->
+    <string name="font_styles_title">Стили шрифтов</string>
+    <string name="font_styles_summary">Изменение стиля системного шрифта</string>
+    <string name="font_preview_text">The quick brown\nfox jumps over the\nlazy dog\n\nABCDEFGHIJKLM\nNOPQRSTUVWXYZ\nabcdefghijkl\nmnopqrstuvwxyz\n1234567890</string>
+    <string name="apply_button_text">Применить</string>
+    <!-- Max visible notification icons -->
+    <string name="max_visible_notification_icons_title">Значки уведомлений</string>
+    <string name="max_visible_notification_icons_summary">Максимальное количество значков уведомлений, отображаемых в строке состояния</string>
+    <!-- Vertical Mirror -->
+    <string name="pulse_vertical_mirror_title">Вертикальное зеркало</string>
+    <string name="pulse_vertical_mirror_summary">Создайте другой импульс и переверните его вертикально.</string>
+    <!-- Pulse Gravity and mirror options -->
+    <string name="pulse_custom_gravity_title">Гравитация</string>
+    <string name="pulse_custom_gravity_bottom">Внизу</string>
+    <string name="pulse_custom_gravity_top">Вверх</string>
+    <string name="pulse_custom_gravity_center">Центр</string>
+    <string name="visualizer_center_mirrored_title">Зеркальный центр</string>
+    <string name="visualizer_center_mirrored_summary">Установите визуализатор в режим зеркального отображения центра</string>
+</resources>
