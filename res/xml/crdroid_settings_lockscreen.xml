@@ -80,6 +80,31 @@
         android:key="lockscreen_interface_category"
         android:title="@string/lockscreen_interface_category">
 
+        <com.crdroid.settings.preferences.SystemSettingSwitchPreference
+            android:key="depth_wallpaper_enabled"
+            android:icon="@drawable/ic_ui_styles"
+            android:title="@string/dw_wallpaper_enabled_title"
+            android:summary="@string/dw_wallpaper_enabled_summary"
+            android:defaultValue="false" />
+
+        <Preference
+            android:key="depth_wallpaper_subject_image_uri"
+            android:icon="@drawable/ic_ui_styles"
+            android:dependency="depth_wallpaper_enabled"
+            android:title="@string/dw_file_header_select_title"
+            android:summary="@string/dw_file_header_select_summary"
+            android:persistent="false" />
+
+        <com.crdroid.settings.preferences.SystemSettingSeekBarPreference
+            android:key="depth_wallpaper_opacity"
+            android:icon="@drawable/ic_ui_styles"
+            android:title="@string/dw_wallpaper_opacity_title"
+            android:max="100"
+            settings:min="1"
+            settings:interval="1"
+            settings:units="%"
+            android:defaultValue="100" />
+
         <!--<lineageos.preference.LineageSecureSettingSwitchPreference
             android:key="lockscreen_media_metadata"
             android:icon="@drawable/ic_movie"
