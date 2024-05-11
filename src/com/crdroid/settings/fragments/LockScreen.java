@@ -85,25 +85,16 @@ public class LockScreen extends SettingsPreferenceFragment
     private static final String LOCKSCREEN_GESTURES_CATEGORY = "lockscreen_gestures_category";
     private static final String KEY_RIPPLE_EFFECT = "enable_ripple_effect";
     private static final String KEY_WEATHER = "lockscreen_weather_enabled";
-    private static final String KEY_UDFPS_ANIMATIONS = "udfps_recognizing_animation_preview";
-    private static final String KEY_UDFPS_ICONS = "udfps_icon_picker";
-    private static final String SCREEN_OFF_UDFPS_ENABLED = "screen_off_udfps_enabled";
     private static final String CUSTOM_KEYGUARD_BATTERY_BAR_COLOR_SOURCE = "sysui_keyguard_battery_bar_color_source";
     private static final String CUSTOM_KEYGUARD_BATTERY_BAR_CUSTOM_COLOR = "sysui_keyguard_battery_bar_custom_color";
-    private static final String CUSTOM_FOD_ICON_KEY = "custom_fp_icon_enabled";
-    private static final String CUSTOM_FP_FILE_SELECT = "custom_fp_file_select";
-    private static final int REQUEST_PICK_IMAGE = 0;
     private static final String LOCKSCREEN_MAX_NOTIF_CONFIG = "lockscreen_max_notif_cofig";
+    private static final String KEY_UDFPS_SETTINGS = "udfps_settings";
 
-    private Preference mUdfpsAnimations;
-    private Preference mUdfpsIcons;
     private Preference mRippleEffect;
     private Preference mWeather;
-    private Preference mScreenOffUdfps;
+    private Preference mUdfpsSettings;
     private SystemSettingListPreference mBarColorSource;
     private ColorPickerPreference mBarCustomColor;
-    private Preference mCustomFPImage;
-    private SystemSettingSwitchPreference mCustomFodIcon;
     private CustomSeekBarPreference mMaxKeyguardNotifConfig;
 
     private Preference mDepthWallpaperCustomImagePicker;
@@ -127,53 +118,16 @@ public class LockScreen extends SettingsPreferenceFragment
 
         FingerprintManager mFingerprintManager = (FingerprintManager)
                 getActivity().getSystemService(Context.FINGERPRINT_SERVICE);
-        mUdfpsAnimations = (Preference) findPreference(KEY_UDFPS_ANIMATIONS);
-        mUdfpsIcons = (Preference) findPreference(KEY_UDFPS_ICONS);
         mRippleEffect = (Preference) findPreference(KEY_RIPPLE_EFFECT);
-        mScreenOffUdfps = (Preference) findPreference(SCREEN_OFF_UDFPS_ENABLED);
-
-        mCustomFPImage = findPreference(CUSTOM_FP_FILE_SELECT);
-        final String customIconURI = Settings.System.getString(getContext().getContentResolver(),
-               Settings.System.OMNI_CUSTOM_FP_ICON);
-        if (!TextUtils.isEmpty(customIconURI)) {
-            setPickerIcon(customIconURI);
-        }
-
-        mCustomFodIcon = (SystemSettingSwitchPreference) findPreference(CUSTOM_FOD_ICON_KEY);
-        boolean val = Settings.System.getIntForUser(getActivity().getContentResolver(),
-                Settings.System.OMNI_CUSTOM_FP_ICON_ENABLED, 0, UserHandle.USER_CURRENT) == 1;
-        mCustomFodIcon.setOnPreferenceChangeListener(this);
-        if (val) {
-            mUdfpsIcons.setEnabled(false);
-        } else {
-            mUdfpsIcons.setEnabled(true);
-        }
+        mUdfpsSettings = (Preference) findPreference(KEY_UDFPS_SETTINGS);
 
         if (mFingerprintManager == null || !mFingerprintManager.isHardwareDetected()) {
-            gestCategory.removePreference(mUdfpsAnimations);
-            gestCategory.removePreference(mUdfpsIcons);
             gestCategory.removePreference(mRippleEffect);
-            gestCategory.removePreference(mScreenOffUdfps);
-            gestCategory.removePreference(mCustomFPImage);
-            gestCategory.removePreference(mCustomFodIcon);
+            gestCategory.removePreference(mUdfpsSettings);
         } else {
             if (!isUdfps) {
-                gestCategory.removePreference(mCustomFPImage);
-                gestCategory.removePreference(mCustomFodIcon);
+                gestCategory.removePreference(mUdfpsSettings);
             }
-            if (!Utils.isPackageInstalled(getContext(), "com.crdroid.udfps.animations")) {
-                gestCategory.removePreference(mUdfpsAnimations);
-            }
-            if (!Utils.isPackageInstalled(getContext(), "com.crdroid.udfps.icons")) {
-                gestCategory.removePreference(mUdfpsIcons);
-            }
-            Resources resources = getResources();
-            boolean screenOffUdfpsAvailable = resources.getBoolean(
-                    com.android.internal.R.bool.config_supportScreenOffUdfps) ||
-                    !TextUtils.isEmpty(resources.getString(
-                        com.android.internal.R.string.config_dozeUdfpsLongPressSensorType));
-            if (!screenOffUdfpsAvailable)
-                gestCategory.removePreference(mScreenOffUdfps);
         }
 
         // ambient batterybar color type
@@ -202,17 +156,6 @@ public class LockScreen extends SettingsPreferenceFragment
     }
 
     @Override
-    public boolean onPreferenceTreeClick(Preference preference) {
-        if (preference == mCustomFPImage) {
-            Intent intent = new Intent(Intent.ACTION_PICK);
-            intent.setType("image/*");
-            startActivityForResult(intent, REQUEST_PICK_IMAGE);
-            return true;
-        }
-        return super.onPreferenceTreeClick(preference);
-    }
-
-    @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
          if (preference == mBarColorSource) {
              int value = Integer.valueOf((String) newValue);
@@ -234,17 +177,6 @@ public class LockScreen extends SettingsPreferenceFragment
             Settings.System.putInt(getContentResolver(),
                     Settings.System.CUSTOM_KEYGUARD_BATTERY_BAR_CUSTOM_COLOR, intHex);
             return true;
-        } else if (preference == mCustomFodIcon) {
-            boolean val = (Boolean) newValue;
-            Settings.System.putIntForUser(getActivity().getContentResolver(),
-                    Settings.System.OMNI_CUSTOM_FP_ICON_ENABLED, val ? 1 : 0,
-                    UserHandle.USER_CURRENT);
-            if (val) {
-                mUdfpsIcons.setEnabled(false);
-            } else {
-                mUdfpsIcons.setEnabled(true);
-            }
-            return true;
         } else if (preference == mMaxKeyguardNotifConfig) {
             int kgconf = (Integer) newValue;
             Settings.System.putInt(getActivity().getContentResolver(),
@@ -254,39 +186,8 @@ public class LockScreen extends SettingsPreferenceFragment
         return false;
     }
 
-    @Override
-    public void onActivityResult(int requestCode, int resultCode, Intent result) {
-       if (requestCode == REQUEST_PICK_IMAGE && resultCode == Activity.RESULT_OK) {
-           Uri uri = null;
-           if (result != null) {
-               uri = result.getData();
-               setPickerIcon(uri.toString());
-               Settings.System.putString(getContentResolver(), Settings.System.OMNI_CUSTOM_FP_ICON,
-                   uri.toString());
-            }
-        } else if (requestCode == REQUEST_PICK_IMAGE && resultCode == Activity.RESULT_CANCELED) {
-            mCustomFPImage.setIcon(new ColorDrawable(Color.TRANSPARENT));
-            Settings.System.putString(getContentResolver(), Settings.System.OMNI_CUSTOM_FP_ICON, "");
-        }
-    }
-
-    private void setPickerIcon(String uri) {
-        try {
-                ParcelFileDescriptor parcelFileDescriptor =
-                    getContext().getContentResolver().openFileDescriptor(Uri.parse(uri), "r");
-                FileDescriptor fileDescriptor = parcelFileDescriptor.getFileDescriptor();
-                Bitmap image = BitmapFactory.decodeFileDescriptor(fileDescriptor);
-                parcelFileDescriptor.close();
-                Drawable d = new BitmapDrawable(getResources(), image);
-                mCustomFPImage.setIcon(d);
-            }
-            catch (Exception e) {}
-    }
-
     public static void reset(Context mContext) {
         ContentResolver resolver = mContext.getContentResolver();
-        Settings.Secure.putIntForUser(resolver,
-                Settings.Secure.SCREEN_OFF_UDFPS_ENABLED, 0, UserHandle.USER_CURRENT);
         Settings.System.putIntForUser(resolver,
                 Settings.System.LOCKSCREEN_BATTERY_INFO, 1, UserHandle.USER_CURRENT);
         Settings.System.putIntForUser(resolver,
@@ -309,8 +210,6 @@ public class LockScreen extends SettingsPreferenceFragment
                 Settings.System.LOCK_SCREEN_CUSTOM_NOTIF, 0, UserHandle.USER_CURRENT);
         Settings.System.putIntForUser(resolver,
                 Settings.System.LOCKSCREEN_MAX_NOTIF_CONFIG, 3, UserHandle.USER_CURRENT);
-        UdfpsAnimation.reset(mContext);
-        UdfpsIconPicker.reset(mContext);
     }
 
     private void updateWeatherSettings() {
@@ -410,24 +309,8 @@ public class LockScreen extends SettingsPreferenceFragment
                     FingerprintManager mFingerprintManager = (FingerprintManager)
                             context.getSystemService(Context.FINGERPRINT_SERVICE);
                     if (mFingerprintManager == null || !mFingerprintManager.isHardwareDetected()) {
-                        keys.add(KEY_UDFPS_ANIMATIONS);
-                        keys.add(KEY_UDFPS_ICONS);
+                        keys.add(KEY_UDFPS_SETTINGS);
                         keys.add(KEY_RIPPLE_EFFECT);
-                        keys.add(SCREEN_OFF_UDFPS_ENABLED);
-                    } else {
-                        if (!Utils.isPackageInstalled(context, "com.crdroid.udfps.animations")) {
-                            keys.add(KEY_UDFPS_ANIMATIONS);
-                        }
-                        if (!Utils.isPackageInstalled(context, "com.crdroid.udfps.icons")) {
-                            keys.add(KEY_UDFPS_ICONS);
-                        }
-                        Resources resources = context.getResources();
-                        boolean screenOffUdfpsAvailable = resources.getBoolean(
-                            com.android.internal.R.bool.config_supportScreenOffUdfps) ||
-                            !TextUtils.isEmpty(resources.getString(
-                                com.android.internal.R.string.config_dozeUdfpsLongPressSensorType));
-                        if (!screenOffUdfpsAvailable)
-                            keys.add(SCREEN_OFF_UDFPS_ENABLED);
                         }
                     return keys;
                 }

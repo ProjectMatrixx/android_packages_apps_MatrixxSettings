@@ -317,4 +317,7 @@
     <string name="notif_panel_maxnotif_title">Notif. Panel notification count</string>
     <string name="notif_panel_maxnotif_summary">Enable adjustment of max Notif. Panel notifications</string>
     <string name="notif_panel_maxnotif_config">Max Notif. Panel notifications</string>
+
+    <string name="udfps_settings_title">UDFPS Settings</string>
+    <string name="udfps_settings_summary">Options for customizing UDFPS</string>
 </resources>
