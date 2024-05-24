@@ -164,23 +164,17 @@ public class StatusBar extends SettingsPreferenceFragment implements
         mChargingSymbol = (SystemSettingListPreference) findPreference("text_charging_symbol");
         mChargingSymbol.setEnabled(batterystyle == BATTERY_STYLE_TEXT);
 
-        final int defaultLeftPadding = Settings.System.getIntForUser(getContentResolver(),
-                    KEY_STATUSBAR_LEFT_PADDING + DEFAULT, 0, UserHandle.USER_CURRENT);
-        CustomSeekBarPreference seekBar = findPreference(KEY_STATUSBAR_LEFT_PADDING);
-        seekBar.setDefaultValue(defaultLeftPadding, true);
+        CustomSeekBarPreference leftSeekBar = findPreference(KEY_STATUSBAR_LEFT_PADDING);
+        int defaultLeftPadding = getResources().getDimensionPixelSize(com.android.internal.R.dimen.status_bar_padding_start);
+        leftSeekBar.setDefaultValue(defaultLeftPadding, true);
 
-        final int defaultRightPadding = Settings.System.getIntForUser(getContentResolver(),
-                    KEY_STATUSBAR_RIGHT_PADDING + DEFAULT, 0, UserHandle.USER_CURRENT);
-        seekBar = findPreference(KEY_STATUSBAR_RIGHT_PADDING);
-        seekBar.setDefaultValue(defaultRightPadding, true);
+        CustomSeekBarPreference rightSeekBar = findPreference(KEY_STATUSBAR_RIGHT_PADDING);
+        int defaultRightPadding = getResources().getDimensionPixelSize(com.android.internal.R.dimen.status_bar_padding_end);
+        rightSeekBar.setDefaultValue(defaultRightPadding, true);
 
-        final int defaultTopPadding = Settings.System.getIntForUser(getContentResolver(),
-                    KEY_STATUSBAR_TOP_PADDING + DEFAULT, 0, UserHandle.USER_CURRENT);
-        seekBar = findPreference(KEY_STATUSBAR_TOP_PADDING);
-        seekBar.setDefaultValue(defaultTopPadding, true);
-
-        mChargingSymbol = (SystemSettingListPreference) findPreference("text_charging_symbol");
-        mChargingSymbol.setEnabled(batterystyle == BATTERY_STYLE_TEXT);
+        CustomSeekBarPreference topSeekbar = findPreference(KEY_STATUSBAR_TOP_PADDING);
+        int defaultTopPadding = getResources().getDimensionPixelSize(com.android.internal.R.dimen.status_bar_padding_top);
+        topSeekbar.setDefaultValue(defaultTopPadding, true);
     }
 
     @Override
