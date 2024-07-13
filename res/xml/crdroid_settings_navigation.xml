@@ -24,6 +24,14 @@
         android:key="nav_illustration"
         lineage:lottie_rawRes="@raw/nav_illustration" />
 
+    <Preference
+        android:key="gesture_system_navigation"
+        android:title="@string/system_navigation_title"
+        android:summary="@string/system_navigation_summary"
+        android:icon="@drawable/ic_x_navbar"
+        android:fragment="com.android.settings.gestures.SystemNavigationGestureSettings"
+        settings:controller="com.android.settings.gestures.SystemNavigationPreferenceController" />
+
     <SwitchPreferenceCompat
         android:key="navbar_visibility"
         android:icon="@drawable/ic_navbar"
