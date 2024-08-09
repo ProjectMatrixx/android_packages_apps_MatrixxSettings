@@ -32,8 +32,8 @@
     	android:icon="@drawable/ic_hide"
         android:title="@string/hide_developer_status_title"
         android:summary="@string/hide_developer_status_summary"
-        android:fragment="com.android.settings.security.HideDeveloperStatusSettings"
-        settings:controller="com.android.settings.security.HideDeveloperStatusPreferenceController" />            
+        android:fragment="com.crdroid.settings.fragments.HideDeveloperStatusSettings" />
+                    
 
     <com.crdroid.settings.preferences.SecureSettingSwitchPreference
         android:key="window_ignore_secure"
