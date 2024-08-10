@@ -126,6 +126,12 @@
         android:entryValues="@array/hardware_keys_action_values"
         android:persistent="false" />
 
+    <com.crdroid.settings.preferences.SecureSettingSwitchPreference
+        android:key="window_ignore_secure"
+        android:title="@string/laboratory_ignore_window_secure_title"
+        android:summary="@string/laboratory_ignore_window_secure_summary"
+        android:defaultValue="false" />
+
     <!-- Sensor block per package -->
     <Preference
         android:key="sensor_block_settings"
