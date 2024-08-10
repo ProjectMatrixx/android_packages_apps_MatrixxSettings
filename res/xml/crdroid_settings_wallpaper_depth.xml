@@ -45,7 +45,7 @@
     <com.crdroid.settings.preferences.SystemSettingSeekBarPreference
         android:key="depth_wallpaper_offset_x"
         android:title="@string/depth_wallpaper_offset_x_title"
-        android:max="0"
+        android:max="100"
         settings:min="-100"
         settings:interval="1"
         settings:units="%"
@@ -54,7 +54,7 @@
     <com.crdroid.settings.preferences.SystemSettingSeekBarPreference
         android:key="depth_wallpaper_offset_y"
         android:title="@string/depth_wallpaper_offset_y_title"
-        android:max="0"
+        android:max="100"
         settings:min="-100"
         settings:interval="1"
         settings:units="%"
