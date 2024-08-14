@@ -117,9 +117,6 @@
     <string name="status_bar_battery_category_title">自訂電池</string>
     <!-- Gestures -->
     <string name="gestures_title">手勢</string>
-    <!-- Roaming indicator icon -->
-    <string name="roaming_indicator_icon_title">漫遊圖示</string>
-    <string name="roaming_indicator_icon_summary">漫遊時在訊號圖示處顯示漫遊標誌</string>
     <!-- 4G icon -->
     <string name="show_fourg_icon_title">4G 圖示</string>
     <string name="show_fourg_icon_summary">在訊號圖示上顯示 4G 而不是 LTE</string>
@@ -249,11 +246,8 @@
     <string name="monet_engine_style_spritz">噴灑</string>
     <string name="monet_engine_style_rainbow">彩虹</string>
     <string name="monet_engine_style_fruit_salad">水果沙拉</string>
-    <string name="monet_engine_style_muted">柔和</string>
-    <string name="monet_engine_style_content">內容</string>
-    <!-- Quick unlock -->
-    <string name="unlock_quick_unlock_control_title">快速解除鎖定</string>
-    <string name="unlock_quick_unlock_control_summary">當正確輸入 PIN 碼／密碼時自動解鎖</string>
+    <!-- Auto pin confirm -->
+    <string name="lock_screen_auto_pin_confirm_summary_custom">當您輸入正確的 PIN 碼時自動解鎖。安全性會略低於點擊確認按鈕進行密碼確認。</string>
     <!-- Doze settings -->
     <string name="doze_display_title">微光螢幕</string>
     <string name="doze_display_summary">設定微光螢幕</string>

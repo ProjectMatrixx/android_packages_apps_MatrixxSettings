@@ -117,9 +117,6 @@
     <string name="status_bar_battery_category_title">شازدانەکانی پاتری</string>
     <!-- Gestures -->
     <string name="gestures_title">Gestures</string>
-    <!-- Roaming indicator icon -->
-    <string name="roaming_indicator_icon_title">Roaming indicator</string>
-    <string name="roaming_indicator_icon_summary">Display roaming indicator in signal icon when in roaming mode</string>
     <!-- 4G icon -->
     <string name="show_fourg_icon_title">4G icon</string>
     <string name="show_fourg_icon_summary">Display 4G icon in signal icon instead LTE</string>
@@ -250,11 +247,8 @@
     <string name="monet_engine_style_spritz">Spritz</string>
     <string name="monet_engine_style_rainbow">Rainbow</string>
     <string name="monet_engine_style_fruit_salad">Fruit Salad</string>
-    <string name="monet_engine_style_muted">Muted</string>
-    <string name="monet_engine_style_content">Content</string>
-    <!-- Quick unlock -->
-    <string name="unlock_quick_unlock_control_title">Quick unlock</string>
-    <string name="unlock_quick_unlock_control_summary">Unlock automatically when the correct PIN/password is entered</string>
+    <!-- Auto pin confirm -->
+    <string name="lock_screen_auto_pin_confirm_summary_custom">Unlock automatically if you input a correct PIN. This is slightly less secure than tapping Enter to confirm.</string>
     <!-- Doze settings -->
     <string name="doze_display_title">Ambient display</string>
     <string name="doze_display_summary">Configure settings for ambient display</string>

@@ -117,9 +117,6 @@
     <string name="status_bar_battery_category_title">Personalizações da bateria</string>
     <!-- Gestures -->
     <string name="gestures_title">Gestos</string>
-    <!-- Roaming indicator icon -->
-    <string name="roaming_indicator_icon_title">Indicador de roaming</string>
-    <string name="roaming_indicator_icon_summary">Exibir o indicador de roaming no ícone de sinal quando em modo de roaming</string>
     <!-- 4G icon -->
     <string name="show_fourg_icon_title">Ícone 4G</string>
     <string name="show_fourg_icon_summary">Exibir ícone 4G no ícone de sinal em vez de LTE</string>
@@ -244,17 +241,14 @@
     <string name="monet_engine_tint_background_title">Colorir superfície de fundo</string>
     <string name="monet_engine_tint_background_summary">Usar as definições de cor e de luminosidade na aplicação da cor de fundo</string>
     <string name="monet_engine_style_title">Estilo do tema</string>
-    <string name="monet_engine_style_tonal_spot">Tonal Spot (Default)</string>
-    <string name="monet_engine_style_vibrant">Vibrant</string>
-    <string name="monet_engine_style_expressive">Expressive</string>
-    <string name="monet_engine_style_spritz">Spritz</string>
-    <string name="monet_engine_style_rainbow">Rainbow</string>
-    <string name="monet_engine_style_fruit_salad">Fruit Salad</string>
-    <string name="monet_engine_style_muted">Muted</string>
-    <string name="monet_engine_style_content">Content</string>
-    <!-- Quick unlock -->
-    <string name="unlock_quick_unlock_control_title">Desbloqueio rápido</string>
-    <string name="unlock_quick_unlock_control_summary">Desbloquear automaticamente quando o PIN ou palavra-passe correta for inserida</string>
+    <string name="monet_engine_style_tonal_spot">Ponto Tonal (predefinido)</string>
+    <string name="monet_engine_style_vibrant">Vibrante</string>
+    <string name="monet_engine_style_expressive">Expressivo</string>
+    <string name="monet_engine_style_spritz">Neutro</string>
+    <string name="monet_engine_style_rainbow">Arco-íris</string>
+    <string name="monet_engine_style_fruit_salad">Salada de Frutas</string>
+    <!-- Auto pin confirm -->
+    <string name="lock_screen_auto_pin_confirm_summary_custom">Desbloquear automaticamente se inserir um PIN correto. Isto é um pouco menos seguro do que confirmar manualmente.</string>
     <!-- Doze settings -->
     <string name="doze_display_title">Ecrã ambiente</string>
     <string name="doze_display_summary">Definir as configurações do ecrã ambiente</string>
