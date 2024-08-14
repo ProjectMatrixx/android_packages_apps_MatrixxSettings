@@ -117,9 +117,6 @@
     <string name="status_bar_battery_category_title">Dostosowanie baterii</string>
     <!-- Gestures -->
     <string name="gestures_title">Gesty</string>
-    <!-- Roaming indicator icon -->
-    <string name="roaming_indicator_icon_title">Wskaźnik roamingu</string>
-    <string name="roaming_indicator_icon_summary">Wyświetlaj wskaźnik sygnału roamingu w trybie roamingu</string>
     <!-- 4G icon -->
     <string name="show_fourg_icon_title">Ikona 4G</string>
     <string name="show_fourg_icon_summary">Wyświetlaj ikonę 4G zamiast ikony sygnału LTE</string>
@@ -252,11 +249,8 @@
     <string name="monet_engine_style_spritz">Spritz</string>
     <string name="monet_engine_style_rainbow">Tęcza</string>
     <string name="monet_engine_style_fruit_salad">Sałatka owocowa</string>
-    <string name="monet_engine_style_muted">Wytłumiony</string>
-    <string name="monet_engine_style_content">Treść</string>
-    <!-- Quick unlock -->
-    <string name="unlock_quick_unlock_control_title">Szybkie odblokowanie</string>
-    <string name="unlock_quick_unlock_control_summary">Odblokuj automatycznie po wprowadzeniu poprawnego kodu PIN/hasła</string>
+    <!-- Auto pin confirm -->
+    <string name="lock_screen_auto_pin_confirm_summary_custom">Odblokuj automatycznie po wprowadzeniu poprawnego kodu PIN. Jest to nieco mniej bezpieczne niż dotknięcie przycisku Enter w celu potwierdzenia.</string>
     <!-- Doze settings -->
     <string name="doze_display_title">Ekran Ambient</string>
     <string name="doze_display_summary">Konfigurowanie ustawień dla ekranu Ambient</string>

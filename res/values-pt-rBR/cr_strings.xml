@@ -117,9 +117,6 @@
     <string name="status_bar_battery_category_title">Personalizações da bateria</string>
     <!-- Gestures -->
     <string name="gestures_title">Gestos</string>
-    <!-- Roaming indicator icon -->
-    <string name="roaming_indicator_icon_title">Indicador de roaming</string>
-    <string name="roaming_indicator_icon_summary">Mostrar o indicador de roaming no ícone de sinal quando no modo de roaming</string>
     <!-- 4G icon -->
     <string name="show_fourg_icon_title">Icone 4G</string>
     <string name="show_fourg_icon_summary">Mostrar ícone 4G em vez LTE</string>
@@ -250,11 +247,8 @@
     <string name="monet_engine_style_spritz">Spritz</string>
     <string name="monet_engine_style_rainbow">Arco-íris</string>
     <string name="monet_engine_style_fruit_salad">Salada de Frutas</string>
-    <string name="monet_engine_style_muted">Silenciado</string>
-    <string name="monet_engine_style_content">Conteúdo</string>
-    <!-- Quick unlock -->
-    <string name="unlock_quick_unlock_control_title">Desbloqueio rápido</string>
-    <string name="unlock_quick_unlock_control_summary">Desbloquear automaticamente quando o PIN/Senha correto for inserido</string>
+    <!-- Auto pin confirm -->
+    <string name="lock_screen_auto_pin_confirm_summary_custom">Desbloquear automaticamente se você inserir o PIN correto. Isso é um pouco menos seguro do que tocar em Enter para confirmar.</string>
     <!-- Doze settings -->
     <string name="doze_display_title">Tela ambiente</string>
     <string name="doze_display_summary">Definir as configurações da tela ambiente</string>

@@ -117,9 +117,6 @@
     <string name="status_bar_battery_category_title">バッテリー表示</string>
     <!-- Gestures -->
     <string name="gestures_title">ジェスチャー</string>
-    <!-- Roaming indicator icon -->
-    <string name="roaming_indicator_icon_title">ローミング表示</string>
-    <string name="roaming_indicator_icon_summary">ローミング中に電波アイコンにローミング表示をします</string>
     <!-- 4G icon -->
     <string name="show_fourg_icon_title">4G アイコン</string>
     <string name="show_fourg_icon_summary">LTE の代わりに 4G アイコンを表示します</string>
@@ -249,11 +246,8 @@
     <string name="monet_engine_style_spritz">Spritz</string>
     <string name="monet_engine_style_rainbow">Rainbow</string>
     <string name="monet_engine_style_fruit_salad">Fruit Salad</string>
-    <string name="monet_engine_style_muted">Muted</string>
-    <string name="monet_engine_style_content">Content</string>
-    <!-- Quick unlock -->
-    <string name="unlock_quick_unlock_control_title">クイックロック解除</string>
-    <string name="unlock_quick_unlock_control_summary">正しい PIN / パスワードを入力すると自動的にロック解除します</string>
+    <!-- Auto pin confirm -->
+    <string name="lock_screen_auto_pin_confirm_summary_custom">正しい PIN を入力すると自動的にロックが解除されます。 この機能は、Enter をタップして確認するよりも安全性が若干劣ります。</string>
     <!-- Doze settings -->
     <string name="doze_display_title">アンビエント表示</string>
     <string name="doze_display_summary">アンビエント表示の設定を編集します</string>

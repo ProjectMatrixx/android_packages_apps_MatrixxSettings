@@ -118,9 +118,6 @@ Ashle-XDA [SLOVAK Preklad]</string>
     <string name="status_bar_battery_category_title">Vlastné nastavenia batérie</string>
     <!-- Gestures -->
     <string name="gestures_title">Gestá</string>
-    <!-- Roaming indicator icon -->
-    <string name="roaming_indicator_icon_title">Indikátor roamingu</string>
-    <string name="roaming_indicator_icon_summary">V režime roamingu zobraziť indikátor v ikone signálu</string>
     <!-- 4G icon -->
     <string name="show_fourg_icon_title">Ikona 4G</string>
     <string name="show_fourg_icon_summary">Zobraziť ikonu 4G namiesto ikony LTE</string>
@@ -253,11 +250,8 @@ Ashle-XDA [SLOVAK Preklad]</string>
     <string name="monet_engine_style_spritz">Spritz</string>
     <string name="monet_engine_style_rainbow">Dúha</string>
     <string name="monet_engine_style_fruit_salad">Ovocný šalát</string>
-    <string name="monet_engine_style_muted">Stlmené</string>
-    <string name="monet_engine_style_content">Obsah</string>
-    <!-- Quick unlock -->
-    <string name="unlock_quick_unlock_control_title">Rýchle odomknutie</string>
-    <string name="unlock_quick_unlock_control_summary">Odomknúť automaticky po zadaní správneho PIN kódu alebo hesla</string>
+    <!-- Auto pin confirm -->
+    <string name="lock_screen_auto_pin_confirm_summary_custom">Automaticky odomknúť po zadaní správneho PIN kódu. Potvrdenie tlačidlom Enter je o trochu bezpečnejšie.</string>
     <!-- Doze settings -->
     <string name="doze_display_title">Ambientne zobrazenie</string>
     <string name="doze_display_summary">Nastavenia pre Ambientne zobrazenie</string>

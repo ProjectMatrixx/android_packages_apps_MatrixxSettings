@@ -117,9 +117,6 @@
     <string name="status_bar_battery_category_title">Akkumulátor testreszabása</string>
     <!-- Gestures -->
     <string name="gestures_title">Gesztusok</string>
-    <!-- Roaming indicator icon -->
-    <string name="roaming_indicator_icon_title">Barangoláskijelző</string>
-    <string name="roaming_indicator_icon_summary">Barangolás kijelzőjének megjelenítése a térerő ikonban, ha barangolásmódban van</string>
     <!-- 4G icon -->
     <string name="show_fourg_icon_title">4G-ikon</string>
     <string name="show_fourg_icon_summary">4G-ikon megjelenítése LTE helyett</string>
@@ -250,11 +247,8 @@
     <string name="monet_engine_style_spritz">Fröccs</string>
     <string name="monet_engine_style_rainbow">Szivárvány</string>
     <string name="monet_engine_style_fruit_salad">Gyümölcssaláta</string>
-    <string name="monet_engine_style_muted">Némított</string>
-    <string name="monet_engine_style_content">Tartalmas</string>
-    <!-- Quick unlock -->
-    <string name="unlock_quick_unlock_control_title">Gyorsfeloldás</string>
-    <string name="unlock_quick_unlock_control_summary">Automatikus feloldás a helyes jelszó/PIN kód megadásakor</string>
+    <!-- Auto pin confirm -->
+    <string name="lock_screen_auto_pin_confirm_summary_custom">Helyes PIN beírásakor automatikusan feloldódik. Ez kevésbé biztonságos, mint az Enter megérintése a megerősítéshez.</string>
     <!-- Doze settings -->
     <string name="doze_display_title">Környezeti kijelző</string>
     <string name="doze_display_summary">A környezeti kijelző testreszabása</string>

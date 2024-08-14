@@ -117,9 +117,6 @@
     <string name="status_bar_battery_category_title">பேட்டரி தனிப்பயனாக்கல்</string>
     <!-- Gestures -->
     <string name="gestures_title">சைகைகள்</string>
-    <!-- Roaming indicator icon -->
-    <string name="roaming_indicator_icon_title">Roaming காட்டி</string>
-    <string name="roaming_indicator_icon_summary">ரோமிங் பயன்முறையில் போது சிக்னல் ஐகானில் ரோமிங் காட்டி காட்டவும்</string>
     <!-- 4G icon -->
     <string name="show_fourg_icon_title">4G படவுரு</string>
     <string name="show_fourg_icon_summary">LTEக்கு பதிலாக சிக்னல் படவுருவில் 4G படவுருவை காண்பி</string>
@@ -250,11 +247,8 @@
     <string name="monet_engine_style_spritz">Spritz</string>
     <string name="monet_engine_style_rainbow">Rainbow</string>
     <string name="monet_engine_style_fruit_salad">Fruit Salad</string>
-    <string name="monet_engine_style_muted">Muted</string>
-    <string name="monet_engine_style_content">Content</string>
-    <!-- Quick unlock -->
-    <string name="unlock_quick_unlock_control_title">விரைவாகத் திற</string>
-    <string name="unlock_quick_unlock_control_summary">சரியான PIN/கடவுச்சொல்லை இட்டவுடனே தானாகத் திற</string>
+    <!-- Auto pin confirm -->
+    <string name="lock_screen_auto_pin_confirm_summary_custom">Unlock automatically if you input a correct PIN. This is slightly less secure than tapping Enter to confirm.</string>
     <!-- Doze settings -->
     <string name="doze_display_title">சூழல்சார் திரை</string>
     <string name="doze_display_summary">Configure settings for ambient display</string>

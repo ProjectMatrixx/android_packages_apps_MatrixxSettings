@@ -117,9 +117,6 @@
     <string name="status_bar_battery_category_title">Anpassung der Akkuanzeige</string>
     <!-- Gestures -->
     <string name="gestures_title">Gesten</string>
-    <!-- Roaming indicator icon -->
-    <string name="roaming_indicator_icon_title">Anzeige bei Roaming</string>
-    <string name="roaming_indicator_icon_summary">Bei Roaming dies im Signalsymbol anzeigen</string>
     <!-- 4G icon -->
     <string name="show_fourg_icon_title">4G-Symbol</string>
     <string name="show_fourg_icon_summary">4G-Symbol anstelle von LTE anzeigen</string>
@@ -250,11 +247,8 @@
     <string name="monet_engine_style_spritz">Spritz</string>
     <string name="monet_engine_style_rainbow">Regenbogen</string>
     <string name="monet_engine_style_fruit_salad">Obstsalat</string>
-    <string name="monet_engine_style_muted">Gedämpfte Farben</string>
-    <string name="monet_engine_style_content">Inhalt</string>
-    <!-- Quick unlock -->
-    <string name="unlock_quick_unlock_control_title">Schnelles Entsperren</string>
-    <string name="unlock_quick_unlock_control_summary">Automatische Entsperrung bei korrekter PIN-/Passworteingabe</string>
+    <!-- Auto pin confirm -->
+    <string name="lock_screen_auto_pin_confirm_summary_custom">Automatisch entsperren bei korrekter PIN-Eingabe. Diese Option ist etwas unsicherer, als zum Bestätigen auf „Eingabe“ tippen zu müssen.</string>
     <!-- Doze settings -->
     <string name="doze_display_title">Ambient-Modus</string>
     <string name="doze_display_summary">Einstellungen für den Ambient-Modus anpassen</string>

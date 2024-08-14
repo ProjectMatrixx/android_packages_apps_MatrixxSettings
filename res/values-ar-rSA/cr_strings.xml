@@ -117,9 +117,6 @@
     <string name="status_bar_battery_category_title">تخصيصات البطارية</string>
     <!-- Gestures -->
     <string name="gestures_title">الإيماءات</string>
-    <!-- Roaming indicator icon -->
-    <string name="roaming_indicator_icon_title">مؤشر التجوال</string>
-    <string name="roaming_indicator_icon_summary">عرض مؤشر التجوال في رمز إشارة الشبكة عندما يكون في وضع التجوال</string>
     <!-- 4G icon -->
     <string name="show_fourg_icon_title">أيقونة 4G</string>
     <string name="show_fourg_icon_summary">عرض أيقونة 4G على إشارة الشبكة بدلاً من LTE</string>
@@ -254,11 +251,11 @@
     <string name="monet_engine_style_spritz">رش</string>
     <string name="monet_engine_style_rainbow">قوس المطر</string>
     <string name="monet_engine_style_fruit_salad">سلطة فواكه</string>
-    <string name="monet_engine_style_muted">مكتوم</string>
-    <string name="monet_engine_style_content">محتوى</string>
     <!-- Quick unlock -->
     <string name="unlock_quick_unlock_control_title">فتح سريع للقفل</string>
     <string name="unlock_quick_unlock_control_summary">فتح تلقائياً عندما يتم إدخال PIN او كلمة السر صحيحة</string>
+    <!-- Auto pin confirm -->
+    <string name="lock_screen_auto_pin_confirm_summary_custom">الفعل من (إلغاء) القُفْل تلقائيًا إذا الفعل من (إدخال) رَقَم التعريف الشخصي الصحيح.  يعد هذا أقل أمانًا قليلاً من النقر على إدخال للتأكيد.</string>
     <!-- Doze settings -->
     <string name="doze_display_title">شاشة الاشعارات Ambient Display</string>
     <string name="doze_display_summary">تعديل إعدادات الشاشة الدائمة</string>
