@@ -33,6 +33,7 @@ import android.app.Activity;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceScreen;
 
+import com.android.internal.util.crdroid.SystemRestartUtils;
 import com.android.internal.logging.nano.MetricsProto;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
@@ -147,6 +148,9 @@ public class Miscellaneous extends SettingsPreferenceFragment implements
             } catch (Exception e) {
                 Log.e(TAG, "Error reading JSON or setting properties", e);
             }
+            mHandler.postDelayed(() -> {
+                SystemRestartUtils.showSystemRestartDialog(getContext());
+            }, 1250);
         }
     }
 
