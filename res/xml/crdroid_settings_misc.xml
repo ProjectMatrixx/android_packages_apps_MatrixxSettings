@@ -70,6 +70,11 @@
     <PreferenceCategory
             android:title="@string/spoofing_category">
     
+    <Preference
+        android:key="pif_json_file_preference"
+        android:title="@string/pif_spoofing_title"
+        android:summary="@string/pif_spoofing_summary"/>
+
     <!-- Unlimited google photos storage -->
     <com.crdroid.settings.preferences.SystemPropertySwitchPreference
         android:key="persist.sys.pixelprops.gphotos"
