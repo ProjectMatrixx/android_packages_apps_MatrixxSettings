@@ -72,6 +72,7 @@
     
     <Preference
         android:key="pif_json_file_preference"
+        android:icon="@drawable/ic_code_json"        
         android:title="@string/pif_spoofing_title"
         android:summary="@string/pif_spoofing_summary"/>
 
