@@ -37,6 +37,7 @@ import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settingslib.search.SearchIndexable;
 
+import com.crdroid.settings.fragments.quicksettings.LayoutSettings;
 import com.crdroid.settings.fragments.quicksettings.QsHeaderImageSettings;
 import com.crdroid.settings.preferences.CustomSeekBarPreference;
 
@@ -178,8 +179,8 @@ public class QuickSettings extends SettingsPreferenceFragment implements
                 Settings.System.QS_SHOW_BATTERY_PERCENT, 2, UserHandle.USER_CURRENT);
         Settings.System.putIntForUser(resolver,
                 Settings.System.SECURE_LOCKSCREEN_QS_DISABLED, 0, UserHandle.USER_CURRENT);
-//        Settings.System.putIntForUser(resolver,
-  //              Settings.System.NOTIFICATION_MATERIAL_DISMISS, 0, UserHandle.USER_CURRENT);
+        Settings.System.putIntForUser(resolver,
+                Settings.System.NOTIFICATION_MATERIAL_DISMISS, 0, UserHandle.USER_CURRENT);
         Settings.System.putIntForUser(resolver,
                 Settings.System.QS_TRANSPARENCY, 100, UserHandle.USER_CURRENT);
         Settings.System.putIntForUser(resolver,
@@ -192,14 +193,6 @@ public class QuickSettings extends SettingsPreferenceFragment implements
                 Settings.System.QS_TILE_UI_STYLE, 0, UserHandle.USER_CURRENT);
         Settings.System.putIntForUser(resolver,
                 Settings.System.QS_PANEL_STYLE, 0, UserHandle.USER_CURRENT);
-        Settings.System.putIntForUser(resolver,
-                Settings.System.QS_LAYOUT_COLUMNS_LANDSCAPE, 4, UserHandle.USER_CURRENT);
-        Settings.System.putIntForUser(resolver,
-                Settings.System.QQS_LAYOUT_ROWS, 2, UserHandle.USER_CURRENT);
-        Settings.System.putIntForUser(resolver,
-                Settings.System.QQS_LAYOUT_ROWS_LANDSCAPE, 1, UserHandle.USER_CURRENT);
-        Settings.System.putIntForUser(resolver,
-                Settings.System.QS_LAYOUT_COLUMNS, 2, UserHandle.USER_CURRENT);
         Settings.System.putIntForUser(resolver,
                 Settings.System.QS_TILE_VERTICAL_LAYOUT, 0, UserHandle.USER_CURRENT);
         Settings.System.putIntForUser(resolver,
@@ -220,6 +213,7 @@ public class QuickSettings extends SettingsPreferenceFragment implements
                 LineageSettings.Secure.QS_SHOW_AUTO_BRIGHTNESS, 1, UserHandle.USER_CURRENT);
         updateQsStyle(mContext);
         updateQsPanelStyle(mContext);
+        LayoutSettings.reset(mContext);
         QsHeaderImageSettings.reset(mContext);
     }
 
