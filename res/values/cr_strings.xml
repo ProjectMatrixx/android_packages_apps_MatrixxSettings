@@ -16,6 +16,10 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
+   <!-- Hide screen capture status -->
+    <string name="hide_screen_capture_status_title">Hide screen capture status</string>
+    <string name="hide_screen_capture_status_summary">Hide screen capture and screen record status from all applications. Can be convenient in some cases but may lead to privacy leaks.</string>
+
     <!-- App Title -->
     <string name="crdroid_settings_title">Matrixx Settings</string>
     <string name="crdroid_settings_summary">Redefining the Fabric of Customization</string>
