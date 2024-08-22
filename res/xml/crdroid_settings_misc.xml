@@ -44,10 +44,23 @@
          android:summary="@string/pif_spoofing_summary"/>
 
     <!-- Unlock FPS for specific games -->
-    <com.crdroid.settings.preferences.SystemPropertySwitchPreference
+    <!--com.crdroid.settings.preferences.SystemPropertySwitchPreference
         android:key="persist.sys.pixelprops.games"
         android:title="@string/use_games_spoof_title"
-        android:summary="@string/use_games_spoof_summary" />
+        android:summary="@string/use_games_spoof_summary" /-->
+
+    <com.crdroid.settings.preferences.SystemPropertySwitchPreference
+       android:key="persist.sys.gameprops.enabled"
+       android:title="@string/gameprops_title"
+       android:icon="@drawable/ic_refresh_rate"
+       android:summary="@string/gameprops_summary"
+       android:defaultValue="false" />
+       
+   <com.android.settings.preferences.ui.AdaptivePreference
+       android:key="game_props_json_file_preference"
+       android:title="@string/gameprops_load_json_title"
+       android:icon="@drawable/ic_code_json"
+       android:summary="@string/gameprops_load_json_summary" />
 
     <!-- Unlimited google photos storage -->
     <com.crdroid.settings.preferences.SystemPropertySwitchPreference
