@@ -59,10 +59,13 @@ public class Miscellaneous extends SettingsPreferenceFragment implements
 
     private static final String POCKET_JUDGE = "pocket_judge";
     private static final String SYS_GAMES_SPOOF = "persist.sys.pixelprops.games";
+    private static final String SYS_PROP_OPTIONS = "persist.sys.pixelprops.all";
     private static final String SYS_PHOTOS_SPOOF = "persist.sys.pixelprops.gphotos";
     private static final String SYS_NETFLIX_SPOOF = "persist.sys.pixelprops.netflix";
     private static final String KEY_THREE_FINGERS_SWIPE = "three_fingers_swipe";
     private static final String KEY_PIF_JSON_FILE_PREFERENCE = "pif_json_file_preference";
+
+    private Preference mPropOptions;
 
     private Preference mPocketJudge;
     private ListPreference mThreeFingersSwipeAction;
@@ -80,6 +83,8 @@ public class Miscellaneous extends SettingsPreferenceFragment implements
         final PreferenceScreen prefScreen = getPreferenceScreen();
         final Resources res = getResources();
 
+        mPropOptions = (Preference) findPreference(SYS_PROP_OPTIONS);
+        mPropOptions.setOnPreferenceChangeListener(this);
         mPocketJudge = (Preference) prefScreen.findPreference(POCKET_JUDGE);
         boolean mPocketJudgeSupported = res.getBoolean(
                 com.android.internal.R.bool.config_pocketModeSupported);
@@ -155,8 +160,12 @@ public class Miscellaneous extends SettingsPreferenceFragment implements
 
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
-           if (preference == mThreeFingersSwipeAction) {
-            handleListChange((ListPreference) preference, newValue,
+           if (preference == mPropOptions) {
+              systemUtils.showSystemRestartDialog(getContext());
+            return true;
+    }
+      else if (preference == mThreeFingersSwipeAction) {
+              handleListChange((ListPreference) preference, newValue,
                     LineageSettings.System.KEY_THREE_FINGERS_SWIPE_ACTION);
             return true;
         }

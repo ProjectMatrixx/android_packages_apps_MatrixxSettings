@@ -70,6 +70,14 @@
     <PreferenceCategory
             android:title="@string/spoofing_category">
     
+    <!-- Google Play Integrity -->
+    <com.crdroid.settings.preferences.SystemPropertySwitchPreference
+        android:key="persist.sys.pixelprops.all"
+        android:icon="@drawable/ic_google"
+        android:title="@string/pi_spoof_title"
+        android:summary="@string/pi_spoof_summary"
+        android:defaultValue="true" />
+
     <Preference
         android:key="pif_json_file_preference"
         android:icon="@drawable/ic_code_json"        
@@ -82,6 +90,7 @@
         android:icon="@drawable/ic_backup"
         android:title="@string/use_photos_spoof_title"
         android:summary="@string/use_photos_spoof_summary"
+	android:dependency="persist.sys.pixelprops.all"
         android:defaultValue="true" />
 
     <!-- Netflix -->
@@ -90,6 +99,7 @@
         android:icon="@drawable/ic_netflix"
         android:title="@string/netflix_spoof_title"
         android:summary="@string/netflix_spoof_summary"
+	android:dependency="persist.sys.pixelprops.all"
         android:defaultValue="false" />
 
     </PreferenceCategory>
