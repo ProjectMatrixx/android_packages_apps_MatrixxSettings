@@ -320,4 +320,7 @@
 
     <string name="system_navigation_summary">Configure navigation menus</string>
 
+    <!-- QS split shade -->
+    <string name="qs_split_shade_title">Split Shade</string>
+    <string name="qs_split_shade_summary">Split QS layout in landscape mode</string>
 </resources>

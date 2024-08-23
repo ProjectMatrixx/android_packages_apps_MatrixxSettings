@@ -222,6 +222,13 @@
             android:summary="@string/qs_layout_columns_rows_summary"
             android:fragment="com.crdroid.settings.fragments.quicksettings.LayoutSettings" />
 
+        <SwitchPreferenceCompat
+            android:key="qs_split_shade"
+            android:icon="@drawable/ic_qs_tile"
+            android:title="@string/qs_split_shade_title"
+            android:summary="@string/qs_split_shade_summary"
+            android:defaultValue="false" />
+
     </PreferenceCategory>
 
     <PreferenceCategory
