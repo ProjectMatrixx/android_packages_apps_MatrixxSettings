@@ -15,11 +15,13 @@
  */
 package com.crdroid.settings.utils;
 
+import android.content.Context;
 import android.content.res.Resources;
 import android.util.TypedValue;
 
 import androidx.annotation.DimenRes;
 
+import com.android.internal.util.crdroid.ThemeUtils;
 
 public class ResourceUtils {
     public static Float getFloatDimensionDp(Resources resources, @DimenRes int dimenResId) {
@@ -30,5 +32,10 @@ public class ResourceUtils {
 
     public static int getIntDimensionDp(Resources resources, @DimenRes int dimenResId) {
         return getFloatDimensionDp(resources, dimenResId).intValue();
+    }
+
+    public static void updateOverlay(Context context, String category, String packageName, String target) {
+        ThemeUtils themeUtils = new ThemeUtils(context);
+        themeUtils.setOverlayEnabled(category, packageName, target);
     }
 }
