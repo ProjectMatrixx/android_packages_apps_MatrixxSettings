@@ -1360,6 +1360,12 @@
     <string name="custom_fp_select_title">Select Custom UDFPS Icon</string>
     <string name="custom_fp_select_summary">Select custom image from your saved files or gallery</string>
     
+    <!-- GameProps spoofing -->
+    <string name="gameprops_title">Enable GameProps spoofing</string>
+    <string name="gameprops_summary">Enables all the spoof options within the PixelProps</string>
+    <string name="gameprops_load_json_title">Select GameProps JSON File</string>
+    <string name="gameprops_load_json_summary">Pick GameProps JSON file to be used for spoofing games</string>
+
     <!-- PIF spoofing -->
     <string name="pif_spoofing_title">Select PIF JSON File</string>
     <string name="pif_spoofing_summary">Pick PIF JSON file to be used for spoofing play integrity</string>

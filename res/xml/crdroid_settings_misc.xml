@@ -60,11 +60,17 @@
 
     <!-- Unlock FPS for specific games -->
     <com.crdroid.settings.preferences.SystemPropertySwitchPreference
-        android:key="persist.sys.pixelprops.games"
+        android:key="persist.sys.gameprops.enabled"
         android:icon="@drawable/ic_backup"
-        android:title="@string/use_games_spoof_title"
-        android:summary="@string/use_games_spoof_summary" />
+        android:title="@string/gameprops_title"
+        android:summary="@string/gameprops_summary"
+        android:defaultValue="false" />
 
+    <Preference
+        android:key="game_props_json_file_preference"
+        android:icon="@drawable/ic_code_json"
+        android:title="@string/gameprops_load_json_title"
+        android:summary="@string/gameprops_load_json_summary" />
     </PreferenceCategory>
 
     <PreferenceCategory
