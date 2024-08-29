@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2016-2024 crDroid Android Project
+ * Copyright (C) 2016-2023 crDroid Android Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -28,7 +28,6 @@ import android.os.UserHandle;
 import android.util.Log;
 import android.provider.Settings;
 
-import androidx.preference.ListPreference;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceScreen;
 
@@ -52,8 +51,6 @@ import java.nio.charset.StandardCharsets;
 import java.util.Iterator;
 import lineageos.providers.LineageSettings;
 
-import static org.lineageos.internal.util.DeviceKeysConstants.*;
-
 @SearchIndexable
 public class Miscellaneous extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
@@ -65,7 +62,6 @@ public class Miscellaneous extends SettingsPreferenceFragment implements
     private static final String SYS_PROP_OPTIONS = "persist.sys.pixelprops.all";
     private static final String SYS_PHOTOS_SPOOF = "persist.sys.pixelprops.gphotos";
     private static final String SYS_NETFLIX_SPOOF = "persist.sys.pixelprops.netflix";
-    private static final String KEY_THREE_FINGERS_SWIPE = "three_fingers_swipe";
     private static final String SYS_GAMEPROP_ENABLED = "persist.sys.gameprops.enabled";
     private static final String KEY_GAME_PROPS_JSON_FILE_PREFERENCE = "game_props_json_file_preference";
     private static final String KEY_PIF_JSON_FILE_PREFERENCE = "pif_json_file_preference";
@@ -73,8 +69,6 @@ public class Miscellaneous extends SettingsPreferenceFragment implements
     private Preference mPropOptions;
 
     private Preference mPocketJudge;
-    private ListPreference mThreeFingersSwipeAction;
-    
     private Preference mPifJsonFilePreference;
 
     private Preference mGamePropsJsonFilePreference;
@@ -103,33 +97,6 @@ public class Miscellaneous extends SettingsPreferenceFragment implements
                 com.android.internal.R.bool.config_pocketModeSupported);
         if (!mPocketJudgeSupported)
             prefScreen.removePreference(mPocketJudge);
-
-        Action defaultThreeFingersSwipeAction = Action.fromIntSafe(res.getInteger(
-                org.lineageos.platform.internal.R.integer.config_threeFingersSwipeBehavior));
-        Action threeFingersSwipeAction = Action.fromSettings(getContentResolver(),
-                LineageSettings.System.KEY_THREE_FINGERS_SWIPE_ACTION,
-                defaultThreeFingersSwipeAction);
-        mThreeFingersSwipeAction = initList(KEY_THREE_FINGERS_SWIPE, threeFingersSwipeAction);
-    }
-
-    private ListPreference initList(String key, Action value) {
-        return initList(key, value.ordinal());
-    }
-
-    private ListPreference initList(String key, int value) {
-        ListPreference list = (ListPreference) getPreferenceScreen().findPreference(key);
-        if (list == null) return null;
-        list.setValue(Integer.toString(value));
-        list.setSummary(list.getEntry());
-        list.setOnPreferenceChangeListener(this);
-        return list;
-    }
-
-    private void handleListChange(ListPreference pref, Object newValue, String setting) {
-        String value = (String) newValue;
-        int index = pref.findIndexOfValue(value);
-        pref.setSummary(pref.getEntries()[index]);
-        LineageSettings.System.putIntForUser(getContentResolver(), setting, Integer.valueOf(value), UserHandle.USER_CURRENT);
     }
 
     @Override
@@ -245,11 +212,6 @@ public class Miscellaneous extends SettingsPreferenceFragment implements
               systemUtils.showSystemRestartDialog(getContext());
             return true;
     }
-      else if (preference == mThreeFingersSwipeAction) {
-              handleListChange((ListPreference) preference, newValue,
-                    LineageSettings.System.KEY_THREE_FINGERS_SWIPE_ACTION);
-            return true;
-        }
         return false;
     }
 
