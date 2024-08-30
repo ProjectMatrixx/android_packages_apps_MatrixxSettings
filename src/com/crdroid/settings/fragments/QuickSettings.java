@@ -67,9 +67,6 @@ public class QuickSettings extends SettingsPreferenceFragment implements
     private static final String QS_SPLIT_SHADE_LAYOUT_CTG = "android.theme.customization.qs_landscape_layout";
     private static final String QS_SPLIT_SHADE_LAYOUT_PKG = "com.android.systemui.qs.landscape.split_shade_layout";
     private static final String QS_SPLIT_SHADE_LAYOUT_TARGET = "com.android.systemui";
-    private static final String QS_SPLIT_SHADE_CUTOUT_CTG = "android.theme.customization.qs_landscape_cutout";
-    private static final String QS_SPLIT_SHADE_CUTOUT_PKG = "android.landscape.split_shade_cutout";
-    private static final String QS_SPLIT_SHADE_CUTOUT_TARGET = "android";
 
     private ListPreference mShowBrightnessSlider;
     private ListPreference mBrightnessSliderPosition;
@@ -190,8 +187,7 @@ public class QuickSettings extends SettingsPreferenceFragment implements
     }
 
     private boolean isSplitShadeEnabled() {
-        return mThemeUtils.isOverlayEnabled(QS_SPLIT_SHADE_LAYOUT_PKG)
-            && mThemeUtils.isOverlayEnabled(QS_SPLIT_SHADE_CUTOUT_PKG);
+        return mThemeUtils.isOverlayEnabled(QS_SPLIT_SHADE_LAYOUT_PKG);
     }
 
     private void updateSplitShadeState(boolean enable) {
@@ -201,10 +197,6 @@ public class QuickSettings extends SettingsPreferenceFragment implements
                 enable ? QS_SPLIT_SHADE_LAYOUT_PKG : QS_SPLIT_SHADE_LAYOUT_TARGET,
                 QS_SPLIT_SHADE_LAYOUT_TARGET);
 
-        mThemeUtils.setOverlayEnabled(
-                QS_SPLIT_SHADE_CUTOUT_CTG,
-                enable ? QS_SPLIT_SHADE_CUTOUT_PKG : QS_SPLIT_SHADE_CUTOUT_TARGET,
-                QS_SPLIT_SHADE_CUTOUT_TARGET);
     }
 
     public static void reset(Context mContext) {
@@ -253,8 +245,6 @@ public class QuickSettings extends SettingsPreferenceFragment implements
         QsHeaderImageSettings.reset(mContext);
         ResourceUtils.updateOverlay(mContext, QS_SPLIT_SHADE_LAYOUT_CTG, QS_SPLIT_SHADE_LAYOUT_TARGET,
                 QS_SPLIT_SHADE_LAYOUT_TARGET);
-        ResourceUtils.updateOverlay(mContext, QS_SPLIT_SHADE_CUTOUT_CTG, QS_SPLIT_SHADE_CUTOUT_TARGET,
-                QS_SPLIT_SHADE_CUTOUT_TARGET);
     }
 
     private void updateAnimTileStyle(int tileAnimationStyle) {
