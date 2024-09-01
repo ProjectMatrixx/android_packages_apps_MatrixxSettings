@@ -17,10 +17,10 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
     <!-- App Title -->
-    <string name="crdroid_settings_title">crDroid Hub</string>
-    <string name="crdroid_settings_summary">Open goodness</string>
+    <string name="crdroid_settings_title">MatriXify</string>
+    <string name="crdroid_settings_summary">Redefining the Fabric of Customization</string>
     <string name="reset_settings_title">Reset settings</string>
-    <string name="reset_settings_message">This will reset most crdroid settings to their default values for the current user. Would you like to continue?</string>
+    <string name="reset_settings_message">This will reset most MatriXify settings to their default values for the current user. Would you like to continue?</string>
 
     <!-- Personalization Categories -->
     <string name="button_title">Buttons</string>
@@ -72,19 +72,19 @@
     <string name="changelog_crdroid_error">Unable to load changelog</string>
 
     <!-- About crDroid -->
-    <string name="about_crdroid">About crDroid</string>
+    <string name="about_crdroid">About Matrixx</string>
     <string name="about_device_name">Device</string>
 
     <!-- Share crDroid -->
-    <string name="share_crdroid_title">Share crDroid</string>
-    <string name="share_crdroid_summary">Let others know about crDroid</string>
-    <string name="share_message">Check out if #crDroidAndroid is available for your device @ https://crdroid.net/</string>
-    <string name="share_chooser_title">Share crDroid</string>
+    <string name="share_crdroid_title">Share Matrixx</string>
+    <string name="share_crdroid_summary">Let others know about Matrixx</string>
+    <string name="share_message">Check out if #Matrixx is available for your device @ https://www.projectmatrixx.org/</string>
+    <string name="share_chooser_title">Share Matrixx</string>
 
     <!-- Sites crDroid -->
     <string name="crdroid_source_title">GitHub</string>
     <string name="crdroid_source_summary">We love open source, check us out</string>
-    <string name="crdroid_telegram_title">crDroid community</string>
+    <string name="crdroid_telegram_title">Matrixx community</string>
     <string name="crdroid_telegram_summary">We are on telegram. Join us!</string>
     <string name="crdroid_telegram_channel_title">Updates channel</string>
     <string name="crdroid_telegram_channel_summary">Get notified of new builds on Telegram</string>
@@ -100,13 +100,13 @@
     <!-- Support crDroid -->
     <string name="crdroid_donate_preference_title">Support us</string>
     <string name="crdroid_donate_preference_summary">Donate to support further development</string>
-    <string name="crdroid_donate_title">crDroid needs your help!</string>
+    <string name="crdroid_donate_title">Matrixx needs your help!</string>
     <string name="crdroid_donate_notification_text">Tap to learn more</string>
-    <string name="crdroid_donate_message">crDroid Android is an open-source project which needs your help to keep website online, our build servers running, and to deliver high-quality builds for your device.\n\n
+    <string name="crdroid_donate_message">Matrixx is an open-source project which needs your help to keep website online, our build servers running, and to deliver high-quality builds for your device.\n\n
 A small donation helps keep this project alive and improving. You can dismiss this message, but your support means a lot to us.</string>
     <string name="crdroid_donate_button">Donate now</string>
     <string name="crdroid_later_button">Maybe later</string>
-    <string name="crdroid_channel_name">crDroid notifications</string>
+    <string name="crdroid_channel_name">Matrixx notifications</string>
     <string name="crdroid_channel_desc">Project specific notifications</string>
     <string name="crdroid_donate_still_needed">We still need €%,d this month. Help us reach our goal.</string>
     <string name="crdroid_donate_thank_you">We appreciate all donations for this month. You can still contribute and make a difference!</string>
@@ -587,7 +587,7 @@ A small donation helps keep this project alive and improving. You can dismiss th
     <string name="qs_footer_settings_icon_title">Settings shortcut</string>
 
     <!-- Device Info screen. crDroid legal. -->
-    <string name="crdroid_license_title">crDroid legal</string>
+    <string name="crdroid_license_title">Matrixx legal</string>
 
     <!-- Quick Settings brightness slider -->
     <string name="qs_brightness_slider_category">Brightness slider</string>
@@ -1053,7 +1053,7 @@ A small donation helps keep this project alive and improving. You can dismiss th
     <string name="status_bar_logo_summary">Display a custom logo on left or right of the status bar</string>
     <string name="status_bar_logo_position_title">Logo position</string>
     <string name="status_bar_logo_style_title">Logo style</string>
-    <string name="status_bar_logo_style_crdroid">crDroid</string>
+    <string name="status_bar_logo_style_crdroid">Matrixx</string>
     <string name="status_bar_logo_style_android">Android</string>
     <string name="status_bar_logo_style_adidas">Adidas</string>
     <string name="status_bar_logo_style_alien">Alien</string>

@@ -22,7 +22,6 @@
     <!-- Gaming mode -->
     <Preference
         android:key="gaming_mode"
-        android:icon="@drawable/ic_gaming"
         android:title="@string/gaming_mode_title"
         android:summary="@string/gaming_mode_summary">
 
@@ -35,7 +34,6 @@
     <!-- Google Play Integrity -->
     <com.crdroid.settings.preferences.SecureSettingSwitchPreference
         android:key="pi_enable_spoof"
-        android:icon="@drawable/ic_google"
         android:title="@string/pi_spoof_title"
         android:summary="@string/pi_spoof_summary"
         android:defaultValue="true" />
@@ -43,7 +41,6 @@
     <!-- Vbmeta hash attestation -->
     <com.crdroid.settings.preferences.SystemPropertySwitchPreference
         android:key="persist.sys.vbmeta.update"
-        android:icon="@drawable/ic_hash"
         android:title="@string/vbmeta_attestation_title"
         android:summary="@string/vbmeta_attestation_summary"
         android:defaultValue="true" />
@@ -51,27 +48,23 @@
     <!-- Keybox Data -->
     <com.crdroid.settings.preferences.KeyboxDataPreference
         android:key="keybox_data_setting"
-        android:icon="@drawable/ic_key"
         android:title="@string/keybox_data_title"/>
 
     <!-- Block attestation even with Keybox Data -->
     <com.crdroid.settings.preferences.SecureSettingSwitchPreference
         android:key="pi_gms_cert_chain"
-        android:icon="@drawable/ic_key"
         android:title="@string/pi_gmscertchain_title"
         android:summary="@string/pi_gmscertchain_summary" />
 
     <!-- Unlock FPS for specific games -->
     <com.crdroid.settings.preferences.SecureSettingSwitchPreference
         android:key="pi_games_spoof"
-        android:icon="@drawable/ic_backup"
         android:title="@string/use_games_spoof_title"
         android:summary="@string/use_games_spoof_summary" />
 
     <!-- Unlimited google photos storage -->
     <com.crdroid.settings.preferences.SecureSettingSwitchPreference
         android:key="pi_photos_spoof"
-        android:icon="@drawable/ic_backup"
         android:title="@string/use_photos_spoof_title"
         android:summary="@string/use_photos_spoof_summary"
         android:defaultValue="true" />
@@ -79,7 +72,6 @@
     <!-- Netflix -->
     <com.crdroid.settings.preferences.SecureSettingSwitchPreference
         android:key="pi_netflix_spoof"
-        android:icon="@drawable/ic_netflix"
         android:title="@string/netflix_spoof_title"
         android:summary="@string/netflix_spoof_summary"
         android:defaultValue="false" />
@@ -87,7 +79,6 @@
     <!-- Application downgrade -->
     <com.crdroid.settings.preferences.GlobalSettingSwitchPreference
         android:key="pm_downgrade_allowed"
-        android:icon="@drawable/ic_arrow_down_box"
         android:title="@string/app_downgrade_title"
         android:summary="@string/app_downgrade_summary"
         android:defaultValue="false"/>
@@ -95,7 +86,6 @@
     <!-- Sidebar -->
     <Preference
         android:key="sidebar"
-        android:icon="@drawable/ic_floating"
         android:title="@string/sidebar_title"
         android:summary="@string/sidebar_summary">
 
@@ -108,7 +98,6 @@
     <!-- Three fingers swipe action -->
     <ListPreference
         android:key="three_fingers_swipe"
-        android:icon="@drawable/ic_three_finger_gesture"
         android:dialogTitle="@string/three_fingers_swipe_title"
         android:title="@string/three_fingers_swipe_title"
         android:entries="@array/hardware_keys_action_entries"
@@ -118,7 +107,6 @@
     <!-- Sensor block per package -->
     <Preference
         android:key="sensor_block_settings"
-        android:icon="@drawable/ic_remote"
         android:title="@string/sensor_block_title"
         android:summary="@string/sensor_block_summary"
         android:fragment="com.crdroid.settings.fragments.misc.SensorBlock"/>
@@ -126,7 +114,6 @@
     <!-- Pocket Judge -->
     <com.crdroid.settings.preferences.SystemSettingSwitchPreference
         android:key="pocket_judge"
-        android:icon="@drawable/ic_pocket"
         android:title="@string/pocket_judge_title"
         android:summary="@string/pocket_judge_summary"
         android:defaultValue="false" />

@@ -103,8 +103,7 @@
 
         <Preference
             android:key="custom_apps_add"
-            android:title="@string/add"
-            android:icon="@drawable/ic_add_24dp" />
+            android:title="@string/add" />
 
     </PreferenceCategory>
 

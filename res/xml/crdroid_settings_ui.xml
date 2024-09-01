@@ -23,7 +23,6 @@
     <!-- Ambient Display -->
     <Preference
         android:key="doze_fragment"
-        android:icon="@drawable/ic_ambient"
         android:title="@string/doze_display_title"
         android:summary="@string/doze_display_summary"
         android:fragment="com.crdroid.settings.fragments.ui.DozeSettings" />
@@ -54,7 +53,6 @@
     <!-- Charging animation -->
     <com.crdroid.settings.preferences.SystemSettingSwitchPreference
         android:key="charging_animation"
-        android:icon="@drawable/ic_battery_charging"
         android:title="@string/charging_animation_title"
         android:summary="@string/charging_animation_summary"
         android:defaultValue="true" />
@@ -62,7 +60,6 @@
     <!-- Display Cutout -->
     <Preference
         android:key="display_cutout_force_fullscreen_settings"
-        android:icon="@drawable/ic_fullscreen"
         android:title="@string/display_cutout_force_fullscreen_title"
         android:summary="@string/display_cutout_force_fullscreen_summary">
         <intent android:action="android.intent.action.MAIN"
@@ -73,7 +70,6 @@
     <!-- Screen Off animation -->
     <com.crdroid.settings.preferences.SystemSettingListPreference
         android:key="screen_off_animation"
-        android:icon="@drawable/ic_television_classic"
         android:title="@string/screen_off_animation_title"
         android:dialogTitle="@string/screen_off_animation_title"
         android:entries="@array/screen_off_animation_entries"
@@ -83,7 +79,6 @@
     <!-- Smart Pixels -->
     <Preference
         android:key="smart_pixels"
-        android:icon="@drawable/ic_smart_pixels"
         android:title="@string/smart_pixels_title" 
         android:summary="@string/smart_pixels_summary" 
         android:fragment="com.crdroid.settings.fragments.ui.SmartPixels" />
@@ -91,7 +86,6 @@
     <!-- Monet Theme Engine -->
     <Preference
         android:key="monet_engine"
-        android:icon="@drawable/ic_themes"
         android:title="@string/monet_title"
         android:summary="@string/monet_summary"
         android:fragment="com.crdroid.settings.fragments.ui.MonetSettings" />
@@ -99,7 +93,6 @@
     <!-- Navbar Style -->
     <Preference
         android:key="android.theme.customization.navbar"
-        android:icon="@drawable/ic_navbar"
         android:title="@string/theme_customization_navbar_title"
         android:summary="@string/theme_customization_navbar_summary"
         android:fragment="com.crdroid.settings.fragments.ui.NavbarStyles"/>
@@ -127,7 +120,6 @@
     <!-- Font style -->
     <Preference
         android:key="android.theme.customization.fonts"
-        android:icon="@drawable/ic_font"
         android:title="@string/theme_customization_font_title"
         android:summary="@string/theme_customization_font_summary"
         android:fragment="com.crdroid.settings.fragments.ui.FontsPicker"/>
@@ -135,7 +127,6 @@
     <!-- Icon pack -->
     <Preference
         android:key="android.theme.customization.icon_pack"
-        android:icon="@drawable/ic_drawing"
         android:title="@string/theme_customization_icon_pack_title"
         android:summary="@string/theme_customization_icon_pack_summary"
         android:fragment="com.crdroid.settings.fragments.ui.StatusbarIcons"/>
@@ -143,7 +134,6 @@
     <!-- Signal icon style -->
     <Preference
         android:key="android.theme.customization.signal_icon"
-        android:icon="@drawable/ic_signal"
         android:title="@string/theme_customization_signal_icon_title"
         android:summary="@string/theme_customization_signal_icon_summary"
         android:fragment="com.crdroid.settings.fragments.ui.SignalIcons"/>
@@ -151,7 +141,6 @@
     <!-- Wifi icon style -->
     <Preference
         android:key="android.theme.customization.wifi_icon"
-        android:icon="@drawable/ic_wifi"
         android:title="@string/theme_customization_wifi_icon_title"
         android:summary="@string/theme_customization_wifi_icon_summary"
         android:fragment="com.crdroid.settings.fragments.ui.WifiIcons"/>
@@ -159,7 +148,6 @@
     <!-- Adaptive icon pack -->
     <Preference
         android:key="android.theme.customization.adaptive_icon_shape"
-        android:icon="@drawable/ic_shapes"
         android:title="@string/theme_customization_icon_shape_title"
         android:summary="@string/theme_customization_icon_shape_summary"
         android:fragment="com.crdroid.settings.fragments.ui.IconShapes"/>
