@@ -99,15 +99,6 @@
 	android:dependency="persist.sys.pixelprops.all"
         android:defaultValue="true" />
 
-    <!-- Netflix -->
-    <com.crdroid.settings.preferences.SystemPropertySwitchPreference
-        android:key="persist.sys.pixelprops.netflix"
-        android:icon="@drawable/ic_netflix"
-        android:title="@string/netflix_spoof_title"
-        android:summary="@string/netflix_spoof_summary"
-	android:dependency="persist.sys.pixelprops.all"
-        android:defaultValue="false" />
-
     </PreferenceCategory>
 
     <!-- Google services

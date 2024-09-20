@@ -64,7 +64,6 @@ public class Miscellaneous extends SettingsPreferenceFragment implements
     private static final String SYS_GAMES_SPOOF = "persist.sys.pixelprops.games";
     private static final String SYS_PROP_OPTIONS = "persist.sys.pixelprops.all";
     private static final String SYS_PHOTOS_SPOOF = "persist.sys.pixelprops.gphotos";
-    private static final String SYS_NETFLIX_SPOOF = "persist.sys.pixelprops.netflix";
     private static final String KEY_THREE_FINGERS_SWIPE = "three_fingers_swipe";
     private static final String SYS_GAMEPROP_ENABLED = "persist.sys.gameprops.enabled";
     private static final String KEY_GAME_PROPS_JSON_FILE_PREFERENCE = "game_props_json_file_preference";
@@ -259,7 +258,6 @@ public class Miscellaneous extends SettingsPreferenceFragment implements
                 LineageSettings.System.AUTO_BRIGHTNESS_ONE_SHOT, 0, UserHandle.USER_CURRENT);
         SystemProperties.set(SYS_GAMES_SPOOF, "false");
         SystemProperties.set(SYS_PHOTOS_SPOOF, "true");
-        SystemProperties.set(SYS_NETFLIX_SPOOF, "false");
         SensorBlock.reset(mContext);
     }
 
