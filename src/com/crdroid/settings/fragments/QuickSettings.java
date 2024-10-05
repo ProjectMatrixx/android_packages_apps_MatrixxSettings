@@ -15,10 +15,8 @@
  */
 package com.crdroid.settings.fragments;
 
-import android.app.Activity;
 import android.content.ContentResolver;
 import android.content.Context;
-import android.net.Uri;
 import android.os.Bundle;
 import android.os.UserHandle;
 import android.provider.Settings;
@@ -87,9 +85,9 @@ public class QuickSettings extends SettingsPreferenceFragment implements
 
         addPreferencesFromResource(R.xml.crdroid_settings_quicksettings);
 
-        mThemeUtils = new ThemeUtils(getActivity());
+        mThemeUtils = new ThemeUtils(getContext());
 
-        final Context mContext = getActivity().getApplicationContext();
+        final Context mContext = getContext();
         final ContentResolver resolver = mContext.getContentResolver();
         final PreferenceScreen prefScreen = getPreferenceScreen();
 
@@ -148,7 +146,7 @@ public class QuickSettings extends SettingsPreferenceFragment implements
 
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
-        ContentResolver resolver = getActivity().getContentResolver();
+        ContentResolver resolver = getContext().getContentResolver();
 
         if (preference == mShowBrightnessSlider) {
             int value = Integer.parseInt((String) newValue);
@@ -168,7 +166,7 @@ public class QuickSettings extends SettingsPreferenceFragment implements
             mQsUI.setSummary(mQsUI.getEntries()[index]);
             Settings.System.putIntForUser(resolver,
                     Settings.System.QS_TILE_UI_STYLE, value, UserHandle.USER_CURRENT);
-            updateQsStyle(getActivity());
+            updateQsStyle(getContext());
             return true;
         } else if (preference == mQsPanelStyle) {
             int value = Integer.parseInt((String) newValue);
@@ -177,7 +175,7 @@ public class QuickSettings extends SettingsPreferenceFragment implements
             mQsPanelStyle.setSummary(mQsPanelStyle.getEntries()[index]);
             Settings.System.putIntForUser(resolver,
                     Settings.System.QS_PANEL_STYLE, value, UserHandle.USER_CURRENT);
-            updateQsPanelStyle(getActivity());
+            updateQsPanelStyle(getContext());
             return true;
         } else if (preference == mSplitShade) {
             updateSplitShadeState(((Boolean) newValue).booleanValue());
