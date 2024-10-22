@@ -112,6 +112,13 @@
             android:summary="@string/qs_bt_show_dialog_summary"
             android:defaultValue="true" />
 
+        <!-- QS Media Player  -->
+        <com.crdroid.settings.preferences.SystemSettingSwitchPreference
+            android:key="qs_compact_media_player_mode"
+            android:title="@string/qs_compact_media_player_mode_title"
+            android:summary="@string/qs_compact_media_player_mode_summary"
+            android:defaultValue="false"  />
+
     </PreferenceCategory>
 
     <PreferenceCategory
