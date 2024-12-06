@@ -41,4 +41,7 @@
     <string name="haptic_feedback_category">Haptic Feedback Settings</string>
     <string name="volume_panel_haptic_feedback_title">Vibrate on changing volume</string>
 
+     <!-- QS Tiles haptic -->
+    <string name="qs_tiles_haptic_feedback_title">Vibrate on touching QS tiles</string>
+
 </resources>

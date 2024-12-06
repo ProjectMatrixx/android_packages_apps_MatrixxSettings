@@ -175,6 +175,12 @@
             android:title="@string/qs_brightness_slider_haptic_title"
             android:summary="@string/qs_tile_haptic_summary" />
 
+        <!-- QS Tiles haptic -->
+        <com.crdroid.settings.preferences.SystemSettingSwitchPreference
+            android:key="qs_tiles_haptic_feedback"
+            android:title="@string/qs_tiles_haptic_feedback_title"
+            android:defaultValue="false" />
+
     </PreferenceCategory>
 
     <!--<PreferenceCategory
