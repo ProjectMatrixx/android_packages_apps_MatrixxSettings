@@ -37,4 +37,8 @@
     <string name="user_summary">Various User interface customization</string>
     <string name="about_summary">Know about this project</string>
 
+    <!-- Volume Haptic feedback -->
+    <string name="haptic_feedback_category">Haptic Feedback Settings</string>
+    <string name="volume_panel_haptic_feedback_title">Vibrate on changing volume</string>
+
 </resources>

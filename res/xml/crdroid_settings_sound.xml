@@ -53,6 +53,11 @@
         android:key="volume_panel"
         android:title="@string/volume_panel_category" >
 
+        <com.crdroid.settings.preferences.SystemSettingSwitchPreference
+            android:key="volume_panel_haptic_feedback"
+            android:title="@string/volume_panel_haptic_feedback_title"
+            android:defaultValue="false" />
+
         <lineageos.preference.LineageSecureSettingSwitchPreference
             android:key="volume_panel_on_left"
             android:title="@string/volume_panel_on_left_title" />
