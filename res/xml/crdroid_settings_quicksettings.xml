@@ -190,6 +190,12 @@
             android:summary="@string/qs_layout_columns_rows_summary"
             android:fragment="com.crdroid.settings.fragments.quicksettings.LayoutSettings" />
 
+        <!-- QS Tiles haptic -->
+        <com.crdroid.settings.preferences.SystemSettingSwitchPreference
+            android:key="qs_tiles_haptic_feedback"
+            android:title="@string/qs_tiles_haptic_feedback_title"
+            android:defaultValue="false" />
+
     </PreferenceCategory>
 
     <PreferenceCategory
