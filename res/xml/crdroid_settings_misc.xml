@@ -135,6 +135,14 @@
         android:summary="@string/hide_screen_capture_status_summary"
         android:defaultValue="false"/>
 
+
+         <!-- Hide applist -->
+    <Preference
+        android:key="hide_applist_setting"
+        android:title="@string/hide_applist_title"
+        android:summary="@string/hide_applist_summary"
+        android:fragment="com.crdroid.settings.fragments.misc.HideAppListSettings" />
+
     <!-- Sensor block per package -->
     <Preference
         android:key="sensor_block_settings"
