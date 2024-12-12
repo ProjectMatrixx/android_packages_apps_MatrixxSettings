@@ -18,40 +18,26 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:title="@string/crdroid_settings_title" >
       
+        <!-- UserInterface -->
+        <Preference
+            android:icon="@drawable/ic_themes"
+            android:title="@string/ui_title"
+            android:summary="@string/user_summary"
+            android:fragment="com.crdroid.settings.fragments.UserInterface" />
+
+        <!-- Statusbar -->   
+        <Preference
+            android:icon="@drawable/ic_settings_statusbar"
+            android:title="@string/statusbar_title"
+            android:summary="@string/status_summary"
+            android:fragment="com.crdroid.settings.fragments.StatusBar" />  
+
         <!-- QuickSettings -->
         <Preference
             android:icon="@drawable/ic_settings_quicksettings"
 	        android:title="@string/quicksettings_title"
             android:summary="@string/quick_summary"
             android:fragment="com.crdroid.settings.fragments.QuickSettings" />
-
-      <!-- Buttons -->
-        <Preference
-            android:icon="@drawable/ic_shapes"
-	        android:title="@string/button_title"
-            android:summary="@string/bottom_summary"
-            android:fragment="com.crdroid.settings.fragments.Buttons" />
-
-      <!-- Lockscreen -->
-        <Preference
-            android:icon="@drawable/ic_settings_lockscreens"
-            android:title="@string/lockscreen_title"
-            android:summary="@string/lockscreen_summary"
-            android:fragment="com.crdroid.settings.fragments.LockScreen" />
-
-        <!-- Misc -->
-        <Preference
-            android:icon="@drawable/ic_settings_miscs"
-            android:title="@string/misc_title"
-            android:summary="@string/mice_summary"
-            android:fragment="com.crdroid.settings.fragments.Miscellaneous" />
-
-        <!-- Navigation -->
-        <Preference
-            android:icon="@drawable/ic_navbar"
-            android:title="@string/navigation_title"
-            android:summary="@string/navigation_summary"
-            android:fragment="com.crdroid.settings.fragments.Navigation" />
 
         <!-- Notifications -->
         <Preference
@@ -60,25 +46,39 @@
             android:summary="@string/notification_summary"
             android:fragment="com.crdroid.settings.fragments.Notifications" />
 
+        <!-- Buttons -->
+        <Preference
+            android:icon="@drawable/ic_shapes"
+	        android:title="@string/button_title"
+            android:summary="@string/bottom_summary"
+            android:fragment="com.crdroid.settings.fragments.Buttons" />
+
+        <!-- Navigation -->
+        <Preference
+            android:icon="@drawable/ic_navbar"
+            android:title="@string/navigation_title"
+            android:summary="@string/navigation_summary"
+            android:fragment="com.crdroid.settings.fragments.Navigation" />
+
+        <!-- Lockscreen -->
+        <Preference
+            android:icon="@drawable/ic_settings_lockscreens"
+            android:title="@string/lockscreen_title"
+            android:summary="@string/lockscreen_summary"
+            android:fragment="com.crdroid.settings.fragments.LockScreen" />
+
         <!-- Sound -->
          <Preference
             android:icon="@drawable/ic_settings_sound"
             android:title="@string/sound_title"
             android:summary="@string/sound_summary"
             android:fragment="com.crdroid.settings.fragments.Sound" />
-            
-        <!-- Statusbar -->   
-        <Preference
-            android:icon="@drawable/ic_settings_statusbar"
-            android:title="@string/statusbar_title"
-            android:summary="@string/status_summary"
-            android:fragment="com.crdroid.settings.fragments.StatusBar" />  
 
-        <!-- UserInterface -->
+        <!-- Misc -->
         <Preference
-            android:icon="@drawable/ic_themes"
-            android:title="@string/ui_title"
-            android:summary="@string/user_summary"
-            android:fragment="com.crdroid.settings.fragments.UserInterface" />
+            android:icon="@drawable/ic_settings_miscs"
+            android:title="@string/misc_title"
+            android:summary="@string/mice_summary"
+            android:fragment="com.crdroid.settings.fragments.Miscellaneous" />
 
 </PreferenceScreen>
