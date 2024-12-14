@@ -66,6 +66,7 @@ public class Miscellaneous extends SettingsPreferenceFragment implements
 
     private static final String POCKET_JUDGE = "pocket_judge";
     private static final String SYS_GAMES_SPOOF = "persist.sys.pixelprops.games";
+    private static final String SYS_PROP_OPTIONS_PI = "persist.sys.pixelprops.pi";
     private static final String SYS_PHOTOS_SPOOF = "persist.sys.pixelprops.gphotos";
     private static final String SYS_NETFLIX_SPOOF = "persist.sys.pixelprops.netflix";
     
@@ -74,7 +75,8 @@ public class Miscellaneous extends SettingsPreferenceFragment implements
     private static final String KEY_PIF_JSON_FILE_PREFERENCE = "pif_json_file_preference";
 
     private Preference mPocketJudge;
-    private ListPreference mThreeFingersSwipeAction;
+    private Preference mPropOptionsPi;
+
     private Preference mPifJsonFilePreference;
 
     private Preference mGamePropsJsonFilePreference;
@@ -92,8 +94,12 @@ public class Miscellaneous extends SettingsPreferenceFragment implements
         final Resources res = getResources();
 
         mPifJsonFilePreference = findPreference(KEY_PIF_JSON_FILE_PREFERENCE);
-        mGamePropsJsonFilePreference = findPreference(KEY_GAME_PROPS_JSON_FILE_PREFERENCE);    
+        mGamePropsJsonFilePreference = findPreference(KEY_GAME_PROPS_JSON_FILE_PREFERENCE);
         mGamePropsSpoof.setOnPreferenceChangeListener(this);
+
+        mPropOptionsPi = (Preference) findPreference(SYS_PROP_OPTIONS_PI);
+        mPropOptionsPi.setOnPreferenceChangeListener(this);
+
         mPocketJudge = (Preference) prefScreen.findPreference(POCKET_JUDGE);
         boolean mPocketJudgeSupported = res.getBoolean(
                 com.android.internal.R.bool.config_pocketModeSupported);
@@ -246,7 +252,7 @@ public class Miscellaneous extends SettingsPreferenceFragment implements
 
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
-        if (preference == mGamePropsSpoof) {
+        if (preference == mGamePropsSpoof || preference == mPropOptionsPi) {
                     SystemRestartUtils.showSystemRestartDialog(getContext());
             return true;
         }
