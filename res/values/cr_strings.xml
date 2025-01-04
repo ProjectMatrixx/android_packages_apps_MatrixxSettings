@@ -1219,7 +1219,7 @@
 
     <!-- Google Play Integrity Spoof -->
     <string name="pi_spoof_title">Google Play Integrity spoof</string>
-    <string name="pi_spoof_summary">Spoof your device as different model for Google Play Integrity</string>
+    <string name="pi_spoof_summary">Spoof your device as different model for Google Play Integrity (Disable to use custom keyboxes/Tricky Store)</string>
 
     <!-- Captive portal -->
     <string name="captive_portal_title">Connectivity check</string>
@@ -1357,14 +1357,14 @@
     <string name="always_on_display_schedule_mixed_sunrise">Turns on from a time till sunrise</string>
 
     <!-- Per-app spoofing -->
-    <string name="gameprops_title">Enable Per-app spoofing</string>
+    <string name="gameprops_title">Enable Game Prop spoofing</string>
     <string name="gameprops_summary">Enables Per-app spoofing options within the PixelProps</string>
-    <string name="gameprops_load_json_title">Select Per-app Props JSON File</string>
-    <string name="gameprops_load_json_summary">Pick Per-app JSON file to be used for spoofing games</string>
+    <string name="gameprops_load_json_title">Select Game Props JSON File</string>
+    <string name="gameprops_load_json_summary">Pick Game Prop JSON file to be used (can be used to spoof other apps as well)</string>
 
     <!-- PIF spoofing -->
     <string name="pif_spoofing_title">Select PIF JSON File</string>
-    <string name="pif_spoofing_summary">Pick PIF JSON file to be used for spoofing play integrity</string>
+    <string name="pif_spoofing_summary">Select a PIF JSON file for spoofing Play Integrity (using the PIF module may break this Implementation)</string>
     <string name="show_pif_properties_title">Play Integrity Fix properties</string>
     <string name="show_pif_properties_summary">Show all currently set PIF properties</string>
     <string name="error_loading_properties">Error loading PIF properties</string>

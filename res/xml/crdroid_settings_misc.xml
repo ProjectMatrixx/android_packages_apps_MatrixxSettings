@@ -64,8 +64,7 @@
     <Preference
          android:key="show_pif_properties"
          android:title="@string/show_pif_properties_title"
-         android:summary="@string/show_pif_properties_summary"
-         android:dependency="persist.sys.pixelprops.all"/>
+         android:summary="@string/show_pif_properties_summary"/>
 
     <!-- Unlimited google photos storage -->
     <com.crdroid.settings.preferences.SystemPropertySwitchPreference
