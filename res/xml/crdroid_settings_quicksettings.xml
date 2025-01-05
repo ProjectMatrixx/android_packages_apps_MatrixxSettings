@@ -196,6 +196,13 @@
             android:title="@string/qs_tiles_haptic_feedback_title"
             android:defaultValue="false" />
 
+        <!-- Better Landscape QS (EXPERIMENTAL) -->
+        <com.crdroid.settings.preferences.SystemSettingSwitchPreference
+            android:key="qs_split_shade_enabled"
+            android:title="@string/qs_split_shade_enabled_title"
+            android:summary="@string/qs_split_shade_enabled_summary"
+            android:defaultValue="false" />
+
     </PreferenceCategory>
 
     <PreferenceCategory

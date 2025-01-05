@@ -18,6 +18,7 @@ package com.crdroid.settings.fragments;
 import android.content.ContentResolver;
 import android.content.Context;
 import android.os.Bundle;
+import android.os.Handler;
 import android.os.UserHandle;
 import android.provider.Settings;
 
@@ -69,8 +70,13 @@ public class QuickSettings extends SettingsPreferenceFragment implements
     private ListPreference mTileAnimationInterpolator;
     private ListPreference mQsUI;
     private ListPreference mQsPanelStyle;
+    private Preference mSplitShadePref;
 
-    private static ThemeUtils mThemeUtils;
+    private  static ThemeUtils mThemeUtils;
+
+    private  ThemeUtils mThemeUtils_split;
+
+    private Handler mHandler = new Handler();
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -119,6 +125,9 @@ public class QuickSettings extends SettingsPreferenceFragment implements
         mQsPanelStyle = (ListPreference) findPreference(KEY_QS_PANEL_STYLE);
         mQsPanelStyle.setOnPreferenceChangeListener(this);
 
+        mSplitShadePref = (Preference) findPreference("qs_split_shade_enabled");
+        mSplitShadePref.setOnPreferenceChangeListener(this);
+
         checkQSOverlays(mContext);
     }
 
@@ -150,6 +159,12 @@ public class QuickSettings extends SettingsPreferenceFragment implements
                     Settings.System.QS_PANEL_STYLE, value, UserHandle.USER_CURRENT);
             updateQsPanelStyle(getContext());
             checkQSOverlays(getContext());
+            return true;
+        } else if (preference == mSplitShadePref) {
+            int value = (boolean) newValue ? 1 : 0;
+            Settings.System.putIntForUser(resolver,
+                "qs_split_shade_enabled", value, UserHandle.USER_CURRENT);
+            updateSplitShadeEnabled(getActivity());
             return true;
         }
         return false;
@@ -204,6 +219,25 @@ public class QuickSettings extends SettingsPreferenceFragment implements
     private void updateAnimTileStyle(int tileAnimationStyle) {
         mTileAnimationDuration.setEnabled(tileAnimationStyle != 0);
         mTileAnimationInterpolator.setEnabled(tileAnimationStyle != 0);
+    }
+
+    private void updateSplitShadeEnabled(Context context) {
+        ContentResolver resolver = context.getContentResolver();
+        boolean splitShadeEnabled = Settings.System.getIntForUser(
+                resolver,
+                "qs_split_shade_enabled" , 0, UserHandle.USER_CURRENT) != 0;
+	    String splitShadeStyleCategory = "android.theme.customization.better_qs";
+        String overlayThemeTarget  = "com.android.systemui";
+        String overlayThemePackage  = "com.android.system.qs.ui.better_qs";
+        if (mThemeUtils_split == null) {
+            mThemeUtils_split = new ThemeUtils(context);
+        }
+        mHandler.postDelayed(() -> {
+            mThemeUtils_split.setOverlayEnabled(splitShadeStyleCategory, overlayThemeTarget, overlayThemeTarget);
+            if (splitShadeEnabled) {
+                mThemeUtils_split.setOverlayEnabled(splitShadeStyleCategory, overlayThemePackage, overlayThemeTarget);
+            }
+        }, 1250);
     }
 
     private static void updateQsStyle(Context context) {
