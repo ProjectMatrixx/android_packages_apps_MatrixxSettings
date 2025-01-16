@@ -105,6 +105,13 @@
             android:max="100"
             android:min="1" />
 
+            <!-- Notification Styles -->      
+        <com.crdroid.settings.preferences.SystemSettingSwitchPreference
+            android:key="notification_style"
+            android:title="@string/notif_style_title"
+            android:summary="@string/notif_style_summary"
+            android:defaultValue="false" />
+
         <!-- QS Bluetooth Dialog -->
         <com.crdroid.settings.preferences.SystemSettingSwitchPreference
             android:key="qs_bt_show_dialog"

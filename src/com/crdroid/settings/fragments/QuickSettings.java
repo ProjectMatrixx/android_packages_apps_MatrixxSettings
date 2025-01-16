@@ -60,6 +60,7 @@ public class QuickSettings extends SettingsPreferenceFragment implements
     private static final String KEY_PREF_TILE_ANIM_INTERPOLATOR = "qs_tile_animation_interpolator";
     private static final String KEY_QS_UI_STYLE  = "qs_tile_ui_style";
     private static final String KEY_QS_PANEL_STYLE  = "qs_panel_style";
+    private static final String KEY_NOTIF_STYLE = "notification_style";
 
     private ListPreference mShowBrightnessSlider;
     private ListPreference mBrightnessSliderPosition;
@@ -71,10 +72,13 @@ public class QuickSettings extends SettingsPreferenceFragment implements
     private ListPreference mQsUI;
     private ListPreference mQsPanelStyle;
     private Preference mSplitShadePref;
+    private Preference  mNotificationStyleSwitch;
 
     private  static ThemeUtils mThemeUtils;
 
     private  ThemeUtils mThemeUtils_split;
+
+    private  ThemeUtils mThemeUtils_noti;
 
     private Handler mHandler = new Handler();
 
@@ -128,6 +132,9 @@ public class QuickSettings extends SettingsPreferenceFragment implements
         mSplitShadePref = (Preference) findPreference("qs_split_shade_enabled");
         mSplitShadePref.setOnPreferenceChangeListener(this);
 
+        mNotificationStyleSwitch = (Preference) findPreference("notification_style");
+        mNotificationStyleSwitch.setOnPreferenceChangeListener(this);
+
         checkQSOverlays(mContext);
     }
 
@@ -166,6 +173,12 @@ public class QuickSettings extends SettingsPreferenceFragment implements
                 "qs_split_shade_enabled", value, UserHandle.USER_CURRENT);
             updateSplitShadeEnabled(getActivity());
             return true;
+        } else if (preference == mNotificationStyleSwitch ) {
+                int value = (boolean) newValue ? 1 : 0;
+                Settings.System.putIntForUser(resolver,
+                    "notification_style", value, UserHandle.USER_CURRENT);
+                    updateNotifStyle(getActivity());
+                return true;
         }
         return false;
     }
@@ -312,6 +325,34 @@ public class QuickSettings extends SettingsPreferenceFragment implements
         if (qsPanelStyle > 0) {
             mThemeUtils.setOverlayEnabled(qsPanelStyleCategory, overlayThemePackage, overlayThemeTarget);
         }
+    }
+
+    private void updateNotifStyle(Context context) {
+        ContentResolver resolver = context.getContentResolver();
+        // Fetch the current notification style setting
+        boolean enableStyle = Settings.System.getIntForUser(
+                resolver,
+                "notification_style",
+                0,
+                UserHandle.USER_CURRENT
+        ) == 1;
+
+        String notifStyleCategory = "android.theme.customization.notification";
+        String overlayThemeTarget = "com.android.systemui";
+        String overlayPackage = null;
+        if (mThemeUtils_noti == null) {
+                mThemeUtils_noti = new ThemeUtils(context);
+        }
+        // Apply the style
+        if (enableStyle) {
+            overlayPackage = "com.android.theme.notification.fluid";
+        }
+        // Apply or reset the overlay
+        mThemeUtils_noti.setOverlayEnabled(
+                notifStyleCategory,
+                overlayPackage != null ? overlayPackage : overlayThemeTarget,
+                overlayThemeTarget
+        );
     }
 
     private void checkQSOverlays(Context context) {
