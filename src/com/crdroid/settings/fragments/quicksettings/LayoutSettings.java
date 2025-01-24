@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2024-2025 crDroid Android Project
+ * Copyright (C) 2024 crDroid Android Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -45,7 +45,7 @@ public class LayoutSettings extends SettingsPreferenceFragment {
         Settings.System.putIntForUser(resolver,
                 Settings.System.QS_LAYOUT_COLUMNS, 2, UserHandle.USER_CURRENT);
         Settings.System.putIntForUser(resolver,
-                Settings.System.QS_LAYOUT_COLUMNS_LANDSCAPE, 2, UserHandle.USER_CURRENT);
+                Settings.System.QS_LAYOUT_COLUMNS_LANDSCAPE, 4, UserHandle.USER_CURRENT);
         Settings.System.putIntForUser(resolver,
                 Settings.System.QS_LAYOUT_ROWS, 4, UserHandle.USER_CURRENT);
         Settings.System.putIntForUser(resolver,
