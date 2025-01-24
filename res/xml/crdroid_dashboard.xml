@@ -26,13 +26,13 @@
             settings:layout="@layout/matrixx_dashboard_preference_top"
             android:fragment="com.crdroid.settings.fragments.UserInterface" />
 
-        <!-- Statusbar -->   
+        <!-- Lockscreen -->
         <Preference
-            android:icon="@drawable/ic_settings_statusbar"
-            android:title="@string/statusbar_title"
-            android:summary="@string/status_summary"
+            android:icon="@drawable/ic_settings_lockscreens"
+            android:title="@string/lockscreen_title"
+            android:summary="@string/lockscreen_summary"
             settings:layout="@layout/matrixx_dashboard_preference_middle"
-            android:fragment="com.crdroid.settings.fragments.StatusBar" />  
+            android:fragment="com.crdroid.settings.fragments.LockScreen" />
 
         <!-- QuickSettings -->
         <Preference
@@ -42,45 +42,46 @@
             settings:layout="@layout/matrixx_dashboard_preference_bottom"
             android:fragment="com.crdroid.settings.fragments.QuickSettings" />
 
+        <!-- Statusbar -->   
+        <Preference
+            android:icon="@drawable/ic_settings_statusbar"
+            android:title="@string/statusbar_title"
+            android:summary="@string/status_summary"
+            settings:layout="@layout/matrixx_dashboard_preference_top"
+            android:fragment="com.crdroid.settings.fragments.StatusBar" />  
+
         <!-- Notifications -->
         <Preference
             android:icon="@drawable/ic_message_fast"
             android:title="@string/notifications_title"
             android:summary="@string/notification_summary"
-            settings:layout="@layout/matrixx_dashboard_preference_top"
-            android:fragment="com.crdroid.settings.fragments.Notifications" />
-
-        <!-- Buttons -->
-        <Preference
-            android:icon="@drawable/ic_shapes"
-	        android:title="@string/button_title"
-            android:summary="@string/bottom_summary"
             settings:layout="@layout/matrixx_dashboard_preference_middle"
-            android:fragment="com.crdroid.settings.fragments.Buttons" />
-
-        <!-- Navigation -->
-        <Preference
-            android:icon="@drawable/ic_navbar"
-            android:title="@string/navigation_title"
-            android:summary="@string/navigation_summary"
-            settings:layout="@layout/matrixx_dashboard_preference_bottom"
-            android:fragment="com.crdroid.settings.fragments.Navigation" />
-
-        <!-- Lockscreen -->
-        <Preference
-            android:icon="@drawable/ic_settings_lockscreens"
-            android:title="@string/lockscreen_title"
-            android:summary="@string/lockscreen_summary"
-            settings:layout="@layout/matrixx_dashboard_preference_top"
-            android:fragment="com.crdroid.settings.fragments.LockScreen" />
+            android:fragment="com.crdroid.settings.fragments.Notifications" />
 
         <!-- Sound -->
          <Preference
             android:icon="@drawable/ic_settings_sound"
             android:title="@string/sound_title"
             android:summary="@string/sound_summary"
-            settings:layout="@layout/matrixx_dashboard_preference_middle"
+            settings:layout="@layout/matrixx_dashboard_preference_bottom"
             android:fragment="com.crdroid.settings.fragments.Sound" />
+
+
+        <!-- Buttons -->
+        <Preference
+            android:icon="@drawable/ic_shapes"
+	        android:title="@string/button_title"
+            android:summary="@string/bottom_summary"
+            settings:layout="@layout/matrixx_dashboard_preference_top"
+            android:fragment="com.crdroid.settings.fragments.Buttons" />
+        
+        <!-- Navigation -->
+        <Preference
+            android:icon="@drawable/ic_navbar"
+            android:title="@string/navigation_title"
+            android:summary="@string/navigation_summary"
+            settings:layout="@layout/matrixx_dashboard_preference_middle"
+            android:fragment="com.crdroid.settings.fragments.Navigation" />
 
         <!-- Misc -->
         <Preference
