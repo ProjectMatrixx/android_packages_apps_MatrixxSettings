@@ -39,6 +39,8 @@ import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settingslib.search.SearchIndexable;
 
+import com.crdroid.settings.utils.ImageUtils;
+
 import java.util.List;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -219,8 +221,11 @@ public class QsHeaderImageSettings extends SettingsPreferenceFragment implements
         if (requestCode == REQUEST_PICK_IMAGE && resultCode == Activity.RESULT_OK) {
             final Uri imageUri = result.getData();
             if (imageUri != null) {
-                Settings.System.putString(getContentResolver(),
-                    Settings.System.STATUS_BAR_FILE_HEADER_IMAGE, imageUri.toString());
+                String savedImagePath = ImageUtils.saveImageToInternalStorage(getContext(), imageUri, "qs_header_image", "QS_HEADER_IMAGE");
+                if (savedImagePath != null) {
+                    ContentResolver resolver = getContext().getContentResolver();
+                    Settings.System.putStringForUser(resolver, Settings.System.STATUS_BAR_FILE_HEADER_IMAGE, savedImagePath, UserHandle.USER_CURRENT);
+                }
             }
         }
     }
