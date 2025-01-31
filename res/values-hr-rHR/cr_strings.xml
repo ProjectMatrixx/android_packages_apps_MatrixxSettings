@@ -16,8 +16,8 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- App Title -->
-    <string name="crdroid_settings_title">crDroid postavke</string>
-    <string name="crdroid_settings_summary">Otvorite mrak opcije</string>
+    <string name="crdroid_settings_title">Matrixx postavke</string>
+    <string name="crdroid_settings_summary">Redefining the Fabric of Customization</string>
     <string name="reset_settings_title">Vraćanje postavki</string>
     <string name="reset_settings_message">Ovo će vratiti većinu crDroid postavki na njihove zadane vrijednosti za trenutnog korisnika. Želite li nastaviti?</string>
     <!-- Personalization Categories -->
@@ -966,7 +966,7 @@
     <string name="status_bar_logo_summary">Prikaz prilagođenog logotipa lijevo ili desno od statusne trake</string>
     <string name="status_bar_logo_position_title">Položaj logotipa</string>
     <string name="status_bar_logo_style_title">Stil logotipa</string>
-    <string name="status_bar_logo_style_crdroid">crDroid</string>
+    <string name="status_bar_logo_style_crdroid">Matrixxx</string>
     <string name="status_bar_logo_style_android">Android</string>
     <string name="status_bar_logo_style_adidas">Adidas</string>
     <string name="status_bar_logo_style_alien">Vanzemaljci</string>

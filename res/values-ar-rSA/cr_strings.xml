@@ -16,8 +16,8 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- App Title -->
-    <string name="crdroid_settings_title">إعدادات crDroid</string>
-    <string name="crdroid_settings_summary">ملخص الإعدادات</string>
+    <string name="crdroid_settings_title">إعدادات Matrixx</string>
+    <string name="crdroid_settings_summary">Redefining the Fabric of Customization</string>
     <string name="reset_settings_title">إعادة ضبط الإعدادات</string>
     <string name="reset_settings_message">سيؤدي ذلك إلى إعادة تعيين معظم إعدادات crdroid إلى قيمها الافتراضية للمستخدم الحالي. هل ترغب في المتابعة؟</string>
     <!-- Personalization Categories -->
@@ -973,7 +973,7 @@
     <string name="status_bar_logo_summary">عرض شعار مخصص على اليسار أو اليمين من شريط الحالة</string>
     <string name="status_bar_logo_position_title">موقع الشعار</string>
     <string name="status_bar_logo_style_title">نمط الشعار</string>
-    <string name="status_bar_logo_style_crdroid">crDroid</string>
+    <string name="status_bar_logo_style_crdroid">Matrixxx</string>
     <string name="status_bar_logo_style_android">أندرويد</string>
     <string name="status_bar_logo_style_adidas">أديداس</string>
     <string name="status_bar_logo_style_alien">كائن فضائي</string>

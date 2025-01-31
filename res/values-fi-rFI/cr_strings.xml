@@ -16,8 +16,8 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- App Title -->
-    <string name="crdroid_settings_title">crDroidin asetukset</string>
-    <string name="crdroid_settings_summary">Avaa hyvyys</string>
+    <string name="crdroid_settings_title">Matrixxin asetukset</string>
+    <string name="crdroid_settings_summary">Redefining the Fabric of Customization</string>
     <string name="reset_settings_title">Nollaa asetukset</string>
     <string name="reset_settings_message">Tämä palauttaa nykyiselle käyttäjälle useimmat crDroid-asetukset niiden oletusarvoille. Haluatko jatkaa?</string>
     <!-- Personalization Categories -->
@@ -964,7 +964,7 @@
     <string name="status_bar_logo_summary">Display a custom logo on left or right of the status bar</string>
     <string name="status_bar_logo_position_title">Logo position</string>
     <string name="status_bar_logo_style_title">Logo style</string>
-    <string name="status_bar_logo_style_crdroid">crDroid</string>
+    <string name="status_bar_logo_style_crdroid">Matrixxx</string>
     <string name="status_bar_logo_style_android">Android</string>
     <string name="status_bar_logo_style_adidas">Adidas</string>
     <string name="status_bar_logo_style_alien">Alien</string>

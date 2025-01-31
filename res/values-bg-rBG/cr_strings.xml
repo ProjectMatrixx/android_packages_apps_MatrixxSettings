@@ -16,8 +16,8 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- App Title -->
-    <string name="crdroid_settings_title">настройки на crDroid</string>
-    <string name="crdroid_settings_summary">Отворени благини</string>
+    <string name="crdroid_settings_title">настройки на Matrixx</string>
+    <string name="crdroid_settings_summary">Redefining the Fabric of Customization</string>
     <string name="reset_settings_title">Нулирай настройките</string>
     <string name="reset_settings_message">Това ще нулира повечето crdroid настройки до техните стойности по подразбиране за текущия потребител. Искате ли да продължите?</string>
     <!-- Personalization Categories -->
@@ -964,7 +964,7 @@
     <string name="status_bar_logo_summary">在状态栏的左侧或右侧显示自定义徽标</string>
     <string name="status_bar_logo_position_title">Позиция на лого</string>
     <string name="status_bar_logo_style_title">Стил на логото</string>
-    <string name="status_bar_logo_style_crdroid">crDroid</string>
+    <string name="status_bar_logo_style_crdroid">Matrixxx</string>
     <string name="status_bar_logo_style_android">Андроид</string>
     <string name="status_bar_logo_style_adidas">adidas</string>
     <string name="status_bar_logo_style_alien">外星人</string>

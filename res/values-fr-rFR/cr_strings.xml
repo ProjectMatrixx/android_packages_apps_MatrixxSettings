@@ -16,8 +16,8 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- App Title -->
-    <string name="crdroid_settings_title">Paramètres crDroid</string>
-    <string name="crdroid_settings_summary">Les trésors de crDroid</string>
+    <string name="crdroid_settings_title">Paramètres Matrixx</string>
+    <string name="crdroid_settings_summary">Redefining the Fabric of Customization</string>
     <string name="reset_settings_title">Réinitialiser les paramètres</string>
     <string name="reset_settings_message">Cette action réinitialisera la plupart des paramètres crDroid à leurs valeurs par défaut pour l’utilisateur actuel. Souhaitez-vous continuer ?</string>
     <!-- Personalization Categories -->
@@ -964,7 +964,7 @@
     <string name="status_bar_logo_summary">Afficher un logo personnalisé à gauche ou à droite de la barre d\'état</string>
     <string name="status_bar_logo_position_title">Position du logo</string>
     <string name="status_bar_logo_style_title">Style du logo</string>
-    <string name="status_bar_logo_style_crdroid">crDroid</string>
+    <string name="status_bar_logo_style_crdroid">Matrixxx</string>
     <string name="status_bar_logo_style_android">Android</string>
     <string name="status_bar_logo_style_adidas">Adidas</string>
     <string name="status_bar_logo_style_alien">Alien</string>

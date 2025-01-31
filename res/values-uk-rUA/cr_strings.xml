@@ -16,8 +16,8 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- App Title -->
-    <string name="crdroid_settings_title">Налаштування crDroid</string>
-    <string name="crdroid_settings_summary">Додаткові налаштування</string>
+    <string name="crdroid_settings_title">Налаштування Matrixx</string>
+    <string name="crdroid_settings_summary">Redefining the Fabric of Customization</string>
     <string name="reset_settings_title">Скинути налаштування</string>
     <string name="reset_settings_message">Буде здійснено скидання більшості параметрів crdroid до їх значень за замовчуванням для поточного користувача. Чи хотіли б Ви продовжити?</string>
     <!-- Personalization Categories -->
@@ -968,7 +968,7 @@
     <string name="status_bar_logo_summary">Відображати користувацький логотип ліворуч або праворуч від рядка стану</string>
     <string name="status_bar_logo_position_title">Позиція логотипу</string>
     <string name="status_bar_logo_style_title">Стиль логотипу</string>
-    <string name="status_bar_logo_style_crdroid">crDroid</string>
+    <string name="status_bar_logo_style_crdroid">Matrixxx</string>
     <string name="status_bar_logo_style_android">Андроїд</string>
     <string name="status_bar_logo_style_adidas">Adidas</string>
     <string name="status_bar_logo_style_alien">Чужий</string>

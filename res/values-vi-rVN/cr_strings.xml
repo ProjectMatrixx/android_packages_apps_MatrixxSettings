@@ -16,8 +16,8 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- App Title -->
-    <string name="crdroid_settings_title">Các thiết lập tùy chỉnh</string>
-    <string name="crdroid_settings_summary">Khám phá tính năng hay nhất</string>
+    <string name="crdroid_settings_title">Matrixx Settings</string>
+    <string name="crdroid_settings_summary">Redefining the Fabric of Customization</string>
     <string name="reset_settings_title">Đặt lại cài đặt</string>
     <string name="reset_settings_message">Tiếp tục đặt lại toàn bộ các thiết lập về giá trị mặc định cho người dùng hiện tại không?</string>
     <!-- Personalization Categories -->

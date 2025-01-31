@@ -16,8 +16,8 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- App Title -->
-    <string name="crdroid_settings_title">crட்ராய்டு அமைப்புகள்</string>
-    <string name="crdroid_settings_summary">திறந்த நன்மை</string>
+    <string name="crdroid_settings_title">Matrixx அமைப்புகள்</string>
+    <string name="crdroid_settings_summary">Redefining the Fabric of Customization</string>
     <string name="reset_settings_title">அமைப்புகளை மீட்டமைக்கவும்</string>
     <string name="reset_settings_message">இது பெரும்பாலான crdroid அமைப்புகளை தற்போதைய பயனருக்கான இயல்புநிலை மதிப்புகளுக்கு மீட்டமைக்கும்.  நீங்கள் தொடர விரும்புகிறீர்களா?</string>
     <!-- Personalization Categories -->
@@ -967,7 +967,7 @@ quick_settings_expanded_desktop
     <string name="status_bar_logo_summary">Display a custom logo on left or right of the status bar</string>
     <string name="status_bar_logo_position_title">சின்னத்தின் நிலை</string>
     <string name="status_bar_logo_style_title">சின்னம் பாணி</string>
-    <string name="status_bar_logo_style_crdroid">crDroid</string>
+    <string name="status_bar_logo_style_crdroid">Matrixxx</string>
     <string name="status_bar_logo_style_android">Android</string>
     <string name="status_bar_logo_style_adidas">Adidas</string>
     <string name="status_bar_logo_style_alien">Alien</string>

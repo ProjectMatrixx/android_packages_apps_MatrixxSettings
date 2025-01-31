@@ -16,8 +16,8 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- App Title -->
-    <string name="crdroid_settings_title">Setări crDroid</string>
-    <string name="crdroid_settings_summary">Unde se intampla magia</string>
+    <string name="crdroid_settings_title">Setări Matrixx</string>
+    <string name="crdroid_settings_summary">Redefining the Fabric of Customization</string>
     <string name="reset_settings_title">Resetare setări</string>
     <string name="reset_settings_message">Aceasta va reseta cele mai multe setări crdroid la valorile lor implicite pentru utilizatorul curent. Doriți să continuați?</string>
     <!-- Personalization Categories -->
@@ -966,7 +966,7 @@
     <string name="status_bar_logo_summary">Afișează o siglă personalizată pe partea stângă sau dreaptă a barei de stare</string>
     <string name="status_bar_logo_position_title">Pozitie logo</string>
     <string name="status_bar_logo_style_title">Stil logo</string>
-    <string name="status_bar_logo_style_crdroid">crDroid</string>
+    <string name="status_bar_logo_style_crdroid">Matrixxx</string>
     <string name="status_bar_logo_style_android">Android</string>
     <string name="status_bar_logo_style_adidas">Adidas</string>
     <string name="status_bar_logo_style_alien">Extraterestru</string>

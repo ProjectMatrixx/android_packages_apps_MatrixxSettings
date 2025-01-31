@@ -16,7 +16,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- App Title -->
-    <string name="crdroid_settings_title">crDroid 설정</string>
+    <string name="crdroid_settings_title">Matrixx 설정</string>
     <string name="crdroid_settings_summary">기기의 더 자세한 부분까지 사용자 정의</string>
     <string name="reset_settings_title">추가 사용자 정의 설정 초기화</string>
     <string name="reset_settings_message">추가 사용자 정의 설정을 기본값으로 초기화합니다. 정말 계속하시겠습니까?</string>
@@ -962,7 +962,7 @@
     <string name="status_bar_logo_summary">상태 표시줄 왼쪽 또는 오른쪽에 사용자 정의 로고 표시</string>
     <string name="status_bar_logo_position_title">로고 위치</string>
     <string name="status_bar_logo_style_title">로고 스타일</string>
-    <string name="status_bar_logo_style_crdroid">crDroid</string>
+    <string name="status_bar_logo_style_crdroid">Matrixxx</string>
     <string name="status_bar_logo_style_android">안드로이드</string>
     <string name="status_bar_logo_style_adidas">아디다스</string>
     <string name="status_bar_logo_style_alien">외계인</string>

@@ -16,8 +16,8 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- App Title -->
-    <string name="crdroid_settings_title">crDroid 设置</string>
-    <string name="crdroid_settings_summary">个性化设置</string>
+    <string name="crdroid_settings_title">Matrixx 设置</string>
+    <string name="crdroid_settings_summary">Redefining the Fabric of Customization</string>
     <string name="reset_settings_title">重置设置</string>
     <string name="reset_settings_message">这将会重置当前用户大部分的 crDroid 设置为默认值。您要继续吗？</string>
     <!-- Personalization Categories -->
@@ -962,7 +962,7 @@
     <string name="status_bar_logo_summary">在状态栏左侧或右侧显示自定义 Logo</string>
     <string name="status_bar_logo_position_title">Logo 位置</string>
     <string name="status_bar_logo_style_title">Logo 样式</string>
-    <string name="status_bar_logo_style_crdroid">crDroid</string>
+    <string name="status_bar_logo_style_crdroid">Matrixxx</string>
     <string name="status_bar_logo_style_android">Android</string>
     <string name="status_bar_logo_style_adidas">阿迪达斯</string>
     <string name="status_bar_logo_style_alien">外星人</string>

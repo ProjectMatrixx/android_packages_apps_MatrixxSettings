@@ -16,8 +16,8 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- App Title -->
-    <string name="crdroid_settings_title">Configuració de crDroid</string>
-    <string name="crdroid_settings_summary">Obrir Goodness</string>
+    <string name="crdroid_settings_title">Configuració de Matrixx</string>
+    <string name="crdroid_settings_summary">Redefining the Fabric of Customization</string>
     <string name="reset_settings_title">Restableix la configuració</string>
     <string name="reset_settings_message">La major part de la configuració de crDroid de l\'usuari actual es restablirà als valors per defecte. Voleu continuar?</string>
     <!-- Personalization Categories -->
@@ -964,7 +964,7 @@
     <string name="status_bar_logo_summary">Mostra un logotip personalitzat a la part dreta o esquerra de la barra d\'estat</string>
     <string name="status_bar_logo_position_title">Posició del logotip</string>
     <string name="status_bar_logo_style_title">Estil del logotip</string>
-    <string name="status_bar_logo_style_crdroid">crDroid</string>
+    <string name="status_bar_logo_style_crdroid">Matrixxx</string>
     <string name="status_bar_logo_style_android">Android</string>
     <string name="status_bar_logo_style_adidas">Adidas</string>
     <string name="status_bar_logo_style_alien">Alienígena</string>

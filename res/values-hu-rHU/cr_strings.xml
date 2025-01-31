@@ -16,8 +16,8 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- App Title -->
-    <string name="crdroid_settings_title">A crDroid beállításai</string>
-    <string name="crdroid_settings_summary">Klassz dolgok lelőhelye</string>
+    <string name="crdroid_settings_title">A Matrixx beállításai</string>
+    <string name="crdroid_settings_summary">Redefining the Fabric of Customization</string>
     <string name="reset_settings_title">Beállítások visszaállítása</string>
     <string name="reset_settings_message">Ez a legtöbb crDroid-beállításértéket visszaállítja alapértelmezettre a jelenlegi felhasználónál. Szeretné folytatni?</string>
     <!-- Personalization Categories -->
@@ -964,7 +964,7 @@
     <string name="status_bar_logo_summary">Egyéni logo megjelenítése az állapotsor jobb vagy bal oldalán</string>
     <string name="status_bar_logo_position_title">A logó pozíciója</string>
     <string name="status_bar_logo_style_title">Logóstílus</string>
-    <string name="status_bar_logo_style_crdroid">crDroid</string>
+    <string name="status_bar_logo_style_crdroid">Matrixxx</string>
     <string name="status_bar_logo_style_android">Android</string>
     <string name="status_bar_logo_style_adidas">Adidas</string>
     <string name="status_bar_logo_style_alien">Földönkívüli</string>

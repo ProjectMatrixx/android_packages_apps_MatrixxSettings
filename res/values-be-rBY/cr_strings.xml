@@ -16,8 +16,8 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- App Title -->
-    <string name="crdroid_settings_title">Налады crDroid</string>
-    <string name="crdroid_settings_summary">Тут адбываецца чараўніцтва</string>
+    <string name="crdroid_settings_title">Налады Matrixx</string>
+    <string name="crdroid_settings_summary">Redefining the Fabric of Customization</string>
     <string name="reset_settings_title">Скінуць налады</string>
     <string name="reset_settings_message">Гэта прывядзе да скіду большасці налад crdroid да значэнняў па змаўчанні для бягучага карыстальніка. Працягнуць?</string>
     <!-- Personalization Categories -->
@@ -969,7 +969,7 @@
     <string name="status_bar_logo_summary">Адлюстраванне ўласнага лагатыпа злева або справа ад радка стану</string>
     <string name="status_bar_logo_position_title">Пазіцыя лагатыпа</string>
     <string name="status_bar_logo_style_title">Стыль лагатыпу</string>
-    <string name="status_bar_logo_style_crdroid">crDroid</string>
+    <string name="status_bar_logo_style_crdroid">Matrixxx</string>
     <string name="status_bar_logo_style_android">Android</string>
     <string name="status_bar_logo_style_adidas">Adidas</string>
     <string name="status_bar_logo_style_alien">Прышэлец</string>
