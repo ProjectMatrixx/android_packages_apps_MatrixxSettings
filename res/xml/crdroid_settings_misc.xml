@@ -89,7 +89,17 @@
          android:title="@string/quickswitch_launcher_title" 
          android:summary="@string/quickswitch_launcher_summary" 
          android:fragment="com.crdroid.settings.fragments.QuickSwitch"
-         android:enabled="@bool/quickswitch_enabled" />         
+         android:enabled="@bool/quickswitch_enabled" />       
+  
+    <!-- Freeform launch mode -->
+    <com.crdroid.settings.preferences.SystemSettingListPreference
+        android:key="freeform_launch_mode"
+        android:title="@string/freeform_launch_mode_title"
+        android:dialogTitle="@string/freeform_launch_mode_title"
+        android:entries="@array/freeform_launch_mode_entries"
+        android:entryValues="@array/freeform_launch_mode_values"
+        android:defaultValue="0"
+        android:summary="%s" />
 
     <!-- Sidebar -->
     <Preference
