@@ -54,7 +54,7 @@
         android:title="@string/volume_panel_category" >
 
         <com.crdroid.settings.preferences.SystemSettingSwitchPreference
-            android:key="volume_panel_haptic_feedback"
+            android:key="haptic_on_slider"
             android:title="@string/volume_panel_haptic_feedback_title"
             android:defaultValue="false" />
 
