@@ -91,4 +91,15 @@
     <string name="power_off_verify_footer">Power off verification protects your device by preventing others from turning it off immediately after it\'s lost, increasing the chances of recovery. You only need to enter your lock screen password when powering off or restarting the phone from the lock screen.</string>
     <string name="power_off_verify_summary">When your device is locked, you\'ll need to use your password to power off or restart.</string>
     <string name="power_off_verify_title">Power off verify</string>
+
+    <!-- Matrixx -->
+    <string name="about_matrixx_summary">Information about Matrixx</string>    
+    <string name="team_matrixx">Team Matrixx</string>
+    <string name="team_matrixx_desc">Hey! We are Team Matrixx</string>
+    <string name="devices_summary">Official devices list</string>
+    <string name="matrixx_devices_title">Official Devices</string>
+    <string name="get_changelogs_title">Latest changelog</string>
+    <string name="get_changelogs_summary">Check latest changes</string>
+    <string name="matrixx_legal">Matrixx legal</string>
+    <string name="matrixx_legal_desc">Legal terms of use</string>
 </resources>
