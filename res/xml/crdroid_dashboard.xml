@@ -88,7 +88,14 @@
             android:icon="@drawable/ic_settings_miscs"
             android:title="@string/misc_title"
             android:summary="@string/mice_summary"
-            settings:layout="@layout/matrixx_dashboard_preference_bottom"
+            settings:layout="@layout/matrixx_dashboard_preference_middle"
             android:fragment="com.crdroid.settings.fragments.Miscellaneous" />
 
+        <!-- About -->
+        <Preference
+            android:icon="@drawable/ic_settings_about"
+            android:title="@string/about_matrixx"
+            android:summary="@string/about_matrixx_summary"
+            settings:layout="@layout/matrixx_dashboard_preference_bottom"
+            android:fragment="com.crdroid.settings.fragments.About" />
 </PreferenceScreen>

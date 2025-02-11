@@ -17,89 +17,69 @@
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
-    android:title="@string/about_crdroid">
+    xmlns:lineage="http://schemas.android.com/apk/res-auto"
+    android:title="@string/about_matrixx" >
 
-    <!-- crDroid Changelog -->
     <Preference
-        android:key="crdroid_changelog"
-        android:icon="@drawable/ic_changelog"
-        android:title="@string/changelog_crdroid_title"
-        android:summary="@string/changelog_crdroid_summary">
-        <intent android:action="android.intent.action.MAIN"
-             android:targetPackage="com.android.settings"
-             android:targetClass="com.crdroid.settings.fragments.about.ChangelogActivity"/>
+        android:title="@string/team_matrixx"
+        settings:layout="@layout/matrixx_dashboard_preference_top"
+        android:summary="@string/team_matrixx_desc"
+        android:icon="@drawable/ic_team" >
+    <intent
+        android:action="android.intent.action.VIEW"
+        android:data="https://www.projectmatrixx.org/team" />
     </Preference>
 
-    <!-- crDroid Website -->
     <Preference
-        android:key="crdroid_website"
-        android:icon="@drawable/ic_web"
-        android:title="@string/crdroid_website_title"
-        android:summary="@string/crdroid_website_summary" />
+        android:title="@string/matrixx_devices_title"
+        android:summary="@string/devices_summary"
+        settings:layout="@layout/matrixx_dashboard_preference_middle"
+        android:icon="@drawable/ic_devs_phone" >
+    <intent
+        android:action="android.intent.action.VIEW"
+        android:data="https://www.projectmatrixx.org/downloads" />
+    </Preference>
 
-    <!-- crDroid Translate -->
     <Preference
-        android:key="crdroid_translate"
-        android:icon="@drawable/ic_translate"
-        android:title="@string/crdroid_translate_title"
-        android:summary="@string/crdroid_translate_summary" />
+        android:key="matrixx_changelog"
+        android:icon="@drawable/ic_pencil"
+        android:title="@string/get_changelogs_title"
+        settings:layout="@layout/matrixx_dashboard_preference_middle"
+        android:summary="@string/get_changelogs_summary">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://www.projectmatrixx.org/changelog" />
+    </Preference>
 
-    <!-- crDroid Share -->
     <Preference
-        android:key="crdroid_share"
-        android:icon="@drawable/ic_share"
-        android:title="@string/share_crdroid_title"
-        android:summary="@string/share_crdroid_summary" />
-
-    <!-- crDroid Donate -->
-    <Preference
-        android:key="crdroid_donate"
-        android:icon="@drawable/ic_donate"
-        android:title="@string/donate_crdroid_title"
-        android:summary="@string/donate_crdroid_summary" />
-
-    <!-- crDroid Source -->
-    <Preference
-        android:key="crdroid_source"
+        android:key="matrixx_source"
         android:icon="@drawable/ic_source"
-        android:title="@string/crdroid_source_title"
-        android:summary="@string/crdroid_source_summary" />
-
-    <!-- crDroid Telegram -->
+        android:title="@string/matrixx_source_title"
+        settings:layout="@layout/matrixx_dashboard_preference_middle"
+        android:summary="@string/matrixx_source_summary">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://github.com/ProjectMatrixx" />
+    </Preference>
+    
     <Preference
-        android:key="crdroid_telegram"
+        android:key="matrixx_telegram"
         android:icon="@drawable/ic_telegram"
-        android:title="@string/crdroid_telegram_title"
-        android:summary="@string/crdroid_telegram_summary" />
+        android:title="@string/matrixx_telegram_title"
+        settings:layout="@layout/matrixx_dashboard_preference_middle"
+        android:summary="@string/matrixx_telegram_summary">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://t.me/matrixx_community" />
+    </Preference>
 
-    <!-- crDroid Telegram Updates Channel -->
     <Preference
-        android:key="crdroid_telegram_channel"
-        android:icon="@drawable/ic_telegram_channel"
-        android:title="@string/crdroid_telegram_channel_title"
-        android:summary="@string/crdroid_telegram_channel_summary" />
-
-    <!-- crDroid buildserver sponsor -->
-    <Preference
-        android:key="crdroid_buildserversponsor"
-        android:icon="@drawable/ic_sponsor"
-        android:title="@string/crdroid_buildserversponsor_title"
-        android:summary="@string/crdroid_buildserversponsor_summary" />
-
-    <!-- crDroid sponsor -->
-    <Preference
-        android:key="crdroid_sponsor"
-        android:icon="@drawable/ic_sponsor"
-        android:title="@string/crdroid_sponsor_title"
-        android:summary="@string/crdroid_sponsor_summary" />
-
-    <!-- crDroid OTA update -->
-    <Preference
-        android:key="system_update_settings"
-        android:title="@string/crdroid_update_title"
-        android:summary="@string/crdroid_update_summary"
-        android:icon="@drawable/ic_update"
-        settings:controller="com.android.settings.system.SystemUpdatePreferenceController">
-        <intent android:action="android.settings.SYSTEM_UPDATE_SETTINGS" />
+        android:title="@string/matrixx_legal"
+        settings:layout="@layout/matrixx_dashboard_preference_bottom"
+        android:summary="@string/matrixx_legal_desc"
+        android:icon="@drawable/ic_legal" >
+    <intent
+        android:action="android.intent.action.VIEW"
+        android:data="https://www.projectmatrixx.org/legal" />
     </Preference>
 </PreferenceScreen>
