@@ -18,6 +18,10 @@
     <string name="freeform_launch_mode_1">Native AOSP</string>
     <string name="freeform_launch_mode_2">LMOFreeForm</string>
 
+    <!-- Clock size -->
+    <string name="statusbar_clock_size_title">Clock Size (Statusbar)</string>
+    <string name="qs_clock_size_title">Clock Size (QS)</string>
+
     <!-- Miscellaneous/Hide applist -->
     <string name="hide_applist_title">Hide applist</string>
     <string name="hide_applist_summary">Prevent apps from checking selected apps from appslist</string>
