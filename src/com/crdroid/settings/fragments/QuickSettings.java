@@ -294,22 +294,7 @@ public class QuickSettings extends SettingsPreferenceFragment implements
               overlayThemePackage = "com.android.system.qs.twotoneaccent";
               break;
             case 4:
-              overlayThemePackage = "com.android.system.qs.shaded";
-              break;
-            case 5:
               overlayThemePackage = "com.android.system.qs.cyberpunk";
-              break;
-            case 6:
-              overlayThemePackage = "com.android.system.qs.neumorph";
-              break;
-            case 7:
-              overlayThemePackage = "com.android.system.qs.reflected";
-              break;
-            case 8:
-              overlayThemePackage = "com.android.system.qs.surround";
-              break;
-            case 9:
-              overlayThemePackage = "com.android.system.qs.thin";
               break;
             default:
               break;

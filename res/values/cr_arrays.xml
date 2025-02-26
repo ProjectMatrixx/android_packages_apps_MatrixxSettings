@@ -836,12 +836,7 @@
         <item>@string/qs_panel_style_outline</item>
         <item>@string/qs_panel_style_two_tone</item>
         <item>@string/qs_panel_style_color_pop</item>
-        <item>@string/qs_panel_style_shaded</item>
         <item>@string/qs_panel_style_cyberpunk</item>
-        <item>@string/qs_panel_style_neumorph</item>
-        <item>@string/qs_panel_style_reflected</item>
-        <item>@string/qs_panel_style_surround</item>
-        <item>@string/qs_panel_style_thin</item>
     </string-array>
 
     <string-array name="qs_panel_style_values" translatable="false">
@@ -850,11 +845,6 @@
         <item>2</item>
         <item>3</item>
         <item>4</item>
-        <item>5</item>
-        <item>6</item>
-        <item>7</item>
-        <item>8</item>
-        <item>9</item>
     </string-array>
 
     <!-- Monet theme styles  -->
