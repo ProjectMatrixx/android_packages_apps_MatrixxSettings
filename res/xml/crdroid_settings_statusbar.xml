@@ -118,6 +118,15 @@
             android:title="@string/status_bar_lyric_title"
             android:summary="@string/status_bar_lyric_summary"
             android:fragment="com.crdroid.settings.fragments.statusbar.StatusbarLyricSettings" />
+
+
+    <com.crdroid.settings.preferences.SystemSettingSwitchPreference
+            android:key="config_enableOngoingProgressBarChip"
+            android:title="@string/ongoing_action_chip_title"
+            android:summary="@string/ongoing_action_chip_summary"
+            android:defaultValue="false"
+            android:persistent="true"/>
+
     </PreferenceCategory>
 
     <!-- Custom logo -->

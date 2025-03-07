@@ -70,4 +70,7 @@
     <string name="get_changelogs_summary">Check latest changes</string>
     <string name="matrixx_legal">Matrixx legal</string>
     <string name="matrixx_legal_desc">Legal terms of use</string>
+
+    <string name="ongoing_action_chip_title">Enable Ongoing ProgressBar Chip</string>
+    <string name="ongoing_action_chip_summary">Show progressbar chip in statusbar which features ongoing action progress from a notification</string>
 </resources>
