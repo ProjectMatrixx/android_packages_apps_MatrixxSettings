@@ -59,4 +59,16 @@
         <item>3</item>
         <item>4</item>
     </string-array>
+    
+   <string-array name="quickswitch_launcher_entries">
+        <item>Matrixx Launcher</item>
+        <item>Pixel Launcher</item>
+        <item>Lawnchair Launcher</item>
+    </string-array>
+    <string-array name="quickswitch_launcher_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    
 </resources>

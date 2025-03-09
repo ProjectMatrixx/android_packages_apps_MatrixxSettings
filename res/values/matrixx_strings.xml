@@ -73,4 +73,16 @@
 
     <string name="ongoing_action_chip_title">Enable Ongoing ProgressBar Chip</string>
     <string name="ongoing_action_chip_summary">Show progressbar chip in statusbar which features ongoing action progress from a notification</string>
+
+    <!-- QuickSwitch -->
+    <string name="quickswitch_launcher_title">QuickSwitch</string>
+    <string name="quickswitch_launcher_summary">Customize default homescreen app</string>
+    <string name="nothing_launcher_customizations_title">Nothing launcher customizations</string>
+    <string name="nothing_launcher_customizations_summary">Customize nothing launcher homescreen app</string>
+    <string name="quickswitch_not_supported">QuickSwitch is not supported; the system only has one launcher.</string>
+    <string name="quickswitch_footer_text">
+        Notes: \n\n
+        1. Due to compatibility issues with current Android API, the Lawnchair Launcher uses the Ortus Launcher recents overview and will override any third-party launchers when set as the active QuickSwitch launcher. For better compatibility with third-party launchers, consider setting the QuickSwitch launcher to Ortus or Pixel Launcher instead.\n\n
+        2. External launcher modules/modifications must be adapted to the QuickSwitch structure to function properly.
+    </string>
 </resources>
