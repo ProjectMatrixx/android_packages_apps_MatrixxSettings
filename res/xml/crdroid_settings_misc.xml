@@ -83,6 +83,13 @@
         android:summary="@string/app_downgrade_summary"
         android:defaultValue="false"/>
 
+    <!-- QuickSwitch Launcher -->
+    <Preference
+         android:key="quickswitch"
+         android:title="@string/quickswitch_launcher_title" 
+         android:summary="@string/quickswitch_launcher_summary" 
+         android:fragment="com.crdroid.settings.fragments.QuickSwitch"/> 
+
     <!-- Sidebar -->
     <Preference
         android:key="sidebar"
