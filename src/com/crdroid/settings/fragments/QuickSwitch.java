@@ -54,6 +54,12 @@ public class QuickSwitch extends SettingsPreferenceFragment
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.quick_switch);
 
+    // Condition to remove QuickSwitch preference category
+    if (SystemProperties.getInt("persist.sys.quickswitch_enabled", 0) == 0) {
+        getPreferenceScreen().removeAll();
+        return;
+    }
+
         int defaultLauncher = SystemProperties.getInt(QUICKSWITCH_KEY, 0);
         quickSwitchPref = findPreference(QUICKSWITCH_KEY);
         quickSwitchPref.setOnPreferenceChangeListener(this);
