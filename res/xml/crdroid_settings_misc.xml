@@ -121,7 +121,8 @@
          android:key="quickswitch"
          android:title="@string/quickswitch_launcher_title" 
          android:summary="@string/quickswitch_launcher_summary" 
-         android:fragment="com.crdroid.settings.fragments.QuickSwitch"/> 
+         android:fragment="com.crdroid.settings.fragments.QuickSwitch"
+         android:enabled="@bool/quickswitch_enabled" />         
 
     <!-- Sidebar -->
     <Preference
