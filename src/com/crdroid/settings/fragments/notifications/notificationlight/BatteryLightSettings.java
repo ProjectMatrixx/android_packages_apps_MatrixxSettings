@@ -56,6 +56,10 @@ public class BatteryLightSettings extends SettingsPreferenceFragment implements
     private static final String BRIGHTNESS_PREFERENCE = "battery_light_brightness_level";
     private static final String BRIGHTNESS_ZEN_PREFERENCE = "battery_light_brightness_level_zen";
 
+    private static final boolean DEFAULT_LIGHT_ENABLED_PREF = true;
+    private static final boolean DEFAULT_LIGHT_FULL_CHARGE_DISABLED_PREF = true;
+    private static final boolean DEFAULT_PULSE_ENABLED_PREF = true;
+
     private ApplicationLightPreference mLowColorPref;
     private ApplicationLightPreference mMediumColorPref;
     private ApplicationLightPreference mFullColorPref;
@@ -104,16 +108,6 @@ public class BatteryLightSettings extends SettingsPreferenceFragment implements
         mBatteryBrightnessPref = prefSet.findPreference(BRIGHTNESS_PREFERENCE);
         mBatteryBrightnessZenPref = prefSet.findPreference(BRIGHTNESS_ZEN_PREFERENCE);
 
-        boolean isLightEnabled = LineageSettings.System.getIntForUser(resolver,
-                LineageSettings.System.BATTERY_LIGHT_ENABLED,
-                isBatteryLightEnabled(context) ? 1 : 0, UserHandle.USER_CURRENT) != 0;
-        mLightEnabledPref.setChecked(isLightEnabled);
-
-        boolean isLightFullChargeDisabled = LineageSettings.System.getIntForUser(resolver,
-                LineageSettings.System.BATTERY_LIGHT_FULL_CHARGE_DISABLED,
-                isBatteryLightFullChargeDisabled(context) ? 1 : 0, UserHandle.USER_CURRENT) != 0;
-        mLightFullChargeDisabledPref.setChecked(isLightFullChargeDisabled);
-
         mDefaultLowColor = res.getInteger(
                 com.android.internal.R.integer.config_notificationsBatteryLowARGB);
         mDefaultMediumColor = res.getInteger(
@@ -125,13 +119,12 @@ public class BatteryLightSettings extends SettingsPreferenceFragment implements
 
         int batteryBrightness = mBatteryBrightnessPref.getBrightnessSetting();
 
+        mLightEnabledPref.setDefaultValue(DEFAULT_LIGHT_ENABLED_PREF);
+        mLightFullChargeDisabledPref.setDefaultValue(DEFAULT_LIGHT_FULL_CHARGE_DISABLED_PREF);
+        mPulseEnabledPref.setDefaultValue(DEFAULT_PULSE_ENABLED_PREF);
+
         if (!blinkingLed || segmentedBatteryLed) {
             generalPrefs.removePreference(mPulseEnabledPref);
-        } else {
-            boolean isPulseEnabled = LineageSettings.System.getIntForUser(resolver,
-                    LineageSettings.System.BATTERY_LIGHT_PULSE,
-                    isBatteryLightPulseEnabled(context) ? 1 : 0, UserHandle.USER_CURRENT) != 0;
-            mPulseEnabledPref.setChecked(isPulseEnabled);
         }
 
         if (mMultiColorLed) {
@@ -289,47 +282,17 @@ public class BatteryLightSettings extends SettingsPreferenceFragment implements
         refreshColors();
     }
 
-    private static boolean isBatteryLightEnabled(Context context) {
-        try {
-            Context con = context.createPackageContext("org.lineageos.lineageparts", 0);
-            int id = con.getResources().getIdentifier("def_battery_light_enabled",
-                    "bool", "org.lineageos.lineageparts");
-            return con.getResources().getBoolean(id);
-        } catch (PackageManager.NameNotFoundException e) {
-            return true;
-        }
-    }
-
-    private static boolean isBatteryLightFullChargeDisabled(Context context) {
-        try {
-            Context con = context.createPackageContext("org.lineageos.lineageparts", 0);
-            int id = con.getResources().getIdentifier("def_battery_light_full_charge_disabled",
-                    "bool", "org.lineageos.lineageparts");
-            return con.getResources().getBoolean(id);
-        } catch (PackageManager.NameNotFoundException e) {
-            return false;
-        }
-    }
-
-    private static boolean isBatteryLightPulseEnabled(Context context) {
-        try {
-            Context con = context.createPackageContext("org.lineageos.lineageparts", 0);
-            int id = con.getResources().getIdentifier("def_battery_light_pulse",
-                    "bool", "org.lineageos.lineageparts");
-            return con.getResources().getBoolean(id);
-        } catch (PackageManager.NameNotFoundException e) {
-            return true;
-        }
-    }
-
     protected void resetToDefaults() {
-        final Context context = getContext();
+        final Resources res = getResources();
+        final boolean batteryLightEnabled = DEFAULT_LIGHT_ENABLED_PREF;
+        final boolean batteryLightFullChargeDisabled = DEFAULT_LIGHT_FULL_CHARGE_DISABLED_PREF;
+        final boolean batteryLightPulseEnabled = DEFAULT_PULSE_ENABLED_PREF;
 
-        if (mLightEnabledPref != null) mLightEnabledPref.setChecked(isBatteryLightEnabled(context));
+        if (mLightEnabledPref != null) mLightEnabledPref.setChecked(batteryLightEnabled);
         if (mLightFullChargeDisabledPref != null) {
-            mLightFullChargeDisabledPref.setChecked(isBatteryLightFullChargeDisabled(context));
+            mLightFullChargeDisabledPref.setChecked(batteryLightFullChargeDisabled);
         }
-        if (mPulseEnabledPref != null) mPulseEnabledPref.setChecked(isBatteryLightPulseEnabled(context));
+        if (mPulseEnabledPref != null) mPulseEnabledPref.setChecked(batteryLightPulseEnabled);
 
         resetColors();
     }
