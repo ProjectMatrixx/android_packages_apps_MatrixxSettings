@@ -116,15 +116,6 @@
             android:targetClass="com.libremobileos.sidebar.ui.sidebar.SidebarSettingsActivity" />
     </Preference>
 
-    <!-- Three fingers swipe action -->
-    <ListPreference
-        android:key="three_fingers_swipe"
-        android:dialogTitle="@string/three_fingers_swipe_title"
-        android:title="@string/three_fingers_swipe_title"
-        android:entries="@array/hardware_keys_action_entries"
-        android:entryValues="@array/hardware_keys_action_values"
-        android:persistent="false" />
-
     <com.crdroid.settings.preferences.SecureSettingSwitchPreference
         android:key="window_ignore_secure"
         android:title="@string/laboratory_ignore_window_secure_title"
