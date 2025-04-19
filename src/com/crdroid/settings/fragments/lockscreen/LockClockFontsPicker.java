@@ -39,6 +39,7 @@ import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.internal.util.crdroid.ThemeUtils;
+import com.crdroid.settings.utils.SystemUtils;
 
 import java.lang.ref.WeakReference;
 import java.util.List;
@@ -144,6 +145,7 @@ public class LockClockFontsPicker extends SettingsPreferenceFragment {
                 if (!pkg.equals(mSelectedPkg)) {
                     mSelectedPkg = pkg;
                     mThemeUtils.setOverlayEnabled(mCategory, mSelectedPkg, "android");
+                    SystemUtils.restartSystemUI(context);
                 }
             });
         }
