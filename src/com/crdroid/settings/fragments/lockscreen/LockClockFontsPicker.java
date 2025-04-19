@@ -16,15 +16,13 @@
 
 package com.crdroid.settings.fragments.lockscreen;
 
-import android.content.ContentResolver;
 import android.content.Context;
-import android.content.res.Resources;
 import android.content.pm.PackageManager;
+import android.content.res.Resources;
 import android.graphics.Typeface;
-import android.graphics.drawable.AnimationDrawable;
-import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.provider.Settings;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -32,49 +30,59 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.recyclerview.widget.GridLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceViewHolder;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
-
 import com.android.internal.util.crdroid.ThemeUtils;
 
+import java.lang.ref.WeakReference;
 import java.util.List;
 
 public class LockClockFontsPicker extends SettingsPreferenceFragment {
 
+    private static final String TAG = "LockClockFontsPicker";
+
     private RecyclerView mRecyclerView;
     private ThemeUtils mThemeUtils;
     private String mCategory = "android.theme.customization.lockscreen_clock_font";
-
     private List<String> mPkgs;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getActivity().setTitle(R.string.theme_customization_lock_clock_title);
+        if (!isAdded()) return;
 
-        mThemeUtils = new ThemeUtils(getActivity());
+        requireActivity().setTitle(R.string.theme_customization_lock_clock_title);
+
+        mThemeUtils = new ThemeUtils(requireContext());
         mPkgs = mThemeUtils.getOverlayPackagesForCategory(mCategory, "android");
     }
 
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
-            @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(
-                R.layout.item_view, container, false);
+                             @Nullable Bundle savedInstanceState) {
+        View view = inflater.inflate(R.layout.item_view, container, false);
 
-        mRecyclerView = (RecyclerView) view.findViewById(R.id.recycler_view);
-        GridLayoutManager gridLayoutManager = new GridLayoutManager(getActivity(), 1);
+        mRecyclerView = view.findViewById(R.id.recycler_view);
+        GridLayoutManager gridLayoutManager = new GridLayoutManager(requireContext(), 1);
         mRecyclerView.setLayoutManager(gridLayoutManager);
-        Adapter mAdapter = new Adapter(getActivity());
-        mRecyclerView.setAdapter(mAdapter);
+        mRecyclerView.setAdapter(new Adapter(requireContext(), mPkgs, mThemeUtils, mCategory, mRecyclerView));
 
         return view;
+    }
+
+    @Override
+    public void onDestroyView() {
+        super.onDestroyView();
+        if (mRecyclerView != null) {
+            mRecyclerView.setAdapter(null);
+            mRecyclerView = null;
+        }
     }
 
     @Override
@@ -82,50 +90,58 @@ public class LockClockFontsPicker extends SettingsPreferenceFragment {
         return MetricsEvent.CRDROID_SETTINGS;
     }
 
-    public class Adapter extends RecyclerView.Adapter<Adapter.CustomViewHolder> {
-        Context context;
-        String mSelectedPkg;
-        String mAppliedPkg;
+    public static class Adapter extends RecyclerView.Adapter<Adapter.CustomViewHolder> {
+        private final WeakReference<Context> contextRef;
+        private final List<String> mPkgs;
+        private final ThemeUtils mThemeUtils;
+        private final String mCategory;
+        private final RecyclerView mRecyclerView;
+        private String mSelectedPkg;
+        private final String mAppliedPkg;
 
-        public Adapter(Context context) {
-            this.context = context;
+        public Adapter(Context context, List<String> pkgs, ThemeUtils themeUtils, String category, RecyclerView recyclerView) {
+            this.contextRef = new WeakReference<>(context);
+            this.mPkgs = pkgs;
+            this.mThemeUtils = themeUtils;
+            this.mCategory = category;
+            this.mRecyclerView = recyclerView;
+
+            mAppliedPkg = mThemeUtils.getOverlayInfos(mCategory).stream()
+                    .filter(info -> info.isEnabled())
+                    .map(info -> info.packageName)
+                    .findFirst()
+                    .orElse("android");
+
+            mSelectedPkg = mAppliedPkg;
+        }
+
+        @NonNull
+        @Override
+        public CustomViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+            View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.lock_clock_fonts_option, parent, false);
+            return new CustomViewHolder(view);
         }
 
         @Override
-        public CustomViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-            View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.lock_clock_fonts_option, parent, false);
-            CustomViewHolder vh = new CustomViewHolder(v);
-            return vh;
-        }
+        public void onBindViewHolder(@NonNull CustomViewHolder holder, int position) {
+            Context context = contextRef.get();
+            if (context == null) return;
 
-        @Override
-        public void onBindViewHolder(CustomViewHolder holder, final int position) {
             String pkg = mPkgs.get(position);
-            String label = getLabel(holder.itemView.getContext(), pkg);
-
-            String currentPackageName = mThemeUtils.getOverlayInfos(mCategory).stream()
-                .filter(info -> info.isEnabled())
-                .map(info -> info.packageName)
-                .findFirst()
-                .orElse("android");
+            String label = getLabel(context, pkg);
+            Typeface typeface = getTypeface(context, pkg);
 
             holder.title.setTextSize(28);
-            holder.title.setTypeface(getTypeface(holder.title.getContext(), pkg));
+            if (typeface != null) {
+                holder.title.setTypeface(typeface);
+            }
             holder.name.setText("android".equals(pkg) ? "Default" : label);
 
-            if (currentPackageName.equals(pkg)) {
-                mAppliedPkg = pkg;
-                if (mSelectedPkg == null) {
-                    mSelectedPkg = pkg;
-                }
-            }
-
-            holder.itemView.setActivated(pkg == mSelectedPkg);
-            holder.itemView.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    updateActivatedStatus(mSelectedPkg, false);
-                    updateActivatedStatus(pkg, true);
+            holder.itemView.setActivated(pkg.equals(mSelectedPkg));
+            holder.itemView.setOnClickListener(view -> {
+                updateActivatedStatus(mSelectedPkg, false);
+                updateActivatedStatus(pkg, true);
+                if (!pkg.equals(mSelectedPkg)) {
                     mSelectedPkg = pkg;
                     mThemeUtils.setOverlayEnabled(mCategory, mSelectedPkg, "android");
                 }
@@ -137,51 +153,48 @@ public class LockClockFontsPicker extends SettingsPreferenceFragment {
             return mPkgs.size();
         }
 
-        public class CustomViewHolder extends RecyclerView.ViewHolder {
+        public static class CustomViewHolder extends RecyclerView.ViewHolder {
             TextView name;
             TextView title;
+
             public CustomViewHolder(View itemView) {
                 super(itemView);
-                title = (TextView) itemView.findViewById(R.id.option_title);
-                name = (TextView) itemView.findViewById(R.id.option_label);
+                title = itemView.findViewById(R.id.option_title);
+                name = itemView.findViewById(R.id.option_label);
             }
         }
 
         private void updateActivatedStatus(String pkg, boolean isActivated) {
             int index = mPkgs.indexOf(pkg);
-            if (index < 0) {
-                return;
-            }
+            if (index < 0) return;
             RecyclerView.ViewHolder holder = mRecyclerView.findViewHolderForAdapterPosition(index);
             if (holder != null && holder.itemView != null) {
                 holder.itemView.setActivated(isActivated);
             }
         }
-    }
 
-    public Typeface getTypeface(Context context, String pkg) {
-        try {
+        private Typeface getTypeface(Context context, String pkg) {
+            try {
+                PackageManager pm = context.getPackageManager();
+                Resources res = pkg.equals("android") ? Resources.getSystem()
+                        : pm.getResourcesForApplication(pkg);
+                return Typeface.create(res.getString(
+                        res.getIdentifier("config_clockFontFamily",
+                                "string", pkg)), Typeface.NORMAL);
+            } catch (PackageManager.NameNotFoundException e) {
+                Log.e(TAG, "Typeface load failed for pkg: " + pkg, e);
+            }
+            return null;
+        }
+
+        private String getLabel(Context context, String pkg) {
             PackageManager pm = context.getPackageManager();
-            Resources res = pkg.equals("android") ? Resources.getSystem()
-                    : pm.getResourcesForApplication(pkg);
-            return Typeface.create(res.getString(
-                    res.getIdentifier("config_clockFontFamily",
-                    "string", pkg)), Typeface.NORMAL);
+            try {
+                return pm.getApplicationInfo(pkg, 0).loadLabel(pm).toString();
+            } catch (PackageManager.NameNotFoundException e) {
+                Log.e(TAG, "Label load failed for pkg: " + pkg, e);
+            }
+            return pkg;
         }
-        catch (PackageManager.NameNotFoundException e) {
-            e.printStackTrace();
-        }
-        return null;
-    }
-
-    public String getLabel(Context context, String pkg) {
-        PackageManager pm = context.getPackageManager();
-        try {
-            return pm.getApplicationInfo(pkg, 0)
-                    .loadLabel(pm).toString();
-        } catch (PackageManager.NameNotFoundException e) {
-            e.printStackTrace();
-        }
-        return pkg;
     }
 }
