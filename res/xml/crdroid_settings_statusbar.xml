@@ -112,12 +112,11 @@
 	        android:summary="@string/statusbar_notif_count_summary"
 	        android:defaultValue="false" />
 
-    <com.crdroid.settings.preferences.SystemSettingSwitchPreference
-            android:key="config_enableOngoingProgressBarChip"
-            android:title="@string/ongoing_action_chip_title"
-            android:summary="@string/ongoing_action_chip_summary"
-            android:defaultValue="false"
-            android:persistent="true"/>
+        <Preference
+            android:key="ongoing_progress_settings"
+            android:title="@string/ongoing_progress_settings_title"
+            android:summary="@string/ongoing_progress_settings_summary"
+            android:fragment="com.crdroid.settings.fragments.statusbar.OngoingProgressBar" />
 
     </PreferenceCategory>
 
