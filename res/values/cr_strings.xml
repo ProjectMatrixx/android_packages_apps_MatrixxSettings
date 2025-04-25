@@ -806,6 +806,12 @@
     <!-- Quad9 DNS hostname -->
     <string name="private_dns_hostname_quad9" translatable="false">dns.quad9.net</string>
 
+    <!-- Comss DNS Option -->
+    <string name="private_dns_mode_comss" translatable="false">Comss DNS</string>
+
+    <!-- Comss DNS hostname -->
+    <string name="private_dns_hostname_comss" translatable="false">dns.comss.one</string>
+
     <!-- Alert Slider Notifications (OnePlus devices) -->
     <string name="alert_slider_notifications_title">Alert slider notifications</string>
     <string name="alert_slider_notifications_summary">Display notification when changing alert slider position</string>
