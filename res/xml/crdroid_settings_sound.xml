@@ -70,12 +70,6 @@
             settings:min="1000"
             settings:interval="500"
             settings:units="@string/unit_milliseconds" />
-
-        <com.crdroid.settings.preferences.SecureSettingSwitchPreference
-            android:key="volume_dialog_haptic_feedback"
-            android:icon="@drawable/ic_volume_vibrate"
-            android:title="@string/volume_dialog_haptic_feedback_title"
-            android:defaultValue="false" />
     </PreferenceCategory>
 
     <!-- In-call feedback -->
