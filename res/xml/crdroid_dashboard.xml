@@ -69,12 +69,12 @@
             android:fragment="com.crdroid.settings.fragments.Buttons" />
         
         <!-- Navigation -->
-        <Preference
+       <!-- <Preference
             android:icon="@drawable/ic_navbar"
             android:title="@string/navigation_title"
             android:summary="@string/navigation_summary"
             settings:layout="@layout/matrixx_dashboard_preference_middle"
-            android:fragment="com.crdroid.settings.fragments.Navigation" />
+            android:fragment="com.crdroid.settings.fragments.Navigation" /> -->
 
         <!-- Misc -->
         <Preference
