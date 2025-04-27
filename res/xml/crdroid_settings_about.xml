@@ -22,7 +22,6 @@
 
     <Preference
         android:title="@string/team_matrixx"
-        settings:layout="@layout/matrixx_dashboard_preference_top"
         android:summary="@string/team_matrixx_desc"
         android:icon="@drawable/ic_team" >
     <intent
@@ -33,7 +32,6 @@
     <Preference
         android:title="@string/matrixx_devices_title"
         android:summary="@string/devices_summary"
-        settings:layout="@layout/matrixx_dashboard_preference_middle"
         android:icon="@drawable/ic_devs_phone" >
     <intent
         android:action="android.intent.action.VIEW"
@@ -44,7 +42,6 @@
         android:key="matrixx_changelog"
         android:icon="@drawable/ic_pencil"
         android:title="@string/get_changelogs_title"
-        settings:layout="@layout/matrixx_dashboard_preference_middle"
         android:summary="@string/get_changelogs_summary">
         <intent
             android:action="android.intent.action.VIEW"
@@ -55,7 +52,6 @@
         android:key="matrixx_source"
         android:icon="@drawable/ic_source"
         android:title="@string/matrixx_source_title"
-        settings:layout="@layout/matrixx_dashboard_preference_middle"
         android:summary="@string/matrixx_source_summary">
         <intent
             android:action="android.intent.action.VIEW"
@@ -66,7 +62,6 @@
         android:key="matrixx_telegram"
         android:icon="@drawable/ic_telegram"
         android:title="@string/matrixx_telegram_title"
-        settings:layout="@layout/matrixx_dashboard_preference_middle"
         android:summary="@string/matrixx_telegram_summary">
         <intent
             android:action="android.intent.action.VIEW"
@@ -75,7 +70,6 @@
 
     <Preference
         android:title="@string/matrixx_legal"
-        settings:layout="@layout/matrixx_dashboard_preference_bottom"
         android:summary="@string/matrixx_legal_desc"
         android:icon="@drawable/ic_legal" >
     <intent
