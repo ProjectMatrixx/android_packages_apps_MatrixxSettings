@@ -1,4 +1,4 @@
-package com.android.settings.fragments;
+package com.crdroid.settings.fragments.statusbar;
 
 import android.content.Context;
 import android.os.Bundle;
