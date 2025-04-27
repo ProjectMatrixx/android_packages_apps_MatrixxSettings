@@ -16,7 +16,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- App Title -->
-    <string name="crdroid_settings_title">ম্যাট্রিক্স সেটিংস</string>
+    <string name="crdroid_settings_title">Matrixx Override</string>
     <string name="crdroid_settings_summary">Redefining the Fabric of Customization</string>
     <string name="reset_settings_title">সেটিংস রিসেট করুন</string>
     <string name="reset_settings_message">এটি বর্তমান ব্যবহারকারীর জন্য বেশিরভাগ Matrixx সেটিংসকে তাদের ডিফল্ট মানগুলিতে পুনরায় সেট করবে। আপনি কি অবিরত করতে চান?</string>

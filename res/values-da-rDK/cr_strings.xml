@@ -16,7 +16,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- App Title -->
-    <string name="crdroid_settings_title">Matrixx-indstillinger</string>
+    <string name="crdroid_settings_title">Matrixx Override</string>
     <string name="crdroid_settings_summary">Redefining the Fabric of Customization</string>
     <string name="reset_settings_title">Nulstil indstillinger</string>
     <string name="reset_settings_message">Dette vil nulstille de fleste crDroid-indstillinger til deres standardværdier for den aktuelle bruger. Fortsæt?</string>

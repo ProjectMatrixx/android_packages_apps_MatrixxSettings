@@ -16,7 +16,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- App Title -->
-    <string name="crdroid_settings_title">Setări Matrixx</string>
+    <string name="crdroid_settings_title">Matrixx Override</string>
     <string name="crdroid_settings_summary">Redefining the Fabric of Customization</string>
     <string name="reset_settings_title">Resetare setări</string>
     <string name="reset_settings_message">Aceasta va reseta cele mai multe setări crdroid la valorile lor implicite pentru utilizatorul curent. Doriți să continuați?</string>

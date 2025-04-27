@@ -16,8 +16,8 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- App Title -->
-    <string name="crdroid_settings_title">Matrixx 설정</string>
-    <string name="crdroid_settings_summary">기기의 더 자세한 부분까지 사용자 정의</string>
+    <string name="crdroid_settings_title">Matrixx Override</string>
+    <string name="crdroid_settings_summary">Redefining the Fabric of Customization</string>
     <string name="reset_settings_title">추가 사용자 정의 설정 초기화</string>
     <string name="reset_settings_message">추가 사용자 정의 설정을 기본값으로 초기화합니다. 정말 계속하시겠습니까?</string>
     <!-- Personalization Categories -->

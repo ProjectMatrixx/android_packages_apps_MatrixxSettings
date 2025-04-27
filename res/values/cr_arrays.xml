@@ -985,7 +985,6 @@
         <item>@string/default_value</item>
         <item>@string/custom_style_cyberpunk</item>
         <item>@string/custom_style_duoline</item>
-        <item>@string/custom_style_fluid</item>
         <item>@string/custom_style_ios</item>
         <item>@string/custom_style_layers</item>
     </string-array>
@@ -996,6 +995,5 @@
         <item>2</item>
         <item>3</item>
         <item>4</item>
-        <item>5</item>
     </string-array>
 </resources>

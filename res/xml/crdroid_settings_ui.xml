@@ -77,7 +77,6 @@
     <!-- Notification Style -->
     <com.crdroid.settings.preferences.SystemSettingListPreference
         android:key="notification_style"
-        android:icon="@drawable/ic_message_text_outline"
         android:title="@string/notification_style_title"
         android:entries="@array/custom_style_entries"
         android:entryValues="@array/custom_style_values"
@@ -87,7 +86,6 @@
     <!-- Powermenu Style -->
     <com.crdroid.settings.preferences.SystemSettingListPreference
         android:key="powermenu_style"
-        android:icon="@drawable/ic_settings_powermenu"
         android:title="@string/powermenu_style_title"
         android:entries="@array/custom_style_entries"
         android:entryValues="@array/custom_style_values"

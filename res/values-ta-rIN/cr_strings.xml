@@ -16,7 +16,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- App Title -->
-    <string name="crdroid_settings_title">Matrixx அமைப்புகள்</string>
+    <string name="crdroid_settings_title">Matrixx Override</string>
     <string name="crdroid_settings_summary">Redefining the Fabric of Customization</string>
     <string name="reset_settings_title">அமைப்புகளை மீட்டமைக்கவும்</string>
     <string name="reset_settings_message">இது பெரும்பாலான crdroid அமைப்புகளை தற்போதைய பயனருக்கான இயல்புநிலை மதிப்புகளுக்கு மீட்டமைக்கும்.  நீங்கள் தொடர விரும்புகிறீர்களா?</string>

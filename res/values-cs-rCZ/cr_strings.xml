@@ -16,7 +16,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- App Title -->
-    <string name="crdroid_settings_title">Nastavení Matrixx</string>
+    <string name="crdroid_settings_title">Matrixx Override</string>
     <string name="crdroid_settings_summary">Redefining the Fabric of Customization</string>
     <string name="reset_settings_title">Obnovit nastavení</string>
     <string name="reset_settings_message">Tímto obnovíte většinu nastavení Matrixx pro aktuálního uživatele na výchozí hodnoty. Přejete si pokračovat?</string>
