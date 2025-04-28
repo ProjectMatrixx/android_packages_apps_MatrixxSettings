@@ -21,12 +21,20 @@
     android:title="@string/ui_title">
 
     <com.crdroid.settings.preferences.SystemSettingListPreference
-            android:key="settings_dashboard_style"
-            android:title="@string/settings_dashboard_style_title"
-            android:summary="%s"
-            android:entries="@array/settings_dashboard_style_entries"
-            android:entryValues="@array/settings_dashboard_style_values"
-            android:defaultValue="0" />
+        android:key="settings_dashboard_style"
+        android:title="@string/settings_dashboard_style_title"
+        android:summary="%s"
+        android:entries="@array/settings_dashboard_style_entries"
+        android:entryValues="@array/settings_dashboard_style_values"
+        android:defaultValue="0" />
+
+    <com.crdroid.settings.preferences.SystemSettingListPreference
+        android:key="search_bar_style"
+        android:title="@string/search_bar_style_title"
+        android:entries="@array/settings_sb_style_entries"
+        android:entryValues="@array/settings_sb_style_values"
+        android:defaultValue="0"
+        android:summary="%s" />
 
     <!-- Ambient Display -->
     <Preference

@@ -98,4 +98,8 @@
     <string name="settings_dashboard_style_title">Settings Styles</string>
     <string name="settings_dashboard_style_1">Google Revamp Style</string>
     <string name="settings_dashboard_style_2">Simple Style</string>
+
+
+    <string name="search_bar_style_title">Search Bar Style</string>
+    <string name="settings_sb_style_1">Android 15 (Revamped)</string>
 </resources>
