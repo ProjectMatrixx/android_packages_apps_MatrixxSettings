@@ -53,4 +53,17 @@
         <item>com.android.systemui</item>
         <item>com.android.shell</item>
     </string-array>
+    
+     <!-- Settings dashboard styles-->
+    <string-array name="settings_dashboard_style_entries" translatable="false">
+        <item>@string/settings_dashboard_style_1</item>
+        <item>@string/settings_dashboard_style_2</item>
+        <item>@string/settings_dashboard_style_3</item>
+    </string-array>
+
+    <string-array name="settings_dashboard_style_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
 </resources>
