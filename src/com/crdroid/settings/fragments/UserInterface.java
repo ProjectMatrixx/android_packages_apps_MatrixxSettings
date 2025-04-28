@@ -37,11 +37,16 @@ import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settingslib.search.SearchIndexable;
 
+import com.crdroid.settings.preferences.SystemSettingListPreference;
+
 import com.crdroid.settings.fragments.ui.DozeSettings;
 import com.crdroid.settings.fragments.ui.SmartPixels;
 import com.crdroid.settings.fragments.ui.MonetSettings;
 
 import com.android.internal.util.crdroid.ThemeUtils;
+
+import com.android.internal.util.crdroid.SystemRestartUtils;
+
 
 import java.util.List;
 
@@ -55,6 +60,7 @@ public class UserInterface extends SettingsPreferenceFragment implements
     private static final String SMART_PIXELS = "smart_pixels";
     private static final String KEY_NOTIFICATION_STYLE = "notification_style";
     private static final String KEY_POWERMENU_STYLE = "powermenu_style";
+    public static final String SETTINGS_DASHBOARD_STYLE = "settings_dashboard_style";
 
     private static final String[] NOTIF_OVERLAYS = {
             "com.android.theme.notification.cyberpunk",
@@ -76,6 +82,7 @@ public class UserInterface extends SettingsPreferenceFragment implements
     private ListPreference mNotificationStylePref;
     private ListPreference mPowermenuStylePref;
     private ThemeUtils mThemeUtils;
+    private SystemSettingListPreference mSettingsDashBoardStyle;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -105,6 +112,9 @@ public class UserInterface extends SettingsPreferenceFragment implements
         mNotificationStylePref.setOnPreferenceChangeListener(this);
         mPowermenuStylePref = findPreference(KEY_POWERMENU_STYLE);
         mPowermenuStylePref.setOnPreferenceChangeListener(this);
+
+        mSettingsDashBoardStyle = (SystemSettingListPreference) findPreference(SETTINGS_DASHBOARD_STYLE);
+        mSettingsDashBoardStyle.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -118,6 +128,14 @@ public class UserInterface extends SettingsPreferenceFragment implements
             updatePowermenuStyle(value);
             return true;
         }
+
+        final String key = preference.getKey();
+        ContentResolver resolver = getActivity().getContentResolver();
+	    if (preference == mSettingsDashBoardStyle){
+            SystemRestartUtils.showSettingsRestartDialog(getContext());
+            return true;
+            }
+
         return false;
     }
 

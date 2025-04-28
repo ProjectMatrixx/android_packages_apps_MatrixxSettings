@@ -93,4 +93,9 @@
     <string name="quickswitch_footer_text">
         Notes: &#10;External launcher modules/modifications must be adapted to the QuickSwitch structure to function properly.
     </string>
+
+    <!-- Custom settings dashboard style -->
+    <string name="settings_dashboard_style_title">Settings Styles</string>
+    <string name="settings_dashboard_style_1">Google Revamp Style</string>
+    <string name="settings_dashboard_style_2">Simple Style</string>
 </resources>

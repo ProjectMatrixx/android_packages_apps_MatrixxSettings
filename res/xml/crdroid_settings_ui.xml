@@ -20,6 +20,14 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/ui_title">
 
+    <com.crdroid.settings.preferences.SystemSettingListPreference
+            android:key="settings_dashboard_style"
+            android:title="@string/settings_dashboard_style_title"
+            android:summary="%s"
+            android:entries="@array/settings_dashboard_style_entries"
+            android:entryValues="@array/settings_dashboard_style_values"
+            android:defaultValue="0" />
+
     <!-- Ambient Display -->
     <Preference
         android:key="doze_fragment"
