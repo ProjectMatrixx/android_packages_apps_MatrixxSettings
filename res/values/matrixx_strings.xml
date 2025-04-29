@@ -58,6 +58,10 @@
     <string name="matrixx_legal">Matrixx legal</string>
     <string name="matrixx_legal_desc">Legal terms of use</string>
 
+    <!-- Three-fingers-swipe to screenshot -->
+    <string name="three_finger_gesture">Swipe to screenshot</string>
+    <string name="three_finger_gesture_summary">Swipe three fingers to take screenshot</string>
+
     <!-- Ongoing action chip -->
     <string name="ongoing_progress_settings_title">Statusbar action chip</string>
     <string name="ongoing_progress_settings_summary">Statusbar action chip options</string>
@@ -98,7 +102,6 @@
     <string name="settings_dashboard_style_title">Settings Styles</string>
     <string name="settings_dashboard_style_1">Google Revamp Style</string>
     <string name="settings_dashboard_style_2">Simple Style</string>
-
 
     <string name="search_bar_style_title">Search Bar Style</string>
     <string name="settings_sb_style_1">Android 15 (Revamped)</string>

@@ -19,6 +19,9 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/misc_title">
 
+    <PreferenceCategory
+         android:title="@string/gaming_category">
+
     <!-- Gaming mode -->
     <Preference
         android:key="gaming_mode"
@@ -30,6 +33,23 @@
             android:targetPackage="io.chaldeaprjkt.gamespace"
             android:targetClass="io.chaldeaprjkt.gamespace.settings.SettingsActivity" />
     </Preference>
+
+    <com.crdroid.settings.preferences.SystemPropertySwitchPreference
+       android:key="persist.sys.gameprops.enabled"
+       android:title="@string/gameprops_title"
+       android:summary="@string/gameprops_summary"
+       android:defaultValue="false" />
+
+   <Preference
+       android:key="game_props_json_file_preference"
+       android:title="@string/gameprops_load_json_title"
+       android:dependency="persist.sys.gameprops.enabled"
+       android:summary="@string/gameprops_load_json_summary" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+         android:title="@string/spoofing_category">
 
     <!-- Google Play Integrity -->
     <com.crdroid.settings.preferences.SystemPropertySwitchPreference
@@ -44,30 +64,18 @@
          android:dependency="persist.sys.pixelprops.pi"
          android:summary="@string/pif_spoofing_summary"/>
 
-    <!-- Unlock FPS for specific games -->
-    <!--com.crdroid.settings.preferences.SystemPropertySwitchPreference
-        android:key="persist.sys.pixelprops.games"
-        android:title="@string/use_games_spoof_title"
-        android:summary="@string/use_games_spoof_summary" /-->
-
-    <com.crdroid.settings.preferences.SystemPropertySwitchPreference
-       android:key="persist.sys.gameprops.enabled"
-       android:title="@string/gameprops_title"
-       android:summary="@string/gameprops_summary"
-       android:defaultValue="false" />
-
-   <Preference
-       android:key="game_props_json_file_preference"
-       android:title="@string/gameprops_load_json_title"
-       android:dependency="persist.sys.gameprops.enabled"
-       android:summary="@string/gameprops_load_json_summary" />
-
     <!-- displaying current PIF properties -->
     <Preference
          android:key="show_pif_properties"
          android:title="@string/show_pif_properties_title"
          android:summary="@string/show_pif_properties_summary"
          android:dependency="persist.sys.pixelprops.pi"/>
+
+    <!-- Unlock FPS for specific games -->
+    <!--com.crdroid.settings.preferences.SystemPropertySwitchPreference
+        android:key="persist.sys.pixelprops.games"
+        android:title="@string/use_games_spoof_title"
+        android:summary="@string/use_games_spoof_summary" /-->
 
     <!-- Unlimited google photos storage -->
     <com.crdroid.settings.preferences.SystemPropertySwitchPreference
@@ -89,6 +97,7 @@
         android:title="@string/gms_enabled_title"
         android:summary="@string/gms_enabled_summary"
         android:fragment="com.crdroid.settings.fragments.misc.GmsSwitch"/> -->
+    </PreferenceCategory>
 
     <!-- Parallel space
     <Preference
@@ -101,6 +110,61 @@
             android:targetClass="ink.kscope.parallelspace.MainActivity" />
     </Preference> -->
 
+    <PreferenceCategory
+         android:title="@string/security_category">
+
+    <com.crdroid.settings.preferences.GlobalSettingSwitchPreference
+        android:key="window_ignore_secure"
+        android:title="@string/laboratory_ignore_window_secure_title"
+        android:summary="@string/laboratory_ignore_window_secure_summary"
+        android:defaultValue="false" />
+
+    <com.crdroid.settings.preferences.SystemSettingSwitchPreference
+        android:key="hide_screen_capture_status"
+        android:title="@string/hide_screen_capture_status_title"
+        android:summary="@string/hide_screen_capture_status_summary"
+        android:defaultValue="false"/>
+
+        <!-- Hide applist -->
+        <Preference
+            android:key="hide_applist_setting"
+            android:title="@string/hide_applist_title"
+            android:summary="@string/hide_applist_summary"
+            android:fragment="com.crdroid.settings.fragments.misc.HideAppListSettings" />
+
+   	 <Preference
+             android:key="hide_developer_status_settings"
+             android:title="@string/hide_developer_status_title"
+             android:summary="@string/hide_developer_status_summary"
+             android:fragment="com.crdroid.settings.fragments.misc.HideDeveloperStatusSettings"
+             settings:controller="com.crdroid.settings.fragments.misc.HideDeveloperStatusPreferenceController" /> 
+    </PreferenceCategory>
+
+    <PreferenceCategory
+         android:title="@string/other_category">
+
+    <!-- Sensor block per package -->
+    <Preference
+        android:key="sensor_block_settings"
+        android:title="@string/sensor_block_title"
+        android:summary="@string/sensor_block_summary"
+        android:fragment="com.crdroid.settings.fragments.misc.SensorBlock"/>
+
+    <!-- Pocket Judge -->
+    <com.crdroid.settings.preferences.SystemSettingSwitchPreference
+        android:key="pocket_judge"
+        android:title="@string/pocket_judge_title"
+        android:summary="@string/pocket_judge_summary"
+        android:defaultValue="false" />
+
+    <!-- Three-fingers-swipe to screenshot -->
+    <com.crdroid.settings.preferences.SystemSettingSwitchPreference
+        android:key="three_finger_gesture"
+        android:title="@string/three_finger_gesture"
+        android:summary="@string/three_finger_gesture_summary"
+        android:defaultValue="false" />
+
+    <!-- Application Downgrade-->
     <com.crdroid.settings.preferences.GlobalSettingSwitchPreference
         android:key="pm_downgrade_allowed"
         android:title="@string/app_downgrade_title"
@@ -117,12 +181,12 @@
         android:defaultValue="0"
         android:summary="%s" />
 
-<!--    <Preference
+    <!-- <Preference
          android:key="quickswitch"
          android:title="@string/quickswitch_launcher_title" 
          android:summary="@string/quickswitch_launcher_summary" 
          android:fragment="com.crdroid.settings.fragments.QuickSwitch"
-         android:enabled="@bool/quickswitch_enabled" />   -->
+         android:enabled="@bool/quickswitch_enabled" /> -->    
 
     <!-- Sidebar -->
     <Preference
@@ -135,47 +199,5 @@
             android:targetPackage="com.libremobileos.sidebar"
             android:targetClass="com.libremobileos.sidebar.ui.sidebar.SidebarSettingsActivity" />
     </Preference>
-
-    <com.crdroid.settings.preferences.GlobalSettingSwitchPreference
-        android:key="window_ignore_secure"
-        android:title="@string/laboratory_ignore_window_secure_title"
-        android:summary="@string/laboratory_ignore_window_secure_summary"
-        android:defaultValue="false" />
-
-
-    <com.crdroid.settings.preferences.SystemSettingSwitchPreference
-        android:key="hide_screen_capture_status"
-        android:title="@string/hide_screen_capture_status_title"
-        android:summary="@string/hide_screen_capture_status_summary"
-        android:defaultValue="false"/>
-
-
-    <Preference
-        android:key="hide_developer_status_settings"
-        android:title="@string/hide_developer_status_title"
-        android:summary="@string/hide_developer_status_summary"
-        android:fragment="com.crdroid.settings.fragments.misc.HideDeveloperStatusSettings"
-        settings:controller="com.crdroid.settings.fragments.misc.HideDeveloperStatusPreferenceController" />
-
-         <!-- Hide applist -->
-    <Preference
-        android:key="hide_applist_setting"
-        android:title="@string/hide_applist_title"
-        android:summary="@string/hide_applist_summary"
-        android:fragment="com.crdroid.settings.fragments.misc.HideAppListSettings" />
-
-    <!-- Sensor block per package -->
-    <Preference
-        android:key="sensor_block_settings"
-        android:title="@string/sensor_block_title"
-        android:summary="@string/sensor_block_summary"
-        android:fragment="com.crdroid.settings.fragments.misc.SensorBlock"/>
-
-    <!-- Pocket Judge -->
-    <com.crdroid.settings.preferences.SystemSettingSwitchPreference
-        android:key="pocket_judge"
-        android:title="@string/pocket_judge_title"
-        android:summary="@string/pocket_judge_summary"
-        android:defaultValue="false" />
-
+    </PreferenceCategory>
 </PreferenceScreen>
