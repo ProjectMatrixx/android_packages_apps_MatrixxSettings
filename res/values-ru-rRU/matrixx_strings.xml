@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2024-25 Project Matrixx
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- Freeform launch mode -->
+    <string name="freeform_launch_mode_title">Режим запуска Freeforme</string>
+    <string name="freeform_launch_mode_1">Встроенный AOSP</string>
+    <string name="freeform_launch_mode_2">LMOFreeForm</string>
+
+    <!-- Clock size -->
+    <string name="statusbar_clock_size_title">Размер часов (Статус-бар)</string>
+    <string name="qs_clock_size_title">Размер часов (Панель быстрых настроек)</string>
+
+    <!-- Miscellaneous/Hide applist -->
+    <string name="hide_applist_title">Скрыть список приложений</string>
+    <string name="hide_applist_summary">Запретить приложениям проверять выбранные приложения из списка</string>
+    <string name="menu_show_overlay">Показать наложение</string>
+    <string name="menu_hide_overlay">Скрыть наложение</string>
+
+    <!-- Hide developer status -->
+    <string name="search">Поиск</string>
+    <string name="search_apps">Поиск приложений</string>
+    <string name="hide_developer_status_title">Скрыть статус разработчика</string>
+    <string name="hide_developer_status_summary">Скрывать статус разработчика от приложений</string>
+
+    <!-- QS Header Clock Styles -->
+    <string name="qs_header_clock_style_title">Стиль часов в заголовке панели быстрых настроек</string>
+    <string name="qs_header_style1">Chip</string>
+    <string name="qs_header_style2">Oxygen</string>
+    <string name="qs_header_style3">Аналоговые</string>
+    <string name="qs_header_style4">Простые</string>
+
+    <!-- Font styles -->
+    <string name="font_styles_title">Стили шрифта</string>
+    <string name="font_styles_summary">Изменение системного стиля шрифта</string>
+    <string name="font_preview_text">Быстрая коричневая\nлиса перепрыгивает через\nленивую собаку\n\nАБВГДЕЁЖЗИЙКЛМ\nНОПРСТУФХЦЧШЩЪЫЬЭЮЯ\nабвгдеёжзийкл\nнопрстуфхцчшщъыьэюя\n1234567890</string>
+    <string name="apply_button_text">Применить</string>
+
+    <!-- Matrixx -->
+    <string name="about_matrixx_summary">Информация о Matrixx</string>    
+    <string name="team_matrixx">Команда Matrixx</string>
+    <string name="team_matrixx_desc">Привет! Мы — команда Matrixx</string>
+    <string name="devices_summary">Список официальных устройств</string>
+    <string name="matrixx_devices_title">Официальные устройства</string>
+    <string name="get_changelogs_title">Последний список изменений</string>
+    <string name="get_changelogs_summary">Посмотреть последние изменения</string>
+    <string name="matrixx_legal">Юридическая информация Matrixx</string>
+    <string name="matrixx_legal_desc">Условия использования</string>
+
+    <!-- Three-fingers-swipe to screenshot -->
+    <string name="three_finger_gesture">Скриншот тремя пальцами</string>
+    <string name="three_finger_gesture_summary">Сделайте скриншот, проведя по экрану тремя пальцами</string>
+
+    <!-- Ongoing action chip -->
+    <string name="ongoing_progress_settings_title">Chip действий в строке состояния</string>
+    <string name="ongoing_progress_settings_summary">Параметры chip действий в строке состояния</string>
+    <string name="ongoing_action_chip_title">Chip текущих действий</string>
+    <string name="ongoing_action_chip_summary">Показ индикатора выполнения в строке состояния для текущих процессов, таких как загрузки</string>
+    <string name="show_media_progress_title">Показывать прогресс медиа</string>
+    <string name="show_media_progress_summary">Отображать прогресс воспроизведения медиа в строке состояния</string>
+    <string name="progress_footer_text">
+    "Индикатор выполнения в строке состояния предоставляет обновления в реальном времени как для воспроизведения медиа, так и для активных загрузок и выгрузок.
+
+    - 🎵 Прогресс медиа:
+    • Отображает ход воспроизведения музыки и видео при активном медиа.
+    • Одно нажатие открывает элементы управления (предыдущий/следующий трек).
+    • Двойное нажатие переключает воспроизведение (пауза/пуск).
+    • Свайп влево — переход к предыдущему треку.
+    • Свайп вправо — переход к следующему треку.
+    • Долгое нажатие — открытие медиа-приложения.
+
+    - 📥Прогресс загрузки/выгрузки:
+    • Показывает ход текущих загрузок и выгрузок.
+    • Автоматически скрывается при отсутствии активных передач.
+    • Одно нажатие открывает приложение, ответственное за загрузку.
+
+    Индикатор выполнения динамически переключается между состояниями медиа и загрузки, обеспечивая отображение наиболее актуальной информации с первого взгляда."
+    </string>
+
+    <!-- QuickSwitch -->
+    <string name="quickswitch_launcher_title">QuickSwitch</string>
+    <string name="quickswitch_launcher_summary">Настройка приложения домашнего экрана по умолчанию</string>
+    <string name="nothing_launcher_customizations_title">Настройки Nothing Launcher</string>
+    <string name="nothing_launcher_customizations_summary">Настройка домашнего экрана Nothing Launcher</string>
+    <string name="quickswitch_not_supported">QuickSwitch не поддерживается: в системе установлен только один лаунчер.</string>
+    <string name="quickswitch_footer_text">
+        Примечание: &#10;Внешние модули и модификации лаунчеров должны быть адаптированы под структуру QuickSwitch для корректной работы.
+    </string>
+
+
+    <!-- Custom settings dashboard style -->
+    <string name="settings_dashboard_style_title">Стили настроек</string>
+    <string name="settings_dashboard_style_1">Обновлённый стиль Google</string>
+    <string name="settings_dashboard_style_2">Простой стиль</string>
+
+    <string name="search_bar_style_title">Стиль строки поиска</string>
+    <string name="settings_sb_style_1">Android 15 (обновлённый)</string>
+</resources>
