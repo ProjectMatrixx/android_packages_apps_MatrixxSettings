@@ -40,6 +40,10 @@
     <string name="hide_developer_status_title">Hide developer status</string>
     <string name="hide_developer_status_summary">Hide developer status from apps</string>
 
+    <!-- No storage restrict -->
+    <string name="no_storage_restrict_title">No storage restrict</string>
+    <string name="no_storage_restrict_summary">Remove the restriction when selecting folders through Storage Access Framework. Can be convenient in some cases but may lead to privacy leaks.</string>
+
     <!-- Font styles -->
     <string name="font_styles_title">Font Styles</string>
     <string name="font_styles_summary">Change system font style</string>

@@ -128,6 +128,11 @@
         android:summary="@string/laboratory_ignore_window_secure_summary"
         android:defaultValue="false" />
 
+    <com.crdroid.settings.preferences.GlobalSettingSwitchPreference
+        android:key="no_storage_restrict"
+        android:title="@string/no_storage_restrict_title"
+        android:summary="@string/no_storage_restrict_summary"
+        android:defaultValue="false"/>
 
     <com.crdroid.settings.preferences.SystemSettingSwitchPreference
         android:key="hide_screen_capture_status"
