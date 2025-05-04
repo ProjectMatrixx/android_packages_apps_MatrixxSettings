@@ -34,6 +34,10 @@
     <string name="hide_developer_status_title">Hide developer status</string>
     <string name="hide_developer_status_summary">Hide developer status from apps</string>
 
+    <!-- No storage restrict -->
+    <string name="no_storage_restrict_title">No storage restrict</string>
+    <string name="no_storage_restrict_summary">Remove the restriction when selecting folders through Storage Access Framework. Can be convenient in some cases but may lead to privacy leaks.</string>
+
     <!-- QS Header Clock Styles -->
     <string name="qs_header_clock_style_title">QS header clock style</string>
     <string name="qs_header_style1">Chip</string>
