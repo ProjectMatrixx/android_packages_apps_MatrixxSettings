@@ -53,11 +53,6 @@
         android:key="volume_panel"
         android:title="@string/volume_panel_category" >
 
-        <com.crdroid.settings.preferences.SystemSettingSwitchPreference
-            android:key="haptic_on_slider"
-            android:title="@string/volume_panel_haptic_feedback_title"
-            android:defaultValue="false" />
-
         <lineageos.preference.LineageSecureSettingSwitchPreference
             android:key="volume_panel_on_left"
             android:title="@string/volume_panel_on_left_title" />
@@ -70,6 +65,12 @@
             settings:min="1000"
             settings:interval="500"
             settings:units="@string/unit_milliseconds" />
+
+        <com.crdroid.settings.preferences.SecureSettingSwitchPreference
+            android:key="volume_dialog_haptic_feedback"
+            android:icon="@drawable/ic_volume_vibrate"
+            android:title="@string/volume_dialog_haptic_feedback_title"
+            android:defaultValue="false" />
     </PreferenceCategory>
 
     <!-- In-call feedback -->
