@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2024-25 Project Matrixx
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- Ambient Battery percent & Temperature -->
+    <string name="ambient_bottom_title">Показать информацию внизу экрана</string>
+    <string name="ambient_bottom_summary">Выберите опцию для отображения информации о процессоре и батарее (температура и уровень) на экране ожидания</string>
+    <string name="ambient_bottom_hidden_title">Скрыто</string>
+    <string name="ambient_battery_percent_title">Только уровень заряда батареи</string> 
+    <string name="ambient_battery_temperature_title">Только температура батареи</string>
+    <string name="ambient_battery_cpu_battery_temperature_title">Уровень заряда, температура батареи и температура CPU</string>
+
+    <!-- Ambient settings show icon -->
+    <string name="display_icon_title">Иконки</string>
+    <string name="display_icon_summary">Отображать иконки вместе с уровнем и температурой</string>
+</resources>
