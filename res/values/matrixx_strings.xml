@@ -91,6 +91,8 @@
 
     The progress bar dynamically switches between media and download states, ensuring you always have the most relevant information at a glance."
     </string>
+     <string name="compact_progress_mode_title">Compact Progress Indicator</string>
+     <string name="compact_progress_mode_summary">Use a compact circular indicator for ongoing actions</string>
 
     <!-- QuickSwitch -->
     <string name="quickswitch_launcher_title">QuickSwitch</string>
