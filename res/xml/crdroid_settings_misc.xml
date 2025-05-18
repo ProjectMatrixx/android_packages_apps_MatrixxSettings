@@ -131,6 +131,12 @@
         android:summary="@string/hide_screen_capture_status_summary"
         android:defaultValue="false"/>
 
+    <com.crdroid.settings.preferences.SystemSettingSwitchPreference
+        android:key="spoof_storage_encryption_status"
+        android:title="@string/spoof_storage_encryption_status_title"
+        android:summary="@string/spoof_storage_encryption_status_summary"
+        android:defaultValue="false"/>
+
         <!-- Hide applist -->
         <Preference
             android:key="hide_applist_setting"
