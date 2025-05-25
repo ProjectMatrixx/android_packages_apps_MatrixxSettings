@@ -170,6 +170,8 @@ public class Miscellaneous extends SettingsPreferenceFragment implements
                 "persist.sys.pihooks_TAG",
                 "persist.sys.pihooks_RELEASE",
                 "persist.sys.pihooks_DEBUG",
+                "persist.sys.pihooks_SDK_INT"
+
             };
             for (String key : keys) {
                 String value = SystemProperties.get(key, null);
