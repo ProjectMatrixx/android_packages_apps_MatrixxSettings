@@ -165,7 +165,11 @@ public class Miscellaneous extends SettingsPreferenceFragment implements
                 "persist.sys.pihooks_MODEL",
                 "persist.sys.pihooks_PRODUCT",
                 "persist.sys.pihooks_SECURITY_PATCH",
-                "persist.sys.pihooks_DEVICE_INITIAL_SDK_INT"
+                "persist.sys.pihooks_DEVICE_INITIAL_SDK_INT",
+                "persist.sys.pihooks_TYPE",
+                "persist.sys.pihooks_TAG",
+                "persist.sys.pihooks_RELEASE",
+                "persist.sys.pihooks_DEBUG",
             };
             for (String key : keys) {
                 String value = SystemProperties.get(key, null);
@@ -255,7 +259,7 @@ public class Miscellaneous extends SettingsPreferenceFragment implements
 
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
-        if (preference == mGamePropsSpoof || preference == mPropOptionsPi ||preference == mVending32Spoof) {
+        if (preference == mGamePropsSpoof || preference == mPropOptionsPi || preference == mVending32Spoof) {
                     SystemRestartUtils.showSystemRestartDialog(getContext());
             return true;
         }
