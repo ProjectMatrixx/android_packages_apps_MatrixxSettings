@@ -67,6 +67,7 @@ public class Miscellaneous extends SettingsPreferenceFragment implements
     private static final String POCKET_JUDGE = "pocket_judge";
     private static final String SYS_GAMES_SPOOF = "persist.sys.pixelprops.games";
     private static final String SYS_PROP_OPTIONS_PI = "persist.sys.pixelprops.pi";
+     private static final String SYS_VENDING_32_SPOOF = "persist.sys.spoof.vending_sdk32";
     private static final String SYS_PHOTOS_SPOOF = "persist.sys.pixelprops.gphotos";
     private static final String SYS_NETFLIX_SPOOF = "persist.sys.pixelprops.netflix";
     
@@ -76,9 +77,9 @@ public class Miscellaneous extends SettingsPreferenceFragment implements
 
     private Preference mPocketJudge;
     private Preference mPropOptionsPi;
+    private Preference mVending32Spoof;
 
     private Preference mPifJsonFilePreference;
-
     private Preference mGamePropsJsonFilePreference;
     private Preference mGamePropsSpoof;
 
@@ -97,6 +98,8 @@ public class Miscellaneous extends SettingsPreferenceFragment implements
         mGamePropsJsonFilePreference = findPreference(KEY_GAME_PROPS_JSON_FILE_PREFERENCE);
         mGamePropsSpoof.setOnPreferenceChangeListener(this);
 
+        mVending32Spoof = (Preference) findPreference(SYS_VENDING_32_SPOOF);
+        mVending32Spoof.setOnPreferenceChangeListener(this);
         mPropOptionsPi = (Preference) findPreference(SYS_PROP_OPTIONS_PI);
         mPropOptionsPi.setOnPreferenceChangeListener(this);
 
@@ -252,7 +255,7 @@ public class Miscellaneous extends SettingsPreferenceFragment implements
 
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
-        if (preference == mGamePropsSpoof || preference == mPropOptionsPi) {
+        if (preference == mGamePropsSpoof || preference == mPropOptionsPi ||preference == mVending32Spoof) {
                     SystemRestartUtils.showSystemRestartDialog(getContext());
             return true;
         }

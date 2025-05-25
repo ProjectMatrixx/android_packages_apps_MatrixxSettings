@@ -1199,6 +1199,10 @@
     <string name="pi_spoof_title">Google Play Integrity spoof</string>
     <string name="pi_spoof_summary">Spoof your device as different model for Google Play Integrity (Disable to use custom keyboxes/Tricky Store)</string>
 
+    <!--Spoof playstore to SDK 32  -->
+     <string name="spoofing_vending_32_title">(EXP)Spoof playstore to SDK 32</string>
+     <string name="spoofing_vending_32_summary">Spoof playstore to SDK 32 to get legacy attestation</string>
+
     <!-- Captive portal -->
     <string name="captive_portal_title">Connectivity check</string>
     <string name="captive_portal_summary">Determine if the device can connect to the internet, by contacting Google. Also used to detect captive portals.</string>
