@@ -58,6 +58,12 @@
         android:summary="@string/pi_spoof_summary"
         android:defaultValue="true" />
 
+    <com.crdroid.settings.fragments.misc.KeyboxDataPreference
+        android:key="keybox_data_setting"
+        android:title="@string/keybox_data_title"
+        android:summary="@string/keybox_data_summary"
+        android:defaultValue=""/>
+
     <Preference
          android:key="pif_json_file_preference"
          android:title="@string/pif_spoofing_title"
