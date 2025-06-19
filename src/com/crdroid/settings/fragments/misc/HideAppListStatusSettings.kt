@@ -141,7 +141,9 @@ class HideAppListSettings : Fragment(R.layout.hide_applist_layout) {
 
                 override fun onQueryTextChange(newText: String): Boolean {
                     searchText = newText
-                    refreshList()
+                    if (isAdded && context != null) {
+                        refreshList()
+                    }
                     return true
                 }
             }
@@ -215,6 +217,7 @@ class HideAppListSettings : Fragment(R.layout.hide_applist_layout) {
     }
 
     private fun refreshList() {
+        if (!isAdded || context == null) return
         var list =
             packageList
                 .filter {
@@ -318,4 +321,12 @@ class HideAppListSettings : Fragment(R.layout.hide_applist_layout) {
                     oldInfo == newInfo
             }
     }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        optionsMenu?.findItem(R.id.search)?.actionView?.let {
+            (it as? SearchView)?.setOnQueryTextListener(null)
+        }
+    }
+
 }
