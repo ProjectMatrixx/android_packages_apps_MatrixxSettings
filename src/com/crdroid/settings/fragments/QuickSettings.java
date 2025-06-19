@@ -30,6 +30,7 @@ import androidx.preference.SwitchPreferenceCompat;
 
 import com.android.internal.logging.nano.MetricsProto;
 import com.android.internal.util.crdroid.ThemeUtils;
+import com.android.internal.util.crdroid.SystemRestartUtils;
 
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
@@ -39,7 +40,7 @@ import com.android.settingslib.search.SearchIndexable;
 import com.crdroid.settings.fragments.quicksettings.LayoutSettings;
 import com.crdroid.settings.fragments.quicksettings.QsHeaderImageSettings;
 import com.crdroid.settings.preferences.CustomSeekBarPreference;
-
+import com.crdroid.settings.preferences.SecureSettingSwitchPreference;
 import lineageos.providers.LineageSettings;
 
 import java.util.List;
@@ -61,6 +62,7 @@ public class QuickSettings extends SettingsPreferenceFragment implements
     private static final String KEY_QS_UI_STYLE  = "qs_tile_ui_style";
     private static final String KEY_QS_PANEL_STYLE  = "qs_panel_style";
     private static final String KEY_NOTIF_STYLE = "notification_style";
+    private static final String KEY_QS_REFACTOR_ENABLED = "qs_refactor_enabled";
 
     private ListPreference mShowBrightnessSlider;
     private ListPreference mBrightnessSliderPosition;
@@ -73,6 +75,7 @@ public class QuickSettings extends SettingsPreferenceFragment implements
     private ListPreference mQsPanelStyle;
     private Preference mSplitShadePref;
     private Preference  mNotificationStyleSwitch;
+    private SecureSettingSwitchPreference mQsRefactorEnabled;
 
     private  static ThemeUtils mThemeUtils;
 
@@ -122,6 +125,9 @@ public class QuickSettings extends SettingsPreferenceFragment implements
         int tileAnimationStyle = Settings.System.getIntForUser(resolver,
                 Settings.System.QS_TILE_ANIMATION_STYLE, 0, UserHandle.USER_CURRENT);
         updateAnimTileStyle(tileAnimationStyle);
+
+        mQsRefactorEnabled = (SecureSettingSwitchPreference) findPreference(KEY_QS_REFACTOR_ENABLED);
+        mQsRefactorEnabled.setOnPreferenceChangeListener(this);
 
         mQsUI = (ListPreference) findPreference(KEY_QS_UI_STYLE);
         mQsUI.setOnPreferenceChangeListener(this);
@@ -179,6 +185,10 @@ public class QuickSettings extends SettingsPreferenceFragment implements
                     "notification_style", value, UserHandle.USER_CURRENT);
                     updateNotifStyle(getActivity());
                 return true;
+        } else if (preference == mQsRefactorEnabled) {
+            // QS Refactor setting changed - restart SystemUI
+            SystemRestartUtils.showSystemRestartDialog(getContext());
+            return true;
         }
         return false;
     }

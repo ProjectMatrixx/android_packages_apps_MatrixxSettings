@@ -146,4 +146,9 @@
     <string name="ambient_image_title">Ambient image</string>
     <string name="file_header_select_title">Select local image</string>
     <string name="file_header_select_summary">Select image from storage</string>
+
+
+    <!-- QuickSettings Refactor -->
+    <string name="qs_refactor_title">Enable revamp QS</string>
+    <string name="qs_refactor_summary">Some features will not work on the revamp QS</string>
 </resources>
