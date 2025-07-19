@@ -60,8 +60,6 @@ public class Navigation extends SettingsPreferenceFragment {
         Settings.Secure.putIntForUser(resolver,
                 Settings.Secure.BACK_GESTURE_HAPTIC, 1, UserHandle.USER_CURRENT);
         Settings.System.putIntForUser(resolver,
-                Settings.System.PIXEL_NAV_ANIMATION, 1, UserHandle.USER_CURRENT);
-        Settings.System.putIntForUser(resolver,
                 Settings.System.BACK_GESTURE_HEIGHT, 0, UserHandle.USER_CURRENT);
         Settings.System.putIntForUser(resolver,
                 Settings.System.GESTURE_NAVBAR_LENGTH_MODE, 1, UserHandle.USER_CURRENT);
