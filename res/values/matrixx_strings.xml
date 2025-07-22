@@ -86,4 +86,9 @@
 
     <string name="search_bar_style_title">Search Bar Style</string>
     <string name="settings_sb_style_1">Android 16</string>
+
+    <!-- Power off verify -->
+    <string name="power_off_verify_footer">Power off verification protects your device by preventing others from turning it off immediately after it\'s lost, increasing the chances of recovery. You only need to enter your lock screen password when powering off or restarting the phone from the lock screen.</string>
+    <string name="power_off_verify_summary">When your device is locked, you\'ll need to use your password to power off or restart.</string>
+    <string name="power_off_verify_title">Power off verify</string>
 </resources>
