@@ -78,6 +78,12 @@
             android:summary="@string/advanced_reboot_secured_summary"
             android:dependency="advanced_reboot"
             android:defaultValue="true" />
+
+        <Preference
+    	    android:key="power_off_verify_entry"
+            android:title="@string/power_off_verify_title"
+            android:summary="@string/power_off_verify_summary"
+            settings:fragment="com.crdroid.settings.fragments.buttons.PowerOffVerifySettings"/>
     </PreferenceCategory>
 
 </PreferenceScreen>
