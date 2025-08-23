@@ -34,6 +34,7 @@ import android.app.AlertDialog;
 
 import androidx.preference.Preference;
 import androidx.preference.PreferenceScreen;
+import androidx.preference.PreferenceCategory;
 
 import com.android.internal.util.crdroid.SystemRestartUtils;
 import com.android.internal.logging.nano.MetricsProto;
@@ -78,7 +79,9 @@ public class Miscellaneous extends SettingsPreferenceFragment implements
     private static final String SYS_GAMEPROP_ENABLED = "persist.sys.gameprops.enabled";
     private static final String KEY_GAME_PROPS_JSON_FILE_PREFERENCE = "game_props_json_file_preference";
     private static final String KEY_PIF_JSON_FILE_PREFERENCE = "pif_json_file_preference";
-    
+
+    private static final String QUICK_SWITCH = "quickswitch";
+
     private static final String KEYBOX_DATA_KEY = "keybox_data_setting";
     private ActivityResultLauncher<Intent> mKeyboxFilePickerLauncher;
     private KeyboxDataPreference mKeyboxDataPreference;
@@ -90,6 +93,8 @@ public class Miscellaneous extends SettingsPreferenceFragment implements
     private Preference mGamePropsJsonFilePreference;
     private Preference mGamePropsSpoof;
 
+    private Preference mquickswitchperf;
+
     private Handler mHandler;
 
     @Override
@@ -97,6 +102,7 @@ public class Miscellaneous extends SettingsPreferenceFragment implements
         super.onCreate(savedInstanceState);
         mHandler = new Handler();
         addPreferencesFromResource(R.xml.crdroid_settings_misc);
+        PreferenceCategory miscCategory = findPreference("misc_category");
         mGamePropsSpoof = findPreference(SYS_GAMEPROP_ENABLED);
         final PreferenceScreen prefScreen = getPreferenceScreen();
         final Resources res = getResources();
@@ -116,7 +122,7 @@ public class Miscellaneous extends SettingsPreferenceFragment implements
             });
         }
         mGamePropsSpoof.setOnPreferenceChangeListener(this);
-        
+
         mKeyboxFilePickerLauncher = registerForActivityResult(
         new ActivityResultContracts.StartActivityForResult(),
         result -> {
@@ -135,6 +141,13 @@ public class Miscellaneous extends SettingsPreferenceFragment implements
                 com.android.internal.R.bool.config_pocketModeSupported);
         if (!mPocketJudgeSupported)
             prefScreen.removePreference(mPocketJudge);
+
+	mquickswitchperf = findPreference(QUICK_SWITCH);
+	if (!SystemProperties.getBoolean("ro.quickswitch.available", false)) {
+		if (mquickswitchperf !=null && miscCategory != null) {
+			miscCategory.removePreference(mquickswitchperf);
+		}
+	}
     }
 
     @Override
