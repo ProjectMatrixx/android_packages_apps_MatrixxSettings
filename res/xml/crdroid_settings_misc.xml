@@ -157,6 +157,7 @@
     </PreferenceCategory>
 
     <PreferenceCategory
+    	 android:key="misc_category"
          android:title="@string/other_category">
 
     <!-- Sensor block per package -->
@@ -197,13 +198,6 @@
         android:defaultValue="0"
         android:summary="%s" />
 
-    <!-- <Preference
-         android:key="quickswitch"
-         android:title="@string/quickswitch_launcher_title" 
-         android:summary="@string/quickswitch_launcher_summary" 
-         android:fragment="com.crdroid.settings.fragments.QuickSwitch"
-         android:enabled="@bool/quickswitch_enabled" /> -->    
-
     <!-- Sidebar -->
     <Preference
         android:key="sidebar"
@@ -215,5 +209,12 @@
             android:targetPackage="com.libremobileos.sidebar"
             android:targetClass="com.libremobileos.sidebar.ui.sidebar.SidebarSettingsActivity" />
     </Preference>
+
+     <Preference
+         android:key="quickswitch"
+         android:title="@string/quickswitch_launcher_title" 
+         android:summary="@string/quickswitch_launcher_summary" 
+         android:fragment="com.crdroid.settings.fragments.QuickSwitch" />
+
     </PreferenceCategory>
 </PreferenceScreen>

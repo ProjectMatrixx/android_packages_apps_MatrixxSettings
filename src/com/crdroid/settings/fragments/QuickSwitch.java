@@ -106,15 +106,21 @@ public class QuickSwitch extends SettingsPreferenceFragment
                     ArrayList<SearchIndexableResource> result =
                             new ArrayList<SearchIndexableResource>();
 
+    	     if (SystemProperties.getBoolean("ro.quickswitch.available", false)) {
                     SearchIndexableResource sir = new SearchIndexableResource(context);
                     sir.xmlResId = R.xml.quick_switch;
                     result.add(sir);
+		  }
                     return result;
                 }
 
                 @Override
                 public List<String> getNonIndexableKeys(Context context) {
                     List<String> keys = super.getNonIndexableKeys(context);
+
+		    if (!SystemProperties.getBoolean("ro.quickswitch.available", false)) {
+        	    	keys.add("quickswitch");
+		    }
                     return keys;
                 }
             };
