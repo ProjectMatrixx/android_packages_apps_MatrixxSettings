@@ -140,7 +140,7 @@ public class Miscellaneous extends SettingsPreferenceFragment implements
         boolean mPocketJudgeSupported = res.getBoolean(
                 com.android.internal.R.bool.config_pocketModeSupported);
         if (!mPocketJudgeSupported)
-            prefScreen.removePreference(mPocketJudge);
+            miscCategory.removePreference(mPocketJudge);
 
 	mquickswitchperf = findPreference(QUICK_SWITCH);
 	if (!SystemProperties.getBoolean("ro.quickswitch.available", false)) {
