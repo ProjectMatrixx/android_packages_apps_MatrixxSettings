@@ -16,7 +16,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- App Title -->
-    <string name="crdroid_settings_title">mîhengên crDroid</string>
+    <string name="crdroid_settings_title">Matrixx override</string>
     <string name="crdroid_settings_summary">Xwezî veke</string>
     <string name="reset_settings_title">Mîhengan vegerîne</string>
     <string name="reset_settings_message">Ev ê piraniya mîhengên crdroid-ê li nirxên xweyên xwerû ji bo bikarhênerê heyî vegerîne. Ma hûn dixwazin berdewam bikin?</string>

@@ -113,7 +113,6 @@
 
         <com.crdroid.settings.preferences.SystemSettingListPreference
             android:key="qs_brightness_slider_shape"
-            android:icon="@drawable/ic_shapes"
             android:title="@string/qs_brightness_slider_shape_title"
             android:entries="@array/qs_brightness_slider_shape_entries"
             android:entryValues="@array/qs_brightness_slider_shape_values"
@@ -173,7 +172,6 @@
 
         <com.crdroid.settings.preferences.SystemSettingSwitchPreference
             android:key="qs_tile_haptic"
-            android:icon="@drawable/ic_brightness"
             android:title="@string/qs_brightness_slider_haptic_title"
             android:summary="@string/qs_tile_haptic_summary" />
 

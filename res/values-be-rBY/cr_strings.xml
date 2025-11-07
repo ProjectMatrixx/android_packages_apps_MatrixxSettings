@@ -16,7 +16,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- App Title -->
-    <string name="crdroid_settings_title">Налады crDroid</string>
+    <string name="crdroid_settings_title">Matrixx override</string>
     <string name="crdroid_settings_summary">Тут адбываецца чараўніцтва</string>
     <string name="reset_settings_title">Скінуць налады</string>
     <string name="reset_settings_message">Гэта прывядзе да скіду большасці налад crdroid да значэнняў па змаўчанні для бягучага карыстальніка. Працягнуць?</string>

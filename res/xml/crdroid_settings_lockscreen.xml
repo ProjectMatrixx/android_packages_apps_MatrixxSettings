@@ -46,21 +46,18 @@
         <!-- Pulse music visualizer -->
         <Preference
             android:key="pulse_settings"
-            android:icon="@drawable/ic_pulse"
             android:title="@string/pulse_settings_title"
             android:summary="@string/pulse_settings_summary"
             android:fragment="com.crdroid.settings.fragments.lockscreen.PulseSettings" />
 
         <com.crdroid.settings.preferences.SystemSettingSwitchPreference
             android:key="ls_media_art_enabled"
-            android:icon="@drawable/ic_movie"
             android:title="@string/ls_media_art_title"
             android:summary="@string/ls_media_art_summary"
             android:defaultValue="false" />
 
         <com.crdroid.settings.preferences.SystemSettingListPreference
             android:key="ls_media_art_filter"
-            android:icon="@drawable/ic_movie"
             android:title="@string/ls_media_art_filter_title"
             android:entries="@array/ls_media_art_filter_entries"
             android:entryValues="@array/ls_media_art_filter_values"
@@ -69,7 +66,6 @@
 
         <com.crdroid.settings.preferences.SystemSettingSeekBarPreference
             android:key="ls_media_art_fade_level"
-            android:icon="@drawable/ic_movie"
             android:title="@string/ls_media_art_fade_level_title"
             android:summary="@string/ls_media_art_fade_level_summary"
             android:defaultValue="40"
@@ -81,7 +77,6 @@
 
         <com.crdroid.settings.preferences.SystemSettingSeekBarPreference
             android:key="ls_media_art_blur_level"
-            android:icon="@drawable/ic_movie"
             android:title="@string/ls_media_art_blur_level_title"
             android:summary="@string/ls_media_art_blur_level_summary"
             android:max="600"

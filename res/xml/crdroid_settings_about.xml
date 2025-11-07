@@ -22,7 +22,6 @@
     <!-- crDroid Changelog -->
     <Preference
         android:key="crdroid_changelog"
-        android:icon="@drawable/ic_changelog"
         android:title="@string/changelog_crdroid_title"
         android:summary="@string/changelog_crdroid_summary">
         <intent android:action="android.intent.action.MAIN"
@@ -33,28 +32,24 @@
     <!-- crDroid Website -->
     <Preference
         android:key="crdroid_website"
-        android:icon="@drawable/ic_web"
         android:title="@string/crdroid_website_title"
         android:summary="@string/crdroid_website_summary" />
 
     <!-- crDroid Translate -->
     <Preference
         android:key="crdroid_translate"
-        android:icon="@drawable/ic_translate"
         android:title="@string/crdroid_translate_title"
         android:summary="@string/crdroid_translate_summary" />
 
     <!-- crDroid Share -->
     <Preference
         android:key="crdroid_share"
-        android:icon="@drawable/ic_share"
         android:title="@string/share_crdroid_title"
         android:summary="@string/share_crdroid_summary" />
 
     <!-- crDroid Donate -->
     <Preference
         android:key="crdroid_donate"
-        android:icon="@drawable/ic_donate"
         android:title="@string/crdroid_donate_preference_title"
         android:summary="@string/crdroid_donate_preference_summary">
         <intent android:action="android.intent.action.MAIN"
@@ -65,35 +60,30 @@
     <!-- crDroid Source -->
     <Preference
         android:key="crdroid_source"
-        android:icon="@drawable/ic_source"
         android:title="@string/crdroid_source_title"
         android:summary="@string/crdroid_source_summary" />
 
     <!-- crDroid Telegram -->
     <Preference
         android:key="crdroid_telegram"
-        android:icon="@drawable/ic_telegram"
         android:title="@string/crdroid_telegram_title"
         android:summary="@string/crdroid_telegram_summary" />
 
     <!-- crDroid Telegram Updates Channel -->
     <Preference
         android:key="crdroid_telegram_channel"
-        android:icon="@drawable/ic_telegram_channel"
         android:title="@string/crdroid_telegram_channel_title"
         android:summary="@string/crdroid_telegram_channel_summary" />
 
     <!-- crDroid buildserver sponsor -->
     <Preference
         android:key="crdroid_buildserversponsor"
-        android:icon="@drawable/ic_sponsor"
         android:title="@string/crdroid_buildserversponsor_title"
         android:summary="@string/crdroid_buildserversponsor_summary" />
 
     <!-- crDroid sponsor -->
     <Preference
         android:key="crdroid_sponsor"
-        android:icon="@drawable/ic_sponsor"
         android:title="@string/crdroid_sponsor_title"
         android:summary="@string/crdroid_sponsor_summary" />
 
@@ -102,7 +92,6 @@
         android:key="system_update_settings"
         android:title="@string/crdroid_update_title"
         android:summary="@string/crdroid_update_summary"
-        android:icon="@drawable/ic_update"
         settings:controller="com.android.settings.system.SystemUpdatePreferenceController">
         <intent android:action="android.settings.SYSTEM_UPDATE_SETTINGS" />
     </Preference>

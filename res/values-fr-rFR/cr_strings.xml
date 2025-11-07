@@ -16,7 +16,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- App Title -->
-    <string name="crdroid_settings_title">Paramètres crDroid</string>
+    <string name="crdroid_settings_title">Matrixx override</string>
     <string name="crdroid_settings_summary">Les trésors de crDroid</string>
     <string name="reset_settings_title">Réinitialiser les paramètres</string>
     <string name="reset_settings_message">Cette action réinitialisera la plupart des paramètres crDroid à leurs valeurs par défaut pour l’utilisateur actuel. Souhaitez-vous continuer ?</string>

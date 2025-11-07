@@ -34,21 +34,18 @@
 
     <com.crdroid.settings.preferences.SecureSettingSwitchPreference
         android:key="notification_row_transparency"
-        android:icon="@drawable/ic_chat_dashed"
         android:title="@string/notification_row_transparency_title"
         android:summary="@string/notification_row_transparency_summary"
         android:defaultValue="true" />
 
     <com.crdroid.settings.preferences.SecureSettingSwitchPreference
         android:key="notification_row_transparency_lockscreen"
-        android:icon="@drawable/ic_chat_dashed"
         android:title="@string/notification_row_transparency_lockscreen_title"
         android:summary="@string/notification_row_transparency_lockscreen_summary"
         android:defaultValue="true" />
 
     <com.crdroid.settings.preferences.SecureSettingSwitchPreference
         android:key="media_squiggle_animation"
-        android:icon="@drawable/ic_waves"
         android:title="@string/media_squiggle_animation_title"
         android:summary="@string/media_squiggle_animation_summary"
         android:defaultValue="true" />
@@ -78,7 +75,6 @@
 
         <com.crdroid.settings.preferences.SystemPropertySwitchPreference
             android:key="persist.sys.compact_heads_up_notification.always_show"
-            android:icon="@drawable/ic_headsup"
             android:title="@string/compact_heads_up_notifications_enabled_title"
             android:summary="@string/compact_heads_up_notifications_enabled_summary"
             android:defaultValue="false"

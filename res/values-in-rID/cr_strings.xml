@@ -16,7 +16,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- App Title -->
-    <string name="crdroid_settings_title">Setelan crDroid</string>
+    <string name="crdroid_settings_title">Matrixx override</string>
     <string name="crdroid_settings_summary">Kebaikan terbuka</string>
     <string name="reset_settings_title">Setel ulang pengaturan</string>
     <string name="reset_settings_message">Ini akan mengatur ulang sebagian besar pengaturan crdroid ke nilai default untuk pengguna saat ini. Apakah Anda ingin melanjutkan?</string>

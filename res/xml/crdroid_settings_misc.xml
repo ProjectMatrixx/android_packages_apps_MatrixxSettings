@@ -121,7 +121,6 @@
     <!-- Rotation button -->
     <com.crdroid.settings.preferences.SystemSettingSwitchPreference
         android:key="enable_rotation_button"
-        android:icon="@drawable/ic_rotation"
         android:title="@string/floating_rotation_button_title"
         android:summary="@string/floating_rotation_button_summary"
         android:defaultValue="true" />

@@ -16,7 +16,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- App Title -->
-    <string name="crdroid_settings_title">تنظیمات crDroid</string>
+    <string name="crdroid_settings_title">Matrixx override</string>
     <string name="crdroid_settings_summary">باز کردن تنظیمات ویژه</string>
     <string name="reset_settings_title">بازنشانی تنظیمات</string>
     <string name="reset_settings_message">با این کار بیشتر تنظیمات crdroid برای کاربر فعلی به مقادیر پیشفرض بازنشانی میشود،دوست دارید ادامه دهید؟</string>
