@@ -17,8 +17,11 @@
 package com.crdroid.settings;
 
 import android.os.Bundle;
+import android.os.UserHandle;
+import android.provider.Settings;
 import android.content.Context;
 import com.android.settings.R;
+import com.crdroid.settings.fragments.UserInterface;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.internal.logging.nano.MetricsProto;
  
@@ -28,9 +31,32 @@ public class crDroidSettingsLayout extends SettingsPreferenceFragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
  
-        addPreferencesFromResource(R.xml.crdroid_dashboard);
-     }
- 
+         Context context = getContext();
+            int dashboardStyle = Settings.System.getIntForUser(
+            context.getContentResolver(),
+            com.crdroid.settings.fragments.UserInterface.SETTINGS_DASHBOARD_STYLE,
+            0,
+            UserHandle.USER_CURRENT
+    );
+
+    switch (dashboardStyle) {
+        case 0:
+            addPreferencesFromResource(R.xml.crdroid_dashboard);
+            break;
+
+        case 1:
+            addPreferencesFromResource(R.xml.crdroid_dashboard);
+            break;
+
+        case 2:
+            addPreferencesFromResource(R.xml.crdroid_dashboard_expressive);
+            break;
+
+        default:
+            addPreferencesFromResource(R.xml.crdroid_dashboard);
+            break;
+    }
+}
 
     @Override
     public int getMetricsCategory() {
