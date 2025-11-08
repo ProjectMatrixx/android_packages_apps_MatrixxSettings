@@ -102,6 +102,7 @@
     </PreferenceCategory>
 
     <PreferenceCategory
+         android:key="qs_brightness_slider_category"
          android:title="@string/qs_brightness_slider_category">
 
         <lineageos.preference.LineageSecureSettingListPreference
