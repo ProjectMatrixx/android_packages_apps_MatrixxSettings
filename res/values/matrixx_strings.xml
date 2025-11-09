@@ -148,4 +148,7 @@
     <string name="reset_default_title">Reset to default?</string>
     <string name="reset_default_message">This will restore the default font settings</string>
 
+    <!-- Blur intensity -->
+    <string name="blur_intensity_title">Blur intensity</string>
+    <string name="blur_intensity_summary" formatted="false">Control the intensity of blur effects throughout the system.\n0% = no blur, 100% = system default, 200% = double intensity.</string>
 </resources>
