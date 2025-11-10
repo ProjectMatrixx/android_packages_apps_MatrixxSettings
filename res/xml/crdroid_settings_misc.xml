@@ -19,6 +19,10 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/misc_title">
 
+    <PreferenceCategory
+        android:key="gaming_category"
+        android:title="@string/gaming_category">
+
     <!-- Gaming mode -->
     <Preference
         android:key="gaming_mode"
@@ -30,6 +34,18 @@
             android:targetPackage="io.chaldeaprjkt.gamespace"
             android:targetClass="io.chaldeaprjkt.gamespace.settings.SettingsActivity" />
     </Preference>
+
+    <!-- Unlock FPS for specific games -->
+    <com.crdroid.settings.preferences.SecureSettingSwitchPreference
+        android:key="pi_games_spoof"
+        android:title="@string/use_games_spoof_title"
+        android:summary="@string/use_games_spoof_summary" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+    	 android:key="spoofing_category"
+         android:title="@string/spoofing_category">
 
     <!-- Google Play Integrity -->
     <com.crdroid.settings.preferences.SecureSettingSwitchPreference
@@ -56,12 +72,6 @@
         android:title="@string/pi_gmscertchain_title"
         android:summary="@string/pi_gmscertchain_summary" />
 
-    <!-- Unlock FPS for specific games -->
-    <com.crdroid.settings.preferences.SecureSettingSwitchPreference
-        android:key="pi_games_spoof"
-        android:title="@string/use_games_spoof_title"
-        android:summary="@string/use_games_spoof_summary" />
-
     <!-- Unlimited google photos storage -->
     <com.crdroid.settings.preferences.SecureSettingSwitchPreference
         android:key="pi_photos_spoof"
@@ -75,6 +85,11 @@
         android:title="@string/netflix_spoof_title"
         android:summary="@string/netflix_spoof_summary"
         android:defaultValue="false" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+    	 android:key="security_category"
+         android:title="@string/security_category">
 
     <!-- Application downgrade -->
     <com.crdroid.settings.preferences.GlobalSettingSwitchPreference
@@ -82,45 +97,6 @@
         android:title="@string/app_downgrade_title"
         android:summary="@string/app_downgrade_summary"
         android:defaultValue="false"/>
-
-    <!-- QuickSwitch Launcher -->
-    <Preference
-         android:key="quickswitch"
-         android:title="@string/quickswitch_launcher_title" 
-         android:summary="@string/quickswitch_launcher_summary" 
-         android:fragment="com.crdroid.settings.fragments.QuickSwitch"
-         android:enabled="@bool/quickswitch_enabled" />       
-  
-    <!-- Freeform launch mode -->
-    <com.crdroid.settings.preferences.SystemSettingListPreference
-        android:key="freeform_launch_mode"
-        android:title="@string/freeform_launch_mode_title"
-        android:dialogTitle="@string/freeform_launch_mode_title"
-        android:entries="@array/freeform_launch_mode_entries"
-        android:entryValues="@array/freeform_launch_mode_values"
-        android:defaultValue="0"
-        android:summary="%s" />
-
-    <!-- Sidebar -->
-    <Preference
-        android:key="sidebar"
-        android:title="@string/sidebar_title"
-        android:summary="@string/sidebar_summary">
-
-        <intent
-            android:action="android.intent.action.IA_SETTINGS"
-            android:targetPackage="com.libremobileos.sidebar"
-            android:targetClass="com.libremobileos.sidebar.ui.sidebar.SidebarSettingsActivity" />
-    </Preference>
-
-    <!-- Three fingers swipe action -->
-    <ListPreference
-        android:key="three_fingers_swipe"
-        android:dialogTitle="@string/three_fingers_swipe_title"
-        android:title="@string/three_fingers_swipe_title"
-        android:entries="@array/hardware_keys_action_entries"
-        android:entryValues="@array/hardware_keys_action_values"
-        android:persistent="false" />
 
     <com.crdroid.settings.preferences.GlobalSettingSwitchPreference
         android:key="window_ignore_secure"
@@ -154,6 +130,11 @@
         android:title="@string/hide_applist_title"
         android:summary="@string/hide_applist_summary"
         android:fragment="com.crdroid.settings.fragments.misc.HideAppListSettings" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+    	 android:key="misc_category"
+         android:title="@string/misc_category">
 
     <!-- Sensor block per package -->
     <Preference
@@ -169,11 +150,50 @@
         android:summary="@string/pocket_judge_summary"
         android:defaultValue="false" />
 
+     <!-- Three fingers swipe action -->
+    <ListPreference
+        android:key="three_fingers_swipe"
+        android:dialogTitle="@string/three_fingers_swipe_title"
+        android:title="@string/three_fingers_swipe_title"
+        android:entries="@array/hardware_keys_action_entries"
+        android:entryValues="@array/hardware_keys_action_values"
+        android:persistent="false" />
+
     <!-- Rotation button -->
     <com.crdroid.settings.preferences.SystemSettingSwitchPreference
         android:key="enable_rotation_button"
         android:title="@string/floating_rotation_button_title"
         android:summary="@string/floating_rotation_button_summary"
-        android:defaultValue="true" />
+        android:defaultValue="true" />       
 
+    <!-- QuickSwitch Launcher -->
+    <Preference
+         android:key="quickswitch"
+         android:title="@string/quickswitch_launcher_title" 
+         android:summary="@string/quickswitch_launcher_summary" 
+         android:fragment="com.crdroid.settings.fragments.QuickSwitch"
+         android:enabled="@bool/quickswitch_enabled" />       
+  
+    <!-- Freeform launch mode -->
+    <com.crdroid.settings.preferences.SystemSettingListPreference
+        android:key="freeform_launch_mode"
+        android:title="@string/freeform_launch_mode_title"
+        android:dialogTitle="@string/freeform_launch_mode_title"
+        android:entries="@array/freeform_launch_mode_entries"
+        android:entryValues="@array/freeform_launch_mode_values"
+        android:defaultValue="0"
+        android:summary="%s" />
+
+    <!-- Sidebar -->
+    <Preference
+        android:key="sidebar"
+        android:title="@string/sidebar_title"
+        android:summary="@string/sidebar_summary">
+
+        <intent
+            android:action="android.intent.action.IA_SETTINGS"
+            android:targetPackage="com.libremobileos.sidebar"
+            android:targetClass="com.libremobileos.sidebar.ui.sidebar.SidebarSettingsActivity" />
+    </Preference>
+    </PreferenceCategory>
 </PreferenceScreen>
