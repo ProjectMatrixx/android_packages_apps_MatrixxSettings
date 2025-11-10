@@ -18,6 +18,10 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:title="@string/crdroid_settings_title" >
       
+    <PreferenceCategory
+        android:key="matrixx_one_category"
+        android:layout="@layout/settingslib_preference_category_no_title">
+    
         <!-- UserInterface -->
         <Preference
             android:icon="@drawable/ic_themes"
@@ -38,6 +42,12 @@
 	        android:title="@string/quicksettings_title"
             android:summary="@string/quick_summary"
             android:fragment="com.crdroid.settings.fragments.QuickSettings" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="matrixx_two_category"
+        android:layout="@layout/settingslib_preference_category_no_title">
 
         <!-- Statusbar -->   
         <Preference
@@ -60,6 +70,11 @@
             android:summary="@string/sound_summary"
             android:fragment="com.crdroid.settings.fragments.Sound" />
 
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="matrixx_three_category"
+        android:layout="@layout/settingslib_preference_category_no_title">
 
         <!-- Buttons -->
         <Preference
@@ -73,7 +88,6 @@
             android:icon="@drawable/ic_navbar"
             android:title="@string/navigation_title"
             android:summary="@string/navigation_summary"
-            settings:layout="@layout/matrixx_dashboard_preference_middle"
             android:fragment="com.crdroid.settings.fragments.Navigation" /> -->
 
         <!-- Misc -->
@@ -89,5 +103,5 @@
             android:title="@string/about_matrixx"
             android:summary="@string/about_matrixx_summary"
             android:fragment="com.crdroid.settings.fragments.About" />
-
+        </PreferenceCategory>
 </PreferenceScreen>
