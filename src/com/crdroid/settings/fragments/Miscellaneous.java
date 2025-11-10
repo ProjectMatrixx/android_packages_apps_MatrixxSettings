@@ -32,6 +32,7 @@ import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.preference.ListPreference;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceScreen;
+import androidx.preference.PreferenceCategory;
 import androidx.preference.SwitchPreferenceCompat;
 
 import com.android.internal.logging.nano.MetricsProto;
@@ -60,6 +61,7 @@ public class Miscellaneous extends SettingsPreferenceFragment implements
     private static final String KEY_GMS_CERT_SPOOF = "pi_gms_cert_chain";
     private static final String KEY_THREE_FINGERS_SWIPE = "three_fingers_swipe";
     private static final String KEYBOX_DATA_KEY = "keybox_data_setting";
+    private static final String QUICK_SWITCH = "quickswitch";
 
     private ActivityResultLauncher<Intent> mKeyboxFilePickerLauncher;
     private KeyboxDataPreference mKeyboxDataPreference;
@@ -67,11 +69,15 @@ public class Miscellaneous extends SettingsPreferenceFragment implements
     private Preference mPocketJudge;
     private ListPreference mThreeFingersSwipeAction;
 
+    private Preference mquickswitchperf;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         addPreferencesFromResource(R.xml.crdroid_settings_misc);
+
+        PreferenceCategory miscCategory = findPreference("misc_category");
 
         final PreferenceScreen prefScreen = getPreferenceScreen();
         final Resources res = getResources();
@@ -107,6 +113,13 @@ public class Miscellaneous extends SettingsPreferenceFragment implements
                 }
             }
         );
+
+	mquickswitchperf = findPreference(QUICK_SWITCH);
+	if (!SystemProperties.getBoolean("ro.quickswitch.available", false)) {
+		if (mquickswitchperf !=null && miscCategory != null) {
+			miscCategory.removePreference(mquickswitchperf);
+		}
+	}
     }
 
     private ListPreference initList(String key, Action value) {
