@@ -23,11 +23,6 @@
         Notes: &#10;External launcher modules/modifications must be adapted to the QuickSwitch structure to function properly.
     </string>
 
-    <!-- Freeform launch mode -->
-    <string name="freeform_launch_mode_title">Freeform launch mode</string>
-    <string name="freeform_launch_mode_1">Native AOSP</string>
-    <string name="freeform_launch_mode_2">LMOFreeForm</string>
-
     <!-- Miscellaneous/Hide applist -->
     <string name="hide_applist_title">Hide applist</string>
     <string name="hide_applist_summary">Prevent apps from checking selected apps from appslist</string>
