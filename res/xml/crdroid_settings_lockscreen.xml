@@ -20,18 +20,18 @@
     xmlns:lineage="http://schemas.android.com/apk/res-auto"
     android:title="@string/lockscreen_title">
 
-    <PreferenceCategory
+<!--    <PreferenceCategory
         android:key="lockscreen_clock_category"
         android:title="@string/qs_clock_title">
-
+-->
         <!-- Lockscreen Clock Font style -->
-        <Preference
+<!--        <Preference 
             android:key="android.theme.customization.lockscreen_clock_font"
             android:title="@string/theme_customization_lock_clock_title"
             android:summary="@string/theme_customization_lock_clock_summary"
             android:fragment="com.crdroid.settings.fragments.lockscreen.LockClockFontsPicker"/>
 
-    </PreferenceCategory>
+    </PreferenceCategory> -->
 
     <PreferenceCategory
         android:key="lockscreen_interface_category"
