@@ -16,6 +16,7 @@
 package com.crdroid.settings.fragments;
 
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.content.ContentResolver;
 import android.content.Context;
 import android.content.Intent;
@@ -23,6 +24,8 @@ import android.content.res.Resources;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.SystemProperties;
+import android.os.Handler;
+import android.util.Log;
 import android.os.UserHandle;
 import android.provider.Settings;
 import android.view.View;
@@ -35,6 +38,7 @@ import androidx.preference.PreferenceScreen;
 import androidx.preference.PreferenceCategory;
 import androidx.preference.SwitchPreferenceCompat;
 
+import com.android.internal.util.crdroid.SystemRestartUtils;
 import com.android.internal.logging.nano.MetricsProto;
 import com.android.internal.util.crdroid.KeyProviderManager;
 import com.android.settings.R;
@@ -51,6 +55,12 @@ import lineageos.providers.LineageSettings;
 
 import static org.lineageos.internal.util.DeviceKeysConstants.*;
 
+import org.json.JSONObject;
+import org.json.JSONException;
+import java.io.InputStream;
+import java.nio.charset.StandardCharsets;
+import java.util.Iterator;
+
 @SearchIndexable
 public class Miscellaneous extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
@@ -62,6 +72,7 @@ public class Miscellaneous extends SettingsPreferenceFragment implements
     private static final String KEY_THREE_FINGERS_SWIPE = "three_fingers_swipe";
     private static final String KEYBOX_DATA_KEY = "keybox_data_setting";
     private static final String QUICK_SWITCH = "quickswitch";
+    private static final String KEY_PIF_JSON_FILE_PREFERENCE = "pif_json_file_preference";
 
     private ActivityResultLauncher<Intent> mKeyboxFilePickerLauncher;
     private KeyboxDataPreference mKeyboxDataPreference;
@@ -71,16 +82,21 @@ public class Miscellaneous extends SettingsPreferenceFragment implements
 
     private Preference mquickswitchperf;
 
+    private Preference mPifJsonFilePreference;
+    private Handler mHandler;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
+        mHandler = new Handler();
         addPreferencesFromResource(R.xml.crdroid_settings_misc);
 
         PreferenceCategory miscCategory = findPreference("misc_category");
 
         final PreferenceScreen prefScreen = getPreferenceScreen();
         final Resources res = getResources();
+
+        mPifJsonFilePreference = findPreference(KEY_PIF_JSON_FILE_PREFERENCE);
 
         mPocketJudge = (Preference) prefScreen.findPreference(POCKET_JUDGE);
         boolean mPocketJudgeSupported = res.getBoolean(
@@ -140,6 +156,90 @@ public class Miscellaneous extends SettingsPreferenceFragment implements
         int index = pref.findIndexOfValue(value);
         pref.setSummary(pref.getEntries()[index]);
         LineageSettings.System.putIntForUser(getContentResolver(), setting, Integer.valueOf(value), UserHandle.USER_CURRENT);
+    }
+
+    @Override
+    public boolean onPreferenceTreeClick(Preference preference) {
+        if (preference == mPifJsonFilePreference) {
+            Intent intent = new Intent(Intent.ACTION_GET_CONTENT);
+            intent.setType("application/json");
+            startActivityForResult(intent, 10001);
+            return true;
+        } else if ("show_pif_properties".equals(preference.getKey())) {
+        	showPropertiesDialog();
+        	return true;
+    	}
+
+        return super.onPreferenceTreeClick(preference);
+    }
+
+
+    @Override
+    public void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+
+        if (requestCode == 10001 && resultCode == Activity.RESULT_OK) {
+            Uri uri = data.getData();
+            Log.d(TAG, "URI received: " + uri.toString());
+            try (InputStream inputStream = getActivity().getContentResolver().openInputStream(uri)) {
+                if (inputStream != null) {
+                    String json = new String(inputStream.readAllBytes(), StandardCharsets.UTF_8);
+                    Log.d(TAG, "JSON data: " + json);
+                    JSONObject jsonObject = new JSONObject(json);
+                    for (Iterator<String> it = jsonObject.keys(); it.hasNext(); ) {
+                        String key = it.next();
+                        String value = jsonObject.getString(key);
+                        Log.d(TAG, "Setting property: persist.sys.pihooks_" + key + " = " + value);
+                        SystemProperties.set("persist.sys.pihooks_" + key, value);
+                    }
+                }
+
+            } catch (Exception e) {
+                Log.e(TAG, "Error reading JSON or setting properties", e);
+            }
+            mHandler.postDelayed(() -> {
+                SystemRestartUtils.showSystemRestartDialog(getContext());
+            }, 1250);
+        }
+    }
+
+    private void showPropertiesDialog() {
+        StringBuilder properties = new StringBuilder();
+        try {
+            JSONObject jsonObject = new JSONObject();
+            String[] keys = {
+                "persist.sys.pihooks_ID",
+                "persist.sys.pihooks_BRAND",
+                "persist.sys.pihooks_DEVICE",
+                "persist.sys.pihooks_FINGERPRINT",
+                "persist.sys.pihooks_MANUFACTURER",
+                "persist.sys.pihooks_MODEL",
+                "persist.sys.pihooks_PRODUCT",
+                "persist.sys.pihooks_SECURITY_PATCH",
+                "persist.sys.pihooks_DEVICE_INITIAL_SDK_INT",
+                "persist.sys.pihooks_TYPE",
+                "persist.sys.pihooks_TAG",
+                "persist.sys.pihooks_RELEASE",
+                "persist.sys.pihooks_DEBUG"
+
+            };
+            for (String key : keys) {
+                String value = SystemProperties.get(key, null);
+                if (value != null) {
+                    String buildKey = key.replace("persist.sys.pihooks_", "");
+                    jsonObject.put(buildKey, value);
+                }
+            }
+            properties.append(jsonObject.toString(4));
+        } catch (JSONException e) {
+            Log.e(TAG, "Error creating JSON from properties", e);
+            properties.append(getString(R.string.error_loading_properties));
+        }
+        new AlertDialog.Builder(getContext())
+            .setTitle(R.string.show_pif_properties_title)
+            .setMessage(properties.toString())
+            .setPositiveButton(android.R.string.ok, null)
+            .show();
     }
 
     @Override

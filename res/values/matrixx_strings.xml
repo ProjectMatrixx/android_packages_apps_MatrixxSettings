@@ -146,4 +146,11 @@
     <!-- Blur intensity -->
     <string name="blur_intensity_title">Blur intensity</string>
     <string name="blur_intensity_summary" formatted="false">Control the intensity of blur effects throughout the system.\n0% = no blur, 100% = system default, 200% = double intensity.</string>
+
+    <!-- PIF spoofing -->
+    <string name="pif_spoofing_title">Select PIF JSON File</string>
+    <string name="pif_spoofing_summary">Pick PIF JSON file to be used for spoofing play integrity (Disable Google Play integrity Spoof to use this)</string>
+    <string name="show_pif_properties_title">Play Integrity Fix properties</string>
+    <string name="show_pif_properties_summary">Show all currently set PIF properties</string>
+    <string name="error_loading_properties">Error loading PIF properties</string>
 </resources>

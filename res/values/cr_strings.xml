@@ -1091,7 +1091,7 @@
 
     <!-- Google Play Integrity Spoof -->
     <string name="pi_spoof_title">Google Play Integrity spoof</string>
-    <string name="pi_spoof_summary">Spoof your device as different model for Google Play Integrity</string>
+    <string name="pi_spoof_summary">Spoof your device as different model for Google Play Integrity (Disable this to use cusotm pif json import)</string>
 
     <!-- Captive portal -->
     <string name="captive_portal_title">Connectivity check</string>
