@@ -43,15 +43,9 @@ public class crDroidSettingsLayout extends SettingsPreferenceFragment {
         case 0:
             addPreferencesFromResource(R.xml.crdroid_dashboard);
             break;
-
         case 1:
-            addPreferencesFromResource(R.xml.crdroid_dashboard);
-            break;
-
-        case 2:
             addPreferencesFromResource(R.xml.crdroid_dashboard_expressive);
             break;
-
         default:
             addPreferencesFromResource(R.xml.crdroid_dashboard);
             break;

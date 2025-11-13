@@ -76,8 +76,7 @@
     <!-- Custom settings dashboard style -->
     <string name="settings_dashboard_style_title">Settings Styles</string>
     <string name="settings_dashboard_style_1">Revamp Style</string>
-    <string name="settings_dashboard_style_2">Simple Style</string>
-    <string name="settings_dashboard_style_3">Expressive Style</string>
+    <string name="settings_dashboard_style_2">Expressive Style</string>
 
     <string name="search_bar_style_title">Search Bar Style</string>
     <string name="settings_sb_style_1">Android 16</string>
