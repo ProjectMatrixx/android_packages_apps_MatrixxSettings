@@ -28,13 +28,13 @@
         android:entryValues="@array/settings_dashboard_style_values"
         android:defaultValue="0" />
 
-    <com.crdroid.settings.preferences.SystemSettingListPreference
+<!--    <com.crdroid.settings.preferences.SystemSettingListPreference
         android:key="search_bar_style"
         android:title="@string/search_bar_style_title"
         android:entries="@array/settings_sb_style_entries"
         android:entryValues="@array/settings_sb_style_values"
         android:defaultValue="0"
-        android:summary="%s" />
+        android:summary="%s" /> -->
 
     <com.crdroid.settings.preferences.SystemSettingSeekBarPreference
         android:key="blur_intensity"
