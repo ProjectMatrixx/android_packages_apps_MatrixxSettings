@@ -60,15 +60,15 @@
     <string name="changelog_crdroid_title">Список изменений</string>
     <string name="changelog_crdroid_summary">Просмотр изменений установленной прошивки</string>
     <string name="changelog_crdroid_error">Невозможно загрузить список изменений</string>
-    <!-- About crDroid -->
+    <!-- About Matrixx -->
     <string name="about_crdroid">О Matrixx</string>
     <string name="about_device_name">Устройство</string>
-    <!-- Share crDroid -->
+
     <string name="share_crdroid_title">Рассказать о Matrixx</string>
     <string name="share_crdroid_summary">Пусть другие узнают о Matrixx</string>
     <string name="share_message">Узнайте, доступен ли #ProjectMatrixx для Вашего устройства на @ https://www.projectmatrixx.org/</string>
     <string name="share_chooser_title">Рассказать о Matrixx</string>
-    <!-- Sites crDroid -->
+
     <string name="crdroid_source_title">GitHub</string>
     <string name="crdroid_source_summary">Мы любим открытый исходный код, посмотрите его</string>
     <string name="crdroid_telegram_title">Cообщество Matrixx</string>
@@ -81,7 +81,7 @@
     <string name="crdroid_translate_summary">Помогите перевести прошивку на ваш язык!</string>
     <string name="crdroid_sponsor_summary">Посетите нашего партнёра по размещению веб-сайтов</string>
     <string name="crdroid_buildserversponsor_summary">Мы рекомендуем их серверы, если вы заинтересованы в одном из них</string>
-    <!-- Donate crDroid -->
+
     <string name="donate_crdroid_title">Поддержать нас</string>
     <string name="donate_crdroid_summary">Пожертвуйте для дальнейшего развития</string>
     <string name="donate_team_title">Команда Matrixx</string>
@@ -1149,6 +1149,17 @@
     <string name="always_on_display_schedule_sunrise">Рассвет</string>
     <string name="always_on_display_schedule_mixed_sunset">Включается с заходом солнца до определённого времени</string>
     <string name="always_on_display_schedule_mixed_sunrise">Включается от заданного времени до восхода солнца</string>
+    <!-- Per-app spoofing -->
+    <string name="gameprops_title">Включить подмену свойств игры</string>
+    <string name="gameprops_summary">Включает настройки подмены свойств для отдельных приложений в PixelProps</string>
+    <string name="gameprops_load_json_title">Выбрать JSON-файл свойств игры</string>
+    <string name="gameprops_load_json_summary">Выберите JSON-файл свойств игры (можно использовать и для подмены других приложений)</string>
+    <!-- PIF spoofing -->
+    <string name="pif_spoofing_title">Выбрать JSON-файл PIF</string>
+    <string name="pif_spoofing_summary">Выберите JSON-файл PIF для подмены Play Integrity (использование модуля PIF может нарушить эту реализацию)</string>
+    <string name="show_pif_properties_title">Свойства Play Integrity Fix</string>
+    <string name="show_pif_properties_summary">Показать все текущие свойства PIF</string>
+    <string name="error_loading_properties">Ошибка загрузки свойств PIF</string>
     <!-- QS Bluetooth Dialog -->
     <string name="qs_bt_show_dialog_title">Диалог плитки Bluetooth</string>
     <string name="qs_bt_show_dialog_summary">Показывать диалоговое окно или переключать состояние при нажатии на плитку Bluetooth</string>
