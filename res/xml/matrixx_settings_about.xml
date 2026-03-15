@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+     Copyright (C) 2022-2025 Project Matrixx
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+    xmlns:lineage="http://schemas.android.com/apk/res-auto"
+    android:title="@string/about_matrixx" >
+
+    <Preference
+        android:title="@string/team_matrixx"
+        android:summary="@string/team_matrixx_desc"
+        android:icon="@drawable/ic_team" >
+    <intent
+        android:action="android.intent.action.VIEW"
+        android:data="https://www.projectmatrixx.org/team" />
+    </Preference>
+
+    <Preference
+        android:title="@string/matrixx_devices_title"
+        android:summary="@string/devices_summary" >
+    <intent
+        android:action="android.intent.action.VIEW"
+        android:data="https://www.projectmatrixx.org/downloads" />
+    </Preference>
+
+    <Preference
+        android:key="matrixx_changelog"
+        android:title="@string/get_changelogs_title"
+        android:summary="@string/get_changelogs_summary">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://www.projectmatrixx.org/changelog" />
+    </Preference>
+
+    <Preference
+        android:key="matrixx_source"
+        android:title="@string/matrixx_source_title"
+        android:summary="@string/matrixx_source_summary">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://github.com/ProjectMatrixx" />
+    </Preference>
+    
+    <Preference
+        android:key="matrixx_telegram"
+        android:title="@string/matrixx_telegram_title"
+        android:summary="@string/matrixx_telegram_summary">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://t.me/matrixx_community" />
+    </Preference>
+
+    <Preference
+        android:title="@string/matrixx_legal"
+        android:summary="@string/matrixx_legal_desc">
+    <intent
+        android:action="android.intent.action.VIEW"
+        android:data="https://www.projectmatrixx.org/legal" />
+    </Preference>
+</PreferenceScreen>

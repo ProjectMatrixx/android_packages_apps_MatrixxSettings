@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+     
+     Copyright (C) 2022-2025 Project Matrixx
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+    android:title="@string/matrixx_settings_title" >
+      
+    <com.android.settingslib.widget.UntitledPreferenceCategory
+        android:key="matrixx_one_category">
+    
+        <!-- UserInterface -->
+        <Preference
+            android:icon="@drawable/ic_themes"
+            android:title="@string/ui_title"
+            android:summary="@string/user_summary"
+            android:fragment="com.matrixx.settings.fragments.ui.UserInterface" />
+
+        <!-- Lockscreen -->
+        <Preference
+            android:icon="@drawable/ic_settings_lockscreens"
+            android:title="@string/lockscreen_title"
+            android:summary="@string/lockscreen_summary"
+            android:fragment="com.matrixx.settings.fragments.lockscreen.LockScreen" />
+
+        <!-- QuickSettings -->
+        <Preference
+            android:icon="@drawable/ic_settings_quicksettings"
+	        android:title="@string/quicksettings_title"
+            android:summary="@string/quick_summary"
+            android:fragment="com.matrixx.settings.fragments.quicksettings.QuickSettings" />
+
+    </com.android.settingslib.widget.UntitledPreferenceCategory>
+
+     <com.android.settingslib.widget.UntitledPreferenceCategory
+         android:key="matrixx_two_category">
+
+        <!-- Statusbar -->   
+        <Preference
+            android:icon="@drawable/ic_settings_statusbar"
+            android:title="@string/statusbar_title"
+            android:summary="@string/status_summary"
+            android:fragment="com.matrixx.settings.fragments.statusbar.StatusBar" />  
+
+        <!-- Notifications -->
+        <Preference
+            android:icon="@drawable/ic_message_fast"
+            android:title="@string/notifications_title"
+            android:summary="@string/notification_summary"
+            android:fragment="com.matrixx.settings.fragments.notifications.Notifications" />
+
+        <!-- Sound -->
+         <Preference
+            android:icon="@drawable/ic_settings_sound"
+            android:title="@string/sound_title"
+            android:summary="@string/sound_summary"
+            android:fragment="com.matrixx.settings.fragments.sound.Sound" />
+
+    </com.android.settingslib.widget.UntitledPreferenceCategory>
+
+     <com.android.settingslib.widget.UntitledPreferenceCategory
+         android:key="matrixx_three_category">
+
+        <!-- Buttons -->
+        <Preference
+            android:icon="@drawable/ic_shapes"
+	        android:title="@string/button_title"
+            android:summary="@string/bottom_summary"
+            android:fragment="com.matrixx.settings.fragments.buttons.Buttons" />
+
+        <!-- Misc -->
+        <Preference
+            android:icon="@drawable/ic_settings_miscs"
+            android:title="@string/misc_title"
+            android:summary="@string/mice_summary"
+            android:fragment="com.matrixx.settings.fragments.misc.Miscellaneous" />
+
+        <!-- About -->
+        <Preference
+            android:icon="@drawable/ic_settings_about"
+            android:title="@string/about_matrixx"
+            android:summary="@string/about_matrixx_summary"
+            android:fragment="com.matrixx.settings.fragments.about.About" />
+        </com.android.settingslib.widget.UntitledPreferenceCategory>
+</PreferenceScreen>
