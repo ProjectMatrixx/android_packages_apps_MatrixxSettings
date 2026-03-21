@@ -73,6 +73,14 @@
     <string name="custom_color">Custom color</string>
     <string name="restart_systemui">Restart SystemUI for change to take effect!</string>
     <string name="default_value">Default</string>
+    <string name="search_apps">Search apps</string>
+
+    <!-- SystemUI restart dialog -->
+    <string name="systemui_restart_title">SystemUI restart required</string>
+    <string name="systemui_restart_message">For changes to take effect, a SystemUI restart is required. Restart SystemUI now?</string>
+    <string name="systemui_restart_yes">Yes</string>
+    <string name="systemui_restart_not_now">Not now</string>
+    <string name="systemui_restart_process">Restarting SystemUI to apply changes...</string>
 
     <!-- Changelog -->
     <string name="changelog_crdroid_title">Current changelog</string>
@@ -117,5 +125,74 @@
     <string name="keybox_toast_missing_data">Invalid keybox XML: required fields missing</string>
     <string name="keybox_toast_file_loaded">Keybox loaded</string>
     <string name="keybox_toast_file_cleared">Keybox cleared</string>
+
+    <!-- Miscellaneous -->
+    <string name="miscellaneous_spoofing_category">Spoofing</string>
+    <string name="miscellaneous_developer_options_category">Developer options</string>
+
+    <!-- Miscellaneous/Spoofing -->
+    <string name="spoofing_title">Component spoofing</string>
+    <string name="spoofing_summary">Bypass app restrictions by spoofing components</string>
+    <string name="spoofing_system_wide_category">System-Wide</string>
+    <string name="spoofing_pixel_props_title">Pixel props</string>
+    <string name="spoofing_pixel_props_summary">Spoof a select group of Google apps to the latest Pixel device</string>
+    <string name="gms_spoof_title">Play Integrity fix</string>
+    <string name="gms_spoof_summary">Spoof your device to pass Google Play Attestation</string>
+    <string name="vending_spoof_title">Spoof vending</string>
+    <string name="vending_spoof_summary">Apply device spoofing to Google Play Store</string>
+    <string name="spoofing_app_specific_category">App-Specific</string>
+    <string name="spoofing_photos_title">Google Photos</string>
+    <string name="spoofing_photos_summary">Spoof the Google Photos app as a Pixel XL</string>
+    <string name="spoofing_snap_title">Snapchat</string>
+    <string name="spoofing_snap_summary">Spoof Snapchat as a Pixel XL to fix possible chat issues</string>
+
+    <!-- Miscellaneous/Spoofing/Play Integrity fix JSON update -->
+    <string name="toast_spoofing_success">Successfully downloaded pif.json. Spoofing as %1$s for Play Integrity.</string>
+    <string name="toast_spoofing_failure">Failed to spoof properties.</string>
+    <string name="update_pif_json_title">Update Play Integrity fix</string>
+    <string name="update_pif_json_summary">Update PIF spoofing device (Requires internet connection.)</string>
+    <string name="update_pif_auto_random_title">Update Play Integrity fix (Random)</string>
+    <string name="update_pif_auto_random_summary">Get random spoofing device from Google list. (Requires internet connection.)</string>
+    <string name="show_pif_properties_title">Play Integrity fix properties</string>
+    <string name="show_pif_properties_summary">Show all currently set PIF properties</string>
+    <string name="error_loading_properties">Error loading PIF properties</string>
+    <string name="pif_spoofing_title">Select PIF JSON file</string>
+    <string name="pif_spoofing_summary">Choose the PIF JSON file to be used to spoof Play Integrity</string>
     
+    <!-- App Spoofing -->
+    <string name="user_selectable_app_spoofing_title">App Spoofing</string>
+    <string name="user_selectable_app_spoofing_summary">Choose which apps to spoof device properties for</string>
+    <string name="user_select_spoofing_profile_title">Select spoofing profile</string>
+    <string name="app_spoofing_category_title">Per-App Spoofing</string>
+    <string name="app_spoofing_header_title">Enable Spoofing</string>
+    <string name="app_spoofing_configured_count">%1$d apps Spoofed</string>
+    <string name="app_spoofing_disabled">Disabled</string>
+    <string name="app_spoofing_add_apps">Add apps</string>
+    <string name="app_spoofing_spoofed_model">Select model</string>
+    <string name="app_spoofing_clear_all">Clear all</string>
+    <string name="app_spoofing_configured_apps">Configured app list</string>
+    <string name="app_spoofing_no_apps_configured">No apps configured</string>
+    <string name="app_spoofing_spoof_model">Spoof model</string>
+    <string name="app_spoofing_select_spoof_model">Select spoof model</string>
+    <string name="app_spoofing_change_app">Change app</string>
+    <string name="show_system_apps">Show system apps</string>
+    <string name="hide_system_apps">Hide system apps</string>
+
+    <!-- Custom App Spoofing Profiles -->
+    <string name="add_new_spoof_profile">Add new</string>
+    <string name="add_custom_spoof_profile_title">Add Custom Spoof Profile</string>
+    <string name="custom_spoof_profile_name">Profile name</string>
+    <string name="custom_spoof_profile_brand">BRAND</string>
+    <string name="custom_spoof_profile_manufacturer">MANUFACTURER</string>
+    <string name="custom_spoof_profile_device">DEVICE</string>
+    <string name="custom_spoof_profile_model">MODEL</string>
+    <string name="custom_spoof_profile_fingerprint">FINGERPRINT (Optional)</string>
+    <string name="custom_spoof_profile_product">PRODUCT (Optional)</string>
+    <string name="app_spoofing_clear_all_confirm">This will remove all configured app spoofing entries.</string>
+    <string name="app_spoofing_no_apps_available">No apps available</string>
+    <string name="app_spoofing_no_apps_found">No apps found for "%s"</string>
+    <string name="app_spoofing_clear_search">Clear search</string>
+    <string name="app_spoofing_longpress_hint">Long press to quickly reassign profile</string>
+    <string name="app_spoofing_remove_title">Remove app?</string>
+    <string name="app_spoofing_remove_confirm">Remove %1$s from the spoofing list?</string>
 </resources>
