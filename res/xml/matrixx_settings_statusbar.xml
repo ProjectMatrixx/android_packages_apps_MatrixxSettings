@@ -31,7 +31,14 @@
             android:summary="@string/status_bar_tuner_summary">
                 <intent android:action="com.android.settings.action.STATUS_BAR_TUNER" />
         </Preference>
-    </PreferenceCategory>
 
+        <!-- Clock & date -->
+        <Preference
+            android:key="clock"
+            android:title="@string/status_bar_clock_and_date_title"
+            android:summary="@string/status_bar_clock_and_date_summary"
+            android:fragment="com.matrixx.settings.fragments.statusbar.Clock" />
+
+     </PreferenceCategory>
 
 </PreferenceScreen>
