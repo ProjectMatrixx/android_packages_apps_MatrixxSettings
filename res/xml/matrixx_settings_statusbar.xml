@@ -57,6 +57,18 @@
             android:title="@string/status_bar_colored_icons_title"
             android:summary="@string/status_bar_colored_icons_summary"
             android:defaultValue="false" />
+     </PreferenceCategory>
+
+    <!-- Status bar battery customizations -->
+    <PreferenceCategory
+        android:title="@string/status_bar_battery_category_title">
+
+        <!-- Battery bar -->
+        <Preference
+            android:key="batterybar"
+            android:title="@string/battery_bar_title"
+            android:summary="@string/battery_bar_summary"
+            android:fragment="com.matrixx.settings.fragments.statusbar.BatteryBar" />
 
      </PreferenceCategory>
 
