@@ -194,4 +194,37 @@
         <item>EEEE MM/dd</item>
         <item>@string/status_bar_date_format_custom</item>
     </string-array>
+
+    <!-- Status bar chip styles-->
+    <string-array name="statusbar_clock_chip_labels" translatable="false">
+        <item>@string/disabled</item>
+        <item>@string/solid_accent</item>
+        <item>@string/outline</item>
+        <item>@string/solid_accent_gradient</item>
+        <item>@string/solid_gradient</item>
+        <item>@string/solid_gradient_corner</item>
+        <item>@string/solid_gradient_void</item>
+        <item>@string/solid_gradient_neumorph</item>
+        <item>@string/solid_gradient_stroke</item>
+        <item>@string/solid_accent_transperent</item>
+        <item>@string/solid_gradient_light</item>
+        <item>@string/solid_gradient_shape</item>
+        <item>@string/solid_gradient_void_light</item>
+    </string-array>
+
+    <string-array name="statusbar_clock_chip_drawables" translatable="false">
+        <item>0</item>
+        <item>sb_date_bg1</item>
+        <item>sb_date_bg2</item>
+        <item>sb_date_bg3</item>
+        <item>sb_date_bg4</item>
+        <item>sb_date_bg5</item>
+        <item>sb_date_bg6</item>
+        <item>sb_date_bg7</item>
+        <item>sb_date_bg8</item>
+        <item>sb_date_bg9</item>
+        <item>sb_date_bg10</item>
+        <item>sb_date_bg11</item>
+        <item>sb_date_bg12</item>
+    </string-array>
 </resources>

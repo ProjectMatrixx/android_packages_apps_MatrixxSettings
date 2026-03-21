@@ -39,6 +39,11 @@
             android:summary="@string/status_bar_clock_and_date_summary"
             android:fragment="com.matrixx.settings.fragments.statusbar.Clock" />
 
+        <com.matrixx.settings.preferences.ClockBackgroundChipPreference
+            android:key="statusbar_clock_chip"
+            android:title="@string/status_bar_clock_chip_title"
+            android:summary="@string/status_bar_clock_chip_summary" />
+
      </PreferenceCategory>
 
 </PreferenceScreen>
