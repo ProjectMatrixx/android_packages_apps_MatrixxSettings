@@ -51,6 +51,13 @@
             android:summary="@string/status_bar_notif_count_summary"
             android:defaultValue="false" />
 
+        <!-- Colored icons -->
+        <com.matrixx.settings.preferences.SystemSettingSwitchPreference
+            android:key="statusbar_colored_icons"
+            android:title="@string/status_bar_colored_icons_title"
+            android:summary="@string/status_bar_colored_icons_summary"
+            android:defaultValue="false" />
+
      </PreferenceCategory>
 
 </PreferenceScreen>
