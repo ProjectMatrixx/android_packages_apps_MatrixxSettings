@@ -215,6 +215,13 @@
     <string name="status_bar_colored_icons_title">Colored icons</string>
     <string name="status_bar_colored_icons_summary">Use launcher icons for app notifications</string>
     <string name="status_bar_battery_category_title">Battery customizations</string>
+    <string name="status_bar_privacy_indicators_category">Privacy indicators</string>
+    <string name="status_bar_mic_camera_privacy_indicator_title">Microphone &amp; camera</string>
+    <string name="status_bar_mic_camera_privacy_indicator_summary">Display an indicator when an app accesses the microphone or camera</string>
+    <string name="status_bar_location_privacy_indicator_title">Location</string>
+    <string name="status_bar_location_privacy_indicator_summary">Display an indicator when an app accesses your location</string>
+    <string name="status_bar_projection_privacy_indicator_title">Screen projection</string>
+    <string name="status_bar_projection_privacy_indicator_summary">Display an indicator when the screen is being projected</string>
 
     <!-- Status bar/Clock & date-->
     <string name="status_bar_clock_position_title">Clock position</string>
