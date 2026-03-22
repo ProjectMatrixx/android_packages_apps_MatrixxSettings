@@ -20,5 +20,18 @@
     xmlns:lineage="http://schemas.android.com/apk/res-auto"
     android:title="@string/quicksettings_title">
 
+    <PreferenceCategory
+        android:key="quick_settings_interface_category"
+        android:title="@string/quick_settings_interface_category">
+
+
+        <Preference
+            android:key="qs_header_image"
+            android:title="@string/qs_header_image_title"
+            android:summary="@string/qs_header_image_summary"
+            android:fragment="com.matrixx.settings.fragments.quicksettings.QsHeaderImageSettings" />
+
+    </PreferenceCategory>
+
 
 </PreferenceScreen>
