@@ -339,4 +339,8 @@
     <string name="status_bar_logo_style_mint">Linux Mint</string>
     <string name="status_bar_logo_style_matrixx">Matrixx</string>
     <string name="status_bar_logo_style_amogus">Amogus</string>
+
+    <!-- Wi-Fi standard icon -->
+    <string name="status_bar_wifi_standard_icon_title">Wi-Fi standard</string>
+    <string name="status_bar_wifi_standard_icon_summary">Display Wi-Fi standard next the Wi-Fi icon</string>
 </resources>

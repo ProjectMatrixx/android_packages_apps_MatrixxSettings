@@ -39,6 +39,13 @@
             android:summary="@string/status_bar_bluetooth_battery_summary"
             android:defaultValue="true" />
 
+        <!-- Wi-Fi standard icon -->
+        <com.matrixx.settings.preferences.SystemSettingSwitchPreference
+            android:key="wifi_standard_icon"
+            android:title="@string/status_bar_wifi_standard_icon_title"
+            android:summary="@string/status_bar_wifi_standard_icon_summary"
+            android:defaultValue="false" />
+
         <!-- Clock & date -->
         <Preference
             android:key="clock"
