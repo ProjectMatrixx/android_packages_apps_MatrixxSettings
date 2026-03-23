@@ -521,6 +521,8 @@
     <string name="power_menu_interface_category">Interface</string>
     <string name="power_menu_actions_title">Power menu actions</string>
     <string name="power_menu_actions_summary">Choose which actions are displayed</string>
+    <string name="advanced_reboot_secured_title">Secured lockscreen</string>
+    <string name="advanced_reboot_secured_summary">Display advanced restart options on secured lockscreen</string>
 
     <!-- Power menu/Power menu actions -->
     <string name="power_menu_actions_advanced_reboot_title">Advanced reboot</string>
