@@ -35,6 +35,12 @@
             android:title="@string/swap_capacitive_keys_title"
             android:summary="@string/swap_capacitive_keys_summary" />
 
+        <com.matrixx.settings.preferences.SystemSettingSwitchPreference
+            android:key="anbi_enabled"
+            android:title="@string/anbi_title"
+            android:summary="@string/anbi_summary"
+            android:defaultValue="false" />
+
     </PreferenceCategory>
 
 

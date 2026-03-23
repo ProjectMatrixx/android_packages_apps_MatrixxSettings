@@ -44,9 +44,11 @@ public class Buttons extends SettingsPreferenceFragment
 
     private static final String HWKEYS_DISABLED = "hardware_keys_disable";
     private static final String KEY_SWAP_CAPACITIVE_KEYS = "swap_capacitive_keys";
+    private static final String KEY_ANBI = "anbi_enabled";
 
     private SwitchPreferenceCompat mHardwareKeysDisable;
     private SwitchPreferenceCompat mSwapCapacitiveKeys;
+    private SwitchPreferenceCompat mAnbi;
 
     private LineageHardwareManager mHardware;
 
@@ -94,6 +96,32 @@ public class Buttons extends SettingsPreferenceFragment
                 getPreferenceScreen().removePreference(mSwapCapacitiveKeys);
             }
         }
+
+        // ANBI (Auto Navbar / Button Interface)
+        mAnbi = findPreference(KEY_ANBI);
+        if (mAnbi != null) {
+            int enabled = Settings.System.getIntForUser(
+                    resolver,
+                    Settings.System.NAVIGATION_BAR_ENABLED,
+                    0,
+                    UserHandle.USER_CURRENT
+            );
+
+            mAnbi.setChecked(enabled == 1);
+            mAnbi.setOnPreferenceChangeListener(this);
+
+            // Disable ANBI if HW keys are disabled
+            if (isKeyDisablerSupported(getActivity())) {
+                boolean hwDisabled = Settings.System.getIntForUser(
+                        resolver,
+                        Settings.System.HARDWARE_KEYS_DISABLE,
+                        0,
+                        UserHandle.USER_CURRENT
+                ) == 1;
+
+                mAnbi.setEnabled(!hwDisabled);
+            }
+        }
     }
 
     @Override
@@ -107,6 +135,12 @@ public class Buttons extends SettingsPreferenceFragment
                     value ? 1 : 0,
                     UserHandle.USER_CURRENT
             );
+
+            // Disable ANBI when HW keys disabled
+            if (mAnbi != null) {
+                mAnbi.setEnabled(!value);
+            }
+
             return true;
 
         } else if (preference == mSwapCapacitiveKeys) {
@@ -116,6 +150,17 @@ public class Buttons extends SettingsPreferenceFragment
                     getContentResolver(),
                     LineageSettings.System.KEY_SWAP_CAPACITIVE_KEYS,
                     value ? 1 : 0
+            );
+            return true;
+
+        } else if (preference == mAnbi) {
+            boolean value = (Boolean) newValue;
+
+            Settings.System.putIntForUser(
+                    getContentResolver(),
+                    Settings.System.NAVIGATION_BAR_ENABLED,
+                    value ? 1 : 0,
+                    UserHandle.USER_CURRENT
             );
             return true;
         }
@@ -137,6 +182,13 @@ public class Buttons extends SettingsPreferenceFragment
                 resolver,
                 LineageSettings.System.KEY_SWAP_CAPACITIVE_KEYS,
                 0
+        );
+
+        Settings.System.putIntForUser(
+                resolver,
+                Settings.System.NAVIGATION_BAR_ENABLED,
+                0,
+                UserHandle.USER_CURRENT
         );
     }
 
