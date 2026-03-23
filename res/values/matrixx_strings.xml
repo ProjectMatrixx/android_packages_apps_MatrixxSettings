@@ -603,4 +603,40 @@
 
     <string name="lockscreen_quick_setting_summary">Swipe down on Lock screen to view Quick Settings</string>
     <string name="lockscreen_quick_setting_title">Quick Settings</string>
+
+
+    <!-- Media art -->
+    <string name="ls_media_art_title">Media cover art</string>
+    <string name="ls_media_art_summary">Display media cover art when available</string>
+    <string name="media_art_title">Media cover art</string>
+    <string name="media_art_summary">Display media cover art when available</string>
+    <string name="ls_media_art_fade_level_title">Media cover art fade level</string>
+    <string name="ls_media_art_fade_level_summary">Set media cover art fade level</string>
+
+    <!-- Lock screen album art filter -->
+    <string name="lockscreen_albumart_filter_title">Media cover art filter</string>
+    <string name="lockscreen_albumart_filter_none">None</string>
+    <string name="lockscreen_albumart_filter_grayscale">Grayscale</string>
+    <string name="lockscreen_albumart_filter_tint">Accent tinted</string>
+    <string name="lockscreen_albumart_filter_blur">Blur</string>
+    <string name="lockscreen_albumart_filter_grayblur">Grayscale and blurred</string>
+
+    <!-- AOD Media Settings -->
+    <string name="show_on_aod_title">Show on AOD</string>
+    <string name="show_on_aod_summary">Display media artwork on Always-On Display</string>
+    <string name="aod_brightness_title">AOD brightness</string>
+
+    <!-- Media Art Filter -->
+    <string name="lockscreen_media_art_filter_title">Media art filter</string>
+    <string name="lockscreen_media_art_filter_summary">Choose visual filter for media art</string>
+    <string name="lockscreen_media_art_pixel_size_title">Media art pixel size</string>
+    <string name="lockscreen_media_art_pixel_size_summary">Adjust the pixel size for media artwork displayed on the lock screen</string>
+
+    <!-- Media Art Fade Level -->
+    <string name="lockscreen_media_art_fade_level_title">Media art fade level</string>
+    <string name="lockscreen_media_art_fade_level_summary">Darkness overlay for better text readability</string>
+
+    <!-- Media Art Blur Level -->
+    <string name="lockscreen_media_art_blur_level_title">Media art blur level</string>
+    <string name="lockscreen_media_art_blur_level_summary">Blur intensity when blur filter is applied</string>
 </resources>

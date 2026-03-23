@@ -32,6 +32,13 @@
             android:summary="@string/kg_user_switcher_enabled_summary"
             android:defaultValue="false" />
 
+        <!-- Lockscreen Media Art -->
+        <Preference
+            android:key="media_art_settings"
+            android:title="@string/ls_media_art_title"
+            android:summary="@string/ls_media_art_summary"
+            android:fragment="com.matrixx.settings.fragments.lockscreen.MediaArtSettings" />
+
     </PreferenceCategory>
 
     <PreferenceCategory
