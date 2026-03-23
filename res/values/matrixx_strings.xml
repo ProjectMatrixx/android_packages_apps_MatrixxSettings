@@ -600,4 +600,7 @@
     <string name="qs_rows_landscape_title">Rows (landscape)</string>
     <string name="qqs_rows_portrait_title">Quick QS Rows (portrait)</string>
     <string name="qqs_rows_landscape_title">Quick QS Rows (landscape)</string>
+
+    <string name="lockscreen_quick_setting_summary">Swipe down on Lock screen to view Quick Settings</string>
+    <string name="lockscreen_quick_setting_title">Quick Settings</string>
 </resources>

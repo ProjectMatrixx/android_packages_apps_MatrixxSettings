@@ -43,6 +43,12 @@
             android:summary="@string/quick_settings_tile_haptic_summary"
             android:defaultValue="false" />
 
+        <com.matrixx.settings.preferences.SecureSettingSwitchPreference
+            android:key="enable_lockscreen_quick_settings"
+            android:title="@string/lockscreen_quick_setting_title"
+            android:summary="@string/lockscreen_quick_setting_summary"
+            android:defaultValue="true" />
+
     </PreferenceCategory>
 
     <PreferenceCategory
