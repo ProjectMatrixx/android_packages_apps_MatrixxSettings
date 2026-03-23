@@ -24,7 +24,6 @@
         android:key="quick_settings_interface_category"
         android:title="@string/quick_settings_interface_category">
 
-
         <Preference
             android:key="qs_header_image"
             android:title="@string/qs_header_image_title"
@@ -36,6 +35,12 @@
             android:key="qs_show_data_usage"
             android:title="@string/quick_settings_data_usage_title"
             android:summary="@string/quick_settings_data_usage_summary"
+            android:defaultValue="false" />
+
+        <com.matrixx.settings.preferences.SystemSettingSwitchPreference
+            android:key="qs_tile_haptic"
+            android:title="@string/qs_brightness_slider_haptic_title"
+            android:summary="@string/quick_settings_tile_haptic_summary"
             android:defaultValue="false" />
 
     </PreferenceCategory>
