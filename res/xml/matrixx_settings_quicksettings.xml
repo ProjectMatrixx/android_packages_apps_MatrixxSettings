@@ -40,5 +40,15 @@
 
     </PreferenceCategory>
 
+    <PreferenceCategory
+         android:title="@string/qs_brightness_slider_category">
+
+        <com.matrixx.settings.preferences.SystemSettingSwitchPreference
+            android:key="qs_brightness_slider_haptic"
+            android:title="@string/qs_brightness_slider_haptic_title"
+            android:summary="@string/qs_brightness_slider_haptic_summary"/>
+
+    </PreferenceCategory>
+
 
 </PreferenceScreen>
