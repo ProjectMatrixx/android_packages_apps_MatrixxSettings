@@ -34,5 +34,20 @@
 
     </PreferenceCategory>
 
+    <PreferenceCategory
+        android:key="lock_screen_charging_category"
+        android:title="@string/lock_screen_charging_category">
+
+
+        <!-- Charging stats -->
+        <com.matrixx.settings.preferences.SystemSettingSwitchPreference
+            android:key="lockscreen_battery_info"
+            android:title="@string/lock_screen_charging_stats_title"
+            android:summary="@string/lock_screen_charging_stats_summary"
+            android:defaultValue="true" />
+
+
+    </PreferenceCategory>
+
 
 </PreferenceScreen>
