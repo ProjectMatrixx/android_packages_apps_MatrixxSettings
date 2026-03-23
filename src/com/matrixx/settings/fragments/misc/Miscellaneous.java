@@ -18,8 +18,12 @@ package com.matrixx.settings.fragments.misc;
 import android.content.ContentResolver;
 import android.content.Context;
 import android.os.Bundle;
+import android.os.UserHandle;
+import android.provider.Settings;
 
+import androidx.preference.ListPreference;
 import androidx.preference.Preference;
+import androidx.preference.PreferenceScreen;
 
 import com.android.internal.logging.nano.MetricsProto;
 import com.android.settings.R;
@@ -35,21 +39,67 @@ public class Miscellaneous extends SettingsPreferenceFragment implements
 
     public static final String TAG = "Miscellaneous";
 
-@Override
+    private static final String KEY_THREE_FINGERS_SWIPE = "three_fingers_swipe";
+
+    // System setting key
+    private static final String THREE_FINGERS_SWIPE_ACTION = "three_fingers_swipe_action";
+
+    private ListPreference mThreeFingersSwipe;
+
+    @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         addPreferencesFromResource(R.xml.matrixx_settings_misc);
+
+        final PreferenceScreen prefScreen = getPreferenceScreen();
+
+        // Init Three Finger Swipe
+        mThreeFingersSwipe = (ListPreference) prefScreen.findPreference(KEY_THREE_FINGERS_SWIPE);
+
+        if (mThreeFingersSwipe != null) {
+            int value = Settings.System.getIntForUser(
+                    getContentResolver(),
+                    THREE_FINGERS_SWIPE_ACTION,
+                    0,
+                    UserHandle.USER_CURRENT
+            );
+
+            mThreeFingersSwipe.setValue(String.valueOf(value));
+            mThreeFingersSwipe.setSummary(mThreeFingersSwipe.getEntry());
+            mThreeFingersSwipe.setOnPreferenceChangeListener(this);
+        }
     }
 
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
+        if (preference == mThreeFingersSwipe) {
+            String value = (String) newValue;
+            int intValue = Integer.parseInt(value);
+
+            int index = mThreeFingersSwipe.findIndexOfValue(value);
+            mThreeFingersSwipe.setSummary(mThreeFingersSwipe.getEntries()[index]);
+
+            Settings.System.putIntForUser(
+                    getContentResolver(),
+                    THREE_FINGERS_SWIPE_ACTION,
+                    intValue,
+                    UserHandle.USER_CURRENT
+            );
+            return true;
+        }
         return false;
     }
 
     public static void reset(Context context) {
         ContentResolver resolver = context.getContentResolver();
 
+        Settings.System.putIntForUser(
+                resolver,
+                THREE_FINGERS_SWIPE_ACTION,
+                0,
+                UserHandle.USER_CURRENT
+        );
     }
 
     @Override
