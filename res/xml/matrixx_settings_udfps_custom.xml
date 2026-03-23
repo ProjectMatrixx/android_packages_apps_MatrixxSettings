@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+    android:title="@string/udfps_cust_title">
+
+    <com.matrixx.settings.preferences.SystemSettingListPreference
+        android:key="udfps_icon_type"
+        android:title="@string/udfps_icon_type_title"
+        android:summary="%s"
+        android:entries="@array/udfps_icon_type_entries"
+        android:entryValues="@array/udfps_icon_type_values"
+        android:defaultValue="0" />
+
+    <Preference
+        android:key="udfps_icon_picker"
+        android:title="@string/udfps_icon_picker_title"
+        android:summary="@string/udfps_icon_picker_summary"
+        android:fragment="com.matrixx.settings.fragments.lockscreen.UdfpsIconPicker" />
+
+    <Preference
+        android:key="udfps_custom_icon_select"
+        android:title="@string/udfps_custom_icon_select_title"
+        android:summary="@string/udfps_custom_icon_select_summary" />
+
+    <Preference
+        android:key="udfps_recognizing_animation_preview"
+        android:title="@string/udfps_recog_animation_effect_title"
+        android:summary="@string/udfps_recog_animation_effect_summary"
+        android:fragment="com.matrixx.settings.fragments.lockscreen.UdfpsAnimation" />
+
+    <com.matrixx.settings.preferences.SystemSettingSeekBarPreference
+        android:key="udfps_anim_size"
+        android:title="@string/udfps_animation_size_title"
+        android:summary="@string/udfps_animation_size_summary"
+        android:max="100"
+        android:min="10"
+        android:defaultValue="50"
+        settings:interval="1"
+        settings:units="%"
+        android:dependency="udfps_recognizing_animation_preview" />
+
+    <com.matrixx.settings.preferences.SystemSettingSeekBarPreference
+        android:key="udfps_anim_offset"
+        android:title="@string/udfps_animation_offset_title"
+        android:summary="@string/udfps_animation_offset_summary"
+        android:max="50"
+        settings:min="-50"
+        android:defaultValue="0"
+        settings:interval="1"
+        settings:units="dp"
+        android:dependency="udfps_recognizing_animation_preview" />
+
+    <com.android.settingslib.widget.FooterPreference
+        android:key="udfps_custom_footer"
+        android:title="@string/udfps_custom_footer_text"
+        android:selectable="false"
+        settings:searchable="false" />
+        
+</PreferenceScreen>

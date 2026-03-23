@@ -35,6 +35,18 @@
     </PreferenceCategory>
 
     <PreferenceCategory
+        android:key="lockscreen_custom_category"
+        android:title="@string/udfps_custom_title">
+
+      <Preference
+            android:key="udfps_cust"
+            android:title="@string/udfps_cust_title"
+            android:summary="@string/udfps_cust_summary"
+            android:fragment="com.matrixx.settings.fragments.lockscreen.UdfpsCust" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
         android:key="lock_screen_charging_category"
         android:title="@string/lock_screen_charging_category">
 
