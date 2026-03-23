@@ -572,4 +572,12 @@
     <!-- Brightness slider haptic feedback -->
     <string name="qs_brightness_slider_haptic_title">Haptic feedback</string>
     <string name="qs_brightness_slider_haptic_summary">Provide haptic feedback on changing brightness using slider</string>
+
+    <!-- QS Tiles Shape -->
+    <string name="quick_settings_layout_category_title">Tiles layout</string>
+    <string name="quick_settings_tile_shape_title">QS tiles shape</string>
+    <string name="quick_settings_tile_shape_dynamic">Dynamic</string>
+    <string name="quick_settings_tile_shape_circle">Circle</string>
+    <string name="quick_settings_tile_shape_rounded_square">Rounded square</string>
+    <string name="quick_settings_tile_shape_square">Square</string>
 </resources>
