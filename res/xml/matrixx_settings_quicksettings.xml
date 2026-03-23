@@ -73,6 +73,12 @@
             android:entries="@array/quick_settings_tile_shape_entries"
             android:entryValues="@array/quick_settings_tile_shape_values"
             android:defaultValue="0" />
+
+        <Preference
+            android:key="qs_layout_columns_rows"
+            android:title="@string/qs_layout_columns_rows_title"
+            android:summary="@string/qs_layout_columns_rows_summary"
+            android:fragment="com.matrixx.settings.fragments.quicksettings.LayoutSettings" />
     </PreferenceCategory>
 
 
