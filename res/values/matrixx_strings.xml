@@ -581,4 +581,7 @@
     <string name="quick_settings_tile_shape_rounded_square_smooth">Rounded square (smooth)</string>
     <string name="quick_settings_tile_shape_rounded_square">Rounded square</string>
     <string name="quick_settings_tile_shape_square">Square</string>
+
+    <!-- Brightness Slider Style -->
+    <string name="qs_brightness_slider_shape_title">Brightness slider shape</string>
 </resources>
