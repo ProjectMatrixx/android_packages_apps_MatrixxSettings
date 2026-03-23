@@ -375,4 +375,11 @@
     <string name="qs_header_needs_gallery">You must install a gallery app!</string>
     <string name="qs_header_offset_title">Header image offset</string>
     <string name="qs_header_offset_summary">Adjust the image header size</string>
+
+    <!-- Lockscreen categories -->
+    <string name="lockscreen_interface_category">Interface</string>
+
+    <!-- User Switcher -->
+    <string name="kg_user_switcher_enabled_title">User Switcher</string>
+    <string name="kg_user_switcher_enabled_summary">Show user switcher when showing pin/password prompt</string>
 </resources>

@@ -29,6 +29,8 @@ import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settingslib.search.SearchIndexable;
 
+import com.android.internal.util.matrixx.SystemRestartUtils;
+
 import java.util.List;
 
 @SearchIndexable
@@ -37,15 +39,26 @@ public class LockScreen extends SettingsPreferenceFragment
 
     public static final String TAG = "LockScreen";
 
+    private static final String KEY_KG_USER_SWITCHER= "kg_user_switcher_enabled";
+
+    private Preference mUserSwitcher;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         addPreferencesFromResource(R.xml.matrixx_settings_lockscreen);
+
+        mUserSwitcher = (Preference) findPreference(KEY_KG_USER_SWITCHER);
+        mUserSwitcher.setOnPreferenceChangeListener(this);
     }
 
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
+        if (preference == mUserSwitcher) {
+            SystemRestartUtils.showSystemUIRestartDialog(getContext());
+            return true;
+        }
         return false;
     }
 

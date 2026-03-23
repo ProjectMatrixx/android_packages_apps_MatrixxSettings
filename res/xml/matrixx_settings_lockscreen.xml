@@ -21,4 +21,18 @@
     android:title="@string/lockscreen_title">
 
 
+    <PreferenceCategory
+        android:key="lockscreen_interface_category"
+        android:title="@string/lockscreen_interface_category">
+
+
+        <com.matrixx.settings.preferences.SystemSettingSwitchPreference
+            android:key="kg_user_switcher_enabled"
+            android:title="@string/kg_user_switcher_enabled_title"
+            android:summary="@string/kg_user_switcher_enabled_summary"
+            android:defaultValue="false" />
+
+    </PreferenceCategory>
+
+
 </PreferenceScreen>
