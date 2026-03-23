@@ -19,6 +19,9 @@
     <!-- Oval preview size -->
     <dimen name="oval_notification_size">26dp</dimen>
 
+
+    <dimen name="package_list_padding_top">16dp</dimen>
+
     <!-- Support -->
     <dimen name="logo_vertical_margin">48dp</dimen>
     <dimen name="logo_horizontal_margin">40dp</dimen>

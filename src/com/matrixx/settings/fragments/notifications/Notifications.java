@@ -17,9 +17,12 @@ package com.matrixx.settings.fragments.notifications;
 
 import android.content.ContentResolver;
 import android.content.Context;
+import android.content.res.Resources;
 import android.os.Bundle;
 
 import androidx.preference.Preference;
+import androidx.preference.PreferenceCategory;
+import androidx.preference.PreferenceScreen;
 
 import com.android.internal.logging.nano.MetricsProto;
 import com.android.settings.R;
@@ -35,11 +38,49 @@ public class Notifications extends SettingsPreferenceFragment implements
 
     public static final String TAG = "Notifications";
 
-   @Override
+    private static final String BATTERY_LIGHTS_PREF = "battery_lights";
+    private static final String NOTIFICATION_LIGHTS_PREF = "notification_lights";
+    private static final String LIGHT_BRIGHTNESS_CATEGORY = "light_brightness";
+
+    private Preference mBatteryLights;
+    private Preference mNotificationLights;
+
+    @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         addPreferencesFromResource(R.xml.matrixx_settings_notifications);
+
+        final PreferenceScreen prefScreen = getPreferenceScreen();
+        final Context context = getActivity();
+        final Resources res = context.getResources();
+
+        // Battery Lights
+        mBatteryLights = prefScreen.findPreference(BATTERY_LIGHTS_PREF);
+        boolean batteryLightsSupported = res.getInteger(
+                org.lineageos.platform.internal.R.integer.config_deviceLightCapabilities) >= 64;
+
+        if (!batteryLightsSupported && mBatteryLights != null) {
+            prefScreen.removePreference(mBatteryLights);
+        }
+
+        // Notification Lights
+        mNotificationLights = prefScreen.findPreference(NOTIFICATION_LIGHTS_PREF);
+        boolean notificationLightsSupported = res.getBoolean(
+                com.android.internal.R.bool.config_intrusiveNotificationLed);
+
+        if (!notificationLightsSupported && mNotificationLights != null) {
+            prefScreen.removePreference(mNotificationLights);
+        }
+
+        // Remove category if both not supported
+        if (!batteryLightsSupported && !notificationLightsSupported) {
+            PreferenceCategory lightsCategory =
+                    prefScreen.findPreference(LIGHT_BRIGHTNESS_CATEGORY);
+            if (lightsCategory != null) {
+                prefScreen.removePreference(lightsCategory);
+            }
+        }
     }
 
     @Override
@@ -49,7 +90,7 @@ public class Notifications extends SettingsPreferenceFragment implements
 
     public static void reset(Context context) {
         ContentResolver resolver = context.getContentResolver();
-
+        // No reset needed for these prefs (UI only)
     }
 
     @Override
@@ -65,7 +106,22 @@ public class Notifications extends SettingsPreferenceFragment implements
 
                 @Override
                 public List<String> getNonIndexableKeys(Context context) {
-                    return super.getNonIndexableKeys(context);
+                    List<String> keys = super.getNonIndexableKeys(context);
+                    final Resources res = context.getResources();
+
+                    boolean batteryLightsSupported = res.getInteger(
+                            org.lineageos.platform.internal.R.integer.config_deviceLightCapabilities) >= 64;
+                    if (!batteryLightsSupported) {
+                        keys.add(BATTERY_LIGHTS_PREF);
+                    }
+
+                    boolean notificationLightsSupported = res.getBoolean(
+                            com.android.internal.R.bool.config_intrusiveNotificationLed);
+                    if (!notificationLightsSupported) {
+                        keys.add(NOTIFICATION_LIGHTS_PREF);
+                    }
+
+                    return keys;
                 }
             };
 }

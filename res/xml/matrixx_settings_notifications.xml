@@ -20,5 +20,24 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/notifications_title">
 
+    <PreferenceCategory
+        android:key="light_brightness"
+        android:title="@string/light_brightness_category">
+
+        <!-- Battery light -->
+        <Preference
+            android:key="battery_lights"
+            android:title="@string/battery_light_title"
+            android:summary="@string/battery_light_summary"
+            android:fragment="com.matrixx.settings.fragments.notifications.notificationlight.BatteryLightSettings" />
+
+        <!-- Notification lights -->
+        <Preference
+            android:key="notification_lights"
+            android:title="@string/notification_light_title"
+            android:summary="@string/notification_light_summary"
+            android:fragment="com.matrixx.settings.fragments.notifications.notificationlight.NotificationLightSettings" />
+    </PreferenceCategory>
+
 
 </PreferenceScreen>
