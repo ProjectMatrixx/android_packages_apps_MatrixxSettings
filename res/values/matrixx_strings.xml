@@ -429,4 +429,10 @@
     <string name="udfps_custom_icon_success">Custom icon applied successfully</string>
     <string name="udfps_custom_icon_error">Failed to apply custom icon</string>
     <string name="udfps_custom_icon_picker_error">No gallery app found</string>
+
+    <!-- Fingerprint authentication vibration -->
+    <string name="fp_success_vibrate_title">Fingerprint authentication vibration</string>
+    <string name="fp_success_vibrate_summary">Vibrate when fingerprint authentication is successful</string>
+    <string name="fp_error_vibrate_title">Fingerprint error vibration</string>
+    <string name="fp_error_vibrate_summary">Vibrate when fingerprint authentication fails</string>
 </resources>
