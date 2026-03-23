@@ -43,5 +43,17 @@
 
     </PreferenceCategory>
 
+    <PreferenceCategory
+        android:key="power_menu_interface_category"
+        android:title="@string/power_menu_interface_category">
+
+        <!-- Power menu actions -->
+        <Preference
+            android:key="power_menu_actions"
+            android:title="@string/power_menu_actions_title"
+            android:summary="@string/power_menu_actions_summary"
+            android:fragment="com.matrixx.settings.fragments.buttons.PowerMenuActions" />
+    </PreferenceCategory>
+
 
 </PreferenceScreen>
