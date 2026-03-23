@@ -561,4 +561,8 @@
     <string name="hardware_keys_action_notifications_panel">Toggle notifications panel</string>
     <string name="hardware_keys_action_expand_qs_panel">Expand QS panel</string>
     <string name="hardware_keys_action_ringer_modes">Change ringer mode</string>
+
+    <!-- Data Usage -->
+    <string name="quick_settings_data_usage_title">Data usage</string>
+    <string name="quick_settings_data_usage_summary">Display data usage summary in quick settings footer</string>
 </resources>
