@@ -750,4 +750,8 @@
     <string name="edge_light_animation_effect_sparkle">Sparkle</string>
     <string name="edge_light_animation_effect_chase">Chase</string>
     <string name="edge_light_animation_effect_comet">Comet</string>
+
+    <!-- Less boring heads up -->
+    <string name="less_boring_heads_up_title">Less boring</string>
+    <string name="less_boring_heads_up_summary">Display popup notifications only for alarm, dialer and messaging app</string>
 </resources>
