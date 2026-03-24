@@ -759,4 +759,10 @@
     <string name="notification_category_title">Notifications</string>
     <string name="notification_sound_vib_screen_on_title">Noisy notifications</string>
     <string name="notification_sound_vib_screen_on_summary">Play sound and vibration for notifications when screen is on</string>
+
+    <!-- Heads up timeout -->
+    <string name="notification_heads_up_title">Heads up</string>
+    <string name="notification_heads_up_summary">Allow pop up notifications</string>
+    <string name="notification_heads_up_timeout_title">Time out</string>
+    <string name="notification_heads_up_timeout_summary">Time to display heads up notifications</string>
 </resources>
