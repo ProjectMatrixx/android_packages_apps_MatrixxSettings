@@ -21,5 +21,18 @@
     android:title="@string/ui_title">
 
 
+    <PreferenceCategory
+        android:key="ui_category"
+        android:title="@string/ui_title">
+
+        <Preference
+            android:key="edge_light_settings"
+            android:title="@string/edge_light_title"
+            android:summary="@string/edge_light_summary"
+            android:fragment="com.matrixx.settings.fragments.ui.EdgeLightSettings" />
+
+    </PreferenceCategory>
+
+
 
 </PreferenceScreen>
