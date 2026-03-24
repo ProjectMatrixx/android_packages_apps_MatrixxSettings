@@ -507,4 +507,39 @@
         <item>6</item>
         <item>7</item>
     </string-array>
+
+    <!-- Pulse music visualizer -->
+    <string-array name="pulse_color_entries" translatable="false">
+        <item>@string/pulse_color_lavalamp</item>
+        <item>@string/pulse_color_album</item>
+        <item>@string/pulse_color_accent</item>
+        <item>@string/custom_color</item>
+    </string-array>
+
+    <string-array name="pulse_color_values" translatable="false">
+        <item>lavalamp</item>
+        <item>album</item>
+        <item>accent</item>
+        <item>custom</item>
+    </string-array>
+
+    <string-array name="pulse_renderer_entries" translatable="false">
+        <item>@string/pulse_renderer_solid</item>
+        <item>@string/pulse_renderer_fading</item>
+        <item>@string/pulse_renderer_neon_glow</item>
+        <item>@string/pulse_renderer_retro_vu_meter</item>
+        <item>@string/pulse_renderer_minimal_wave</item>
+        <item>@string/pulse_renderer_sparkle</item>
+        <item>@string/pulse_renderer_matrix</item>
+    </string-array>
+
+    <string-array name="pulse_renderer_values" translatable="false">
+        <item>solid</item>
+        <item>fading</item>
+        <item>neon</item>
+        <item>retro</item>
+        <item>minimal</item>
+        <item>sparkle</item>
+        <item>matrix</item>
+    </string-array>
 </resources>
