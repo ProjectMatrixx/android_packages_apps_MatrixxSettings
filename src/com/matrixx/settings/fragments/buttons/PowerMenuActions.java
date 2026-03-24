@@ -74,7 +74,7 @@ public class PowerMenuActions extends SettingsPreferenceFragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        addPreferencesFromResource(R.xml.power_menu_actions);
+        addPreferencesFromResource(R.xml.power_menu);
         mContext = getActivity().getApplicationContext();
         mLockPatternUtils = new LockPatternUtils(mContext);
         mUserManager = UserManager.get(mContext);
@@ -203,7 +203,7 @@ public class PowerMenuActions extends SettingsPreferenceFragment {
             if (isKeyguardSecure) {
                 mLockDownPref.setSummary(null);
             } else {
-                mLockDownPref.setSummary(R.string.power_menu_actions_lockdown_unavailable);
+                mLockDownPref.setSummary(R.string.power_menu_lockdown_unavailable);
             }
         }
         if (mUsersPref != null) {
