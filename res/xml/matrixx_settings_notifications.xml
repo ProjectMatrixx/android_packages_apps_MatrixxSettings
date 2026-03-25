@@ -99,4 +99,24 @@
     </PreferenceCategory>
 
 
+    <PreferenceCategory
+        android:key="media_category"
+        android:title="@string/media_category_title">
+
+        <com.matrixx.settings.preferences.SecureSettingSwitchPreference
+            android:key="media_squiggle_animation"
+            android:title="@string/media_squiggle_animation_title"
+            android:summary="@string/media_squiggle_animation_summary"
+            android:defaultValue="true" />
+
+        <!-- Waveform seekbar -->
+        <com.matrixx.settings.preferences.SystemSettingSwitchPreference
+            android:key="media_waveform_seekbar"
+            android:title="@string/media_waveform_seekbar_title"
+            android:summary="@string/media_waveform_seekbar_summary"
+            android:defaultValue="false" />
+
+    </PreferenceCategory>
+
+
 </PreferenceScreen>

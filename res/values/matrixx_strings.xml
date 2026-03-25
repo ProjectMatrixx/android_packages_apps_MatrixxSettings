@@ -893,4 +893,13 @@
     <!-- Application downgrade -->
     <string name="app_downgrade_title">Allow app downgrade</string>
     <string name="app_downgrade_summary">This allows you to downgrade applications. Note that this may lead to crashes and data corruption.</string>
+
+    <!-- Squiggle animation for media notification -->
+    <string name="media_category_title">Media player</string>
+    <string name="media_squiggle_animation_title">Squiggle animation</string>
+    <string name="media_squiggle_animation_summary">Show seekbar squiggle animation in media panel when playing media</string>
+
+    <!-- Media art QS background -->
+    <string name="media_waveform_seekbar_title">Waveform Media Seekbar</string>
+    <string name="media_waveform_seekbar_summary">Enable animated waveform effect for media playback progress</string>
 </resources>
