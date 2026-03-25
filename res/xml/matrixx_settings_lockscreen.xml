@@ -25,6 +25,11 @@
         android:key="lockscreen_interface_category"
         android:title="@string/lockscreen_interface_category">
 
+        <Preference
+            android:key="lock_glymps_settings"
+            android:title="@string/lock_glymps_title"
+            android:summary="@string/lock_glymps_enable_summary"
+            android:fragment="com.matrixx.settings.fragments.lockscreen.LockGlympsSettings" />
 
         <com.matrixx.settings.preferences.SystemSettingSwitchPreference
             android:key="kg_user_switcher_enabled"

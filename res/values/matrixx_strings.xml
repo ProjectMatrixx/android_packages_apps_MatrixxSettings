@@ -947,4 +947,55 @@
     <string name="qs_compact_media_player_mode_summary">Enable compact mode for QuickSettings media player</string>
     <string name="qs_media_stock_title">Stock QS media player</string>
     <string name="qs_media_stock_summary">Enable stock large QuickSettings media player</string>
+
+    <!-- Wallpaper Glymps -->
+    <string name="lock_glymps_title">Wallpaper Glymps</string>
+    <string name="lock_glymps_enable_title">Enable Wallpaper Glymps</string>
+    <string name="lock_glymps_enable_summary">Change wallpaper every time screen lights up</string>
+    <string name="lock_glymps_wallpaper_target_title">Wallpaper apply to</string>
+    <string name="lock_glymps_source_category">Wallpaper Source</string>
+    <string name="lock_glymps_source_title">Wallpaper source</string>
+    <string name="lock_glymps_source_summary">Choose where to get wallpapers from</string>
+
+    <string name="lock_glymps_custom_urls_title">Manage custom URLs</string>
+    <string name="lock_glymps_custom_urls_summary">Add or remove custom wallpaper URLs</string>
+
+    <string name="lock_glymps_folder_title">Local folder</string>
+    <string name="lock_glymps_folder_summary">View folder location and wallpaper count (Max 10 wallpapers)</string>
+
+    <string name="lock_glymps_download_category">Download Settings</string>
+    <string name="lock_glymps_wifi_only_title">WiFi only</string>
+    <string name="lock_glymps_wifi_only_summary">Download wallpapers only when connected to WiFi</string>
+
+    <string name="lock_glymps_cache_size_title">Cache size</string>
+    <string name="lock_glymps_cache_size_summary">Number of wallpapers to pre-download</string>
+
+    <string name="lock_glymps_advanced_category">Advanced</string>
+    <string name="lock_glymps_clear_cache_title">Clear cache</string>
+    <string name="lock_glymps_clear_cache_summary">Remove all cached wallpapers</string>
+
+    <string name="lock_glymps_behavior_category">Behavior</string>
+    <string name="lock_glymps_change_on_title">Change wallpaper on</string>
+    <string name="lock_glymps_change_on_summary">When to change the screen wallpaper</string>
+
+    <string name="lock_glymps_timer_interval_title">Timer interval</string>
+    <string name="lock_glymps_timer_interval_summary">How often to change wallpaper automatically</string>
+
+    <!-- Footer -->
+    <string name="lock_glymps_footer_title">Important Information</string>
+    <string name="lock_glymps_footer_text">📁 Local folder: /sdcard/MatrixxGlymps\n\n⚠️ Low-end devices may experience slight lag\n\n🎨 Tip: Use Custom Accent in Monet Settings for stable colors</string>
+
+    <!-- Preview strings -->
+    <string name="lock_glymps_preview_category">Current Wallpapers</string>
+    <string name="lock_glymps_preview_title">Wallpaper Preview</string>
+    <string name="lock_glymps_preview_summary">Current lock and home screen wallpapers</string>
+    <string name="lock_glymps_lock_screen">Lock Screen</string>
+    <string name="lock_glymps_home_screen">Home Screen</string>
+    <string name="lock_glymps_apply_now">Apply New Wallpaper</string>
+    <string name="lock_glymps_applying">Applying...</string>
+    <string name="lock_glymps_lock_preview_desc">Lock screen wallpaper preview</string>
+    <string name="lock_glymps_home_preview_desc">Home screen wallpaper preview</string>
+    <string name="monet_engine_color_source_both">Both (Default)</string>
+    <string name="monet_engine_color_source_home">Home wallpaper</string>
+    <string name="monet_engine_color_source_lock">Lock wallpaper</string>
 </resources>
