@@ -54,6 +54,13 @@
             android:entryValues="@array/hardware_keys_action_values"
             android:persistent="false" />
 
+        <!-- Rotation button -->
+        <com.matrixx.settings.preferences.SystemSettingSwitchPreference
+            android:key="enable_rotation_button"
+            android:title="@string/floating_rotation_button_title"
+            android:summary="@string/floating_rotation_button_summary"
+            android:defaultValue="true" />
+
         <!-- Smart Pixels -->
         <Preference
             android:key="smart_pixels"
