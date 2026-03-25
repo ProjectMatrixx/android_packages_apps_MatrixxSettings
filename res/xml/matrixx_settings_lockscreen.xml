@@ -61,7 +61,7 @@
 
     <PreferenceCategory
         android:key="lock_screen_charging_category"
-        android:title="@string/lock_screen_charging_category">
+        android:title="@string/charging_category">
 
         <!-- Charging stats -->
         <com.matrixx.settings.preferences.SystemSettingSwitchPreference

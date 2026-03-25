@@ -378,7 +378,7 @@
 
     <!-- Lockscreen categories -->
     <string name="lockscreen_interface_category">Interface</string>
-    <string name="lock_screen_charging_category">Charging</string>
+    <string name="charging_category">Charging</string>
 
     <!-- User Switcher -->
     <string name="kg_user_switcher_enabled_title">User Switcher</string>
@@ -777,4 +777,9 @@
     <!-- Heads-up -->
     <string name="compact_heads_up_notifications_enabled_title">Compact heads-up</string>
     <string name="compact_heads_up_notifications_enabled_summary">Display notifications in compact size</string>
+
+    <!-- Charging animation -->
+    <string name="lock_screen_charging_category">Lock screen charging animation</string>
+    <string name="charging_animation_title">Charging animation</string>
+    <string name="charging_animation_summary">Display an animation when the device is plugged in</string>
 </resources>
