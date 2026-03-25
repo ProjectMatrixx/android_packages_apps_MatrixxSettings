@@ -67,6 +67,15 @@
             android:summary="@string/charging_animation_summary"
             android:defaultValue="true" />
 
+
+        <com.matrixx.settings.preferences.SystemSettingListPreference
+            android:key="wireless_charging_ripple_shape"
+            android:title="@string/ripple_shape_title"
+            android:summary="%s"
+            android:entries="@array/ripple_shape_entries"
+            android:entryValues="@array/ripple_shape_values"
+            android:defaultValue="0" />
+
         <!-- Dynamic charging animation -->
         <com.matrixx.settings.preferences.SystemSettingSwitchPreference
             android:key="wireless_charging_dynamic_color"

@@ -906,4 +906,7 @@
     <!-- Dynamic charging animation -->
     <string name="wireless_charging_dynamic_color_title">Dynamic charging color</string>
     <string name="wireless_charging_dynamic_color_summary">Use battery level to determine charging ripple animation color</string>
+
+    <!-- Ripple Shape -->
+    <string name="ripple_shape_title">Charging ripple Shape</string>
 </resources>
