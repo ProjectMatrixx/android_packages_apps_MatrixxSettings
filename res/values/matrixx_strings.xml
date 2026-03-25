@@ -885,4 +885,8 @@
     <!-- Smartspace -->
     <string name="lockscreen_smartspace_title">Smartspace</string>
     <string name="lockscreen_smartspace_summary">Show Google Smartspace when available</string>
+
+    <!-- Carrier name on lockscreen -->
+    <string name="lockscreen_show_carrier_title">Carrier name</string>
+    <string name="lockscreen_show_carrier_summary">Display carrier name in the status bar</string>
 </resources>

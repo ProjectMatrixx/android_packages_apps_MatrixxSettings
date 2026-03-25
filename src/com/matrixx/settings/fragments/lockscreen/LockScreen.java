@@ -42,6 +42,7 @@ public class LockScreen extends SettingsPreferenceFragment
     private static final String KEY_KG_USER_SWITCHER= "kg_user_switcher_enabled";
     private static final String KEY_SMARTSPACE = "lockscreen_smartspace_enabled";
     private static final String KEY_WEATHER = "lockscreen_weather_enabled";
+    private static final String KEY_CARRIER_NAME = "lockscreen_show_carrier";
 
     private Preference mUserSwitcher;
     private SwitchPreferenceCompat mSmartspace;

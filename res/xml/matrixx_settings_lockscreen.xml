@@ -45,6 +45,12 @@
             android:summary="@string/pulse_settings_summary"
             android:fragment="com.matrixx.settings.fragments.lockscreen.PulseSettings" />
 
+        <com.matrixx.settings.preferences.SystemSettingSwitchPreference
+            android:key="lockscreen_show_carrier"
+            android:title="@string/lockscreen_show_carrier_title"
+            android:summary="@string/lockscreen_show_carrier_summary"
+            android:defaultValue="true" />
+
     </PreferenceCategory>
 
     <PreferenceCategory
