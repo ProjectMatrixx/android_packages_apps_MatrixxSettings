@@ -45,6 +45,12 @@
             android:summary="@string/pulse_settings_summary"
             android:fragment="com.matrixx.settings.fragments.lockscreen.PulseSettings" />
 
+        <Preference
+            android:key="nowplaying_settings"
+            android:title="@string/nowplaying_title"
+            android:summary="@string/nowplaying_summary"
+            android:fragment="com.matrixx.settings.fragments.lockscreen.NowplayingSettings" />
+
         <com.matrixx.settings.preferences.SystemSettingSwitchPreference
             android:key="lockscreen_show_carrier"
             android:title="@string/lockscreen_show_carrier_title"

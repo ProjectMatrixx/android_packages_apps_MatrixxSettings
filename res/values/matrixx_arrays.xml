@@ -692,4 +692,17 @@
         <item>1</item>
         <item>2</item>
     </string-array>
+
+    <string-array name="nowplaying_icon_style_entries">
+        <item>Disabled</item>
+        <item>App icon</item>
+        <item>Music note icon</item>
+    </string-array>
+
+    <!-- Now Playing -->
+    <string-array name="nowplaying_icon_style_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
 </resources>
