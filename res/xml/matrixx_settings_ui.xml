@@ -20,6 +20,18 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/ui_title">
 
+    <PreferenceCategory
+        android:key="themes_monet_category"
+        android:title="@string/themes_monet_category">
+
+        <!-- Monet engine -->
+        <Preference
+            android:key="monet_settings"
+            android:title="@string/monet_settings_title"
+            android:summary="@string/monet_settings_summary"
+            android:fragment="com.matrixx.settings.fragments.ui.ColorsSettingsFragment" />
+
+    </PreferenceCategory>
 
     <PreferenceCategory
         android:key="ui_category"
