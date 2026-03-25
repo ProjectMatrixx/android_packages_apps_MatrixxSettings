@@ -27,5 +27,24 @@
         android:summary="@string/screenshot_shutter_sound_summary"
         android:defaultValue="true" />
 
+    <!-- Volume panel -->
+    <PreferenceCategory
+        android:key="volume_panel"
+        android:title="@string/volume_panel_category" >
+
+        <com.matrixx.settings.preferences.SecureSettingSeekBarPreference
+            android:key="volume_dialog_dismiss_timeout"
+            android:title="@string/volume_dialog_timeout_title"
+            android:defaultValue="3000"
+            android:max="10000"
+            settings:min="1000"
+            settings:interval="500"
+            settings:units="@string/unit_milliseconds" />
+
+        <com.matrixx.settings.preferences.SecureSettingSwitchPreference
+            android:key="volume_dialog_haptic_feedback"
+            android:title="@string/volume_dialog_haptic_feedback_title"
+            android:defaultValue="true" />
+    </PreferenceCategory>
 
 </PreferenceScreen>

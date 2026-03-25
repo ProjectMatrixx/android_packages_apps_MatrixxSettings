@@ -860,4 +860,9 @@
     <!-- Screenshot shutter sound  -->
     <string name="screenshot_shutter_sound_title">Screenshot sound</string>
     <string name="screenshot_shutter_sound_summary">Play sound when screenshot is taken</string>
+
+    <!-- Volume panel -->
+    <string name="volume_panel_category">Volume panel</string>
+    <string name="volume_dialog_timeout_title">Volume panel timeout</string>
+    <string name="volume_dialog_haptic_feedback_title">Volume panel haptics</string>
 </resources>
