@@ -902,4 +902,8 @@
     <!-- Media art QS background -->
     <string name="media_waveform_seekbar_title">Waveform Media Seekbar</string>
     <string name="media_waveform_seekbar_summary">Enable animated waveform effect for media playback progress</string>
+
+    <!-- Dynamic charging animation -->
+    <string name="wireless_charging_dynamic_color_title">Dynamic charging color</string>
+    <string name="wireless_charging_dynamic_color_summary">Use battery level to determine charging ripple animation color</string>
 </resources>
