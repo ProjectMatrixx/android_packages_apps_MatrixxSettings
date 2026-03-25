@@ -25,11 +25,24 @@
         android:key="ui_category"
         android:title="@string/ui_title">
 
+        <!-- Ambient Display -->
+        <Preference
+            android:key="doze_fragment"
+            android:title="@string/doze_display_title"
+            android:summary="@string/doze_display_summary"
+            android:fragment="com.matrixx.settings.fragments.ui.DozeSettings" />
+
         <Preference
             android:key="edge_light_settings"
             android:title="@string/edge_light_title"
             android:summary="@string/edge_light_summary"
             android:fragment="com.matrixx.settings.fragments.ui.EdgeLightSettings" />
+
+        <!-- Ambient Music Ticker -->
+        <com.matrixx.settings.preferences.SecureSettingSwitchPreference
+            android:key="pulse_on_new_tracks"
+            android:title="@string/pulse_on_new_tracks_title"
+            android:summary="@string/pulse_on_new_tracks_summary" />
 
     </PreferenceCategory>
 

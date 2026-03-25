@@ -587,4 +587,38 @@
         <item>chase</item>
         <item>comet</item>
     </string-array>
+
+    <!-- Ambient display -->
+    <string-array name="ambient_bottom_entries" translatable="false">
+        <item>@string/ambient_battery_disable_title</item>
+        <item>@string/ambient_battery_percent_title</item>
+        <item>@string/ambient_battery_both_title</item>
+        <item>@string/ambient_battery_cpu_battery_temperature_title</item>
+        <item>@string/ambient_user_name_title</item>
+    </string-array>
+
+    <string-array name="ambient_bottom_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+
+    <!-- AOD Schedule -->
+    <string-array name="doze_always_on_auto_mode_entries" translatable="false">
+        <item>@string/disable</item>
+        <item>@string/night_display_auto_mode_twilight</item>
+        <item>@string/always_on_display_schedule_mixed_sunset</item>
+        <item>@string/always_on_display_schedule_mixed_sunrise</item>
+        <item>@string/night_display_auto_mode_custom</item>
+    </string-array>
+
+    <string-array name="doze_always_on_auto_mode_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>3</item>
+        <item>4</item>
+        <item>2</item>
+    </string-array>
 </resources>
