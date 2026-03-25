@@ -31,6 +31,13 @@
             android:summary="@string/spoofing_summary"
             android:fragment="com.matrixx.settings.fragments.misc.Spoofing" />
 
+        <!-- Application downgrade -->
+        <com.matrixx.settings.preferences.GlobalSettingSwitchPreference
+            android:key="pm_downgrade_allowed"
+            android:title="@string/app_downgrade_title"
+            android:summary="@string/app_downgrade_summary"
+            android:defaultValue="false"/>
+
      </PreferenceCategory>
 
     <PreferenceCategory
