@@ -27,6 +27,8 @@ import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settingslib.search.SearchIndexable;
 
+import com.matrixx.settings.utils.SystemUtils;
+
 import java.util.List;
 
 @SearchIndexable
@@ -35,15 +37,26 @@ public class QuickSettings extends SettingsPreferenceFragment implements
 
     public static final String TAG = "QuickSettings";
 
+    private static final String KEY_QS_COMPACT_PLAYER = "qs_compact_media_player_mode";
+
+    private Preference mQsCompactPlayer;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         
         addPreferencesFromResource(R.xml.matrixx_settings_quicksettings);
+
+        mQsCompactPlayer = (Preference) findPreference(KEY_QS_COMPACT_PLAYER);
+        mQsCompactPlayer.setOnPreferenceChangeListener(this);
     }
 
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
+        if (preference == mQsCompactPlayer) {
+            SystemUtils.showSystemUiRestartDialog(getActivity());
+            return true;
+        }
         return false;
     }
 

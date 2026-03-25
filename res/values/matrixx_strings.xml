@@ -941,4 +941,10 @@
     <string name="nowplaying_compact_style_title">Compact style</string>
     <string name="nowplaying_compact_style_summary">Show as on a single line using the track text size</string>
     <string name="nowplaying_info_summary">Now Playing displays the currently playing music title and artist on your lockscreen and Always-On Display. It automatically appears when music is playing and disappears when stopped. The position can be adjusted to appear anywhere from the top to bottom of the screen.</string>
+
+    <!-- Compact QS Media Player-->
+    <string name="qs_compact_media_player_mode_title">Compact QS media player</string>
+    <string name="qs_compact_media_player_mode_summary">Enable compact mode for QuickSettings media player</string>
+    <string name="qs_media_stock_title">Stock QS media player</string>
+    <string name="qs_media_stock_summary">Enable stock large QuickSettings media player</string>
 </resources>
