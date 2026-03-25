@@ -44,6 +44,16 @@
             android:title="@string/pulse_on_new_tracks_title"
             android:summary="@string/pulse_on_new_tracks_summary" />
 
+        <!-- Display Cutout -->
+        <Preference
+            android:key="display_cutout_force_fullscreen_settings"
+            android:title="@string/display_cutout_force_fullscreen_title"
+            android:summary="@string/display_cutout_force_fullscreen_summary">
+            <intent android:action="android.intent.action.MAIN"
+                android:targetPackage="com.android.settings"
+                android:targetClass="com.matrixx.settings.fragments.ui.DisplayCutoutForceFullscreenActivity"/>
+        </Preference>
+
     </PreferenceCategory>
 
     <PreferenceCategory
