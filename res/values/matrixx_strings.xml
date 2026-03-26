@@ -1194,4 +1194,18 @@
         1. External launcher modules/modifications must be adapted to the QuickSwitch structure to function properly. \n\n
         2. Enable wallpaper overlay for Lunaris Launcher, disable for Pixel Launcher before or after switching to make wallpaper and style working.
     </string>
+
+    <!-- Shake Gestures -->
+    <string name="shake_gestures_enabled_title">Shake Gestures</string>
+    <string name="shake_gestures_enabled_summary">Shake your device to perform actions</string>
+    <string name="shake_gestures_action_title">Shake Gestures Actions</string>
+    <string name="shake_gestures_toggle_flashlight">Toggle Flashlight</string>
+    <string name="shake_gestures_media_playback">Play/Skip Media</string>
+    <string name="shake_gestures_volume_panel">Show Volume Panel</string>
+    <string name="shake_gestures_screen_wake">Turn Screen On/Off</string>
+    <string name="shake_gestures_clear_notifs">Clear All Notifications</string>
+    <string name="shake_gestures_toggle_ringer">Toggle Ringer Mode</string>
+    <string name="shake_gestures_screenshot">Take Screenshot</string>
+    <string name="shake_gestures_intensity_title">Shake Gestures Intensity</string>
+    <string name="shake_gestures_intensity_summary">Adjust the sensitivity of shake gestures</string>
 </resources>

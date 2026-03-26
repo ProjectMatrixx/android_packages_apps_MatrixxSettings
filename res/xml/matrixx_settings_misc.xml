@@ -127,6 +127,12 @@
             android:entryValues="@array/hardware_keys_action_values"
             android:persistent="false" />
 
+        <Preference
+            android:key="gesture_shake_action"
+            android:title="@string/shake_gestures_enabled_title"
+            android:summary="@string/shake_gestures_enabled_summary"
+            android:fragment="com.matrixx.settings.fragments.misc.ShakeGestures" />
+
         <!-- Pocket Judge -->
         <com.matrixx.settings.preferences.SystemSettingSwitchPreference
             android:key="pocket_judge"
