@@ -36,11 +36,24 @@ public class Sound extends SettingsPreferenceFragment
 
     public static final String TAG = "Sound";
 
+    private static final String KEY_VIBRATE_CATEGORY = "incall_vib_options";
+    private static final String KEY_VIBRATE_CONNECT = "vibrate_on_connect";
+    private static final String KEY_VIBRATE_CALLWAITING = "vibrate_on_callwaiting";
+    private static final String KEY_VIBRATE_DISCONNECT = "vibrate_on_disconnect"
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         addPreferencesFromResource(R.xml.matrixx_settings_sound);
+
+        boolean voiceCapable = TelephonyUtils.isVoiceCapable(context);
+        boolean hapticAvailable = DeviceUtils.hasVibrator(context);
+
+        if (!voiceCapable || !hapticAvailable) {
+            final PreferenceCategory vibCategory = prefScreen.findPreference(KEY_VIBRATE_CATEGORY);
+            prefScreen.removePreference(vibCategory);
+        }
     }
 
     @Override
