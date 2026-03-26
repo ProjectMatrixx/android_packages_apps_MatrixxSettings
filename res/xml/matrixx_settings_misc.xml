@@ -80,6 +80,13 @@
             android:summary="@string/hide_applist_summary"
             android:fragment="com.matrixx.settings.fragments.misc.HideAppListSettings" />
 
+        <!-- Block PairIP license activity -->
+        <com.matrixx.settings.preferences.SystemPropertySwitchPreference
+            android:key="persist.sys.pairip.activity.block"
+            android:title="@string/miscellaneous_pairip_activity_block_title"
+            android:summary="@string/miscellaneous_pairip_activity_block_summary"
+            android:defaultValue="false" />
+
      </PreferenceCategory>
 
     <PreferenceCategory
