@@ -32,6 +32,10 @@
         android:key="volume_panel"
         android:title="@string/volume_panel_category" >
 
+        <lineageos.preference.LineageSecureSettingSwitchPreference
+            android:key="volume_panel_on_left"
+            android:title="@string/volume_panel_on_left_title" />
+
         <com.matrixx.settings.preferences.SecureSettingSeekBarPreference
             android:key="volume_dialog_dismiss_timeout"
             android:title="@string/volume_dialog_timeout_title"
