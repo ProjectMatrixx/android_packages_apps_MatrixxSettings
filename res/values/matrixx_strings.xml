@@ -1178,4 +1178,8 @@
     <string name="wifi_icon_style3">Linear</string>
     <string name="wifi_icon_style4">Nothing Dot</string>
     <string name="wifi_icon_style5">ZigZag</string>
+
+    <!-- Navbar Styles -->
+    <string name="theme_customization_navbar_title">Navbar style</string>
+    <string name="theme_customization_navbar_summary">Set custom navigation bar style</string>
 </resources>

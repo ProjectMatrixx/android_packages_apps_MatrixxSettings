@@ -39,6 +39,12 @@
             android:summary="%s"
             android:defaultValue="0" />
 
+        <Preference
+            android:key="android.theme.customization.navbar"
+            android:title="@string/theme_customization_navbar_title"
+            android:summary="@string/theme_customization_navbar_summary"
+            android:fragment="com.matrixx.settings.fragments.ui.NavbarStyles"/>
+
     </PreferenceCategory>
 
     <PreferenceCategory
