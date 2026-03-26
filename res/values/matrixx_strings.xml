@@ -1154,4 +1154,8 @@
 
     <string name="dual_target_tile_style_title">Use Single Tone tile style</string>
     <string name="dual_target_tile_style_summary">Apply full tile coloring for dual target tiles like WiFi and Bluetooth</string>
+
+    <!-- Status bar - Icon tinting -->
+    <string name="status_bar_tint_icons_title">Tint status bar icons</string>
+    <string name="status_bar_tint_icons_summary">Tint status bar icons with system accent color</string>
 </resources>
