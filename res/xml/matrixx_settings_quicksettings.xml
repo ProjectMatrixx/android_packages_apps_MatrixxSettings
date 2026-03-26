@@ -93,6 +93,12 @@
             android:defaultValue="false" />
 
         <com.matrixx.settings.preferences.SystemSettingSwitchPreference
+            android:key="dual_target_tile_style"
+            android:title="@string/dual_target_tile_style_title"
+            android:summary="@string/dual_target_tile_style_summary"
+            android:defaultValue="false" />
+
+        <com.matrixx.settings.preferences.SystemSettingSwitchPreference
             android:key="qs_tile_alternate_color"
             android:title="@string/qs_tile_alternate_color_title"
             android:summary="@string/qs_tile_alternate_color_summary"
