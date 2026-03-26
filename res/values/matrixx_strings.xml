@@ -1355,4 +1355,8 @@
     <string name="status_bar_quick_qs_pulldown_left">Left</string>
     <string name="status_bar_quick_qs_pulldown_right">Right</string>
     <string name="status_bar_quick_qs_pulldown_always">Always show quick settings on status bar pull down</string>
+
+    <!-- Notification count -->
+    <string name="statusbar_notif_count_title">Show notification count</string>
+    <string name="statusbar_notif_count_summary">Display the number of pending notifications</string>
 </resources>

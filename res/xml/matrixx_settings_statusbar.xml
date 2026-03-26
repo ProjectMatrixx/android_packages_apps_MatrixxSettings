@@ -79,6 +79,12 @@
             android:defaultValue="false" />
 
         <com.matrixx.settings.preferences.SystemSettingSwitchPreference
+	        android:key="statusbar_notif_count"
+	        android:title="@string/statusbar_notif_count_title"
+	        android:summary="@string/statusbar_notif_count_summary"
+	        android:defaultValue="false" />
+
+        <com.matrixx.settings.preferences.SystemSettingSwitchPreference
             android:key="tint_statusbar_icons_with_accent"
             android:title="@string/status_bar_tint_icons_title"
             android:summary="@string/status_bar_tint_icons_summary"
