@@ -176,6 +176,18 @@
     </PreferenceCategory>
 
     <PreferenceCategory
+        android:title="@string/gestures_title">
+
+        <lineageos.preference.LineageSystemSettingListPreference
+            android:key="qs_quick_pulldown"
+            android:title="@string/status_bar_quick_qs_pulldown_title"
+            android:entries="@array/status_bar_quick_qs_pulldown_entries"
+            android:entryValues="@array/status_bar_quick_qs_pulldown_values"
+            android:defaultValue="0" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
         android:title="@string/statusbar_extra_padding_category">
 
         <com.matrixx.settings.preferences.SystemSettingSeekBarPreference
