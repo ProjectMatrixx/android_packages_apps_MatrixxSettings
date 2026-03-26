@@ -35,4 +35,8 @@
     </declare-styleable>
 
     <attr name="secureValue" format="string" />
+
+    <declare-styleable name="WallpaperView">
+        <attr name="blurred" format="boolean" />
+    </declare-styleable>
 </resources>

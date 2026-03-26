@@ -1388,8 +1388,6 @@
     <string name="lockscreen_doubletap_sleep_summary">Double-tap on the lock screen to put device asleep</string>
 
     <!-- Font Mode -->
-    <string name="theme_customization_lock_clock_title">Clock face</string>
-    <string name="theme_customization_lock_clock_summary">Modify lockscreen clock appearance</string>
     <string name="theme_customization_font_title">Font style</string>
     <string name="theme_customization_font_summary">Set system font style</string>
     <string name="font_mode_title">Font source</string>
@@ -1430,4 +1428,88 @@
     <string name="font_preview_text">The quick brown\nfox jumps over the\nlazy dog\n\nABCDEFGHIJKLM\nNOPQRSTUVWXYZ\nabcdefghijkl\nmnopqrstuvwxyz\n1234567890</string>
     <string name="apply_button_text">Apply</string>
     <string name="font_picker_select_font">Select font</string>
+
+    <!-- Lockscreen Clock styles -->
+    <string name="theme_customization_lock_clock_title">Clock face</string>
+    <string name="theme_customization_lock_clock_summary">Modify lockscreen clock appearance</string>
+
+    <!-- Clock color mode -->
+    <string name="clock_color_mode_title">Clock color mode</string>
+
+    <!-- Lockscreen Clock Opacity -->
+    <string name="clock_text_opacity_title">Clock text opacity</string>
+    <string name="clock_text_opacity_summary">Adjust the transparency of the clock text</string>
+
+    <!-- Custom clock frame margin top -->
+    <string name="custom_clock_frame_margin_top_title">Custom clock height</string>
+    <string name="custom_clock_frame_margin_top_summary">Adjust the height of custom clock style</string>
+
+    <!-- Lockscreen widgets  -->
+    <string name="lockscreen_widgets_title">Widgets</string>
+    <string name="lockscreen_widgets_enabled_title">Enable Lockscreen Widgets</string>
+    <string name="lockscreen_widgets_enabled_summary">Add widgets to lockscreen</string>
+    <string name="lockscreen_display_widgets_title">Device info Widget</string>
+    <string name="lockscreen_display_widgets_summary">Show device info widget on lockscreen</string>
+	<string name="large_widgets_category_title">Big widgets</string>
+    <string name="main_custom_widgets1">Big widget 1</string>
+    <string name="main_custom_widgets2">Big widget 2</string>
+    <string name="mini_widgets_category_title">Mini widgets</string>
+    <string name="custom_widgets1">Mini widget 1</string>
+    <string name="custom_widgets2">Mini widget 2</string>
+    <string name="custom_widgets3">Mini widget 3</string>
+    <string name="custom_widgets4">Mini widget 4</string>
+    <string name="camera">Camera</string>
+    <string name="clock_timer">Clock/Timer</string>
+    <string name="calculator">Calculator</string>
+    <string name="gallery">Gallery</string>
+    <string name="media">Media Player</string>
+    <string name="torch">Torch</string>
+    <string name="controls_media_button_play">Play</string>
+    <string name="weather">Weather</string>
+    <string name="wifi">Wifi</string>
+    <string name="data">Data</string>
+    <string name="ringer">Ringer</string>
+    <string name="bt">Bluetooth</string>
+    <string name="hotspot">Hotspot</string>
+    <string name="wallet">Wallet</string>
+    <string name="qr_scanner">QR Scanner</string>
+
+    <!-- Lockscreen Widgets Styles -->
+    <string name="lockscreen_widgets_style_title">Lockscreen widgets style</string>
+    <string name="lockscreen_widgets_style1">Material Rounded</string>
+    <string name="lockscreen_widgets_style2">Material Square</string>
+    <string name="lockscreen_widgets_style3">Square Translucent</string>
+    <string name="lockscreen_widgets_style4">Rounded Translucent</string>
+    <string name="lockscreen_widgets_transparency_title">Translucent style transparency</string>
+    <string name="lockscreen_widgets_transparency_summary">Configure translucent style widget opacity level</string>
+
+    <!-- AOD custom image -->
+    <string name="lockscreen_custom_image_enabled_title">AOD avater image</string>
+    <string name="lockscreen_custom_image_title">Select AOD image</string>
+    <string name="lockscreen_custom_image_summary">Set custom AOD image</string>
+    <string name="lockscreen_custom_image_pick_summary">Select AOD image from gallery</string>
+    <string name="custom_aod_image_not_supported">Clock style not supported</string>
+    <string name="quick_settings_header_needs_gallery">You must install a gallery app!</string>
+
+    <!-- Lockscreen Clock Size -->
+    <string name="qs_clock_title">Clock</string>
+    <string name="clock_size_title">Clock size</string>
+    <string name="clock_size_summary">Scale the lockscreen clock (50–150%)</string>
+
+    <!-- Lockscreen Weather -->
+    <string name="custom_clock_weather_title">Lockscreen weather</string>
+    <string name="custom_clock_weather_summary">Show weather on custom lockscreen clock</string>
+
+    <!-- Apply Button -->
+    <string name="apply_change_button_title">Apply</string>
+
+    <!-- Lockscreen Clock Highlight Guide -->
+    <string name="ls_clock_title">Lockscreen Clocks</string>
+    <string name="ls_clock_summary">Set your clock style and widgets</string>
+    <string name="clock_styles_disclaimer_title">Before you continue</string>
+    <string name="clock_styles_disclaimer_message">For the best experience with clock faces and widgets, please make sure to:\n\n• Disable lockscreen Smartspace\n• Disable lockscreen weather\n• Disable the large clock style\n\nYou can find these options in the Lockscreen settings.</string>
+    <string name="ls_clock_face_highlight_text">Swipe left or right to preview clock styles</string>
+
+    <!-- Lockscreen Clock Revamp -->
+    <string name="ls_clock_custom_font_not_supported">Selected clock does not support custom fonts</string>
 </resources>
