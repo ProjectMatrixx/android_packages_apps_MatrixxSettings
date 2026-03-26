@@ -100,6 +100,12 @@
         android:key="lock_screen_fingerprint_category"
         android:title="@string/lock_screen_fingerprint_category">
 
+        <com.matrixx.settings.preferences.SystemSettingSwitchPreference
+            android:key="double_tap_sleep_lockscreen"
+            android:title="@string/lockscreen_doubletap_sleep_title"
+            android:summary="@string/lockscreen_doubletap_sleep_summary"
+            android:defaultValue="true" />
+
         <!-- Fingerprint unlock ripple animation -->
         <com.matrixx.settings.preferences.SystemSettingSwitchPreference
             android:key="enable_ripple_effect"
