@@ -95,6 +95,20 @@
     <PreferenceCategory
         android:title="@string/status_bar_battery_category_title">
 
+        <lineageos.preference.LineageSystemSettingListPreference
+            android:key="status_bar_battery_style"
+            android:title="@string/status_bar_battery_style_title"
+            android:entries="@array/status_bar_battery_style_entries"
+            android:entryValues="@array/status_bar_battery_style_values"
+            android:defaultValue="0" />
+
+        <lineageos.preference.LineageSystemSettingListPreference
+            android:key="status_bar_show_battery_percent"
+            android:title="@string/status_bar_battery_percent_title"
+            android:entries="@array/status_bar_battery_percent_entries"
+            android:entryValues="@array/status_bar_battery_percent_values"
+            android:defaultValue="0" />
+
         <!-- Battery bar -->
         <Preference
             android:key="batterybar"

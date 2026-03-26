@@ -1331,4 +1331,15 @@
     <string name="ongoing_chip_color_mode_accent">System accent color</string>
     <string name="ongoing_chip_color_mode_icon">App icon color</string>
     <string name="ongoing_chip_color_mode_album_art">Album art color</string>
+
+    <!-- Status bar - Battery -->
+    <string name="status_bar_battery_style_title">Battery style</string>
+    <string name="status_bar_battery_style_icon_rlandscape">Icon landscape (Right)</string>
+    <string name="status_bar_battery_style_circle">Circle</string>
+    <string name="status_bar_battery_style_dotted_circle">Dotted circle</string>
+    <string name="status_bar_battery_style_text">Text</string>
+    <string name="status_bar_battery_percent_title">Battery percent</string>
+    <string name="status_bar_battery_percent_hidden">Hidden</string>
+    <string name="status_bar_battery_percent_text_inside">Inside the icon</string>
+    <string name="status_bar_battery_percent_text_next">Next to the icon</string>
 </resources>
