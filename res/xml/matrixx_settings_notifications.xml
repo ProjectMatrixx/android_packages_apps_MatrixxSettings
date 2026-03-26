@@ -61,6 +61,18 @@
             android:title="@string/show_clipboard_overlay_title"
             android:summary="@string/show_clipboard_overlay_summary"
             android:defaultValue="true"/>
+
+        <com.matrixx.settings.preferences.SecureSettingSwitchPreference
+            android:key="notification_row_transparency"
+            android:title="@string/notification_row_transparency_title"
+            android:summary="@string/notification_row_transparency_summary"
+            android:defaultValue="true" />
+
+        <com.matrixx.settings.preferences.SecureSettingSwitchPreference
+            android:key="notification_row_transparency_lockscreen"
+            android:title="@string/notification_row_transparency_lockscreen_title"
+            android:summary="@string/notification_row_transparency_lockscreen_summary"
+            android:defaultValue="true" />
     </PreferenceCategory>
 
     <PreferenceCategory
