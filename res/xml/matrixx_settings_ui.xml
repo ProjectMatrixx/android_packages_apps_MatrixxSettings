@@ -31,6 +31,14 @@
             android:summary="@string/monet_settings_summary"
             android:fragment="com.matrixx.settings.fragments.ui.ColorsSettingsFragment" />
 
+        <com.matrixx.settings.preferences.SystemSettingListPreference
+            android:key="wifi_icon_style"
+            android:title="@string/wifi_icon_style_title"
+            android:entries="@array/wifi_icon_style_entries"
+            android:entryValues="@array/wifi_icon_style_values"
+            android:summary="%s"
+            android:defaultValue="0" />
+
     </PreferenceCategory>
 
     <PreferenceCategory

@@ -1170,4 +1170,12 @@
     <string name="hide_applist_summary">Prevent apps from checking selected apps from appslist</string>
     <string name="menu_show_overlay">Show overlay</string>
     <string name="menu_hide_overlay">Hide overlay</string>
+
+    <!-- Wifi Icon Styles -->
+    <string name="wifi_icon_style_title">Wi-Fi icon style</string>
+    <string name="wifi_icon_style1">Aurora</string>
+    <string name="wifi_icon_style2">Xperia</string>
+    <string name="wifi_icon_style3">Linear</string>
+    <string name="wifi_icon_style4">Nothing Dot</string>
+    <string name="wifi_icon_style5">ZigZag</string>
 </resources>
