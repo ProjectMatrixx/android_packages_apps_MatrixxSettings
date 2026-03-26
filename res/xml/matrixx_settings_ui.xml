@@ -38,6 +38,12 @@
             android:summary="@string/monet_settings_summary"
             android:fragment="com.matrixx.settings.fragments.ui.ColorsSettingsFragment" />
 
+        <Preference
+            android:key="font_settings"
+            android:title="@string/font_settings_title"
+            android:summary="@string/font_settings_summary"
+            android:fragment="com.matrixx.settings.fragments.ui.fonts.FontSettingsFragment"/>
+
         <com.matrixx.settings.preferences.SystemSettingListPreference
             android:key="wifi_icon_style"
             android:title="@string/wifi_icon_style_title"

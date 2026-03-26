@@ -41,8 +41,10 @@ public class UserInterface extends SettingsPreferenceFragment
     public static final String TAG = "UserInterface";
 
     private static final String KEY_WIFI_ICON_STYLE = "wifi_icon_style";
+    private static final String KEY_FONT_SETTINGS = "font_settings";
 
     private SystemSettingListPreference mWifiIconStyle;
+    private Preference mFontSettingsPref;
     private ThemeUtils mThemeUtils;
 
     private static final String[] WIFI_ICON_OVERLAYS = {
@@ -65,6 +67,8 @@ public class UserInterface extends SettingsPreferenceFragment
         if (mWifiIconStyle != null) {
             mWifiIconStyle.setOnPreferenceChangeListener(this);
         }
+
+        mFontSettingsPref = findPreference(KEY_FONT_SETTINGS);
     }
 
     private void updateStyle(String key, String category, String target,
