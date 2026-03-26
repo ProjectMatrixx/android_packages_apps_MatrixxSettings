@@ -17,9 +17,10 @@ package com.matrixx.settings.fragments.misc;
 
 import android.content.ContentResolver;
 import android.content.Context;
+import android.content.res.Resources;
 import android.os.Bundle;
 import android.os.UserHandle;
-import android.provider.Settings;
+import android.view.View;
 
 import androidx.preference.ListPreference;
 import androidx.preference.Preference;
@@ -31,7 +32,13 @@ import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settingslib.search.SearchIndexable;
 
+import com.matrixx.settings.fragments.misc.SensorBlock;
+
 import java.util.List;
+
+import lineageos.providers.LineageSettings;
+
+import static org.lineageos.internal.util.DeviceKeysConstants.*;
 
 @SearchIndexable
 public class Miscellaneous extends SettingsPreferenceFragment implements
@@ -39,14 +46,11 @@ public class Miscellaneous extends SettingsPreferenceFragment implements
 
     public static final String TAG = "Miscellaneous";
 
-    private static final String KEY_THREE_FINGERS_SWIPE = "three_fingers_swipe";
     private static final String POCKET_JUDGE = "pocket_judge";
+    private static final String KEY_THREE_FINGERS_SWIPE = "three_fingers_swipe";
 
-    // System setting key
-    private static final String THREE_FINGERS_SWIPE_ACTION = "three_fingers_swipe_action";
-
-    private ListPreference mThreeFingersSwipe;
     private Preference mPocketJudge;
+    private ListPreference mThreeFingersSwipeAction;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -55,6 +59,7 @@ public class Miscellaneous extends SettingsPreferenceFragment implements
         addPreferencesFromResource(R.xml.matrixx_settings_misc);
 
         final PreferenceScreen prefScreen = getPreferenceScreen();
+        final Resources res = getResources();
 
         mPocketJudge = (Preference) prefScreen.findPreference(POCKET_JUDGE);
         boolean mPocketJudgeSupported = res.getBoolean(
@@ -62,52 +67,45 @@ public class Miscellaneous extends SettingsPreferenceFragment implements
         if (!mPocketJudgeSupported)
             prefScreen.removePreference(mPocketJudge);
 
-        // Init Three Finger Swipe
-        mThreeFingersSwipe = (ListPreference) prefScreen.findPreference(KEY_THREE_FINGERS_SWIPE);
+        Action threeFingersSwipeAction = Action.fromSettings(getContentResolver(),
+                LineageSettings.System.KEY_THREE_FINGERS_SWIPE_ACTION,
+                Action.NOTHING);
+        mThreeFingersSwipeAction = initList(KEY_THREE_FINGERS_SWIPE, threeFingersSwipeAction);
+    }
 
-        if (mThreeFingersSwipe != null) {
-            int value = Settings.System.getIntForUser(
-                    getContentResolver(),
-                    THREE_FINGERS_SWIPE_ACTION,
-                    0,
-                    UserHandle.USER_CURRENT
-            );
+    private ListPreference initList(String key, Action value) {
+        return initList(key, value.ordinal());
+    }
 
-            mThreeFingersSwipe.setValue(String.valueOf(value));
-            mThreeFingersSwipe.setSummary(mThreeFingersSwipe.getEntry());
-            mThreeFingersSwipe.setOnPreferenceChangeListener(this);
-        }
+    private ListPreference initList(String key, int value) {
+        ListPreference list = (ListPreference) getPreferenceScreen().findPreference(key);
+        if (list == null) return null;
+        list.setValue(Integer.toString(value));
+        list.setSummary(list.getEntry());
+        list.setOnPreferenceChangeListener(this);
+        return list;
+    }
+
+    private void handleListChange(ListPreference pref, Object newValue, String setting) {
+        String value = (String) newValue;
+        int index = pref.findIndexOfValue(value);
+        pref.setSummary(pref.getEntries()[index]);
+        LineageSettings.System.putIntForUser(getContentResolver(), setting, Integer.valueOf(value), UserHandle.USER_CURRENT);
     }
 
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
-        if (preference == mThreeFingersSwipe) {
-            String value = (String) newValue;
-            int intValue = Integer.parseInt(value);
-
-            int index = mThreeFingersSwipe.findIndexOfValue(value);
-            mThreeFingersSwipe.setSummary(mThreeFingersSwipe.getEntries()[index]);
-
-            Settings.System.putIntForUser(
-                    getContentResolver(),
-                    THREE_FINGERS_SWIPE_ACTION,
-                    intValue,
-                    UserHandle.USER_CURRENT
-            );
+        if (preference == mThreeFingersSwipeAction) {
+            handleListChange((ListPreference) preference, newValue,
+                    LineageSettings.System.KEY_THREE_FINGERS_SWIPE_ACTION);
             return true;
         }
         return false;
     }
 
-    public static void reset(Context context) {
-        ContentResolver resolver = context.getContentResolver();
-
-        Settings.System.putIntForUser(
-                resolver,
-                THREE_FINGERS_SWIPE_ACTION,
-                0,
-                UserHandle.USER_CURRENT
-        );
+    @Override
+    public void onViewCreated(View view, Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
     }
 
     @Override
@@ -123,11 +121,15 @@ public class Miscellaneous extends SettingsPreferenceFragment implements
 
                 @Override
                 public List<String> getNonIndexableKeys(Context context) {
+                    List<String> keys = super.getNonIndexableKeys(context);
+                    final Resources res = context.getResources();
+
                     boolean mPocketJudgeSupported = res.getBoolean(
                             com.android.internal.R.bool.config_pocketModeSupported);
                     if (!mPocketJudgeSupported)
                         keys.add(POCKET_JUDGE);
-                    return super.getNonIndexableKeys(context);
+
+                    return keys;
                 }
             };
 }
