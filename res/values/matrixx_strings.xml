@@ -1112,4 +1112,9 @@
     <string name="haptics_settings_title">System haptics</string>
     <string name="haptics_settings_summary">Modify system haptics intensities</string>
     <string name="edge_scrolling_haptics_intensity_title">Edge scrolling haptics intensity</string>
+
+    <!-- Single Tone QS -->
+    <string name="qs_scrim_category_title">QS Scrim</string>
+    <string name="qs_single_tone_title">Single Tone QS</string>
+    <string name="qs_single_tone_summary">Hide notification scrim for unified Quick Settings appearance</string>
 </resources>

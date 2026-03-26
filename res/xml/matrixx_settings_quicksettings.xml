@@ -82,6 +82,19 @@
     </PreferenceCategory>
 
     <PreferenceCategory
+        android:key="qs_scrim_category"
+        android:title="@string/qs_scrim_category_title">
+
+        <!-- Single Tone QS -->
+        <com.matrixx.settings.preferences.SystemSettingSwitchPreference
+            android:key="single_qs_tone_enabled"
+            android:title="@string/qs_single_tone_title"
+            android:summary="@string/qs_single_tone_summary"
+            android:defaultValue="false" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
         android:key="qs_layout_category"
         android:title="@string/quick_settings_layout_category_title">
 

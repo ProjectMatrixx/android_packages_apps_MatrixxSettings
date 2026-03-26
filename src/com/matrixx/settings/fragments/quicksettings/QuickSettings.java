@@ -20,6 +20,7 @@ import android.content.Context;
 import android.os.Bundle;
 
 import androidx.preference.Preference;
+import androidx.preference.SwitchPreferenceCompat;
 
 import com.android.internal.logging.nano.MetricsProto;
 import com.android.settings.R;
@@ -38,8 +39,10 @@ public class QuickSettings extends SettingsPreferenceFragment implements
     public static final String TAG = "QuickSettings";
 
     private static final String KEY_QS_COMPACT_PLAYER = "qs_compact_media_player_mode";
+    private static final String KEY_SINGLE_QS_TONE = "single_qs_tone_enabled";
 
     private Preference mQsCompactPlayer;
+    private SwitchPreferenceCompat mSingleQsTone;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -49,11 +52,19 @@ public class QuickSettings extends SettingsPreferenceFragment implements
 
         mQsCompactPlayer = (Preference) findPreference(KEY_QS_COMPACT_PLAYER);
         mQsCompactPlayer.setOnPreferenceChangeListener(this);
+
+        mSingleQsTone = findPreference(KEY_SINGLE_QS_TONE);
+        if (mSingleQsTone != null) {
+            mSingleQsTone.setOnPreferenceChangeListener(this);
+        }
     }
 
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
         if (preference == mQsCompactPlayer) {
+            SystemUtils.showSystemUiRestartDialog(getActivity());
+            return true;
+        } else if (preference == mSingleQsTone) {
             SystemUtils.showSystemUiRestartDialog(getActivity());
             return true;
         }
