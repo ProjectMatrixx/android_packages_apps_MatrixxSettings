@@ -58,6 +58,12 @@
             android:title="@string/status_bar_clock_chip_title"
             android:summary="@string/status_bar_clock_chip_summary" />
 
+        <Preference
+            android:key="cutout_progress"
+            android:title="@string/cutout_progress_title"
+            android:summary="@string/cutout_progress_summary"
+            android:fragment="com.matrixx.settings.fragments.statusbar.CutoutProgressSettingsFragment" />
+
         <!-- Notification counter -->
         <com.matrixx.settings.preferences.SystemSettingSwitchPreference
             android:key="statusbar_notif_count"
