@@ -43,6 +43,18 @@
     <PreferenceCategory
         android:title="@string/extras_category_title">
 
+        <!-- Gaming mode -->
+        <Preference
+            android:key="gaming_mode"
+            android:title="@string/gaming_mode_title"
+            android:summary="@string/gaming_mode_summary">
+
+            <intent
+                android:action="android.intent.action.MAIN"
+                android:targetPackage="io.chaldeaprjkt.gamespace"
+                android:targetClass="io.chaldeaprjkt.gamespace.settings.SettingsActivity" />
+        </Preference>
+
         <!-- Screen Off animation -->
         <com.matrixx.settings.preferences.SystemSettingListPreference
             android:key="screen_off_animation"
