@@ -52,6 +52,13 @@
             android:summary="@string/miscellaneous_ignore_window_secure_summary"
             android:defaultValue="false" />
 
+        <!-- Hide screen capture status -->
+        <com.matrixx.settings.preferences.SystemSettingSwitchPreference
+            android:key="hide_screen_capture_status"
+            android:title="@string/hide_screen_capture_status_title"
+            android:summary="@string/hide_screen_capture_status_summary"
+            android:defaultValue="false"/>
+
      </PreferenceCategory>
 
     <PreferenceCategory
