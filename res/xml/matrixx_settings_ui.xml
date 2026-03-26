@@ -96,5 +96,15 @@
             android:defaultValue="true" />
     </PreferenceCategory>
 
+    <PreferenceCategory
+        android:key="wallpaper_settings_category"
+        android:title="@string/wallpaper_settings_category">
+
+        <Preference
+            android:key="wallpaper_settings"
+            android:title="@string/wallpaper_settings_title"
+            android:summary="@string/wallpaper_settings_summary"
+            android:fragment="com.matrixx.settings.fragments.ui.Wallpaper" />
+    </PreferenceCategory>
 
 </PreferenceScreen>
