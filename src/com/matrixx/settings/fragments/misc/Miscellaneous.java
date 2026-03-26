@@ -40,11 +40,13 @@ public class Miscellaneous extends SettingsPreferenceFragment implements
     public static final String TAG = "Miscellaneous";
 
     private static final String KEY_THREE_FINGERS_SWIPE = "three_fingers_swipe";
+    private static final String POCKET_JUDGE = "pocket_judge";
 
     // System setting key
     private static final String THREE_FINGERS_SWIPE_ACTION = "three_fingers_swipe_action";
 
     private ListPreference mThreeFingersSwipe;
+    private Preference mPocketJudge;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -53,6 +55,12 @@ public class Miscellaneous extends SettingsPreferenceFragment implements
         addPreferencesFromResource(R.xml.matrixx_settings_misc);
 
         final PreferenceScreen prefScreen = getPreferenceScreen();
+
+        mPocketJudge = (Preference) prefScreen.findPreference(POCKET_JUDGE);
+        boolean mPocketJudgeSupported = res.getBoolean(
+                com.android.internal.R.bool.config_pocketModeSupported);
+        if (!mPocketJudgeSupported)
+            prefScreen.removePreference(mPocketJudge);
 
         // Init Three Finger Swipe
         mThreeFingersSwipe = (ListPreference) prefScreen.findPreference(KEY_THREE_FINGERS_SWIPE);
@@ -115,6 +123,10 @@ public class Miscellaneous extends SettingsPreferenceFragment implements
 
                 @Override
                 public List<String> getNonIndexableKeys(Context context) {
+                    boolean mPocketJudgeSupported = res.getBoolean(
+                            com.android.internal.R.bool.config_pocketModeSupported);
+                    if (!mPocketJudgeSupported)
+                        keys.add(POCKET_JUDGE);
                     return super.getNonIndexableKeys(context);
                 }
             };

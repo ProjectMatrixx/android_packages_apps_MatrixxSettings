@@ -61,6 +61,13 @@
             android:entryValues="@array/hardware_keys_action_values"
             android:persistent="false" />
 
+        <!-- Pocket Judge -->
+        <com.matrixx.settings.preferences.SystemSettingSwitchPreference
+            android:key="pocket_judge"
+            android:title="@string/pocket_judge_title"
+            android:summary="@string/pocket_judge_summary"
+            android:defaultValue="false" />
+
         <!-- Rotation button -->
         <com.matrixx.settings.preferences.SystemSettingSwitchPreference
             android:key="enable_rotation_button"

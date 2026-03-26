@@ -1117,4 +1117,8 @@
     <string name="qs_scrim_category_title">QS Scrim</string>
     <string name="qs_single_tone_title">Single Tone QS</string>
     <string name="qs_single_tone_summary">Hide notification scrim for unified Quick Settings appearance</string>
+
+    <!-- Pocket judge -->
+    <string name="pocket_judge_title">Pocket detection</string>
+    <string name="pocket_judge_summary">Block screen and button inputs when device is in pocket</string>
 </resources>
