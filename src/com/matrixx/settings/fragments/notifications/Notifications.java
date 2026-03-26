@@ -38,10 +38,12 @@ public class Notifications extends SettingsPreferenceFragment implements
 
     public static final String TAG = "Notifications";
 
+    private static final String ALERT_SLIDER_PREF = "alert_slider_notifications";
     private static final String BATTERY_LIGHTS_PREF = "battery_lights";
     private static final String NOTIFICATION_LIGHTS_PREF = "notification_lights";
     private static final String LIGHT_BRIGHTNESS_CATEGORY = "light_brightness";
 
+    private Preference mAlertSlider;
     private Preference mBatteryLights;
     private Preference mNotificationLights;
 
@@ -54,6 +56,12 @@ public class Notifications extends SettingsPreferenceFragment implements
         final PreferenceScreen prefScreen = getPreferenceScreen();
         final Context context = getActivity();
         final Resources res = context.getResources();
+
+        mAlertSlider = (Preference) prefScreen.findPreference(ALERT_SLIDER_PREF);
+        boolean mAlertSliderAvailable = res.getBoolean(
+                com.android.internal.R.bool.config_hasAlertSlider);
+        if (!mAlertSliderAvailable)
+            prefScreen.removePreference(mAlertSlider);
 
         // Battery Lights
         mBatteryLights = prefScreen.findPreference(BATTERY_LIGHTS_PREF);
