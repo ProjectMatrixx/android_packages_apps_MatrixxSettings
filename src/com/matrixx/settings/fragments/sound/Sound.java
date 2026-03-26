@@ -15,12 +15,22 @@
  */
 package com.matrixx.settings.fragments.sound;
 
+import android.app.Activity;
 import android.content.ContentResolver;
 import android.content.Context;
+import android.content.Intent;
+import android.content.res.Resources;
 import android.os.Bundle;
+import android.os.SystemProperties;
+import android.os.UserHandle;
 import android.provider.Settings;
 
+import androidx.preference.ListPreference;
 import androidx.preference.Preference;
+import androidx.preference.PreferenceCategory;
+import androidx.preference.PreferenceScreen;
+import androidx.preference.Preference.OnPreferenceChangeListener;
+import androidx.preference.SwitchPreferenceCompat;
 
 import com.android.internal.logging.nano.MetricsProto;
 import com.android.settings.R;
@@ -28,24 +38,47 @@ import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settingslib.search.SearchIndexable;
 
+import com.matrixx.settings.utils.DeviceUtils;
+import com.matrixx.settings.utils.TelephonyUtils;
+
 import java.util.List;
+import java.util.ArrayList;
+
+import lineageos.providers.LineageSettings;
+
+import com.android.internal.util.matrixx.VibrationUtils;
 
 @SearchIndexable
-public class Sound extends SettingsPreferenceFragment
-        implements Preference.OnPreferenceChangeListener {
+public class Sound extends SettingsPreferenceFragment {
 
     public static final String TAG = "Sound";
 
+    private static final String KEY_VOLUME_CATEGORY = "volume_panel";
     private static final String KEY_VIBRATE_CATEGORY = "incall_vib_options";
     private static final String KEY_VIBRATE_CONNECT = "vibrate_on_connect";
     private static final String KEY_VIBRATE_CALLWAITING = "vibrate_on_callwaiting";
-    private static final String KEY_VIBRATE_DISCONNECT = "vibrate_on_disconnect"
+    private static final String KEY_VIBRATE_DISCONNECT = "vibrate_on_disconnect";
+    private static final String KEY_VOLUME_PANEL_LEFT = "volume_panel_on_left";
+    private static final String KEY_VOLUME_HAPTIC = "volume_dialog_haptic_feedback";
+
+    private SwitchPreferenceCompat mVolumePanelLeft;
+    private SwitchPreferenceCompat mVolumeHaptic;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         addPreferencesFromResource(R.xml.matrixx_settings_sound);
+
+        final Context context = getContext();
+        final PreferenceScreen prefScreen = getPreferenceScreen();
+
+        boolean isAudioPanelOnLeft = LineageSettings.Secure.getIntForUser(context.getContentResolver(),
+                LineageSettings.Secure.VOLUME_PANEL_ON_LEFT, isAudioPanelOnLeftSide(context) ? 1 : 0,
+                UserHandle.USER_CURRENT) != 0;
+
+        mVolumePanelLeft = prefScreen.findPreference(KEY_VOLUME_PANEL_LEFT);
+        mVolumePanelLeft.setChecked(isAudioPanelOnLeft);
 
         boolean voiceCapable = TelephonyUtils.isVoiceCapable(context);
         boolean hapticAvailable = DeviceUtils.hasVibrator(context);
@@ -54,16 +87,31 @@ public class Sound extends SettingsPreferenceFragment
             final PreferenceCategory vibCategory = prefScreen.findPreference(KEY_VIBRATE_CATEGORY);
             prefScreen.removePreference(vibCategory);
         }
+        if (!hapticAvailable) {
+            final PreferenceCategory volCategory = prefScreen.findPreference(KEY_VOLUME_CATEGORY);
+            mVolumeHaptic = volCategory.findPreference(KEY_VOLUME_HAPTIC);
+            volCategory.removePreference(mVolumeHaptic);
+        }
+    }
+
+    private static boolean isAudioPanelOnLeftSide(Context context) {
+        try {
+            Context con = context.createPackageContext("org.lineageos.lineagesettings", 0);
+            int id = con.getResources().getIdentifier("def_volume_panel_on_left",
+                    "bool", "org.lineageos.lineagesettings");
+            if (id <= 0) return false;
+            return con.getResources().getBoolean(id);
+        } catch (Exception e) {
+            return false;
+        }
     }
 
     @Override
-    public boolean onPreferenceChange(Preference preference, Object newValue) {
-        return false;
-    }
-
-    public static void reset(Context context) {
-        ContentResolver resolver = context.getContentResolver();
-
+    public boolean onPreferenceTreeClick(Preference preference) {
+        if (preference != null && preference.getKey() != null) {
+            VibrationUtils.triggerVibration(getContext(), 3);
+        }
+        return super.onPreferenceTreeClick(preference);
     }
 
     @Override
@@ -79,7 +127,21 @@ public class Sound extends SettingsPreferenceFragment
 
                 @Override
                 public List<String> getNonIndexableKeys(Context context) {
-                    return super.getNonIndexableKeys(context);
+                    List<String> keys = super.getNonIndexableKeys(context);
+
+                    boolean voiceCapable = TelephonyUtils.isVoiceCapable(context);
+                    boolean hapticAvailable = DeviceUtils.hasVibrator(context);
+
+                    if (!voiceCapable || !hapticAvailable) {
+                        keys.add(KEY_VIBRATE_CATEGORY);
+                        keys.add(KEY_VIBRATE_CONNECT);
+                        keys.add(KEY_VIBRATE_CALLWAITING);
+                        keys.add(KEY_VIBRATE_DISCONNECT);
+                    }
+                    if (!hapticAvailable) {
+                        keys.add(KEY_VOLUME_HAPTIC);
+                    }
+                    return keys;
                 }
             };
 }
