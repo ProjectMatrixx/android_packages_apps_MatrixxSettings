@@ -1125,4 +1125,8 @@
     <!-- Gaming mode -->
     <string name="gaming_mode_title">Game space</string>
     <string name="gaming_mode_summary">Extra features for immersive gaming experience</string>
+
+    <!-- Sidebar -->
+    <string name="sidebar_title">Sidebar</string>
+    <string name="sidebar_summary">Quickly open apps in a floating window</string>
 </resources>

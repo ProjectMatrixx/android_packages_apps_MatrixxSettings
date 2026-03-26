@@ -55,6 +55,18 @@
                 android:targetClass="io.chaldeaprjkt.gamespace.settings.SettingsActivity" />
         </Preference>
 
+        <!-- Sidebar -->
+        <Preference
+            android:key="sidebar"
+            android:title="@string/sidebar_title"
+            android:summary="@string/sidebar_summary">
+
+            <intent
+                android:action="android.intent.action.IA_SETTINGS"
+                android:targetPackage="com.libremobileos.sidebar"
+                android:targetClass="com.libremobileos.sidebar.ui.sidebar.SidebarSettingsActivity" />
+        </Preference>
+
         <!-- Screen Off animation -->
         <com.matrixx.settings.preferences.SystemSettingListPreference
             android:key="screen_off_animation"
