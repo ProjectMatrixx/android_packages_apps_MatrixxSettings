@@ -1143,4 +1143,8 @@
     <string name="notification_row_transparency_summary">Set translucent background for notifications in QS</string>
     <string name="notification_row_transparency_lockscreen_title">Translucent lockscreen notifications</string>
     <string name="notification_row_transparency_lockscreen_summary">Set translucent background for notifications in lockscreen</string>
+
+    <!-- QS tile alternate color -->
+    <string name="qs_tile_alternate_color_title">Alternate QS tile color</string>
+    <string name="qs_tile_alternate_color_summary">Use pre-qpr color for QS tiles</string>
 </resources>

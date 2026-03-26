@@ -40,9 +40,11 @@ public class QuickSettings extends SettingsPreferenceFragment implements
 
     private static final String KEY_QS_COMPACT_PLAYER = "qs_compact_media_player_mode";
     private static final String KEY_SINGLE_QS_TONE = "single_qs_tone_enabled";
+    private static final String KEY_QS_TILE_ALTERNATE_COLOR = "qs_tile_alternate_color";
 
     private Preference mQsCompactPlayer;
     private SwitchPreferenceCompat mSingleQsTone;
+    private SwitchPreferenceCompat mQsTileAlternateColor;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -57,6 +59,11 @@ public class QuickSettings extends SettingsPreferenceFragment implements
         if (mSingleQsTone != null) {
             mSingleQsTone.setOnPreferenceChangeListener(this);
         }
+
+        mQsTileAlternateColor = findPreference(KEY_QS_TILE_ALTERNATE_COLOR);
+        if (mQsTileAlternateColor != null) {
+            mQsTileAlternateColor.setOnPreferenceChangeListener(this);
+        }
     }
 
     @Override
@@ -65,6 +72,9 @@ public class QuickSettings extends SettingsPreferenceFragment implements
             SystemUtils.showSystemUiRestartDialog(getActivity());
             return true;
         } else if (preference == mSingleQsTone) {
+            SystemUtils.showSystemUiRestartDialog(getActivity());
+            return true;
+        } else if (preference == mQsTileAlternateColor) {
             SystemUtils.showSystemUiRestartDialog(getActivity());
             return true;
         }

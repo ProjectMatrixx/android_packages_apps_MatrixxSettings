@@ -92,6 +92,12 @@
             android:summary="@string/qs_single_tone_summary"
             android:defaultValue="false" />
 
+        <com.matrixx.settings.preferences.SystemSettingSwitchPreference
+            android:key="qs_tile_alternate_color"
+            android:title="@string/qs_tile_alternate_color_title"
+            android:summary="@string/qs_tile_alternate_color_summary"
+            android:defaultValue="false" />
+
     </PreferenceCategory>
 
     <PreferenceCategory
