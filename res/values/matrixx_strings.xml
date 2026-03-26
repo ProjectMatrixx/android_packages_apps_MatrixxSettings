@@ -1129,4 +1129,8 @@
     <!-- Sidebar -->
     <string name="sidebar_title">Sidebar</string>
     <string name="sidebar_summary">Quickly open apps in a floating window</string>
+
+    <!-- Ignore Window Secure flags -->
+    <string name="miscellaneous_ignore_window_secure_title">Ignore window secure flags</string>
+    <string name="miscellaneous_ignore_window_secure_summary">Remove restrictions on screenshots and screen recordings for all applications, potentially risking privacy leaks</string>
 </resources>
