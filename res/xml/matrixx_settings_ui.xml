@@ -24,6 +24,13 @@
         android:key="themes_monet_category"
         android:title="@string/themes_monet_category">
 
+        <!-- QuickSwitch -->
+        <Preference
+            android:key="quickswitch"
+            android:title="@string/quickswitch_launcher_title"
+            android:summary="@string/quickswitch_launcher_summary"
+            android:fragment="com.matrixx.settings.fragments.ui.QuickSwitch" />
+
         <!-- Monet engine -->
         <Preference
             android:key="monet_settings"
