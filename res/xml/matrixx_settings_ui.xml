@@ -97,8 +97,14 @@
     </PreferenceCategory>
 
     <PreferenceCategory
-        android:key="wallpaper_settings_category"
-        android:title="@string/wallpaper_settings_category">
+        android:key="video_wallpaper_category"
+        android:title="@string/video_wallpaper_category">
+
+        <Preference
+            android:key="video_wallpaper"
+            android:title="@string/video_wallpaper_category_title"
+            android:summary="@string/video_wallpaper_category_summary"
+            android:fragment="com.matrixx.settings.fragments.ui.VideoWallpaperFragment" />
 
         <Preference
             android:key="wallpaper_settings"
