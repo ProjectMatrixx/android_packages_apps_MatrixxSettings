@@ -1106,4 +1106,10 @@
     <string name="video_wallpaper_picker_error">Unable to open picker. Please try again.</string>
     <string name="video_wallpaper_processing">Processing selected file...</string>
     <string name="video_wallpaper_saved">Video wallpaper saved successfully</string>
+
+    <!-- Edge haptic -->
+    <string name="haptics_settings_category">Haptics</string>
+    <string name="haptics_settings_title">System haptics</string>
+    <string name="haptics_settings_summary">Modify system haptics intensities</string>
+    <string name="edge_scrolling_haptics_intensity_title">Edge scrolling haptics intensity</string>
 </resources>

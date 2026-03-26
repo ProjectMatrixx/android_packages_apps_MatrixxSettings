@@ -47,4 +47,16 @@
             android:defaultValue="true" />
     </PreferenceCategory>
 
+        <!-- Edge scrolling intensity -->
+    <PreferenceCategory
+        android:key="haptics_settings_category"
+        android:title="@string/haptics_settings_category" >
+
+        <Preference
+            android:key="haptics_settings"
+            android:title="@string/haptics_settings_title"
+            android:summary="@string/haptics_settings_summary"
+            android:fragment="com.matrixx.settings.fragments.sound.HapticsPreferenceFragment"/>
+    </PreferenceCategory>
+
 </PreferenceScreen>
