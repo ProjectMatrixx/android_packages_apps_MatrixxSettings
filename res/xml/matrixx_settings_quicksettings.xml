@@ -37,6 +37,12 @@
             android:summary="@string/quick_settings_data_usage_summary"
             android:defaultValue="false" />
 
+        <com.matrixx.settings.preferences.SecureSettingSwitchPreference
+            android:key="qs_show_data_usage_tile"
+            android:title="@string/qs_show_data_usage_title"
+            android:summary="@string/qs_show_data_usage_summary"
+            android:defaultValue="true" />
+
         <com.matrixx.settings.preferences.SystemSettingSwitchPreference
             android:key="qs_tile_haptic"
             android:title="@string/qs_brightness_slider_haptic_title"
