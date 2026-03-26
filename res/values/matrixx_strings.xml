@@ -1160,4 +1160,8 @@
     <!-- Status bar - Icon tinting -->
     <string name="status_bar_tint_icons_title">Tint status bar icons</string>
     <string name="status_bar_tint_icons_summary">Tint status bar icons with system accent color</string>
+
+    <!-- Unlimit screenrecord -->
+    <string name="miscellaneous_unlimit_screenrecord_title">Unlimit screenrecord</string>
+    <string name="miscellaneous_unlimit_screenrecord_summary">Remove the 15GiB file size limit\nMay result in a larger than needed output file</string>
 </resources>
