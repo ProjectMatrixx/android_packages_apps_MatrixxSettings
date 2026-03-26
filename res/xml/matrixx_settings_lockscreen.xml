@@ -62,6 +62,13 @@
             android:summary="@string/lockscreen_show_carrier_summary"
             android:defaultValue="true" />
 
+        <!-- Shortcuts -->
+        <com.matrixx.settings.preferences.SecureSettingSwitchPreference
+            android:key="keyguard_affordance_single_tap"
+            android:title="@string/keyguard_affordance_single_tap_title"
+            android:summary="@string/keyguard_affordance_single_tap_summary"
+            android:defaultValue="false" />
+
     </PreferenceCategory>
 
     <PreferenceCategory
