@@ -59,6 +59,13 @@
             android:summary="@string/hide_screen_capture_status_summary"
             android:defaultValue="false"/>
 
+        <!-- Disable flash sms -->
+        <com.matrixx.settings.preferences.SystemSettingSwitchPreference
+            android:key="disable_flash_sms"
+            android:title="@string/disable_flash_sms_title"
+            android:summary="@string/disable_flash_sms_summary"
+            android:defaultValue="false"/>
+
         <!-- No storage access framework restrictions -->
         <com.matrixx.settings.preferences.GlobalSettingSwitchPreference
             android:key="no_storage_restrict"

@@ -1514,4 +1514,8 @@
 
     <!-- Lockscreen Clock Revamp -->
     <string name="ls_clock_custom_font_not_supported">Selected clock does not support custom fonts</string>
+
+    <!-- Flash SMS -->
+    <string name="disable_flash_sms_title">Disable Flash SMS</string>
+    <string name="disable_flash_sms_summary">Converts full-screen flash messages into standard text SMS.</string>
 </resources>
