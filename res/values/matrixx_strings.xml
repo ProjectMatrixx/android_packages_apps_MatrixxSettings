@@ -138,23 +138,31 @@
     <string name="miscellaneous_pairip_activity_block_title">Block PairIP license verification</string>
     <string name="miscellaneous_pairip_activity_block_summary">Prevent Play Store apps from launching the \"Get this app from Play\" screen when not installed by the Play Store</string>
 
-    <!-- Miscellaneous/Spoofing -->
-    <string name="spoofing_title">Component spoofing</string>
-    <string name="spoofing_summary">Bypass app restrictions by spoofing components</string>
-    <string name="spoofing_system_wide_category">System-Wide</string>
-    <string name="spoofing_pixel_props_title">Pixel props</string>
-    <string name="spoofing_pixel_props_summary">Spoof a select group of Google apps to the latest Pixel device</string>
-    <string name="gms_spoof_title">Play Integrity fix</string>
-    <string name="gms_spoof_summary">Spoof your device to pass Google Play Attestation</string>
-    <string name="vending_spoof_title">Spoof vending</string>
-    <string name="vending_spoof_summary">Apply device spoofing to Google Play Store</string>
-    <string name="spoofing_app_specific_category">App-Specific</string>
-    <string name="spoofing_photos_title">Google Photos</string>
-    <string name="spoofing_photos_summary">Spoof the Google Photos app as a Pixel XL</string>
+    <!-- Unlimited google photos storage -->
     <string name="spoofing_snap_title">Snapchat</string>
     <string name="spoofing_snap_summary">Spoof Snapchat as a Pixel XL to fix possible chat issues</string>
+    <string name="spoofing_vending_title">Play Store</string>
+    <string name="spoofing_vending_summary">Spoof the Play Store to the pi Pixel device</string>
+    <string name="use_photos_spoof_title">Unlimited Photos storage</string>
+    <string name="use_photos_spoof_summary">Spoof your device as Pixel XL for Google Photos app only to provide unlimited storage for backup</string>
+    <string name="spoofing_summary">Device spoofing and misc.</string>
+    <string name="spoofing_app_specific_category">App-Specific</string>
+    <string name="gameprops_title">Enable Games/Apps Props spoofing</string>
+    <string name="gameprops_summary">Spoof your device as different model for specific games/apps</string>
+    <string name="gameprops_load_json_title">Select Game/Apps Props JSON File</string>
+    <string name="gameprops_load_json_summary">Pick Game/Apps Props JSON file to be used for spoofing games/apps</string>
+    <string name="spoofing_qsb_title">Google app</string>
+    <string name="spoofing_qsb_summary">Spoof the Google app to the latest Pixel device to unlock exclusive features</string>
+    <string name="tensor_spoof_title">Spoof tensor features</string>
+    <string name="tensor_spoof_summary">Unlock tensor/pixel features</string>
+    <string name="spoofing_pixel_props_title">Pixel props</string>
+    <string name="spoofing_pixel_props_summary">Spoof a select group of Google apps to the latest Pixel device</string>
 
     <!-- Miscellaneous/Spoofing/Play Integrity fix JSON update -->
+    <string name="spoofing_title">Spoofing Settings</string>
+    <string name="gms_spoof_title">Play Integrity fix</string>
+    <string name="spoofing_system_wide_category">System-Wide</string>
+    <string name="gms_spoof_summary">Spoof your device to pass Google Play Attestation</string>
     <string name="toast_spoofing_success">Successfully downloaded pif.json. Spoofing as %1$s for Play Integrity.</string>
     <string name="toast_spoofing_failure">Failed to spoof properties.</string>
     <string name="update_pif_json_title">Update Play Integrity fix</string>
@@ -166,6 +174,10 @@
     <string name="error_loading_properties">Error loading PIF properties</string>
     <string name="pif_spoofing_title">Select PIF JSON file</string>
     <string name="pif_spoofing_summary">Choose the PIF JSON file to be used to spoof Play Integrity</string>
+
+    <!-- Vbmeta hash attestation -->
+    <string name="vbmeta_attestation_title">Autofix VBMeta detection</string>
+    <string name="vbmeta_attestation_summary">Perform key attestation to generate verified boot hash on boot. Requires system restart.</string>
     
     <!-- App Spoofing -->
     <string name="user_selectable_app_spoofing_title">App Spoofing</string>
