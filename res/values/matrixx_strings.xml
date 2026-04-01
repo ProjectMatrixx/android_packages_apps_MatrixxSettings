@@ -1205,12 +1205,12 @@
     <string name="quickswitch_launcher_title">Quick Switch</string>
     <string name="quickswitch_launcher_summary">Switch default launcher</string>
     <string name="wallpaper_overlay_title">Wallpaper overlay</string>
-    <string name="wallpaper_overlay_summary">Enable for Lunaris Launcher, disable for Pixel Launcher</string>
+    <string name="wallpaper_overlay_summary">Enable for Matrixx Launcher, disable for Pixel Launcher</string>
     <string name="quickswitch_not_supported">QuickSwitch is not supported; the system only has one launcher.</string>
     <string name="quickswitch_footer_text">
         Notes: \n\n
         1. External launcher modules/modifications must be adapted to the QuickSwitch structure to function properly. \n\n
-        2. Enable wallpaper overlay for Lunaris Launcher, disable for Pixel Launcher before or after switching to make wallpaper and style working.
+        2. Enable wallpaper overlay for Matrixx Launcher, disable for Pixel Launcher before or after switching to make wallpaper and style working.
     </string>
 
     <!-- Shake Gestures -->
