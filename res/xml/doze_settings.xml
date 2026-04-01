@@ -32,7 +32,7 @@
         android:key="always_on_display_schedule"
         android:title="@string/always_on_display_schedule_title"
         android:summary="@string/always_on_display_schedule_summary"
-        android:fragment="com.matrixx.settings.fragments.themes.doze.AODSchedule"
+        android:fragment="com.matrixx.settings.fragments.ui.doze.AODSchedule"
         android:dependency="doze_always_on" />
 
     <com.matrixx.settings.preferences.SecureSettingSwitchPreference
