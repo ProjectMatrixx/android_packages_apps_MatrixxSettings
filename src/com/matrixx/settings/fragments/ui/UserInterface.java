@@ -42,6 +42,7 @@ public class UserInterface extends SettingsPreferenceFragment
 
     private static final String KEY_WIFI_ICON_STYLE = "wifi_icon_style";
     private static final String KEY_FONT_SETTINGS = "font_settings";
+    private static final String KEY_QUICKSWITCH = "quickswitch";
 
     private SystemSettingListPreference mWifiIconStyle;
     private Preference mFontSettingsPref;
@@ -69,6 +70,16 @@ public class UserInterface extends SettingsPreferenceFragment
         }
 
         mFontSettingsPref = findPreference(KEY_FONT_SETTINGS);
+        Preference quickswitchPref = findPreference(KEY_QUICKSWITCH);
+
+        if (quickswitchPref != null) {
+            boolean pixelShipped =
+            android.os.SystemProperties.getInt("persist.sys.quickswitch_pixel_shipped", 0) != 0;
+
+        if (!pixelShipped) {
+           getPreferenceScreen().removePreference(quickswitchPref);
+         }
+       }
     }
 
     private void updateStyle(String key, String category, String target,
