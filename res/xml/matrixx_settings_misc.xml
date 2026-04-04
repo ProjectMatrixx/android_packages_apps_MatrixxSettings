@@ -27,8 +27,8 @@
         <!-- Component spoofing -->
         <Preference
             android:key="spoofing"
-            android:title="@string/spoofing_title"
-            android:summary="@string/spoofing_summary"
+            android:title="@string/spoof_screen_title"
+            android:summary="@string/spoof_screen_summary"
             android:fragment="com.matrixx.settings.fragments.misc.Spoofing" />
 
         <!-- Application downgrade -->
