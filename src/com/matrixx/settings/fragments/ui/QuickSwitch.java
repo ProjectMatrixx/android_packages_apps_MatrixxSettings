@@ -47,6 +47,7 @@ public class QuickSwitch extends SettingsPreferenceFragment
     private static final String TAG = "QuickSwitch";
 
     private static final String QUICKSWITCH_KEY = "persist.sys.default_launcher";
+    private static final String WALLPAPER_OVERLAY_KEY = "com.android.system.qs.wallpaperoverlay";
     
     private ListPreference quickSwitchPref;
 
@@ -55,6 +56,8 @@ public class QuickSwitch extends SettingsPreferenceFragment
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.quick_switch);
         
+        boolean isPixelAvailable =
+        android.os.SystemProperties.getBoolean("ro.matrixx.pixel_launcher", false);
         int defaultLauncher = SystemProperties.getInt(QUICKSWITCH_KEY, 0);
         quickSwitchPref = findPreference(QUICKSWITCH_KEY);
         quickSwitchPref.setOnPreferenceChangeListener(this);
@@ -67,21 +70,35 @@ public class QuickSwitch extends SettingsPreferenceFragment
         quickSwitchEntries.add(launcherEntries[0]);
         quickSwitchValues.add(launcherValues[0]);
 
-        if (SystemProperties.getInt("persist.sys.quickswitch_pixel_shipped", 0) != 0) {
+        if (isPixelAvailable) {
             quickSwitchEntries.add(launcherEntries[1]);
             quickSwitchValues.add(launcherValues[1]);
+        }
+
+        if (!isPixelAvailable && defaultLauncher == 1) {
+            defaultLauncher = 0;
+            SystemProperties.set(QUICKSWITCH_KEY, "0");
         }
 
         quickSwitchPref.setEntries(quickSwitchEntries.toArray(new CharSequence[0]));
         quickSwitchPref.setEntryValues(quickSwitchValues.toArray(new CharSequence[0]));
         quickSwitchPref.setValue(String.valueOf(defaultLauncher));
+
+        Preference overlayPref = findPreference(WALLPAPER_OVERLAY_KEY);
+        if (!isPixelAvailable && overlayPref != null) {
+            getPreferenceScreen().removePreference(overlayPref);
+        }
+
+        if (!isPixelAvailable) {
+            quickSwitchPref.setEnabled(false);
+            quickSwitchPref.setSummary(R.string.quickswitch_not_supported);
+        }
     }
 
     @Override
     public int getMetricsCategory() {
         return MetricsProto.MetricsEvent.VIEW_UNKNOWN;
     }
-
 
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
@@ -113,3 +130,4 @@ public class QuickSwitch extends SettingsPreferenceFragment
                 }
             };
 }
+
