@@ -613,7 +613,7 @@
     <string name="quick_settings_data_usage_title">Data usage</string>
     <string name="quick_settings_data_usage_summary">Display data usage summary in quick settings footer</string>
     <string name="qs_show_data_usage_title">Show data usage in tiles</string>
-    <string name="qs_show_data_usage_summary">Display data usage information in WiFi and Cellular Quick Settings tiles</string>
+    <string name="qs_show_data_usage_summary">Display data usage information in Internet, WiFi and Cellular Quick Settings tiles</string>
 
     <!-- Brightness slider haptic feedback -->
     <string name="qs_brightness_slider_haptic_title">Haptic feedback</string>
